@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@400;600;700;900&family=Oswald:wght@400;600&family=Poppins:wght@300;400&family=Raleway&family=Ruwudu&family=Tilt+Prism&display=swap');
+
+
+
+.aboutUS{
+    width: 100%;
+    height: 115vh;
+    background-color: rgb(19, 19, 19);
+}
+.AboutUs{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    height:100vh;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.aboutUsContentHead{
+    font-size: 1.8rem;
+    margin: 0px 30px;
+    padding: 5px 10px;
+    width: max-content;
+    font-weight: lighter;
+    transition: text-shadow 0.5s linear;
+    animation: flicker 5s infinite ease-in;     
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    /* Base font size */   
+    
+    /* Set neon color */
+    --neon-text-color: rgba(14, 14, 14, 0.267);
+  }
+/* .aboutUsContentHead::-moz-selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+  }
+  
+.aboutUsContentHead::selection {
+    background-color: var(--neon-border-color);
+    color: var(--neon-text-color);
+} */
+
+.linkonaboutus{
+    margin: 30px 0px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+.linkFoundOnAboutUs{
+    margin: 0px 10px;
+    padding: 6px 12px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+    font-size: x-small;
+    border-radius: 4px;
+}
+.aboutusContent{
+    flex: 1.5;
+    padding: 10vh 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 80vh;
+}
+.aboutUsContentPara{
+    font-size: small;
+    width: 90%;
+    margin-right: auto;
+    justify-items: center;
+    text-align: justify;
+    margin-left: auto;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+.aboutusImage{
+    height: 80vh;
+    flex: 1;
+}
+.collegeqoute{
+    width: 89%;
+    margin: 20px auto;
+}
+.collegeqouteParaBold{
+    
+    font-weight: 600;
+}
+.collegeqoutePara{
+    font-style: italic;
+    font-size: smaller;
+    font-family: 'Poppins', sans-serif;
+}
+.imageFoundOnAboutUS{
+    width: 86%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 110vh;
+}
+.imgonABoutUs{
+    transform: rotate(0.016turn);
+    /* mix-blend-mode: multiply; */
+    width: 400px;
+    object-fit: fill;
+    margin-right: auto;
+    height: 95vh;
+    object-fit: contain;
+}
+
+
+
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.1rem -0.1rem .5rem #ff0000a8,
+            0.1rem 0.1rem .5rem #ff000086,
+            0 0 .2rem var(--neon-text-color),
+            0 0 .2rem var(--neon-text-color),
+            0 0 .2rem var(--neon-text-color),
+            0 0 .2rem var(--neon-text-color),
+            0 0 .2rem var(--neon-text-color);    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }   
+}
