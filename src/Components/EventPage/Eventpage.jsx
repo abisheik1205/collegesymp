@@ -4,6 +4,8 @@ import './EventPage.css';
 
 export const Eventpage = () => {
     return(
+        <div className="EventMainPage">
+
         <div className="Event_div">
             <div className="EventLeftColumn">
                 <img className="EventImage" alt="logo" src="https://www.cittakshashila.in/bgs/BUSINESS%20MARKETTING.webp"/>
@@ -57,5 +59,6 @@ slint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-is-valid.md </p>
                 </div>
             </div>
         </div>
+                           </div>
     )
 }
