@@ -5,6 +5,7 @@ import AllDepartmentPageContainer from "./AllDepartmentPageContainer/AllDepartme
 import Divider from "../Divider/Divider";
 
 const AllDepartmentPage = () => {
+
     return(
         <div className="AllDepartmentPage">
             <AllDepartmentPageHeader />

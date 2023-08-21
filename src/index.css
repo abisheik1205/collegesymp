@@ -7,7 +7,7 @@ body{
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-clip: border-box;
   backdrop-filter: blur(10px);;
   background-attachment: fixed;

@@ -27,6 +27,11 @@
     margin: 0px 4px;
 }
 
+.AllDepartmentPageHeadereachLinksSelected{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
 .AllDepartmentPageHeadereachLinks:hover{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);

@@ -1,113 +1,224 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@400;600;700;900&family=Oswald:wght@400;600&family=Poppins:wght@300;400&family=Raleway&family=Ruwudu&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Poppins:wght@200;300;400;500&family=Zilla+Slab&display=swap');
 
 .EventMainPage{
-    background-color: rgba(255, 255, 255, 0.74);
+    background-color: rgba(0, 0, 0, 0.596);
+    /* height: 90vh; */
+    backdrop-filter: blur(60px);
 }
 
 .Event_div{
-    backdrop-filter: blur(5px);
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   width: 80%;
-   margin-left: auto;
-   margin-right: auto;
+    backdrop-filter: blur(60px);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(39, 39, 39, 0.845); */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .EventLeftColumn{
-   background-color: rgba(0, 0, 0, 0.826);
-   width: 35%;
-   height: 800px;
-   padding: 5%;
+    /* backdrop-filter: blur(6px); */
+    width: 35%;
+   height: 100%;
+   /* padding: 5%; */
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
+   justify-content: flex-start;
 }
+
 .EventRightColumn{
-   background-color: rgba(7, 7, 7, 0.74);
-   width: 65%;
-   height:800px;
-   padding: 5%;
+    backdrop-filter: blur(1px);
+    width: 95%;
+   /* height:800px; */
+   padding: 20px 30px;
 }
 .EventImage{
-    height: 450px;
-    width: 400px;
-    padding: 50px;
-    border-radius: 70px;
+    height: 350px;
+    width: 370px;
+    position: relative;
+    border-radius: 7px;
 }
+
+.EventImageInside{
+    height: 350px;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    /* padding: 50px; */
+    border-radius: 7px;
+}
+
+.EventImageImg{
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    object-fit: cover;
+    /* padding: 50px; */
+    border-radius: 7px;
+}
+
 .EventLinkbox{
-    height: 10px;
-    padding:30px;
-    width: 400px;
     display: flex;
     justify-content: center;
 }
 .EventLinks{
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 15px;
 }
 #EventRegisterButton{
-    height: 60px;
-    width: 200px;
+    padding: 8px 15px;
     background-color: rgb(255, 255, 255);
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: large;
+    font-family: 'Inconsolata', monospace;
+    outline: none;
+    border: none;
 }
 .EventRegister{
     padding-top: 30px;
 }
 .EventName{
     color:snow;
-    padding: 20px;
+    padding: 10px 20px;
+    font-size: x-large;
 }
-.EventHeader{
-    text-decoration: solid underline 3px snow;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+.EventRightColumnEventHeader{
+    text-decoration: solid 2px rgba(255, 250, 250, 0.827);
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    margin-bottom: 25px;
 }
-.SubHeads{
+
+.EventRightColumnEventHeadertext{
+    font-family: 'Inconsolata', monospace;
+    font-size: small;
+}
+
+.EventDescriptionSubHeads{
+    font-family: 'Inconsolata', monospace;
     color: snow;
-    text-decoration: solid underline 3px snow ;
+    text-decoration: solid underline 2px rgba(255, 250, 250, 0.838) ;
+    text-underline-offset: 13px;
+    margin-bottom: 20px;
+    font-size: medium;
 }
-.text{
+.EventDescriptiontext{
+    font-family: 'Inconsolata', monospace;
     color:snow;
-    padding: 20px;
+    font-size: smaller;
+    padding: 10px;
 }
 .EventDescription{
+    font-family: 'Inconsolata', monospace;
     color:snow;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px 20px;
 }
 .RulesList{
     list-style-type: disc;
     color: snow;
     padding: 20px;
+    font-family: 'Inconsolata', monospace;
 }
+
+.EventRulesSubHeads{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+    text-decoration: solid underline 2px rgba(255, 250, 250, 0.838) ;
+    text-underline-offset: 13px;
+    margin-bottom: 10px;
+    font-size: medium;
+}
+
+.EventPrizeSubHeads{
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: solid underline 1px rgb(215, 215, 215) ;
+    text-underline-offset: 13px;
+    margin-bottom: 25px;
+    font-size: medium;
+}
+
+.EventPrizetext{
+    font-size: small;
+}
+
+.EventDetailsSubHeads{
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+    text-decoration: solid underline 1px rgba(255, 250, 250, 0.838) ;
+    text-underline-offset: 13px;
+    margin-bottom: 25px;
+    font-size: medium;
+}
+
+.ListInBold{
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: 'Inconsolata', monospace;
+}
+
+.EventDetailsListEach{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+    font-size: small;
+    padding: 1px;
+}
+
 .EventRules{
-    padding:20px;
+    padding:10px 20px;
+    font-family: 'Inconsolata', monospace;
 }
-li{
-    padding:2px;
+
+.RulesListEach{
+    font-size: small;
+    padding:1px;
 }
+
 .EventPDC{
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 20px;
 }
+
 .pdc{
-    padding:10px;
+    margin:10px;
+    font-family: 'Inconsolata', monospace;
+    width: 33.33%;
 }
+
 #EventRegisterButton:hover{
-    transform: scale(1.05);
+    background-color: black;
+    color: whitesmoke;
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 .EventLinks:hover{
     transform: scale(1.09);
     color: powderblue;
 }
-.pdctext{
-    padding:5px;
+.EventContactSubHeads{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
+    text-decoration: solid underline 2px rgba(255, 250, 250, 0.838) ;
+    text-underline-offset: 13px;
+    margin-bottom: 25px;
+    font-size: medium;  
 }
-.subpdc{
-    padding-bottom: 14px;
+.EventPrizetext{
+    font-family: 'Inconsolata', monospace;
+    color: whitesmoke;
 }

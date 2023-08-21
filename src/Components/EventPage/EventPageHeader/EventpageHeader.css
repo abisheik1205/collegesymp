@@ -1,0 +1,27 @@
+.EventpageHeader{
+    backdrop-filter: blur(10px);
+    display: flex;
+    transition: .5s;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Inconsolata', monospace;
+    padding: 25px 30px;
+    position: sticky;
+    top: 0;
+}
+
+.EventpageHeaderType{
+
+}
+
+.EventpageHeaderTypePara{
+
+    color: whitesmoke;
+    font-size: larger;
+
+}
+
+.GoBackPara{
+    color: whitesmoke;
+    font-size: larger;
+}

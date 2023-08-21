@@ -78,7 +78,7 @@
     transition: .5s;
     display: flex;
     padding: 10px 20px;
-    color: black;
+    color: rgb(241, 241, 241);
     /* background-color: aqua; */
     justify-content: space-between;
     align-items: flex-end;
