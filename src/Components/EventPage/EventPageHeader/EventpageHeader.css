@@ -24,4 +24,5 @@
 .GoBackPara{
     color: whitesmoke;
     font-size: larger;
+    cursor: pointer;
 }

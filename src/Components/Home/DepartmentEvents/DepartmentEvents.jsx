@@ -1,6 +1,7 @@
 import React from "react";
 import "./DepartmentEvents.css";
 import DepartmentEach from "./DepartmentEach";
+import { Link } from "react-router-dom";
 
 const DepartmentEvents = () => {
 
@@ -21,7 +22,9 @@ const DepartmentEvents = () => {
                         if (key === 5) {
                             return(
                                 <div className="departmentsInGridMore">
-                                    <h2 className="departmentsInGridMoreHead">More Details</h2>
+                                    <Link to={"/allevents"}>
+                                        <h2 className="departmentsInGridMoreHead">More Details</h2>
+                                    </Link>
                                 </div>
                             );                            
                         }

@@ -3,7 +3,7 @@
 
 .EventMainPage{
     background-color: rgba(0, 0, 0, 0.596);
-    /* height: 90vh; */
+    height: 100vh;
     backdrop-filter: blur(60px);
 }
 
@@ -74,7 +74,7 @@
     padding: 10px 15px;
 }
 #EventRegisterButton{
-    padding: 8px 15px;
+    padding: 12px 18px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     font-size: large;
@@ -83,7 +83,7 @@
     border: none;
 }
 .EventRegister{
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .EventName{
     color:snow;

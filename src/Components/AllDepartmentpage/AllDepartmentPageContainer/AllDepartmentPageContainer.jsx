@@ -2,6 +2,7 @@ import React from "react";
 import "./AllDepartmentPageContainer.css";
 import AllDepartmentPageEachContainer from "./AllDepartmentPageEachContainer/AllDepartmentPageEachContainer";
 import { StorageData } from "../../Storage/Storage";
+import { Fade } from "react-reveal";
 
 const AllDepartmentPageContainer = () => {
     
@@ -25,7 +26,14 @@ const AllDepartmentPageContainer = () => {
                 allevents.map((item, key) => {
                     return(
                         <div key={key}>
-                            <AllDepartmentPageEachContainer image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                            {
+                                key%2 == 0? <Fade slow left >
+                                <AllDepartmentPageEachContainer image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                            </Fade> : <Fade slow right>
+                                <AllDepartmentPageEachContainer image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                            </Fade>
+                            }
+                            
                         </div>
                     )
                 })
