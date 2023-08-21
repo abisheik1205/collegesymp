@@ -1,0 +1,105 @@
+#login_btn{
+    background-color: black;
+    color:azure;
+    margin: 15px;
+}
+.cover{
+    text-align: center;
+    display:flex;
+    align-items:center ;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.cover{
+    background-color: #00000000;
+    background-image: url(https://images7.alphacoders.com/100/1006796.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:80%
+}
+h1{
+    color: snow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    /*color: #fff;
+    /*text-shadow:
+      0 0 7px #fff,
+      0 0 10px #d478ec,
+      0 0 21px #9c1cb0,
+      0 0 42px rgb(102, 7, 133),
+      0 0 82px rgb(14, 4, 43),
+      0 0 92px rgb(14, 4, 43),
+      0 0 102px rgb(14, 4, 43),
+      0 0 151px rgb(14, 4, 43)*/
+}
+h2{
+    color: snow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    /*color: #fff;
+    /*  text-shadow:
+      0 0 7px #fff,
+      0 0 10px #d478ec,
+      0 0 21px #9c1cb0,
+      0 0 42px rgb(102, 7, 133),
+      0 0 82px rgb(14, 4, 43),
+      0 0 92px rgb(14, 4, 43),
+      0 0 102px rgb(14, 4, 43),
+      0 0 151px rgb(14, 4, 43)*/
+}
+p{
+    color: azure;
+    font-size: large;
+    font-family: cursive;
+}
+.login_btns:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+#login_btn{
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+}
+input{
+    border-radius: 25px;
+    height: 35px;
+    width: 200px;
+    font-size: medium;
+    text-align: center;
+    margin:15px;
+    border-width: 4px;
+    border-color: black;
+}
+#facebook{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-image: url(https://freepngimg.com/thumb/facebook/141088-logo-circle-facebook-download-hd.png);
+    background-size: cover;
+    border: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+#google{
+    height: 40px;   
+    width: 40px;
+    border-radius: 10px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK5q0FP74VV9wbfwP378_7kj7iDomHuKrxkXsxDdUT28V9dlVMNUe-EMzaLwaFhneeuZI&usqp=CAU);
+    background-size: cover;
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.innerbox{
+    height: 600px;
+    width: 500px;
+    border-color: beige;
+    /*border-style: dashed;*/
+    border-radius: 10%;
+    background-color: #0000008f;
+
+}

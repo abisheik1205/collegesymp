@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Lobster&family=Montserrat:wght@400;600;700;900&family=Oswald:wght@400;600&family=Poppins:wght@300;400&family=Raleway&family=Ruwudu&family=Tilt+Prism&display=swap');
+
+
+.Event_div{
+   background-color: rgba(70, 70, 70, 0.649);
+    backdrop-filter: blur(5px);
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+.EventLeftColumn{
+   background-color: rgba(0, 0, 0, 0.826);
+   width: 35%;
+   height: 800px;
+   padding: 5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.EventRightColumn{
+   background-color: rgba(7, 7, 7, 0.74);
+   width: 65%;
+   height:800px;
+   padding: 5%;
+}
+.EventImage{
+    height: 450px;
+    width: 400px;
+    padding: 50px;
+    border-radius: 70px;
+}
+.EventLinkbox{
+    height: 10px;
+    padding:30px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.EventLinks{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#EventRegisterButton{
+    height: 60px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    font-size: large;
+}
+.EventRegister{
+    padding-top: 30px;
+}
+.EventName{
+    color:snow;
+    padding: 20px;
+}
+.EventHeader{
+    text-decoration: solid underline 3px snow;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+}
+.SubHeads{
+    color: snow;
+    text-decoration: solid underline 3px snow ;
+}
+.text{
+    color:snow;
+    padding: 20px;
+}
+.EventDescription{
+    color:snow;
+    padding: 20px;
+}
+.RulesList{
+    list-style-type: disc;
+    color: snow;
+    padding: 20px;
+}
+.EventRules{
+    padding:20px;
+}
+li{
+    padding:2px;
+}
+.EventPDC{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.pdc{
+    padding:10px;
+}
+#EventRegisterButton:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.EventLinks:hover{
+    transform: scale(1.09);
+    color: powderblue;
+}
+.pdctext{
+    padding:5px;
+}
+.subpdc{
+    padding-bottom: 14px;
+}
