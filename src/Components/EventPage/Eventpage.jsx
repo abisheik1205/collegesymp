@@ -19,7 +19,7 @@ export const Eventpage = () => {
                 <a href="eagae" className="EventLinks">link2</a>
                 <a href="aa" className="EventLinks">link3</a>
                 </div> */}
-                <div className="EventRegister"><button id="EventRegisterButton">REGISTER | $150</button></div>
+                <div className="EventRegister"><button id="EventRegisterButton">REGISTER</button></div>
             </div>
             <div className="EventRightColumn">
                 <div className="EventName">

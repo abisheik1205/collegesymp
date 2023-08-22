@@ -1,0 +1,21 @@
+.HeaderMain{
+    display: flex;
+    width: 100%;
+    padding: 20px 30px;
+    position: absolute;
+    z-index: 10;
+    justify-content: flex-end;
+    font-family: 'Inconsolata', monospace;
+}
+
+.HeaderMainLink{
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: large;
+    margin: 25px 20px;
+}
+
+.HeaderMainLink:hover{
+    color: rgba(255, 255, 255, 0.855);
+    /* background-color: whitesmoke; */
+}

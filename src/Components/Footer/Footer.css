@@ -1,0 +1,25 @@
+footer{
+    display: flex;
+    flex-direction: row;
+}
+.Footer_left{
+    display: flex;
+    flex-direction: column;
+    width:45%;
+}
+.Footer_right{
+    display: flex;
+    flex-direction: row;
+    width:55%;
+}
+.FooterSub{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.Contents{
+    padding: 5px;
+}
+.FooterSubhead{
+    padding: 5px;
+}

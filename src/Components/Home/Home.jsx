@@ -3,8 +3,10 @@ import "./Home.css";
 import AboutUs from "./AboutUs/AboutUs";
 import DepartmentEvents from "./DepartmentEvents/DepartmentEvents";
 import video from "../../assets/21.mp4";
-import vivanata from"../../assets/VIVANATA.png";
+import vivanata from"../../assets/VIVANATA (2).png";
 import i2023 from "../../assets/2023.png";
+import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
     return(
@@ -13,13 +15,7 @@ const Home = () => {
                 <div className="bgContainer">
                 
                 <div className="overlay"></div>
-                <nav class="shift">
-                    <ul>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">EVENTS</a></li>
-                        <li><a href="#">SIGN IN</a></li>
-                    </ul>
-                </nav>
+                <Header />
                 <video  src={video} autoPlay loop muted/>
                 <div className="container">
                     <img src={vivanata} id="logo" alt=""/>
@@ -29,6 +25,7 @@ const Home = () => {
             </div>
             <AboutUs />
             <DepartmentEvents />
+            <Footer />
         </>
     )
 }

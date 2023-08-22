@@ -24,7 +24,7 @@
 .departmentsInGridEachHead{
     font-weight: 200;
     text-align: left;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-size: medium;
 }
 
@@ -39,6 +39,7 @@
 }
 
 .departmentsInGridEachStackHead{
+    font-family: 'Inconsolata', monospace;
     color: whitesmoke;
     margin-bottom: 8px;
     font-weight: 100;
@@ -47,11 +48,18 @@
 }
 
 .departmentsInGridEachStackPara{
+    font-family: 'Inconsolata', monospace;
+
     color: whitesmoke;
     font-weight: 100;
     width: 100%;
     transition: all 1s;
     text-align: center;
+}
+
+.departmentEventsHead{
+    font-family: 'Inconsolata', monospace;
+    margin: 0xp;
 }
 
 .departmentsInGridEach img{
@@ -113,6 +121,8 @@
     align-items: center;    
     display: block;
     margin-bottom: 10px;
+    font-family: 'Inconsolata', monospace;
+
 }
 
 .departmentsInGridEachStackContent:hover{

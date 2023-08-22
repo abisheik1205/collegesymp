@@ -9,6 +9,17 @@ const AllDepartmentPageContainer = () => {
     var Data = StorageData;
     var allevents = [];
 
+    var computerScience = [];
+    var informationTechnology = [];
+    var ECE = [];
+    var AIDS = [];
+    var automobile = [];
+    var Mech = [];
+    var Mechetronics = [];
+    var aeroEvents = [];
+    var civil = [];
+    var Ft = [];
+
     for (var i = 0; i < Data.length; i++) {
 
         var events = Data[i].events;

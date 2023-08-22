@@ -1,17 +1,14 @@
 .EventpageHeader{
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(90px);
     display: flex;
     transition: .5s;
+    z-index: 10;
     flex-direction: row;
     justify-content: space-between;
     font-family: 'Inconsolata', monospace;
     padding: 25px 30px;
     position: sticky;
     top: 0;
-}
-
-.EventpageHeaderType{
-
 }
 
 .EventpageHeaderTypePara{
