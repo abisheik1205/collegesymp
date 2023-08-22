@@ -14,14 +14,19 @@
 
 .AllDepartmentPageHeaderLink{
     display: flex;
+    /* max-width: 800px; */
+    align-items: center;
+    /* overflow-x:scroll; */
+    scrollbar-width:none;
+    /* scrollbar-color: black; */
     flex-direction: row;
 }
 
 .AllDepartmentPageHeadereachLinks{
+    word-wrap:break-word;
     padding: 10px 15px;
     cursor: pointer;
     font-size: small;
-    /* vertical-align: middle; */
     border-radius: 10px;
     background-color: transparent;
     border: 1px solid rgb(255, 255, 255);

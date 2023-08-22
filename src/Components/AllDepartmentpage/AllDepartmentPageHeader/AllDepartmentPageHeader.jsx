@@ -1,15 +1,22 @@
 import React from "react";
 import "./AllDepartmentPageHeader.css";
 
-const AllDepartmentPageHeader = () => {
+const AllDepartmentPageHeader = ({ handlefilter }) => {
     return(
         <div className="AllDepartmentPageHeader">
             <h1 className="AllDepartmentPageHeaderHead">Events</h1>
             <div className="AllDepartmentPageHeaderLink">
-                <p className="AllDepartmentPageHeadereachLinks AllDepartmentPageHeadereachLinksSelected">All</p>
-                <p className="AllDepartmentPageHeadereachLinks">Computer Science</p>
-                <p className="AllDepartmentPageHeadereachLinks">Information Technology</p>
-                <p className="AllDepartmentPageHeadereachLinks">Blah</p>
+                <p onClick={() => handlefilter("all")} className="AllDepartmentPageHeadereachLinks AllDepartmentPageHeadereachLinksSelected">All</p>
+                <p onClick={() => handlefilter("Computer Science")} className="AllDepartmentPageHeadereachLinks">Computer Science</p>
+                <p onClick={() => handlefilter("Information Technology")} className="AllDepartmentPageHeadereachLinks">Information Technology</p>
+                <p onClick={() => handlefilter("Fasion Technology")} className="AllDepartmentPageHeadereachLinks">Fasion Technology</p>
+                <p onClick={() => handlefilter("ECE")} className="AllDepartmentPageHeadereachLinks">ECE</p>
+                <p onClick={() => handlefilter("EEE")} className="AllDepartmentPageHeadereachLinks">EEE</p>
+                <p onClick={() => handlefilter("Mechatronics")} className="AllDepartmentPageHeadereachLinks">Mechatronics</p>
+                <p onClick={() => handlefilter("Aero")} className="AllDepartmentPageHeadereachLinks">Aero</p>
+                <p onClick={() => handlefilter("Civil")} className="AllDepartmentPageHeadereachLinks">Civil</p>
+                <p onClick={() => handlefilter("Automobile")} className="AllDepartmentPageHeadereachLinks">Automobile</p>
+                {/* <p onClick={() => handlefilter("Mechanical")} className="AllDepartmentPageHeadereachLinks">Mechanical</p> */}
             </div>
         </div>
     )

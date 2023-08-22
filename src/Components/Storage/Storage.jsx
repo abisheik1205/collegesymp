@@ -228,7 +228,7 @@ export const StorageData = [
         ]
     },
     {
-        departmentName: "Civil ",
+        departmentName: "Civil",
         eventCoordinator: "Ashwin ",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-8qxGZYCV3lF2h6x-lB3VcxHBixc3lXZYQ&usqp=CAU",
         events: [

@@ -16,6 +16,7 @@ const AllDepartmentPage = () => {
     var computerScience = [];
     var informationTechnology = [];
     var ECE = [];
+    var EEE = [];
     var AIDS = [];
     var automobile = [];
     var Mech = [];
@@ -33,12 +34,61 @@ const AllDepartmentPage = () => {
             allevents = allevents.concat(element);
         }
 
-        for (let computersciencecount = 0; computersciencecount < Data.length; computersciencecount++) {
-            if (Data[computersciencecount].departmentName == "Computer Science") {
-                computerScience = computerScience.concat(Data[computersciencecount]);
-            }
-            
-        }
+
+        // For Computer Science
+            if (Data[i].departmentName == "Computer Science") {
+                computerScience = computerScience.concat(Data[i].events);
+            } 
+
+        // For Information Technology
+            if (Data[i].departmentName == "Information Technology") {
+                informationTechnology = informationTechnology.concat(Data[i].events);
+            } 
+
+        // // For Mechatronics
+            if (Data[i].departmentName == "Mechatronics") {
+                Mechetronics = Mechetronics.concat(Data[i].events);
+            } 
+
+        // // For Mechanical
+            if (Data[i].departmentName == "Mechanical") {
+                Mech = Mech.concat(Data[i].events);
+            } 
+
+        // // For Automobile
+            if (Data[i].departmentName == "Automobile") {
+                automobile = automobile.concat(Data[i].events);
+            } 
+
+        // // For Civil
+            if (Data[i].departmentName == "Civil") {
+                civil = civil.concat(Data[i].events);
+            } 
+
+        // // For Aero
+            if (Data[i].departmentName == "Aero") {
+                aeroEvents = aeroEvents.concat(Data[i].events);
+            } 
+
+        // // For AIDS
+            if (Data[i].departmentName == "Aero") {
+                aeroEvents = aeroEvents.concat(Data[i].events);
+            } 
+
+        // // For EEE
+            if (Data[i].departmentName == "EEE") {
+                EEE = EEE.concat(Data[i].events);
+            } 
+
+        // // For ECE
+            if (Data[i].departmentName == "ECE") {
+                ECE = ECE.concat(Data[i].events);
+            } 
+
+        // // For Fasion Technology
+            if (Data[i].departmentName == "Fasion Technology") {
+                Ft = Ft.concat(Data[i].events);
+            } 
     }
 
     useEffect(() => {
@@ -46,18 +96,55 @@ const AllDepartmentPage = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    const handlefilter = () => {
-        setList()
+    const handlefilter = ( name ) => {
+        if (name === "all") {
+            setList(allevents)
+        }
+        if (name === "Computer Science") {
+            setList(computerScience)
+        }
+        if (name === "Information Technology") {
+            setList(informationTechnology)
+        }
+        if (name === "Mechatronics") {
+            setList(Mechetronics)
+        }
+        if (name === "Mechanical") {
+            setList(Mech)
+        }
+        if (name === "Fasion Technology") {
+            setList(Ft)
+        }
+        if (name === "ECE") {
+            setList(ECE)
+        }
+        if (name === "EEE") {
+            setList(EEE)
+        }
+        if (name === "Aero") {
+            setList(aeroEvents)
+        }
+        if (name === "Automobile") {
+            setList(automobile)
+        }
+        if (name === "Civil") {
+            setList(civil)
+        }
     }
 
     return(
+        <>
         <div className="AllDepartmentPage">
-            <AllDepartmentPageHeader />
+            <AllDepartmentPageHeader handlefilter={handlefilter}/>
             <br />
             <Divider margin="40px 20px 30px" color="whitesmoke"/>
             <AllDepartmentPageContainer list={list}/>
-            <Footer />
+            <br />
+            <br />
+            <br />
         </div>
+            <Footer />
+        </>
     )
 }
 

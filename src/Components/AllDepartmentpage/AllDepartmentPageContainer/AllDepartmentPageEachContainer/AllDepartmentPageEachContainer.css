@@ -52,7 +52,6 @@
 
 .AllDepartmentPageContainerEachStackFormHeaderPara{
     font-size: x-small;    font-family: 'Inconsolata', monospace;
-
 }
 
 .AllDepartmentPageContainerEachStackFormContent{
@@ -80,7 +79,6 @@
     display: flex;
     padding: 10px 20px;
     color: rgb(241, 241, 241);
-    /* background-color: aqua; */
     justify-content: space-between;
     align-items: flex-end;
     height: 400px;width: 100%;
@@ -91,8 +89,6 @@
     display: flex;
     padding: 10px 20px;
     color: black;
-    /* background-color: rgba(0, 0, 0, 0.468); */
-    /* background-color: aqua; */
     justify-content: space-between;
     align-items: flex-end;
     height: 400px;width: 100%;

@@ -21,8 +21,8 @@ const AboutUs = () => {
                         </div>
                         <div className="linkonaboutus">
                             <a href="https://kcgcollege.ac.in/" target="_blank"><p className="linkFoundOnAboutUs">Website</p></a>
-                            <a><p className="linkFoundOnAboutUs">Website</p></a>
-                            <a><p className="linkFoundOnAboutUs">Website</p></a>
+                            {/* <a><p className="linkFoundOnAboutUs">Website</p></a>
+                            <a><p className="linkFoundOnAboutUs">Website</p></a> */}
                         </div>
                     </div>
                     <br />

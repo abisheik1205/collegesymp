@@ -30,7 +30,7 @@ const Footer = () => {
         ></iframe>   
                     </div>
                 </div>
-                <div className="FooterSocials FooterSub">
+                {/* <div className="FooterSocials FooterSub">
                     <h2 className="FooterSocialsHead FooterSubhead">Socials</h2>
                     <div className="Contentlinks">
                         <a href="" className="Contents">Facebook</a>
@@ -38,7 +38,7 @@ const Footer = () => {
                         <a href="" className="Contents">Linkedin</a>
                         <a href="" className="Contents">Email</a>
                     </div>
-                </div>
+                </div> */}
                 <div className="FooterEvents FooterSub">
                     <h2 className="FooterEventsHead FooterSubhead">Events</h2>
                     <div className="Contentlinks">
