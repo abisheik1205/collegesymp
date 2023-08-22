@@ -12,15 +12,11 @@ const DepartmentEvents = () => {
     var mainEvents = [];
 
     for (var i = 0; i < Data.length; i++) {
-
-        var events = Data[i].events;
-        for (var j = 0; j < events.length; j++) {
-            const element = events[j];
-            console.log(element);
-            mainEvents = mainEvents.concat(element);
-        }
-        console.log(Data.length);
+        var events = Data[i];
+        mainEvents = mainEvents.concat(events);
     }
+
+    console.log(mainEvents[0]);
 
     return(
         <div className="departmentEvents">
@@ -30,24 +26,9 @@ const DepartmentEvents = () => {
             <br />
             <div className="departmentsInGrid">
                 { 
-                    mainEvents.map((item, key) => { 
-                        
-                        if (key > 5) {
-                            return null;
-                        }
-
-                        if (key === 5) {
-                            return(
-                                <div className="departmentsInGridMore">
-                                    <Link to={"/allevents"}>
-                                        <h2 className="departmentsInGridMoreHead">More Details</h2>
-                                    </Link>
-                                </div>
-                            );                            
-                        }
-
+                    mainEvents.map((item, key) => {
                         return(
-                            <AllDepartmentPageEachContainer image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                            <AllDepartmentPageEachContainer link="allevents" mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
                         )
                     })
                 }

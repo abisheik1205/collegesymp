@@ -10,11 +10,9 @@ import Footer from "../Footer/Footer";
 
 const Home = () => {
     return(
-        <>
+        <div className="HomeMain">
             <div className="Home">
                 <div className="bgContainer">
-                
-                <div className="overlay"></div>
                 <Header />
                 <video  src={video} autoPlay loop muted/>
                 <div className="container">
@@ -23,10 +21,13 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <br />
             <AboutUs />
             <DepartmentEvents />
+            <br />
+            <br />
             <Footer />
-        </>
+        </div>
     )
 }
 

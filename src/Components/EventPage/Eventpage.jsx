@@ -2,6 +2,7 @@ import React from "react";
 import './EventPage.css';
 import { useLocation } from 'react-router-dom'
 import EventPageHeader from "./EventPageHeader/EventpageHeader";
+import Footer from "../Footer/Footer";
 
 export const Eventpage = () => {
     
@@ -68,6 +69,7 @@ export const Eventpage = () => {
                 </div>
             </div>
         </div>
+        <Footer />
                            </div>
     )
 }

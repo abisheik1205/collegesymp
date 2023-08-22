@@ -1,5 +1,6 @@
 import React from "react";
 import "./AboutUS.css";
+import homeSide from "../../../assets/HomeS.png";
 
 const AboutUs = () => {
     return(
@@ -37,7 +38,7 @@ const AboutUs = () => {
                 </div>
                 <div className="aboutusImage">
                     <div className="imageFoundOnAboutUS">
-                        <img className="imgonABoutUs" src="https://as1.ftcdn.net/v2/jpg/04/59/73/20/1000_F_459732066_bQ2DbssfJQSHvl7F23fsVc50FD6GAXwG.jpg"/>
+                        <img className="imgonABoutUs" src={homeSide} alt={homeSide}/>
                     </div>
                 </div>
             </div>

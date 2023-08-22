@@ -4,7 +4,7 @@ import AllDepartmentPageEachContainer from "./AllDepartmentPageEachContainer/All
 import { StorageData } from "../../Storage/Storage";
 import { Fade } from "react-reveal";
 
-const AllDepartmentPageContainer = () => {
+const AllDepartmentPageContainer = ({ list }) => {
     
     var Data = StorageData;
     var allevents = [];
@@ -28,20 +28,26 @@ const AllDepartmentPageContainer = () => {
             console.log(element);
             allevents = allevents.concat(element);
         }
-        console.log(Data.length);
+
+        for (let computersciencecount = 0; computersciencecount < Data.length; computersciencecount++) {
+            if (Data[computersciencecount].departmentName == "Computer Science") {
+                computerScience = computerScience.concat(Data[computersciencecount]);
+            }
+            
+        }
     }
 
     return(
         <div className="AllDepartmentPageContainer">
             {
-                allevents.map((item, key) => {
+                list.map((item, key) => {
                     return(
                         <div key={key}>
                             {
                                 key%2 == 0? <Fade slow left >
-                                <AllDepartmentPageEachContainer image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                                <AllDepartmentPageEachContainer link="eventpage"  image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
                             </Fade> : <Fade slow right>
-                                <AllDepartmentPageEachContainer image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                                <AllDepartmentPageEachContainer link="eventpage" image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
                             </Fade>
                             }
                             

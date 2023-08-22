@@ -4,10 +4,12 @@
 .EventMainPage{
     background-color: rgba(0, 0, 0, 0.596);
     /* height: 100vh; */
+    /* padding: 20px 0px; */
     backdrop-filter: blur(60px);
 }
 
 .Event_div{
+    padding: 20px 0px 60px;
     backdrop-filter: blur(60px);
     display: flex;
     flex-direction: row;

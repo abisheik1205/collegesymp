@@ -3,7 +3,6 @@
 .aboutUS{   
     width: 100%;
     height: 115vh;
-    background-color: rgb(19, 19, 19);
 }
 .AboutUs{
     display: flex;
@@ -81,7 +80,7 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 .aboutusImage{
-    height: 80vh;
+    height: 100vh;
     flex: 1;
 }
 .collegeqoute{
@@ -98,22 +97,26 @@ a{
     font-family: 'Poppins', sans-serif;
 }
 .imageFoundOnAboutUS{
-    width: 86%;
-    margin-right: auto;
-    margin-left: auto;
-    height: 110vh;
+    width: 100%;
+    position: relative;
+    height: 96vh;
 }
 .imgonABoutUs{
+    position: absolute;
     transform: rotate(0.016turn);
-    /* mix-blend-mode: multiply; */
     width: 400px;
-    object-fit: fill;
-    margin-right: auto;
-    height: 95vh;
-    object-fit: contain;
+    transition: all 2s;
+    right: 0;
+    top: 20px;
+    height: 99vh;
+    object-fit: cover;
+    mix-blend-mode:luminosity;
 }
 
-
+.imgonABoutUs:hover{
+    mix-blend-mode:normal;
+    width: 480px;
+}
 
 @keyframes flicker {
     
