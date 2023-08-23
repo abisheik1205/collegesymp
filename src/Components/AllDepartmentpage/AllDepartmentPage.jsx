@@ -70,8 +70,8 @@ const AllDepartmentPage = () => {
                 aeroEvents = aeroEvents.concat(Data[i].events);
             } 
 
-        // // For AIDS
-            if (Data[i].departmentName == "Aero") {
+        // For AIDS
+            if (Data[i].departmentName == "AIDS") {
                 aeroEvents = aeroEvents.concat(Data[i].events);
             } 
 

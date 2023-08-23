@@ -23,8 +23,8 @@ a{
     padding: 5px 10px;
     width: max-content;
     font-weight: bolder;
-    transition: text-shadow 0.5s;
-    animation: flicker 5s infinite ease-out;     
+    /* transition: text-shadow 0.5s;
+    animation: flicker 5s infinite ease-out;      */
     font-family: 'Inconsolata', monospace;
 }
 
