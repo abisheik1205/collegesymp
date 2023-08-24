@@ -83,7 +83,7 @@ const Register = () => {
                     <h1>Scan the QR code to pay</h1>
                 </div>
                 <div className="QrCode">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO29jpK02kOHa3YX21knBGZT8z1ilBHEyt2g&usqp=CAU" className="QrCodeImage"/>
+                    <img alt="QrCode" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO29jpK02kOHa3YX21knBGZT8z1ilBHEyt2g&usqp=CAU" className="QrCodeImage"/>
                 </div>
                 <div className="RegInputs">
                     {/*<label for="InputPhone">Phone No:</label>*/}

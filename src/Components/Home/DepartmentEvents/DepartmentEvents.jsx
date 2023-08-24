@@ -14,8 +14,6 @@ const DepartmentEvents = () => {
         mainEvents = mainEvents.concat(events);
     }
 
-    console.log(mainEvents[0]);
-
     return(
         <div className="departmentEvents">
             <h2 className="departmentEventsHead">Department</h2>

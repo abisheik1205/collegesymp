@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./AllDepartmentPageEachContainer.css";
 import Divider from "../../../Divider/Divider";
 import { Fade } from "react-reveal";
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
 
@@ -25,7 +25,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
     return(
         <>
         {
-                link == "eventpage"? <div className="AllDepartmentPageEachContainer">
+                link === "eventpage"? <div className="AllDepartmentPageEachContainer">
                 <div className={over? "AllDepartmentPageContainerEach": "AllDepartmentPageContainerEachOnHover"} style={over? {backdropFilter: 'blur(5px)'}: {}} onMouseOver={() => handleOver()} onMouseOut={() => handleOut()}>
                     <Link to={"/eventpage"} state={{ departmentName, image, eventName, shortDescription, eventdescription, rules: snap.rules, venue: snap.details.venue, phoneNumber: snap.coordinator.phoneNumber, date: snap.details.date, time: snap.details.time, facultyName: snap.faculty.name, coodinatorName: snap.coordinator.name }}>
                     <img className="AllDepartmentPageContainerEachImg" src={image} alt={departmentName}/>
@@ -50,7 +50,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
                     </div>
                     </Link>
                 </div>
-            </div>:
+            </div>: 
             <div className="AllDepartmentPageEachContainer">
                 <div className={over? "AllDepartmentPageContainerEach": "AllDepartmentPageContainerEachOnHover"} style={over? {backdropFilter: 'blur(5px)'}: {}} onMouseOver={() => handleOver()} onMouseOut={() => handleOut()}>
                     <Link to={"/allevents"} state={{ dataToSend }}>
@@ -70,7 +70,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
                             !over? <><br /><br /></>: <></>
                         }
                         <div className="AllDepartmentPageContainerEachStackFormFooter">
-                            <div>{departmentName}</div>
+                            {/* <div>{departmentName}</div> */}
                             <div>View</div>
                         </div>  
                     </div>

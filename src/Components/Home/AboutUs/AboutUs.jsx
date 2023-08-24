@@ -20,7 +20,7 @@ const AboutUs = () => {
                             <p className="collegeqoutePara">To Make Every Man A Success And No Man A Failure <span className="collegeqouteParaBold">&nbsp;-&nbsp;  KCG FounderName</span></p>
                         </div>
                         <div className="linkonaboutus">
-                            <a href="https://kcgcollege.ac.in/" target="_blank"><p className="linkFoundOnAboutUs">Website</p></a>
+                            <a href="https://kcgcollege.ac.in/" target="_blank" rel="noreferrer"><p className="linkFoundOnAboutUs">Website</p></a>
                             {/* <a><p className="linkFoundOnAboutUs">Website</p></a>
                             <a><p className="linkFoundOnAboutUs">Website</p></a> */}
                         </div>

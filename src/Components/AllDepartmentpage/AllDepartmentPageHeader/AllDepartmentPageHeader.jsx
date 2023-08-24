@@ -1,6 +1,5 @@
 import React from "react";
 import "./AllDepartmentPageHeader.css";
-// import { useState } from "react";
 
 const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
 

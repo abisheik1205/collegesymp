@@ -1,25 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './EventPage.css';
-import { useLocation } from 'react-router-dom'
+import { useLocation  } from "react-router-dom";
 import EventPageHeader from "./EventPageHeader/EventpageHeader";
 import Footer from "../Footer/Footer";
+import { useNavigate } from 'react-router-dom';
 
 export const Eventpage = () => {
     
     const location = useLocation();
+    const navigate = useNavigate();
+
     const { departmentName, image, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
-    
+
+    const dataToSend = {
+        back: true,
+        departmentNamefoundBACk: departmentName
+    };
+
+    const handleNavigation = () => {
+        navigate(-1, { state: { data: dataToSend } });
+    };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
+
     return(
         <div className="EventMainPage">
-            <EventPageHeader departmentName={departmentName}/>
+            <EventPageHeader departmentName={departmentName} handleNavigation={handleNavigation}/>
         <div className="Event_div">
             <div className="EventLeftColumn">
                 <div className="EventImage"><div className="EventImageInside"><img className="EventImageImg" alt="logo" src={image}/></div></div>
-                {/* <div className="EventLinkbox">
-                <a href="ae" className="EventLinks">link1</a>
-                <a href="eagae" className="EventLinks">link2</a>
-                <a href="aa" className="EventLinks">link3</a>
-                </div> */}
                 <div className="EventRegister"><button id="EventRegisterButton">REGISTER</button></div>
             </div>
             <div className="EventRightColumn">

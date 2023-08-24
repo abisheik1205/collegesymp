@@ -7,7 +7,7 @@ const Footer = () => {
         <footer>
             <div className="Footer_left">
                 <div className="logo">
-                    <img className="logo_img" src={image}/>
+                    <img className="logo_img" alt="logo_img" src={image}/>
                 </div>
                 <div className="FooterNameAdd">
                     <h1 className="FooterCollegeName">KCG COLLEGE OF TECHNOLOGY</h1>
@@ -18,7 +18,7 @@ const Footer = () => {
             <div className="FooterLocation FooterSub">
                     <h2 className="FooterLocationHead FooterSubhead">Location</h2>
                     <div className="Contentlinks">
-                        <iframe className="MapLocation"
+                        <iframe className="MapLocation" title="Kcg College Of Technology"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.7880929375274!2d80.23729427463127!3d12.921337015979162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525c8cd40b76e7%3A0x681487984b55f7bb!2sKCG%20College%20of%20Technology!5e0!3m2!1sen!2sin!4v1692678569564!5m2!1sen!2sin"
           width="150"
           height="100"

@@ -9,7 +9,7 @@ import { useLocation } from 'react-router-dom';
 
 const AllDepartmentPage = () => {
 
-    const [selected, setSelected] = useState("");
+    const [selected, setSelected] = useState("all");
     const [list, setList] = useState([]);
     const location = useLocation();
 
@@ -32,77 +32,131 @@ const AllDepartmentPage = () => {
     var Ft = [];
 
     const handleInitialCommit = () => {
-        // For Computer Science
-        if (dataToSend === "Computer Science") {
-            setSelected("Computer Science");
-            setList(computerScience);
-            console.log("its right")
-        } 
-        
-        // For Information Technology
-        if (dataToSend === "Information Technology") {
-            setSelected("Information Technology");
-            setList(informationTechnology)
-        } 
-        
-        // // For Mechatronics
-        if (dataToSend === "Mechatronics") {
-            setSelected("Mechatronics");
-            setList(Mechetronics);
-        } 
-        
-        // // For Mechanical
-        if (dataToSend === "Mechanical") {
-            setSelected("Mechanical");
-            setList(Mech)
-        } 
-        
-        // // For Automobile
-        if (dataToSend === "Automobile") {
-            setSelected("Automobile");
-            setList(automobile)
-        } 
-        
-        // // For Civil
-        if (dataToSend === "Civil") {
-            setSelected("Civil");
-            setList(civil)
-        } 
-        
-        // // For Aero
-        if (dataToSend  === "Aero") {
-            setSelected("Aero");
-            setList(aeroEvents)
-        } 
-        
-        // For AIDS
-        if (dataToSend === "AIDS") {
-            setSelected("AIDS");
-            setList(AIDS)
-        }
-        
-        // // For EEE
-        if (dataToSend === "EEE") {
-            setSelected("EEE");
-            setList(EEE)
-        } 
-        
-        // // For ECE
-        if (dataToSend === "ECE") {
-            setSelected("ECE");
-            setList(ECE)
-        } 
-        
-        // // For Fasion Technology
-        if (dataToSend === "Fasion Technology") {
-            setSelected("Fasion Technology");
-            setList(Ft)
-        } 
-    }
 
-    console.log("bBEEBEB");
-    console.log(location.state?.dataToSend)
-    console.log(location.state?.dataToSend.back);
+        if (localStorage.getItem("val")) {
+            if (localStorage.getItem("val") === "all") {
+                setSelected("all");
+                setList(allevents);
+            }
+            if (localStorage.getItem("val") === "Computer Science") {
+                setSelected("Computer Science");
+                setList(computerScience);
+            }
+            if (localStorage.getItem("val") === "Information Technology") {
+                setSelected("Information Technology");
+                setList(informationTechnology)
+            }
+            if (localStorage.getItem("val") === "Mechatronics") {
+                setSelected("Mechatronics");
+                setList(Mechetronics);
+            } 
+            if (localStorage.getItem("val") === "Mechanical") {
+                setSelected("Mechanical");
+                setList(Mech)
+            }
+            if (localStorage.getItem("val") === "Automobile") {
+                setSelected("Automobile");
+                setList(automobile)
+            }
+            if (localStorage.getItem("val") === "Civil") {
+                setSelected("Civil");
+                setList(civil)
+            }
+            if (localStorage.getItem("val") === "Aero") {
+                setSelected("Aero");
+                setList(aeroEvents)
+            }
+            if (localStorage.getItem("val") === "AIDS") {
+                setSelected("AIDS");
+                setList(AIDS)
+            }
+            if (localStorage.getItem("val") === "EEE") {
+                setSelected("EEE");
+                setList(EEE)
+            }
+            if (localStorage.getItem("val") === "ECE") {
+                setSelected("ECE");
+                setList(ECE)
+            }
+            if (localStorage.getItem("val") === "Fasion Technology") {
+                setSelected("Fasion Technology");
+                setList(Ft)
+            }
+        }  else{
+            // For ALL
+            if (dataToSend === "all") {
+                console.log("ITS ALLL NOWW")
+                setList(allevents);
+            } 
+            
+            // For Computer Science
+            if (dataToSend === "Computer Science") {
+                setSelected("Computer Science");
+                setList(computerScience);
+            }
+    
+            
+            // For Information Technology
+            if (dataToSend === "Information Technology") {
+                setSelected("Information Technology");
+                setList(informationTechnology)
+            } 
+            
+            // // For Mechatronics
+            if (dataToSend === "Mechatronics") {
+                setSelected("Mechatronics");
+                setList(Mechetronics);
+            } 
+            
+            // // For Mechanical
+            if (dataToSend === "Mechanical") {
+                setSelected("Mechanical");
+                setList(Mech)
+            } 
+            
+            // // For Automobile
+            if (dataToSend === "Automobile") {
+                setSelected("Automobile");
+                setList(automobile)
+            } 
+            
+            // // For Civil
+            if (dataToSend === "Civil") {
+                setSelected("Civil");
+                setList(civil)
+            } 
+            
+            // // For Aero
+            if (dataToSend  === "Aero") {
+                setSelected("Aero");
+                setList(aeroEvents)
+            } 
+            
+            // For AIDS
+            if (dataToSend === "AIDS") {
+                setSelected("AIDS");
+                setList(AIDS)
+            }
+            
+            // // For EEE
+            if (dataToSend === "EEE") {
+                setSelected("EEE");
+                setList(EEE)
+            } 
+            
+            // // For ECE
+            if (dataToSend === "ECE") {
+                setSelected("ECE");
+                setList(ECE)
+            } 
+            
+            // // For Fasion Technology
+            if (dataToSend === "Fasion Technology") {
+                setSelected("Fasion Technology");
+                setList(Ft)
+            } 
+        }
+    }
 
     for (var i = 0; i < Data.length; i++) {
 
@@ -179,65 +233,100 @@ const AllDepartmentPage = () => {
     }
 
     // console.log("HEre below")
-    // console.log(selected)
+    // console.log(location.state)
     
     const handlefilter = ( name ) => {
         if (name === "all") {
             setList(allevents)
+            // dataToSend = "all";
+            localStorage.setItem("val", "all")
             setSelected("all")
         }
+        
         if (name === "Computer Science") {
             setList(computerScience)
+            // dataToSend = "Computer Science";
+            localStorage.setItem("val", "Computer Science")
             setSelected("Computer Science")
         }
         if (name === "Information Technology") {
             setList(informationTechnology)
+            localStorage.setItem("val", "Information Technology")
+            // dataToSend = "Information Technology";
             setSelected("Information Technology")
         }
         if (name === "Mechatronics") {
             setList(Mechetronics)
+            localStorage.setItem("val", "Mechatronics")
+            // dataToSend = "Mechatronics";
             setSelected("Mechatronics")
         }
         if (name === "Mechanical") {
             setList(Mech)
+            localStorage.setItem("val", "Mechanical")
+            // dataToSend = "Mechanicalz";
             setSelected("Mechanical")
         }
         if (name === "Fasion Technology") {
             setList(Ft)
+            localStorage.setItem("val", "Fasion Technology")
+            // dataToSend = "Fasion Technology";
             setSelected("Fasion Technology")
         }
         if (name === "ECE") {
             setList(ECE)
+            localStorage.setItem("val", "ECE")
+            // dataToSend = "ECE";
             setSelected("ECE")
         }
         if (name === "EEE") {
             setList(EEE)
+            localStorage.setItem("val", "EEE")
+            // dataToSend = "EEE";
             setSelected("EEE")
         }
         if (name === "Aero") {
             setList(aeroEvents)
+            localStorage.setItem("val", "Aero")
+            // dataToSend = "Aero";
             setSelected("Aero")
         }
         if (name === "Automobile") {
             setList(automobile)
+            localStorage.setItem("val", "Automobile")
+            // dataToSend = "Automobile";
             setSelected("Automobile")
         }
         if (name === "Civil") {
             setList(civil)
+            localStorage.setItem("val", "Civil")
+            // dataToSend = "Civil";
             setSelected("Civil")
         }
         if (name === "AIDS") {
             setList(AIDS)
+            // dataToSend = "AIDS";
+            localStorage.setItem("val", "AIDS")
             setSelected("AIDS")
         }
     }
+
+    const handleBeforeUnload = (e) => {
+        e.preventDefault();
+        e.returnValue = "Are you sure you want to leave? Your changes may not be saved.";
+        localStorage.clear();
+    };
     
     useEffect(() => {
+        setList(allevents)
         handleInitialCommit();
-        // handlefilter();
         window.scrollTo(0, 0);
-    }, [])
 
+        window.addEventListener("beforeunload", handleBeforeUnload);
+        return () => {
+            window.removeEventListener("beforeunload", handleBeforeUnload);
+        };
+    }, [])
 
     return(
         <>

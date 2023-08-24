@@ -9,6 +9,9 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
+
+    localStorage.clear();
+
     return(
         <div className="HomeMain">
             <div className="Home">
