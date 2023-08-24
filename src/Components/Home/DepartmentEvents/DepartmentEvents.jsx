@@ -1,7 +1,5 @@
 import React from "react";
 import "./DepartmentEvents.css";
-import DepartmentEach from "./DepartmentEach";
-import { Link } from "react-router-dom";
 import Divider from "../../Divider/Divider";
 import { StorageData } from "../../Storage/Storage";
 import AllDepartmentPageEachContainer from "../../AllDepartmentpage/AllDepartmentPageContainer/AllDepartmentPageEachContainer/AllDepartmentPageEachContainer";
@@ -28,7 +26,7 @@ const DepartmentEvents = () => {
                 { 
                     mainEvents.map((item, key) => {
                         return(
-                            <AllDepartmentPageEachContainer link="allevents" mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
+                            <AllDepartmentPageEachContainer link="allevents" departmentName={item.departmentName} mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
                         )
                     })
                 }

@@ -16,8 +16,11 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
         setOver(false);
     }
 
-    console.log(mainEventsimage);
-    console.log(mainEventsimage);
+    const dataToSend = {
+        departmentName,
+        back: false,
+        departmentNamefoundBACk: false
+    };
 
     return(
         <>
@@ -50,7 +53,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
             </div>:
             <div className="AllDepartmentPageEachContainer">
                 <div className={over? "AllDepartmentPageContainerEach": "AllDepartmentPageContainerEachOnHover"} style={over? {backdropFilter: 'blur(5px)'}: {}} onMouseOver={() => handleOver()} onMouseOut={() => handleOut()}>
-                    <Link to={"/allevents"}>
+                    <Link to={"/allevents"} state={{ dataToSend }}>
                     <img className="AllDepartmentPageContainerEachImg" src={mainEventsimage} alt={departmentName}/>
                     <div className="AllDepartmentPageContainerEachStackForm" style={over? {justifyContent: 'center', backdropFilter: 'blur(3px)'}: {justifyContent: 'center'}}>
                         <div className="AllDepartmentPageContainerEachStackFormHeader" style={over? {marginBottom: '50px'}: {}}>

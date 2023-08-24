@@ -2,10 +2,14 @@ import React from "react";
 import "./EventpageHeader.css";
 import { useNavigate } from 'react-router-dom';
 
-
 const EventPageHeader = ({ departmentName }) => {
 
     const navigate = useNavigate();
+
+    const dataToSend = {
+        back: true,
+        departmentNamefoundBACk: departmentName
+    };
 
     return(
         <div className="EventpageHeader">
@@ -13,7 +17,7 @@ const EventPageHeader = ({ departmentName }) => {
                 <p className="EventpageHeaderTypePara">Event / {departmentName}</p>
             </div>
             <div className="GoBack">
-                <p className="GoBackPara" onClick={() => navigate(-1)}>Back</p>
+                <p className="GoBackPara" onClick={() => navigate(-1, { state: { data: dataToSend } })}>Back</p>
             </div>
         </div>
     )

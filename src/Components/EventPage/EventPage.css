@@ -73,6 +73,7 @@
 .EventLinks{
     padding: 10px 15px;
 }
+
 #EventRegisterButton{
     padding: 12px 18px;
     background-color: rgb(255, 255, 255);
@@ -82,6 +83,7 @@
     outline: none;
     border: none;
 }
+
 .EventRegister{
     padding-top: 20px;
 }
