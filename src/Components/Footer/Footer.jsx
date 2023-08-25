@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import image from "../../assets/VIVANATA (2).png"
-
+                    
 const Footer = () => {
     return(
         <footer>

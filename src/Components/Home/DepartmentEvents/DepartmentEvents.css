@@ -15,6 +15,7 @@
     gap: 40px;
 }
 
+
 .departmentsInGridMain{
     width: 280px;
     margin-left: auto;
@@ -52,7 +53,7 @@
 
 .departmentsInGridEachStackPara{
     font-family: 'Inconsolata', monospace;
-
+    
     color: whitesmoke;
     font-weight: 100;
     width: 100%;
@@ -177,4 +178,12 @@
         z-index: 1111;
         padding-bottom: 20px;
     }
+}
+
+
+
+@media only screen and (max-width: 1000px){
+    .departmentsInGrid{
+        grid-template-columns: 0.4fr;
+    }    
 }

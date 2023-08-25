@@ -19,3 +19,12 @@
     color: rgba(255, 255, 255, 0.855);
     /* background-color: whitesmoke; */
 }
+
+@media screen and (max-width: 1000px){
+
+    .HeaderMainLink{
+        padding: 4px 5px;
+        font-size: small;
+    }
+
+}
