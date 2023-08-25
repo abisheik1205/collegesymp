@@ -82,3 +82,13 @@ footer{
 .FooterLocationHead{
     padding-bottom:10px;
 }
+
+@media only screen and (max-width: 1000px){
+    footer{
+        flex-direction: column;
+    }
+    .Footer_right{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
