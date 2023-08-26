@@ -43,3 +43,19 @@
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
 }
+.NavOnMobile{
+    display: none;
+}
+
+@media only screen and (max-width:1000px){
+    .NavOnMobile{
+        display: block;
+        color: whitesmoke;
+    }
+    .NavOnMobilep{
+        transform:rotate(90deg);
+    }
+    .AllDepartmentPageHeaderLink{
+        display: none;
+    }
+}

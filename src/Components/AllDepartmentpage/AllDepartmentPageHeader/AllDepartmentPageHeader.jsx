@@ -22,6 +22,9 @@ const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
                 <p onClick={() => handlefilter("Mechanical")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechanical"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mech</p>
                 <p onClick={() => handlefilter("AIDS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AIDS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
             </div>
+            <div className="NavOnMobile">
+                <p className="NavOnMobileP">|||</p>
+            </div>
         </div>
     )
 }

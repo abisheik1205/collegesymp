@@ -180,10 +180,21 @@
     }
 }
 
-
-
 @media only screen and (max-width: 1000px){
     .departmentsInGrid{
         grid-template-columns: 0.4fr;
     }    
+    .departmentEvents{
+        margin-bottom: 40px;
+    }
+    .departmentEventsHead{
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        /* background-color: aquamarine; */
+    }
+    /* .divider{
+        margin: 5px 10px;
+    } */
 }

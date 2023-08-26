@@ -3,6 +3,7 @@
 .aboutUS{   
     width: 100%;
     height: 115vh;
+    margin-bottom: 45px;
 }
 
 .AboutUs{
@@ -12,7 +13,7 @@
     height:115vh;
     justify-content: center;
     color: whitesmoke;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
 }
 a{
     text-decoration: none;
@@ -127,7 +128,9 @@ a{
 
 @media only screen and (max-width: 1000px){
     .aboutUS{   
-        height:-moz-fit-content;
+        margin-top: 65px;
+        margin-bottom: 0px;
+        /* height:-moz-fit-content; */
     }
     
     .AboutUs{
@@ -153,8 +156,8 @@ a{
     }
     .aboutUsContentHead{
         font-size: 1.5rem;
-        margin: 0px 25px;
-        width: 100%;
+        pad: 0px 25px;
+        width: max-content;
         /* background-color: #ff0000; */
     }
     .aboutusContent{

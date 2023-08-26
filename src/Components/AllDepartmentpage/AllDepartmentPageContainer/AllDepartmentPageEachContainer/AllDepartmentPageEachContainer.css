@@ -94,3 +94,33 @@
     align-items: flex-end;
     height: 400px;width: 100%;
 }
+
+
+@media screen and (max-width: 1000px){
+
+    .AllDepartmentPageContainerEach{
+        width: 290px;
+        height: 350px;
+        background-color: aqua;
+        margin-top: 0%;
+        margin-bottom: 15px;
+    }
+    
+    .AllDepartmentPageContainerEachImg{
+        width: 290px;
+        height: 350px;
+        margin: 0%;
+        background-color: bisque;
+    }
+    .AllDepartmentPageContainerEachOnHover{
+        background-color: violet;
+        width: max-content;
+        height: 350px;
+    }
+    .AllDepartmentPageContainerEachStackForm{
+        height: 350px;
+    }
+    .AllDepartmentPageContainerEachStackFormFooter{
+        display: none;
+    }
+}
