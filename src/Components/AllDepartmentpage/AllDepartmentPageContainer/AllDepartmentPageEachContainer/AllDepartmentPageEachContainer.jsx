@@ -22,7 +22,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
         departmentNamefoundBACk: false
     };
 
-    return(
+        return(
         <>
         {
                 link === "eventpage"? <div className="AllDepartmentPageEachContainer">

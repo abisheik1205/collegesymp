@@ -39,7 +39,7 @@ const Footer = () => {
                         <a href="" className="Contents">Email</a>
                     </div>
                 </div> */}
-                <div className="FooterEvents FooterSub">
+                {/* <div className="FooterEvents FooterSub">
                     <h2 className="FooterEventsHead FooterSubhead">Events</h2>
                     <div className="Contentlinks">
                         <a href="" className="Contents">Technical</a>
@@ -47,14 +47,12 @@ const Footer = () => {
                         <a href="" className="Contents">Departments</a>
                         <a href="" className="Contents">Others</a>
                     </div>
-                </div>
+                </div> */}
                 <div className="FooterWebsite FooterSub">
                     <h2 className="FooterWebsiteHead FooterSubhead">Website</h2>
                     <div className="Contentlinks">
-                        <a href="" className="Contents">Account</a>
                         <a href="" className="Contents">College Site</a>
                         <a href="" className="Contents">Developers</a>
-                        <a href="" className="Contents">Content</a>
                     </div>
                 </div>
                 <div className="FooterSupport FooterSub">
@@ -68,7 +66,6 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-
     )
 }
 

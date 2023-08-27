@@ -1,6 +1,7 @@
 .AllDepartmentPage{
     width: 100%;
     padding: 20px 40px;
+    position: relative;
     backdrop-filter: blur(10px);
     background-color: rgba(57, 57, 57, 0.86)
 }
@@ -8,4 +9,73 @@
 .divider{
     margin: 30px;
     border: 1px solid rgb(255, 255, 255);
+}
+
+.AllDepartmentPageHeaderLinkInMobile{
+    display: none;
+}
+
+@media only screen and (max-width:1000px){
+    .AllDepartmentPageHeaderLink {
+        position: relative;
+        display: none;
+        margin-top: 50px;
+        text-align: center;
+
+    }
+    .NavOnMobileClick{
+        overflow: hidden;
+        position: absolute;
+        display: none;
+        /* margin: 0%; */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        z-index: 10;
+        width: 100vw;
+        background-color: aliceblue;
+        color: whitesmoke;
+    }
+    .NavOnMobile{
+        overflow: hidden;
+        position: absolute;
+        display: block;
+        /* margin: 0%; */
+        top: 0;
+        left: 0;
+        bottom: 0;
+        height: 100vh;
+        z-index: 10;
+        width: 100vw;
+        background-color: aliceblue;
+        color: whitesmoke;
+    }
+    .NavOnMobileP{
+        z-index: 100;
+        transform: rotate(90deg);
+        padding: 15px 25px;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;       
+        background-color: bisque;
+        color: rgb(0, 0, 0);
+    }
+
+    .AllDepartmentPageHeadereachLinks{
+        color: black;
+        z-index: 100;
+        font-size: large;
+    }
+    .AllDepartmentPageHeaderLinkInMobile {
+        margin-top: 100px;
+        display: block;
+        transition: all .5s;
+        text-align: center;
+    }
+    .AllDepartmentPageHeaderLinkInMobile{
+        display: block;
+    }
+    
 }

@@ -99,26 +99,27 @@
 @media screen and (max-width: 1000px){
 
     .AllDepartmentPageContainerEach{
+        background-color: blueviolet;
         width: 290px;
         height: 350px;
-        background-color: aqua;
         margin-top: 0%;
-        margin-bottom: 15px;
+        margin-bottom: 35px;
     }
     
     .AllDepartmentPageContainerEachImg{
         width: 290px;
         height: 350px;
         margin: 0%;
-        background-color: bisque;
     }
     .AllDepartmentPageContainerEachOnHover{
-        background-color: violet;
         width: max-content;
         height: 350px;
     }
     .AllDepartmentPageContainerEachStackForm{
         height: 350px;
+    }
+    .AllDepartmentPageContainerEachStackFormHeaderPara{
+        display: none;
     }
     .AllDepartmentPageContainerEachStackFormFooter{
         display: none;

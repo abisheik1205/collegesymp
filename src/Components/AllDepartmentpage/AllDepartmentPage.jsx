@@ -13,6 +13,8 @@ const AllDepartmentPage = () => {
     const [list, setList] = useState([]);
     const location = useLocation();
 
+    const [mobileClick, setMobileClick] = useState(false);
+
     var Data = StorageData;
 
     var allevents = [];
@@ -316,6 +318,15 @@ const AllDepartmentPage = () => {
         e.returnValue = "Are you sure you want to leave? Your changes may not be saved.";
         localStorage.clear();
     };
+
+    const handleMobileClick = () => {
+        setMobileClick(!mobileClick);
+    }
+
+    const handleFilterAdvanced = (name) => {
+        handlefilter(name)
+        setMobileClick(false);
+    }
     
     useEffect(() => {
         setList(allevents)
@@ -338,6 +349,23 @@ const AllDepartmentPage = () => {
             <br />
             <br />
             <br />
+            <div className={mobileClick ? "NavOnMobile": "NavOnMobileClick"}>
+                <p className="NavOnMobileP" onClick={() => handleMobileClick()}>|||</p>
+                <div className="AllDepartmentPageHeaderLinkInMobile">
+                    <p onClick={() => handleFilterAdvanced("all")} className={`AllDepartmentPageHeadereachLinks ${selected === "all"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>All</p>
+                    <p onClick={() => handleFilterAdvanced("Computer Science")} className={`AllDepartmentPageHeadereachLinks ${selected === "Computer Science"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>CSE</p>
+                    <p onClick={() => handleFilterAdvanced("Information Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Information Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>IT</p>
+                    <p onClick={() => handleFilterAdvanced("Fasion Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Fasion Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>FT</p>
+                    <p onClick={() => handleFilterAdvanced("ECE")} className={`AllDepartmentPageHeadereachLinks ${selected === "ECE"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>ECE</p>
+                    <p onClick={() => handleFilterAdvanced("EEE")} className={`AllDepartmentPageHeadereachLinks ${selected === "EEE"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>EEE</p>
+                    <p onClick={() => handleFilterAdvanced("Mechatronics")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechatronics"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mechatronics</p>
+                    <p onClick={() => handleFilterAdvanced("Aero")} className={`AllDepartmentPageHeadereachLinks ${selected === "Aero"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Aero</p>
+                    <p onClick={() => handleFilterAdvanced("Civil")} className={`AllDepartmentPageHeadereachLinks ${selected === "Civil"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Civil</p>
+                    <p onClick={() => handleFilterAdvanced("Automobile")} className={`AllDepartmentPageHeadereachLinks ${selected === "Automobile"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Automobile</p>
+                    <p onClick={() => handleFilterAdvanced("Mechanical")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechanical"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mech</p>
+                    <p onClick={() => handleFilterAdvanced("AIDS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AIDS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
+                </div>
+            </div>
         </div>
             <Footer />
         </>
