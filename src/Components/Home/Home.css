@@ -21,20 +21,44 @@ video{
 
 .container{
   position: absolute;
-  width: 250px;
-  bottom: 0;
-  right: 0;
-  height: 250px;
+  width: 100VW;
+  height: 100vh;
   z-index: 100;
+  top: 44%;
+  left: 0%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.containerPlaying{
+  position: absolute;
+  width: 100VW;
+  height: 100vh;
+  top: 44%;
+  left: 0%;
+  z-index: 100;
+  animation-name: containerPlayingitAll;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  text-align: center;
+  margin: 0px auto;
   color: aliceblue;
 }
 
+.HomeNote{
+  margin-top: 20px;
+  font-size: x-small;
+  color: whitesmoke;
+  font-family: 'Inconsolata', monospace;
+}
   #logo{
     display: flex;
     flex-direction: column;
     width: 200px;
     height: auto;
     object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   #year{
@@ -125,6 +149,17 @@ video{
   box-shadow: 0px 30px 70px 8px #00000087;
 }
 
+@keyframes containerPlayingitAll{
+  0%{
+    top: 44%;
+    left: 0%;
+  }
+  100%{
+    top: 74%;
+    left: 33%;
+  }
+}
+
 @media screen and (max-width: 1000px){
     .VideoForMobile{
       top: 0;
@@ -137,6 +172,7 @@ video{
     .VideoForDesktop{
       display: none;
     }
+    
     .forBoxShadow{
       width: 100%;
       height: 100vh;
@@ -145,6 +181,7 @@ video{
       backdrop-filter: blur(10px);
       box-shadow: 0px 30px 70px 8px #00000094;
     }
+
     .container{
       width: 100%;
       height: max-content;
@@ -165,5 +202,15 @@ video{
       width: 60%;
       margin-left: auto;
       margin-right: auto;
+    }
+
+    @keyframes containerPlayingitAll{
+      0%{
+        top: 44%;
+        left: 0%;
+      }
+      100%{
+        top: 84%;
+      }
     }
   }

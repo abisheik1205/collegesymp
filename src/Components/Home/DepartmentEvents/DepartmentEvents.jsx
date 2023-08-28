@@ -24,7 +24,7 @@ const DepartmentEvents = () => {
                 { 
                     mainEvents.map((item, key) => {
                         return(
-                            <AllDepartmentPageEachContainer link="allevents" departmentMotto={item.departmentMotto} departmentName={item.departmentName} mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
+                            <AllDepartmentPageEachContainer key={key} link="allevents" departmentMotto={item.departmentMotto} departmentName={item.departmentName} mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
                         )
                     })
                 }

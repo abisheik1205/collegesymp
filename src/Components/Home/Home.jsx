@@ -10,61 +10,63 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 const Home = () => {
-    // const [isPlaying, setIsPlaying] = useState(false);
+    const [isPlayingforDesktop, setIsPlayingforDesktop] = useState(false);
+    const [isPlayingforMobile, setIsPlayingforMobile] = useState(false);
     const videoRefMobile = useRef(null);
-  const videoRefDesktop = useRef(null);
+    const videoRefDesktop = useRef(null);
 
-  const handleInteraction = () => {
+    const handleInteraction = () => {
 
-      
-      // videoRefMobile.current.play;
-      
-    //   videoRefDesktop.current;
-      videoRefMobile.current.play = true;
-        // videoRefDesktop.current.play();
-
-        // setIsVideoMuted(false);
-        // }
-        console.log("Callled");
-        console.log(videoRefMobile);
-        // console.log(videoRefMobile.current.play = true);
+      console.log("Calling Now");
+        if (window.innerWidth > 1000) {
+          setIsPlayingforDesktop(true)
+        }else{
+          setIsPlayingforMobile(true)
+        }
     };
 
-//   useEffect(() => {
-//     window.addEventListener("click", handleInteraction);
-//     return () => {
-//       window.removeEventListener("click", handleInteraction);
-//     };
-//   }, []);
+    useEffect(() => {
+      // setTimeout(() => {
+      //   handleInteraction()
+      // }, 2700)
+
+      window.addEventListener("click", handleInteraction);
+      return () => {
+        window.removeEventListener("click", handleInteraction);
+      };
+    }, []);
 
   return (
     <div className="HomeMain">
       <div className="Home">
         <div className="forBoxShadow">
-          <video
-            className="VideoForMobile"
-            ref={videoRefMobile}
-            src={videoForMobile}
-            loop
-            onClick={() => handleInteraction()}
-            muted
-            pause
-          />
-          <video
-            className="VideoForDesktop"
-            onClick={() => handleInteraction()}
-            ref={videoRefDesktop}
-            src={VideoForDesktop}
-            pause
-            loop
-            muted
-          />
+          {
+            isPlayingforMobile ?
+            <video
+              className="VideoForMobile"
+              ref={videoRefMobile}
+              src={videoForMobile}
+              loop
+              autoPlay
+              />: <></>
+          }         
+          {
+            isPlayingforDesktop ?
+            <video
+              className="VideoForDesktop"
+              ref={videoRefDesktop}
+              src={VideoForDesktop}
+              autoPlay
+              loop
+            />: <></>
+          }
         </div>
         <div className="bgContainer">
           <Header />
-          <div className="container">
+          <div className={isPlayingforDesktop||isPlayingforMobile?"containerPlaying": "container"}>
             <img src={vivanata} id="logo" alt="logo" />
             <img src={i2023} id="year" alt="year" />
+            <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "Click anywhere to play the promo"} </p> 
           </div>
         </div>
       </div>
