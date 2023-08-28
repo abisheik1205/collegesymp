@@ -80,8 +80,8 @@ const AllDepartmentPage = () => {
                 setSelected("ECE");
                 setList(ECE)
             }
-            if (localStorage.getItem("val") === "Fasion Technology") {
-                setSelected("Fasion Technology");
+            if (localStorage.getItem("val") === "Fashion Technology") {
+                setSelected("Fashion Technology");
                 setList(Ft)
             }
         }  else{
@@ -153,8 +153,8 @@ const AllDepartmentPage = () => {
             } 
             
             // // For Fasion Technology
-            if (dataToSend === "Fasion Technology") {
-                setSelected("Fasion Technology");
+            if (dataToSend === "Fashion Technology") {
+                setSelected("Fashion Technology");
                 setList(Ft)
             } 
         }
@@ -229,7 +229,7 @@ const AllDepartmentPage = () => {
         } 
 
         // // For Fasion Technology
-        if (Data[i].departmentName === "Fasion Technology") {
+        if (Data[i].departmentName === "Fashion Technology") {
             Ft = Ft.concat(Data[i].events);
         } 
     }
@@ -269,11 +269,11 @@ const AllDepartmentPage = () => {
             // dataToSend = "Mechanicalz";
             setSelected("Mechanical")
         }
-        if (name === "Fasion Technology") {
+        if (name === "Fashion Technology") {
             setList(Ft)
-            localStorage.setItem("val", "Fasion Technology")
-            // dataToSend = "Fasion Technology";
-            setSelected("Fasion Technology")
+            localStorage.setItem("val", "Fashion Technology")
+            // dataToSend = "Fashion Technology";
+            setSelected("Fashion Technology")
         }
         if (name === "ECE") {
             setList(ECE)
@@ -355,7 +355,7 @@ const AllDepartmentPage = () => {
                     <p onClick={() => handleFilterAdvanced("all")} className={`AllDepartmentPageHeadereachLinks ${selected === "all"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>All</p>
                     <p onClick={() => handleFilterAdvanced("Computer Science")} className={`AllDepartmentPageHeadereachLinks ${selected === "Computer Science"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>CSE</p>
                     <p onClick={() => handleFilterAdvanced("Information Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Information Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>IT</p>
-                    <p onClick={() => handleFilterAdvanced("Fasion Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Fasion Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>FT</p>
+                    <p onClick={() => handleFilterAdvanced("Fashion Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Fashion Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>FT</p>
                     <p onClick={() => handleFilterAdvanced("ECE")} className={`AllDepartmentPageHeadereachLinks ${selected === "ECE"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>ECE</p>
                     <p onClick={() => handleFilterAdvanced("EEE")} className={`AllDepartmentPageHeadereachLinks ${selected === "EEE"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>EEE</p>
                     <p onClick={() => handleFilterAdvanced("Mechatronics")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechatronics"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mechatronics</p>

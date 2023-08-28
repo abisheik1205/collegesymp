@@ -1,6 +1,7 @@
  export const StorageData = [
     {
         departmentName: "Computer Science",
+        departmentMotto: "Unleash the Power of Code: CSE Leading the Way!",
         eventCoordinator: "Ashwin ",
         image: "https://i.pinimg.com/originals/c1/16/2b/c1162b26d323fcc729796e3c31943fd9.png",
         events: [
@@ -36,7 +37,7 @@
             {
                 id: 1,
                 eventName: "Brain Byte Blitz",
-                shortDescription: "",
+                shortDescription: "Technical Quiz",
                 description: "A platform to test your computer science and engineering knowledge through a captivating and enlightening quiz experience.",
                 rules: [
                     "The team should consist of one or two members per team",
@@ -94,8 +95,8 @@
             {
                 id: 3,
                 eventName: "Concept and cascade",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Innovate, Connect: Concept & Cascade!",
+                description: "Explore innovative concepts and foster connections at 'Concept and Cascade': an event merging ideas, technology, and collaboration for progress.",
                 rules: [
                     "Three/four members can take up a team.",
                     "Every team lead should be called to choose the topic based on chit picking.",
@@ -124,19 +125,21 @@
     },
     {
         departmentName: "Information Technology",
+        departmentMotto: "IT Wizards -> Turning Glitches into Good Vibes!",
         image: "https://e1.pxfuel.com/desktop-wallpaper/272/414/desktop-wallpaper-everydays-technology-aesthetic.jpg",
         events: [
             {
                 id: 0,
                 eventName: "Innoventure",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Exploring innovations",
+                description: "Join us for 'Innoventure' – a dynamic event igniting creativity, fostering collaboration, and celebrating innovation in the field of Information Technology.",
                 rules: [
-                    "Eligibility: Open to all College students in teams of 1-3 members.",
-                    "Submission: Teams submit ideas with product details, target market, value, and revenue model.",
-                    "Presentation: Shortlisted teams pitch in 10 mins + 5 mins Q&amp;A",
-                    "Criteria: Judged on uniqueness, potential, feasibility, presentation, scalability.",
-                    "Prizes: Top teams win cash, and networking opportunities.",
+                    "Registered symposium attendees with ID cards can participate.",
+                    "Participation allowed for individuals or teams of 3, with one project or idea per participant/team.",
+                    "Submit a paper focused on the competition's theme, detailing the project's concept, approach, and potential impact.",
+                    "Prepare two presentations: Traditional Paper Presentation (15 minutes) emphasizing technical details and development approach, and a Shark Tank Pitch (10 minutes) highlighting market potential, impact, unique features, investment, expected returns, and scalability.",
+                    "Maintain professionalism, respect, and ethical behavior throughout the event.Plagiarism or misrepresentation will result in disqualification.",
+                    "Scoring criteria include technical quality, market viability, presentation skills, and responses to questions All decisions made by the judges are final.",
                 ],
                 details: {
                     venue: "T07",
@@ -156,20 +159,21 @@
             {
                 id: 1,
                 eventName: "Battle Royale Techfest",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Last man standing wins!",
+                description: "Engage in the ultimate challenge at 'Battle Royale Techfest,' where participants compete head-to-head to showcase tactical prowess and strategy.",
                 rules: [
-                    "Only two persons per team.",
-                    "Each team should present 10 min slide.",
-                    "Work must be unique without plagiarism.",
-                    "Student should not disclose their identity in their ppt presentation.",
+                    "Participants must be registered attendees of the symposium and should bring their ID cards.",
+                    "Participants must use mobile devices for gameplay. PC emulators are strictly prohibited, and participants should have their own data connection.",
+                    "All players on a team must have a minimum ranking of level 30 in the selected game.",
+                    "The Room ID and password for the match will be shared 15 minutes prior to the start of the game, and participants are expected to join promptly.",
+                    "Any violation of in-game rules or unethical conduct will be thoroughly reviewed, and teams found in violation will be immediately disqualified from the event.",
                 ],
                 details: {
                     venue: "T10,S10",
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Dinesh",
                     phoneNumber: "08467248067",
@@ -182,21 +186,21 @@
             {
                 id: 2,
                 eventName: "DebugXplorer",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Unleash Your Tech Ninja in DebugXplorer",
+                description: "Embark on a tech journey like no other at DebugXplorer. Decode errors, navigate challenges, and emerge as the debugging champion!",
                 rules: [
-                    "Eligibility: The competition is open to all college students in teams of 1 to 3 members.",
-                    "Environment: VsCode (2 Languages)",
-                    "Time Limit: Half hour for single round.",
-                    "Malpratice: Don’t use internet and other sources.",
-                    "Explanation: Tell short description of error they cleared.",
+                    "Participation is exclusively open to registered symposium attendees. Teams must consist of 3 members.",
+                    "Round 1 involves a tech trail to find concealed QR codes linked to hidden questions, encouraging collaborative interactions among participants.",
+                    "In Round 2, participants receive questions from scanned QR codes, involving code debugging and problem-solving. Responses must be submitted within the stipulated timeframe.",
+                    "Scoring and evaluation are based on technical accuracy in debugging, effective problem-solving, and responsiveness to questions. Impartial judges will determine scores.",
+                    "Participants are expected to maintain a high level of professionalism, respect, and ethical behavior throughout the event.",
                 ],
                 details: {
                     venue: "IT Lab",
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Sriram",
                     phoneNumber: "xxx",
@@ -209,28 +213,22 @@
             {
                 id: 3,
                 eventName: "Data Driven IPL Auction",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Strategize and Dominate: Data-Driven IPL Auction Challenge.",
+                description: "Experience the future of IPL auctions through data-driven insights and strategies, revolutionizing team selections for the ultimate cricket showdown.",
                 rules: [
-                    "Form teams of 2 participants each.",
-                    "Round 1 - Riddle Challenge:Each team will receive a set of 7 riddles.",
-                    "The solution to each riddle will point to a particular location within our college campus.",
-                    "Teams must solve the riddles, find the locations, and take a selfie at each place.",
-                    "There is a specified time limit for this round (e.g., 1 hour).",
-                    "The team that takes the most selfies within the time limit will qualify for the second round.",
-                    "Selfies must clearly show the team and the designated location in the background.",
-                    "Round 2 - Observation Challenge:",
-                    "Qualified teams will face a series of questions based on the places they visited during Round 1.",
-                    "Questions will test your powers of observation and details about the visited locations.",
-                    "Based on the scores from Round 2, the top 3 teams with the highest scores will be selected as the winners. The team with the highest overall score will be crowned the champion!",
-                    "Participants must solve riddles and answer questions independently, without external assistance.",
+                    "Participation is exclusively open to registered symposium attendees.",
+                    "Individuals or teams of 2-5 members can participate.",
+                    "The preliminary round will be conducted online, with the specific date announced via participants' WhatsApp group and email.",
+                    "This round consists of a Cricket Quiz through an online portal, and only the top 10 teams will qualify for the next round.",
+                    "The Auction Round, the final round, will be conducted offline and will assess teams' financial decision-making, statistical analysis, and critical thinking skills.",
+                    "The decisions made by the auctioneer and judges are final, and participants are expected to maintain professionalism, respect, and ethical behavior throughout the event.",
                 ],
                 details: {
                     venue: "T07",
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Harshithan",
                     phoneNumber: "08467248067",
@@ -244,22 +242,23 @@
     },
     {
         departmentName: "Mechanical",
+        departmentMotto: "Mechanical Marvels -> Where Innovation Drives Motion!",
         eventCoordinator: "Ashwin ",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtH75SX6PJI2wOWhhcjgfYiY24TsAh4T-eA&usqp=CAU",
         events: [
             {
                 id: 0,
                 eventName: "Design Competition",
-                shortDescription: 'Fix bugs.',
-                description: "Debugging is the art of unraveling digital puzzles, converting glitches into graceful symphonies of code.",
+                shortDescription: 'Innovative designs enchancing industrial automation',
+                description: "Create innovative designs using CAD software that can enchance current industrial automation.",
                 rules: [
-                    "The event comprises two rounds.",
-                    "Participants are expected to form a team of two members to participate in the event.",
-                    "Participants should bring their own laptops with good Internet connectivity.",
-                    "Participants are given codes with error and are expected to debug the same. ",
-                    "Each round will have a predetermined time limit for solving the challenges.",
-                    "Plagiarism, cheating, or any unethical behavior will result in immediate disqualification.",
-                    "In all matters not covered by these rules and regulations, the decision of the organizers is final.",
+                    "The competition will consist of two rounds. After the release of the problem statement, the participants arrequested to submit the design perquisites according to specified constraints in the given time.",
+                    "Each specification will carry some points which include details of the assembly for instances, accuracy in technical constraints, analysis of the design ,accuracy in measurements, etc given according to the question and its level of difficulty.",
+                    "Models can be prepared using FUSION 360 software only.",
+                    "On spot verification of the design with timeline will be noted based on the deadline.",
+                    "Participants must necessarily install the software on their laptops or use any online service before participating in the event.",
+                    "For the interview round, a series of questions related to the design and accuracy would be posed to the candidate who cleared the first round.",
+
                 ],
                 image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
                 details: {
@@ -279,11 +278,17 @@
             {
                 id: 1,
                 eventName: "Idea Pitching",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Elevate Innovations: Unleash Ideas at Pitch Perfect.",
+                description: "Step into the spotlight and share your groundbreaking ideas at our Idea Pitching Event, where innovation meets opportunity and growth.",
                 rules: [
-                    "",
-                    "",
+                    "Team should consist of maximum of 2 members.",
+                    "A 10 Slide PPT pitch deck as per the format given below:",
+                    "Title Slide",
+                    "Problem definition",
+                    "Problem Identification",
+                    "Solution Slide",
+                    "Social Impact Slide",
+                    "One page lean canva business",
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
@@ -303,11 +308,16 @@
             {
                 id: 2,
                 eventName: "ROBO - Assembly",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Build Bots, Engineer Future: Robo Assembly Challenge.",
+                description: "Join the ultimate Robo Assembly event, showcasing engineering prowess as participants construct cutting-edge robots that define the future of automation.",
                 rules: [
-                    "",
-                    "",
+                    "Participants are requested to come to the venue on time.",
+                    "All components required for the competition will be provided.",
+                    "Only individual participants allowed (no teams).",
+                    "Participants need to complete the assembly in first 40 minutes and coding part in next 20 minutes.",
+                    "Code will be given with some errors, participants need to correct and run it.",
+                    "Completion of assembly and coding within the time limit will be awarded.",
+                    "No usage of mobiles during event.",
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
@@ -327,11 +337,16 @@
             {
                 id: 3,
                 eventName: "Line Follower",
-                shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                shortDescription: "Precision Robotics: Line Follower Challenge",
+                description: "Navigate the twists and turns of engineering excellence in our Line Follower event, where robots follow the path to victory.",
                 rules: [
-                    "",
-                    "",
+                    "Team Members - 3 (Max.)",
+                    "Each member of the team must contain an identity card of his/her respected institute.",
+                    "No test practice will be allowed on the arena.",
+                    "The robot must not leave behind any of its parts during the run; else it will result in disqualification.",
+                    "Unethical behaviour could lead to disqualification. Faculty coordinators have all the rights to take final decisions for any matter during the event.",
+                    "Jury's decision will be considered final.",
+                    "Certificates of Participation will be given to all teams except the Disqualified teams",
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
@@ -352,6 +367,7 @@
     },
     {
         departmentName: "Automobile",
+        departmentMotto: "Rev Up the Future -> Where Innovation Takes the Wheel!",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkeGLL6FB-PmmsYag-JtCfGog75CeGirfs7lebP-PbVFPOJd6mzTmtdg&s=10",
         events: [
             {
@@ -392,7 +408,7 @@
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Jonathan P",
                     phoneNumber: "08467248067",
@@ -440,7 +456,7 @@
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Arun Kumar S",
                     phoneNumber: "08467248067",
@@ -454,8 +470,9 @@
     },
     {
         departmentName: "Civil",
+        departmentMotto: "Building the World, Brick by Brick.",
         eventCoordinator: "Ashwin ",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-8qxGZYCV3lF2h6x-lB3VcxHBixc3lXZYQ&usqp=CAU",
+        image: "https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/04/Top%20Jobs%20For%20Civil%20Engineering%20Based%20On%20ETABS_1_1680615587.png",
         events: [
             {
                 id: 0,
@@ -516,7 +533,7 @@
                 id: 2,
                 eventName: "Draftomania",
                 shortDescription: 'Architectural precision showcased through Draftomania',
-                description: "Tracing the Future of design and exploring precision and creativity in architectural drafting within the civil engineering field..",
+                description: "Tracing the Future of design and exploring precision and creativity in architectural drafting within the civil engineering field.",
                 rules: [
                     "Individual participation.",
                     "The competition will have two rounds.",
@@ -570,6 +587,7 @@
     },
     {
         departmentName: "Aero",
+        departmentMotto: "Reaching New Heights, Defying Gravity.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOACHdJcytlApaAWD_c97CdzXSMrtbFwaRJA&usqp=CAU",
         events: [
             {
@@ -637,8 +655,8 @@
             {
                 id: 2,
                 eventName: "Water Rocker",
-                shortDescription: "One minute to win it all!",
-                description: "Showcasing aeronautical expertise as participants design, build, and launch water-propelled rockets, blending engineering and excitement in a thrilling display of creativity and precision.",
+                shortDescription: "Hydro Tech Triumph: Water Rocker Challenge",
+                description: "Dive into innovation with Water Rocker, a riveting event where aquatic robots compete, pushing the boundaries of hydro-technology and creativity.",
                 rules: [
                     "Water rockets can have multiple stages. Parachute, gliding and other mechanical launch mechanisms are allowed. Booster mechanisms are allowed as well.",
                     "Use of electronic components and chemical explosives are banned.",
@@ -698,6 +716,7 @@
     },
     {
         departmentName: "Mechatronics",
+        departmentMotto: "Where Mechanics Meets Electronics in Perfect Harmony",
         eventCoordinator: "Ashwin ",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2g3zSrGVcKVr1asGrbFc5yPT2cPs3mReNWw&usqp=CAU",
         events: [
@@ -825,6 +844,7 @@
     },
     {
         departmentName: "EEE",
+        departmentMotto: "Empowering the World, One Electron at a Time.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFowHO38hvkTWgGk0fWYHwlGRwN76GeRALg&usqp=CAU",
         events: [
             {
@@ -867,7 +887,7 @@
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Manoj Devabhraj",
                     phoneNumber: "08467248067",
@@ -917,7 +937,7 @@
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "ahulRaj",
                     phoneNumber: "08467248067",
@@ -930,7 +950,8 @@
         ]
     },
     {
-        departmentName: "Fasion Technology",
+        departmentName: "Fashion Technology",
+        departmentMotto: "Innovate, Create, Elevate: Where Fashion Meets Technology",
         eventCoordinator: "Ashwin ",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBZSG0fHeBBhhCaqD_hsb-tfm4TEs1FIV_g&usqp=CAU",
         events: [
@@ -958,7 +979,7 @@
                 faculty: {
                     name: "Ms.Sumithra"
                 },
-                departmentName: "Fasion Technology",
+                departmentName: "Fashion Technology",
             },
             {
                 id: 1,
@@ -984,11 +1005,11 @@
                 faculty: {
                     name: "Sir Rama"
                 },
-                departmentName: "Fasion Technology",
+                departmentName: "Fashion Technology",
             },
             {
                 id: 2,
-                eventName: "3D fasion Illutration",
+                eventName: "3D fashion Illutration",
                 shortDescription: 'Evolves fashion through 3D innovation ',
                 description: "A platform to redefine the fashion landscape by integrating cutting-edge technology into clothing design, revolutionizing aesthetics and functionality for futuristic style expressions.",
                 rules: [
@@ -1009,7 +1030,7 @@
                 faculty: {
                     name: "Ms.Sumithra"
                 },
-                departmentName: "Fasion Technology",
+                departmentName: "Fashion Technology",
             },
             {
                 id: 3,
@@ -1037,12 +1058,13 @@
                 faculty: {
                     name: "Sir Rama"
                 },
-                departmentName: "Fasion Technology",
+                departmentName: "Fashion Technology",
             },
         ]
     },
     {
         departmentName: "ECE",
+        departmentMotto: "Powering Progress, Connecting the Future.",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvB5Ig1HLe166txl1dmYgxxHeFQx1kgW5Dw&usqp=CAU",
         events: [
             {
@@ -1051,8 +1073,15 @@
                 shortDescription: "Exploring ideas and sharing knowledge!",
                 description: "TechnoStrom is a platform to present their research, exchange insights, and engage in academic dialogue, fostering knowledge dissemination and intellectual growth.",
                 rules: [
-                    "",
-                    "",
+                    "Teams can have a maximum of 3 members from any academic background.",
+                    "The paper's theme should revolve around Electronics and Communication, focusing on innovative solutions for societal issues.",
+                    "Teams can choose from suggested domains, including Communications, VLSI Design, Robotics, Wireless Sensor Networks, and AI/ML applications in electronics.",
+                    "All papers must be submitted in IEEE format.",
+                    "Plagiarism or copy-paste is strictly prohibited; violations will result in disqualification.",
+                    "Abstracts must be emailed to technostorm123@gmail.com with the domain and team name by the specified deadline.",
+                    "Acceptance emails will be sent on a predetermined date.",
+                    "Each team will have an 8-minute presentation during the Symposium, followed by a 2-minute Q&A session",
+                    "Judging criteria include innovation, technical excellence, understanding, relevance, and presentation quality. Two winners will be selected regardless of the domain.",
                 ],
                 details: {
                     venue: "IOT Lab",
@@ -1075,15 +1104,21 @@
                 shortDescription: "Fusing innovation, technology and solutions",
                 description: "Solution Finderz Ideatronics is a dynamic innovation event where teams collaborate to devise ingenious solutions by melding cutting-edge technologies, fostering creativity, and addressing real-world challenges with fresh perspectives.",
                 rules: [
-                    "",
-                    "",
+                    "Timing : 9 am to 1pm.",
+                    "Team size : 2 to 4 members.",
+                    "1 Domain per Team.",
+                    "Any resources and tools can be used to ideate, but mention the platform used.",
+                    "Idea presentation must contain the criterias mentioned for evaluation.",
+                    "Time limits will be strictly enforced.",
+                    "Judges decision will be final.",
+                    "Each team will have 3-4 Minutes of presentation for evaluation.",
                 ],
                 details: {
                     venue: "IOT Lab",
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Nehameena R",
                     phoneNumber: "08467248067",
@@ -1099,8 +1134,10 @@
                 shortDescription: "Test your tech knowledge, conquer, win.",
                 description: "TechWar is a battle of wits where tech enthusiasts test their knowledge, compete, and emerge victorious in a thrilling quizzing showdown.",
                 rules: [
-                    "",
-                    "",
+                    "Pen and Paper Quiz: 15 questions (9 technical, 6 general), 8 teams selected.",
+                    "Buzzer Round: Identify equipment and inventors, top 4 teams advance.",
+                    "Final Round - Rapid Fire: Teams answer 10 questions in 90 seconds.",
+                    "Top 2 teams in the final round win.",
                 ],
                 details: {
                     venue: "F01",
@@ -1123,15 +1160,21 @@
                 shortDescription: "Explore innovations in electromagnetics at Electrominds",
                 description: "ElectroMinds is a platform to showcase ingenious innovations and breakthroughs in electromagnetics, uniting creators to explore cutting-edge projects and ideas in the field .",
                 rules: [
-                    "",
-                    "",
+                    "Teams of 2-3 members allowed.",
+                    "Cross-disciplinary teams welcome.",
+                    "Projects must align with Green Energy, IoT, or Advanced Communication Systems.",
+                    "Social relevance required.",
+                    "Prepare a concise PowerPoint presentation.",
+                    "Top 10 teams present working models in the final round.",
+                    "Judging based on innovation, technical excellence, and presentation quality.",
+                    "Two winners chosen irrespective of category.",
                 ],
                 details: {
                     venue: "Optical Lab",
                     date: "28 August 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Varun kumar",
                     phoneNumber: "08467248067",
@@ -1145,7 +1188,8 @@
     },
     {
         departmentName: "AIDS",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvB5Ig1HLe166txl1dmYgxxHeFQx1kgW5Dw&usqp=CAU",
+        departmentMotto: "Fight AIDS, Not People.",
+        image: "https://media.npr.org/assets/img/2023/05/24/gettyimages-1358149692-bf96c07fc26040785771044ba8470ff9d73a928c-s1100-c50.jpg",
         events: [
             {
                 id: 0,
@@ -1160,7 +1204,7 @@
                     "Winners determined by total points; fair play and sportsmanship expected.",
                 ],
                 details: {
-                    venue: "Intelligence",
+                    venue: "Intelligence lab",
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
@@ -1191,7 +1235,7 @@
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Shaun R",
                     phoneNumber: "08467248067",
@@ -1199,16 +1243,20 @@
                 faculty: {
                     name: "Dr.V. Balaji"
                 },
-                departmentName: "ADIS",
+                departmentName: "AIDS",
             },
             {
                 id: 2,
                 eventName: "OptiHack",
-                shortDescription: "One minute to win it all!",
-                description: "OptiHack is an intense hackathon centered around optimization challenges, where participants collaboratively engineer creative solutions to intricate problems, fostering innovation and teamwork in a competitive environment.",
+                shortDescription: "Optimize, Innovate, Win",
+                description: "Optimize a provided website per a problem statement. Encourage creative methods, like UI/UX design and SEO. Awards for efficient optimizations",
                 rules: [
-                    "",
-                    "",
+                    "Participants can use any number and type of technical tools.",
+                    "Participants may use no more than 4 slides to present, as given in the presentation template.",
+                    "Plagiarism is not encouraged.",
+                    "Submissions after the time limit will be disqualified.",
+                    "Round 1: Programming Challenge - Participants collaborate on an HTML and CSS project.",
+                    "Round 2: Presentation - Present your work with clarity in no more than 5 slides.",
                 ],
                 details: {
                     venue: "Intelligence Lab",
@@ -1242,7 +1290,7 @@
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://as1.ftcdn.net/v2/jpg/04/95/84/76/1000_F_495847600_5Q9j401k7KgmfeDPhy3VzArGo0lcyi4F.jpg",
+                image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Muskan P",
                     phoneNumber: "08467248067",

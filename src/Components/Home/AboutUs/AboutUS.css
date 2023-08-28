@@ -130,11 +130,11 @@ a{
     .aboutUS{   
         margin-top: 65px;
         margin-bottom: 0px;
-        /* height:-moz-fit-content; */
+        height: 105vh;
     }
     
     .AboutUs{
-        height:-moz-fit-content;
+        height: 105vh;
     }
     .imageFoundOnAboutUS{
         width: max-content;

@@ -70,7 +70,7 @@
 .AllDepartmentPageContainerEachStackFormContent p{
     text-align: left;
     font-size: small;
-    text-align: justify;
+    text-align: center;
     color: rgb(255, 255, 255);
 }
 
@@ -94,7 +94,10 @@
     align-items: flex-end;
     height: 400px;width: 100%;
 }
-
+.AppearWhenHover{
+    padding: 0px 20px;
+    font-size: x-small;
+}
 
 @media screen and (max-width: 1000px){
 

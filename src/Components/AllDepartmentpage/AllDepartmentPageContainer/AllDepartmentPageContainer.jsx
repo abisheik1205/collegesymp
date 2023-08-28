@@ -13,9 +13,9 @@ const AllDepartmentPageContainer = ({ list }) => {
                         <div key={key}>
                             {
                                 key%2 === 0? <Fade slow left >
-                                <AllDepartmentPageEachContainer link="eventpage"  image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                                <AllDepartmentPageEachContainer link="eventpage" departmentMotto={item} image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
                             </Fade> : <Fade slow right>
-                                <AllDepartmentPageEachContainer link="eventpage" image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
+                                <AllDepartmentPageEachContainer link="eventpage" departmentMotto={item} image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} shortDescription={item.shortDescription} snap={item}/>
                             </Fade>
                             }
                             

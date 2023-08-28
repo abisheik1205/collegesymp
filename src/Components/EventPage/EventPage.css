@@ -3,8 +3,6 @@
 
 .EventMainPage{
     background-color: rgba(0, 0, 0, 0.596);
-    /* height: 100vh; */
-    /* padding: 20px 0px; */
     backdrop-filter: blur(60px);
 }
 
@@ -13,7 +11,7 @@
     backdrop-filter: blur(60px);
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     width: 100%;
     margin-left: auto;
@@ -223,4 +221,124 @@
 .EventPrizetext{
     font-family: 'Inconsolata', monospace;
     color: whitesmoke;
+}
+.EventLeftColumnfORmoBILE{
+    display: none;
+}
+.EventRegisterMobile{
+    display: none;
+}
+.EventPDCForMobile{
+    display: none;
+}
+
+@media only screen and (max-width:1000px){
+
+    .Event_div{
+    
+        flex-direction: column-reverse;
+        
+    }
+    .EventRightColumn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .EventRegisterMobile{
+        display: block;
+        width: max-content;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .EventRegister{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .EventLeftColumn{
+        display: none;
+    }
+    .EventLeftColumnfORmoBILE{
+        display: block;
+    }
+    .EventDescription{
+        text-align: center;
+    }
+    .EventRightColumnEventHeadertext{
+        text-align: center;
+    }
+    .EventDescriptiontext{
+        text-align: justify;
+        font-size: medium;
+    }
+    .EventRightColumnEventHeader{
+
+        font-size: 1.5rem;
+        text-underline-offset: 15px;
+        text-align: center;
+    }
+    .EventRightColumn{
+        padding: 10px 0px;
+    }
+    .RulesList{
+        padding: 10px 20px;
+    }
+    .RulesListEach{
+        padding: 3px 0px;
+    }
+    .EventImage{
+        height: 250px;
+        margin-bottom: 30px;
+        width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .EventName{
+        margin-bottom: 30px;
+    }
+    .EventPDC{
+        display: none;
+    }
+    .EventImageImg{
+        width: 250px;
+        height: 250px;
+    }
+    .EventImageInside{
+        height: 250px;
+        width: 250px;
+    }
+    .EventRules{
+        text-align: justify;
+        padding: 25px 20px;
+    }
+    .EventRulesSubHeads{
+        text-align: center;
+    }
+    .EventPDCForMobileFlex{
+        flex: 1;
+        text-align: center;
+    }
+    .EventPDCForMobile{
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column-reverse;
+    }
+    .EventDetailsSubHeadsForMobile{
+        font-size: small;
+        font-family: 'Inconsolata', monospace;
+        color: whitesmoke;
+    }
+    .EventDetailsListEach{
+        font-family: 'Inconsolata', monospace;
+        font-size: smaller;
+    }
+    
+    .EventPDCForMobileFlex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .EventPrizeForMobile{
+        margin-top: 20px;
+        text-align: center;
+        font-size: xx-small;
+    }
 }

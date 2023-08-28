@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import image from "../../assets/VIVANATA (2).png"
+import image from "../../assets/vivanta.png";
                     
 const Footer = () => {
     return(
@@ -51,17 +51,15 @@ const Footer = () => {
                 <div className="FooterWebsite FooterSub">
                     <h2 className="FooterWebsiteHead FooterSubhead">Website</h2>
                     <div className="Contentlinks">
-                        <a href="" className="Contents">College Site</a>
+                        <a href="https://kcgcollege.ac.in/" className="Contents">College Site</a>
                         <a href="" className="Contents">Developers</a>
                     </div>
                 </div>
                 <div className="FooterSupport FooterSub">
                     <h2 className="FooterSupportHead FooterSubhead">Support</h2>
                     <div className="Contentlinks">
-                        <a href="" className="Contents">Coordinators</a>
                         <a href="" className="Contents">Contact</a>
                         <a href="" className="Contents">Developer</a>
-                        <a href="" className="Contents">Report</a>
                     </div>
                 </div>
             </div>

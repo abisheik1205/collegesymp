@@ -38,6 +38,9 @@ export const Eventpage = () => {
                     <h1 className="EventRightColumnEventHeader">{eventName}</h1>
                     <p className="EventRightColumnEventHeadertext">{shortDescription}</p>
                 </div>
+                <div className="EventLeftColumnfORmoBILE">
+                    <div className="EventImage"><div className="EventImageInside"><img className="EventImageImg" alt="logo" src={image}/></div></div>
+                </div>
                 <div className="EventDescription">
                     <h2 className="EventDescriptionSubHeads">Description</h2>
                     <p className="EventDescriptiontext">{eventdescription}</p>
@@ -56,6 +59,7 @@ export const Eventpage = () => {
                         }
                     </ul>
                 </div>
+                <div className="EventRegisterMobile"><button id="EventRegisterButton">REGISTER</button></div>
                 <div className="EventPDC">
                     <div className="EventPrize pdc">
                         <h2 className="EventPrizeSubHeads">Prize</h2>
@@ -78,9 +82,33 @@ export const Eventpage = () => {
                         </div>
                     </div>
                 </div>
+                <div className="EventPDCForMobile">
+                    <div className="EventPrizeForMobile">
+                        <h2 className="EventPrizeSubHeads">Prize</h2>
+                        <p className="EventPrizetext">Participate and win exciting prizes</p>
+                    </div>
+                    <div className="EventPDCForMobileFlex">
+                        <div className="EventDetailsForMobile">
+                            <h2 className="EventDetailsSubHeadsForMobile">Details</h2>
+                            <div className="EventDetailsList">
+                                <p className="EventDetailsListEach"><span className="ListInBold">Venue:</span> {venue}</p>
+                                <p className="EventDetailsListEach"><span className="ListInBold">Date: </span>{date}</p>
+                                <p className="EventDetailsListEach"><span className="ListInBold"> Time: </span>{time}</p>
+                            </div>
+                        </div>
+                        <div className="EventDetailsForMobile">
+                            <h2 className="EventDetailsSubHeadsForMobile">Contact</h2>
+                            <div className="EventContactList">
+                                <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
+                                <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
+                                <p className="EventDetailsListEach"><span className="ListInBold"> Phone</span>: {phoneNumber} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <Footer />
+        <Footer /> 
                            </div>
     )
 }

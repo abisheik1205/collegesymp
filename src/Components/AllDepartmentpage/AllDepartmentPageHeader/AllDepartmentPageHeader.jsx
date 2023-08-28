@@ -14,14 +14,14 @@ const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
     return(
         <div className="AllDepartmentPageHeader">
             {/* <div className={mobileClick? "NavOnMobile" :"AllDepartmentPageHeaderM0obile"}> */}
-                <h1 className="AllDepartmentPageHeaderHead">Events</h1>
+                <h1 className="AllDepartmentPageHeaderHead"><a href="/" className="AllDepartmentPageHeaderHead">Home</a> &gt; Events</h1>
                 {/* <p className="NavOnMobileP" onClick={() => handleMobileClick()}>|||</p> */}
             {/* </div> */}
             <div className="AllDepartmentPageHeaderLink">
                 <p onClick={() => handlefilter("all")} className={`AllDepartmentPageHeadereachLinks ${selected === "all"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>All</p>
                 <p onClick={() => handlefilter("Computer Science")} className={`AllDepartmentPageHeadereachLinks ${selected === "Computer Science"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>CSE</p>
                 <p onClick={() => handlefilter("Information Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Information Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>IT</p>
-                <p onClick={() => handlefilter("Fasion Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Fasion Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>FT</p>
+                <p onClick={() => handlefilter("Fashion Technology")} className={`AllDepartmentPageHeadereachLinks ${selected === "Fashion Technology"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>FT</p>
                 <p onClick={() => handlefilter("ECE")} className={`AllDepartmentPageHeadereachLinks ${selected === "ECE"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>ECE</p>
                 <p onClick={() => handlefilter("EEE")} className={`AllDepartmentPageHeadereachLinks ${selected === "EEE"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>EEE</p>
                 <p onClick={() => handlefilter("Mechatronics")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechatronics"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mechatronics</p>

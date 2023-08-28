@@ -4,7 +4,7 @@ import Divider from "../../../Divider/Divider";
 import { Fade } from "react-reveal";
 import { Link } from 'react-router-dom';
 
-const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
+const AllDepartmentPageEachContainer = ({ mainEventsimage, departmentMotto, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
 
     const [over, setOver] = useState(false);
 
@@ -37,7 +37,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
                         </div>
                         <div className={over? "AllDepartmentPageContainerEachStackFormContent":'AllDepartmentPageContainerEachStackFormContentHide'}>
                             <Fade bottom>
-                                <p>{eventdescription}</p>
+                                <p className="AllDepartmentPageContainerEachStackFormHeaderPara">{eventdescription}</p>
                             </Fade>
                         </div>
                         {
@@ -59,11 +59,11 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, mainEventsdepartmentN
                         <div className="AllDepartmentPageContainerEachStackFormHeader" style={over? {marginBottom: '50px'}: {}}>
                             <h2 className="AllDepartmentPageContainerEachStackFormHeaderHead">{mainEventsdepartmentName}</h2>
                             <Divider margin="5px 20px" color="whitesmoke"/>
-                            <p className="AllDepartmentPageContainerEachStackFormHeaderPara">{shortDescription}</p>
+                            {/* <p className="AllDepartmentPageContainerEachStackFormHeaderPara">{departmentMotto}</p> */}
                         </div>
                         <div className={over? "AllDepartmentPageContainerEachStackFormContent":'AllDepartmentPageContainerEachStackFormContentHide'}>
                             <Fade bottom>
-                                <p>{eventdescription}</p>
+                                <p className="AllDepartmentPageContainerEachStackFormHeaderPara">{departmentMotto}</p>
                             </Fade>
                         </div>
                         {
