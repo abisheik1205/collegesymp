@@ -1,7 +1,7 @@
 .AllDepartmentPageContainer{
     display: grid;
     margin: 10px 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     grid-template-columns: auto auto auto;
     gap: 30px;
 }

@@ -1,9 +1,12 @@
- export const StorageData = [
+import cseDepartmentImg from "../../assets/cse.png";
+import AIDSDepartmentImg from "../../assets/AI&DS department Pic.jpg";
+
+export const StorageData = [
     {
         departmentName: "Computer Science",
         departmentMotto: "Unleash the Power of Code: CSE Leading the Way!",
-        eventCoordinator: "Ashwin ",
-        image: "https://i.pinimg.com/originals/c1/16/2b/c1162b26d323fcc729796e3c31943fd9.png",
+        eventCoordinator: "Aswin Kumar E",
+        image: cseDepartmentImg,
         events: [
             {
                 id: 0,
@@ -22,7 +25,7 @@
                 image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
                 details: {
                     venue: "Charles Babbage lab",
-                    date: "22/09/2023",
+                    date: "22 Sep 2023",
                     time: "11:00AM - 12:30PM",
                 },
                 coordinator: {
@@ -30,7 +33,7 @@
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "xxx"
+                    name: "Ms.Sumithra"
                 },
                 departmentName: "Computer Science",
             },
@@ -49,15 +52,15 @@
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
                     venue: "S13",
-                    date: "28 August 2023",
+                    date: "22 Sep 2023",
                     time: "9:30 AM",
                 },
                 coordinator: {
-                    name: "Dinesh",
+                    name: "A K Duvajaa",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms.Bharathi"
                 },
                 departmentName: "Computer Science",
             },
@@ -80,7 +83,7 @@
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
                     venue: "CSE Lab 1 & 2",
-                    date: "28 August 2023",
+                    date: "22 Sep 2023",
                     time: "9:30 AM",
                 },
                 coordinator: {
@@ -88,7 +91,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms. Lavanya"
                 },
                 departmentName: "Computer Science",
             },
@@ -107,8 +110,8 @@
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
-                    venue: "T3 (tentative)",
-                    date: "28 August 2023",
+                    venue: "CSE Lab 2",
+                    date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
                 coordinator: {
@@ -116,7 +119,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms. Saranya"
                 },
                 departmentName: "Computer Science",
             },
@@ -126,6 +129,7 @@
     {
         departmentName: "Information Technology",
         departmentMotto: "IT Wizards -> Turning Glitches into Good Vibes!",
+        eventCoordinator:"Mr. Prashanth",
         image: "https://e1.pxfuel.com/desktop-wallpaper/272/414/desktop-wallpaper-everydays-technology-aesthetic.jpg",
         events: [
             {
@@ -152,7 +156,7 @@
                     phoneNumber: "yyy",
                 },
                 faculty: {
-                    name: "Mr.M.Narendran"
+                    name: "Ms. A. Anju"
                 },
                 departmentName: "Information Technology",
             },
@@ -175,11 +179,11 @@
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "Dinesh",
+                    name: "Vignesh",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Dr. S. Muthuselvan"
                 },
                 departmentName: "Information Technology",
             },
@@ -206,7 +210,7 @@
                     phoneNumber: "xxx",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Dr.Babymol Kurian"
                 },
                 departmentName: "Information Technology",
             },
@@ -234,7 +238,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms.R.Adline Freeda"
                 },
                 departmentName: "Information Technology",
             },
@@ -243,12 +247,12 @@
     {
         departmentName: "Mechanical",
         departmentMotto: "Mechanical Marvels -> Where Innovation Drives Motion!",
-        eventCoordinator: "Ashwin ",
+        eventCoordinator: "MUKESH KANNA M",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtH75SX6PJI2wOWhhcjgfYiY24TsAh4T-eA&usqp=CAU",
         events: [
             {
                 id: 0,
-                eventName: "Design Competition",
+                eventName: "DESIGNO-THRON",
                 shortDescription: 'Innovative designs enchancing industrial automation',
                 description: "Create innovative designs using CAD software that can enchance current industrial automation.",
                 rules: [
@@ -267,11 +271,11 @@
                     time: "xxx",
                 },
                 coordinator: {
-                    name: "Jayaraman",
-                    phoneNumber: "xxx",
+                    name: "MUKESH KANNA M",
+                    phoneNumber: "+91 8124392148",
                 },
                 faculty: {
-                    name: "Mr. Gowthaman S"
+                    name: "DR D. EASU"
                 },
                 departmentName: "Mechanical",
             },
@@ -297,11 +301,11 @@
                     time: "9:30 AM",
                 },
                 coordinator: {
-                    name: "Rohith R",
-                    phoneNumber: "xxx",
+                    name: "JAYARAMAN K",
+                    phoneNumber: "+91 7277300365",
                 },
                 faculty: {
-                    name: "Dr. Gowthaman S"
+                    name: "Dr Z. Edward Kennedy"
                 },
                 departmentName: "Mechanical",
             },
@@ -330,7 +334,7 @@
                     phoneNumber: "xxx",
                 },
                 faculty: {
-                    name: "Dr. Gowthaman S"
+                    name: "K.K.Manivannan"
                 },
                 departmentName: "Mechanical",
             },
@@ -359,7 +363,7 @@
                     phoneNumber: "xxx",
                 },
                 faculty: {
-                    name: "Dr. Gowthaman S"
+                    name: "K.K.Manivannan"
                 },
                 departmentName: "Mechanical",
             },
@@ -368,16 +372,19 @@
     {
         departmentName: "Automobile",
         departmentMotto: "Rev Up the Future -> Where Innovation Takes the Wheel!",
+        eventCoordinator:"Mr.Sherin Chezhian A",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkeGLL6FB-PmmsYag-JtCfGog75CeGirfs7lebP-PbVFPOJd6mzTmtdg&s=10",
         events: [
             {
                 id: 0,
-                eventName: "Dismantle & Assembly of automobile part",
+                eventName: "GREASE AND GEARS",
                 shortDescription: "Hands-on Exploration of Dismantling and Assembling Components",
                 description: "Deconstruct and Assemble Vehicle Components and dive into the inner workings of automobiles, mastering the art of dismantling and reassembling crucial parts for a comprehensive automotive understanding",
                 rules: [
-                    "",
-                    "",
+                    "Team member size: Max. 4 members.",
+                    "Participants must strictly adhere to the instructions of the event coordinators.",
+                    "Participants have to use the tools provided by the event coordinators.",
+                    "Participants have to follow the safety precautions.",
                 ],
                 details: {
                     venue: "Hero Lab",
@@ -390,18 +397,19 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Mr. Balamurugan.R"
                 },
                 departmentName: "Automobile",
             },
             {
                 id: 1,
-                eventName: "Quiz & Interview",
+                eventName: "REV YOUR MIND",
                 shortDescription: "Quiz and Interviews for Automotively driven minds!",
                 description: "A platform to test Your Auto Acumen and engage in a stimulating automotive quiz and insightful interviews, showcasing industry expertise and passion.",
                 rules: [
-                    "",
-                    "",
+                    "Team member size: 2 or 3.",
+                    "The use of mobile phones is prohibited during the event.",
+                    "Participants must strictly adhere to the instructions of the event coordinators.",
                 ],
                 details: {
                     venue: "Bosch Lab",
@@ -414,31 +422,33 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Mr.Mathavan.S"
                 },
                 departmentName: "Automobile",
             },
             {
                 id: 2,
-                eventName: "Start-up presentation",
+                eventName: "START-UP GROUND",
                 shortDescription: "Exploring cutting-edge start-ups in automobiles!",
                 description: " Discovering pioneering ideas, disruptive technologies, and sustainable solutions transforming the driving experience in this insightful presentation.",
                 rules: [
-                    "",
-                    "",
+                    "Team member size: maximum 4 members",
+                    "Maximum time limit 10 minutes per presentation",
+                    "Present with Clarity and Share Accurate Info with Interactive Visuals",
+                    "Must contain Technical &amp; Business aspect, market value and investment plan",
                 ],
                 details: {
-                    venue: "Bosch La",
+                    venue: "Bosch Lab",
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "keerthirajan K",
+                    name: "Mr. DINESH KUMAR S ",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Dr.A.Arivazhagan"
                 },
                 departmentName: "Automobile",
             },
@@ -448,8 +458,10 @@
                 shortDescription: "Crafting automobiles Virtually!",
                 description: "A platform to master vehicle design and to delve into the art of creating intricate automotive models using cutting-edge CAD technology.",
                 rules: [
-                    "",
-                    "",
+                    "Participants have to design and assemble the given automobile part on spot.",
+                    "Participants should bring their own laptop with the software installed on it.",
+                    "Any software can be used to draw and assemble.",
+                    "Duration to design and assemble the parts will be 90 mins.",
                 ],
                 details: {
                     venue: "Bosch Lab",
@@ -462,7 +474,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Mr.M.Nelson Prem Kumar"
                 },
                 departmentName: "Automobile",
             },
@@ -471,7 +483,7 @@
     {
         departmentName: "Civil",
         departmentMotto: "Building the World, Brick by Brick.",
-        eventCoordinator: "Ashwin ",
+        eventCoordinator: "Mruthulha N",
         image: "https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/04/Top%20Jobs%20For%20Civil%20Engineering%20Based%20On%20ETABS_1_1680615587.png",
         events: [
             {
@@ -498,7 +510,7 @@
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "Ms.Sumithra"
+                    name: "Ms.Sabaripriya U"
                 },
                 departmentName: "Civil",
             },
@@ -525,7 +537,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Mr.Akin C"
                 },
                 departmentName: "Civil",
             },
@@ -544,7 +556,7 @@
                 ],
                 image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
                 details: {
-                    venue: "Mechanical CAD Lab",
+                    venue: "Civil CAD Lab",
                     date: "22 SEP 2023",
                     time: "11:00AM - 12:30PM",
                 },
@@ -553,7 +565,7 @@
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "Ms.Sumithra"
+                    name: "Mr.Philips J"
                 },
                 departmentName: "Civil",
             },
@@ -570,7 +582,7 @@
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
-                    venue: "Mechanical CAD Lab",
+                    venue: "Civil CAD Lab",
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
@@ -579,7 +591,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms.Praicy M"
                 },
                 departmentName: "Civil",
             },
@@ -588,6 +600,7 @@
     {
         departmentName: "Aero",
         departmentMotto: "Reaching New Heights, Defying Gravity.",
+        eventCoordinator:"Mr.Sujith Ananth T",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOACHdJcytlApaAWD_c97CdzXSMrtbFwaRJA&usqp=CAU",
         events: [
             {
@@ -606,13 +619,13 @@
                     "Failure in adhering to the rules can lead to immediate disqualification",
                 ],
                 details: {
-                    venue: "T3 (tentative)",
+                    venue: "Aero block - F 53",
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "Kesav Kumar",
+                    name: "Mr. A B Kesav kumar",
                     phoneNumber: "xxx",
                 },
                 faculty: {
@@ -638,13 +651,13 @@
                     "Rules should be followed properly, if not the participant(s) will be disqualified.",
                 ],
                 details: {
-                    venue: "T3 (tentative)",
-                    date: "22 SEP 2023",
+                    venue: "Aero CAD Lab",
+                    date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "Giridaran",
+                    name: "Mr. Giridharan",
                     phoneNumber: "xxx",
                 },
                 faculty: {
@@ -671,13 +684,13 @@
                     "The organization only provides water, a measuring cup, a bucket and compressors (which will have an in-built pressure gage). Other materials will NOT be provided. However, you could buy items in the stationary shops in the campus.",
                 ],
                 details: {
-                    venue: "zzz",
+                    venue: "Ground",
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "yyy",
+                    name: "Mr. Vinith Ram",
                     phoneNumber: "xxx",
                 },
                 faculty: {
@@ -698,13 +711,13 @@
                     "Hard copy of your abstract should submit 5-3 days before the competition",
                 ],
                 details: {
-                    venue: "zzz",
-                    date: "22 SEP 2023",
+                    venue: "Aero block - F 53",
+                    date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "yyy",
+                    name: "Mr. Ragupathi P",
                     phoneNumber: "xxx",
                 },
                 faculty: {
@@ -717,7 +730,7 @@
     {
         departmentName: "Mechatronics",
         departmentMotto: "Where Mechanics Meets Electronics in Perfect Harmony",
-        eventCoordinator: "Ashwin ",
+        eventCoordinator: "B.KANNAN",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2g3zSrGVcKVr1asGrbFc5yPT2cPs3mReNWw&usqp=CAU",
         events: [
             {
@@ -745,7 +758,7 @@
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "Ms.Sumithra"
+                    name: "G.Bhanvani Bharathi"
                 },
                 departmentName: "Mechatronics",
             },
@@ -774,7 +787,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "K.K.Manivannan"
                 },
                 departmentName: "Mechatronics",
             },
@@ -807,7 +820,7 @@
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "Ms.Sumithra"
+                    name: "Dr.T.Raja"
                 },
                 departmentName: "Mechatronics",
             },
@@ -836,7 +849,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "K.K.Manivannan"
                 },
                 departmentName: "Mechatronics",
             },
@@ -845,6 +858,7 @@
     {
         departmentName: "EEE",
         departmentMotto: "Empowering the World, One Electron at a Time.",
+        eventCoordinator:"Mr. Dinesh S",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFowHO38hvkTWgGk0fWYHwlGRwN76GeRALg&usqp=CAU",
         events: [
             {
@@ -868,7 +882,7 @@
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Mr. Balaji S"
                 },
                 departmentName: "EEE",
             },
@@ -889,11 +903,11 @@
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "Manoj Devabhraj",
+                    name: "Mr.Manoj Devabhraj",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms. A.V. Suganya"
                 },
                 departmentName: "EEE",
             },
@@ -914,11 +928,11 @@
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "Joshua Stephen",
+                    name: "Mr. Joshua Stephen",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Dr. Murugan R"
                 },
                 departmentName: "EEE",
             },
@@ -939,11 +953,11 @@
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "ahulRaj",
+                    name: "Mr. RahulRaj",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms. Lavanya"
                 },
                 departmentName: "EEE",
             },
@@ -952,7 +966,7 @@
     {
         departmentName: "Fashion Technology",
         departmentMotto: "Innovate, Create, Elevate: Where Fashion Meets Technology",
-        eventCoordinator: "Ashwin ",
+        eventCoordinator: "Jayadharshini R",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBZSG0fHeBBhhCaqD_hsb-tfm4TEs1FIV_g&usqp=CAU",
         events: [
             {
@@ -968,16 +982,16 @@
                 ],
                 image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
                 details: {
-                    venue: "",
+                    venue: "Patten Engineering Lab / 4018",
                     date: "22 SEP 2023",
                     time: "11:00AM - 12:30PM",
                 },
                 coordinator: {
-                    name: "Samuel Abisheik",
+                    name: "Yawala Ventaka Mahalakshmi ",
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "Ms.Sumithra"
+                    name: "Ms. Sri Tanush Pandian PV"
                 },
                 departmentName: "Fashion Technology",
             },
@@ -994,16 +1008,16 @@
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
-                    venue: "T3 (tentative)",
-                    date: "22 SEP 2023",
+                    venue: "Patten Engineering Lab / 4018",
+                    date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
                 coordinator: {
-                    name: "Dinesh",
+                    name: "Pavithra S.",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Ms. Sri Tanush Pandian PV"
                 },
                 departmentName: "Fashion Technology",
             },
@@ -1019,16 +1033,16 @@
                 ],
                 image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
                 details: {
-                    venue: "",
+                    venue: "Illustration Lab / 4017",
                     date: "22 SEP 2023",
                     time: "11:00AM - 12:30PM",
                 },
                 coordinator: {
-                    name: "Samuel Abisheik",
+                    name: "Abi M",
                     phoneNumber: "7397442337",
                 },
                 faculty: {
-                    name: "Ms.Sumithra"
+                    name: "Mrs. Dharaga Selvi D."
                 },
                 departmentName: "Fashion Technology",
             },
@@ -1047,16 +1061,16 @@
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
-                    venue: "T3 (tentative)",
-                    date: "28 August 2023",
+                    venue: "Illustration Lab / 4017",
+                    date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
                 coordinator: {
-                    name: "Dinesh",
+                    name: "Jayanth BJS.",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Sir Rama"
+                    name: "Mrs. Jayanthi G"
                 },
                 departmentName: "Fashion Technology",
             },
@@ -1065,6 +1079,7 @@
     {
         departmentName: "ECE",
         departmentMotto: "Powering Progress, Connecting the Future.",
+        eventCoordinator:"Mr. Aadil Mohideen",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvB5Ig1HLe166txl1dmYgxxHeFQx1kgW5Dw&usqp=CAU",
         events: [
             {
@@ -1090,11 +1105,11 @@
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "Johanna Afreena",
+                    name: "Ms. Johanna Afreena I",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Dr.C Umakumari "
                 },
                 departmentName: "ECE",
             },
@@ -1120,11 +1135,11 @@
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "Nehameena R",
+                    name: "Ms. Nehameena R",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Dr.Thomas Leonid"
                 },
                 departmentName: "ECE",
             },
@@ -1141,16 +1156,16 @@
                 ],
                 details: {
                     venue: "F01",
-                    date: "28 August 2023",
+                    date: "22 Sep 2023",
                     time: "9:30 AM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
-                    name: "Aravinth P",
+                    name: "Mr. Aravinth P",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Mr.Sadasivam"
                 },
                 departmentName: "ECE",
             },
@@ -1171,25 +1186,26 @@
                 ],
                 details: {
                     venue: "Optical Lab",
-                    date: "28 August 2023",
+                    date: "22 Sep 2023",
                     time: "9:30 AM",
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "Varun kumar",
+                    name: "Ms. Fahima Niaz",
                     phoneNumber: "08467248067",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Mr.Harish M/ Ms"
                 },
                 departmentName: "ECE",
             },
         ]
     },
     {
-        departmentName: "AIDS",
-        departmentMotto: "Fight AIDS, Not People.",
-        image: "https://media.npr.org/assets/img/2023/05/24/gettyimages-1358149692-bf96c07fc26040785771044ba8470ff9d73a928c-s1100-c50.jpg",
+        departmentName: "AI&DS",
+        departmentMotto: "Empowering Tomorrow with AI & Data Science Today!",
+        eventCoordinator:"Vignesh G",
+        image: AIDSDepartmentImg,
         events: [
             {
                 id: 0,
@@ -1211,10 +1227,10 @@
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
                     name: "Sriram A",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "72996 50059",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Dr. S. Bairavel"
                 },
                 departmentName: "AIDS",
             },
@@ -1238,10 +1254,10 @@
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Shaun R",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9344587251",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "C.SURESHKUMAR"
                 },
                 departmentName: "AIDS",
             },
@@ -1266,10 +1282,10 @@
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
                     name: "Ramya P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9176123091",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Ms. D. Arthi Prakash"
                 },
                 departmentName: "AIDS",
             },
@@ -1293,10 +1309,10 @@
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Muskan P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9342806082",
                 },
                 faculty: {
-                    name: "Dr.V. Balaji"
+                    name: "Ms. S. Aishwarya"
                 },
                 departmentName: "AIDS",
             },

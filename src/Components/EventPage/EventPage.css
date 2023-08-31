@@ -22,6 +22,7 @@
     width: 35%;
    height: 100%;
    /* padding: 5%; */
+   margin-top: 60px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -55,7 +56,7 @@
 }
 
 .EventImageImg{
-    height: 250px;
+    height: 350px;
     margin-left: auto;
     margin-right: auto;
     width: 280px;
@@ -101,7 +102,7 @@
 
 .EventRightColumnEventHeadertext{
     font-family: 'poppins', sans-serif;
-    font-size: small;
+    font-size: medium;
 }
 
 .EventDescriptionSubHeads{
@@ -147,10 +148,12 @@
     text-underline-offset: 13px;
     margin-bottom: 25px;
     font-size: medium;
+    display: flex;
+    flex-direction: column;
 }
 
 .EventPrizetext{
-    font-size: small;
+    font-size: medium;
 }
 
 .EventDetailsSubHeads{
@@ -171,7 +174,7 @@
 .EventDetailsListEach{
     font-family: 'poppins', sans-serif;
     color: whitesmoke;
-    font-size: small;
+    font-size: medium;
     padding: 1px;
 }
 

@@ -6,6 +6,7 @@ import Divider from "../Divider/Divider";
 import { StorageData } from "../Storage/Storage";
 import Footer from "../Footer/Footer";
 import { useLocation } from 'react-router-dom';
+import { Fade } from "react-reveal";
 
 const AllDepartmentPage = () => {
 
@@ -68,8 +69,8 @@ const AllDepartmentPage = () => {
                 setSelected("Aero");
                 setList(aeroEvents)
             }
-            if (localStorage.getItem("val") === "AIDS") {
-                setSelected("AIDS");
+            if (localStorage.getItem("val") === "AI&DS") {
+                setSelected("AI&DS");
                 setList(AIDS)
             }
             if (localStorage.getItem("val") === "EEE") {
@@ -135,8 +136,8 @@ const AllDepartmentPage = () => {
             } 
             
             // For AIDS
-            if (dataToSend === "AIDS") {
-                setSelected("AIDS");
+            if (dataToSend === "AI&DS") {
+                setSelected("AI&DS");
                 setList(AIDS)
             }
             
@@ -214,7 +215,7 @@ const AllDepartmentPage = () => {
         } 
 
         // For AIDS
-        if (Data[i].departmentName === "AIDS") {
+        if (Data[i].departmentName === "AI&DS") {
             AIDS = AIDS.concat(Data[i].events);
         } 
 
@@ -305,11 +306,11 @@ const AllDepartmentPage = () => {
             // dataToSend = "Civil";
             setSelected("Civil")
         }
-        if (name === "AIDS") {
+        if (name === "AI&DS") {
             setList(AIDS)
             // dataToSend = "AIDS";
-            localStorage.setItem("val", "AIDS")
-            setSelected("AIDS")
+            localStorage.setItem("val", "AI&DS")
+            setSelected("AI&DS")
         }
     }
 
@@ -363,8 +364,17 @@ const AllDepartmentPage = () => {
                     <p onClick={() => handleFilterAdvanced("Civil")} className={`AllDepartmentPageHeadereachLinks ${selected === "Civil"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Civil</p>
                     <p onClick={() => handleFilterAdvanced("Automobile")} className={`AllDepartmentPageHeadereachLinks ${selected === "Automobile"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Automobile</p>
                     <p onClick={() => handleFilterAdvanced("Mechanical")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechanical"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mech</p>
-                    <p onClick={() => handleFilterAdvanced("AIDS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AIDS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
+                    <p onClick={() => handleFilterAdvanced("AI&DS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AIDS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
                 </div>
+            </div>
+            <div className="AllDepartmentPageContactus">
+                <Fade right>
+                    <div className="AllDepartmentPageContactusSession">
+                        <p><span>Phone Number: </span> 9840298149</p>
+                        <p><span>Faculty: </span> Suraj</p>
+                        <p><span>Coordinator Name: </span> XXX</p>
+                    </div>
+                </Fade>
             </div>
         </div>
             <Footer />

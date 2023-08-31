@@ -51,7 +51,7 @@
 }
 
 .AllDepartmentPageContainerEachStackFormHeaderPara{
-    font-size: xx-small;     font-family: 'poppins', sans-serif;
+    font-size: x-small;     font-family: 'poppins', sans-serif;
 }
 
 .AllDepartmentPageContainerEachStackFormContent{
@@ -69,7 +69,7 @@
 
 .AllDepartmentPageContainerEachStackFormContent p{
     text-align: left;
-    font-size: x-small;
+    font-size: medium;
     text-align: center;
     color: rgb(255, 255, 255);
 }

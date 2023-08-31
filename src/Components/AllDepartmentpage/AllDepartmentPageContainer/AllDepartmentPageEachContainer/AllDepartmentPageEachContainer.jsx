@@ -62,7 +62,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, departmentMotto, main
                             {/* <p className="AllDepartmentPageContainerEachStackFormHeaderPara">{departmentMotto}</p> */}
                         </div>
                         <div className={over? "AllDepartmentPageContainerEachStackFormContent":'AllDepartmentPageContainerEachStackFormContentHide'}>
-                            <Fade bottom>
+                            <Fade slow bottom>
                                 <p className="AllDepartmentPageContainerEachStackFormHeaderPara">{departmentMotto}</p>
                             </Fade>
                         </div>

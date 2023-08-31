@@ -14,6 +14,20 @@
 .AllDepartmentPageHeaderLinkInMobile{
     display: none;
 }
+.AllDepartmentPageContactus{
+    width: 100%;
+}
+.AllDepartmentPageContactusSession{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    padding:15px 25px;
+    border: 1px solid whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    color: whitesmoke;
+}
 
 @media only screen and (max-width:1000px){
     .AllDepartmentPageHeaderLink {
@@ -62,7 +76,17 @@
         background-color: bisque;
         color: rgb(0, 0, 0);
     }
-
+    .AllDepartmentPageContactusSession{
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        padding:15px 25px;
+        border: 1px solid whitesmoke;
+        margin-left: auto;
+        text-align: center;
+        margin-right: auto;
+        color: whitesmoke;
+    }
     .AllDepartmentPageHeadereachLinks{
         color: black;
         z-index: 100;

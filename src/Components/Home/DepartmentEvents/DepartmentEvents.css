@@ -7,14 +7,13 @@
     width: 90%;
     display: grid;
     margin: 0px auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: auto auto auto;
     /* grid-template-rows: auto auto auto; */
     justify-content: space-around;
     align-self: center;
     align-items: center;
     gap: 40px;
 }
-
 
 .departmentsInGridMain{
     width: 280px;
@@ -125,7 +124,7 @@
     align-items: center;    
     display: block;
     margin-bottom: 10px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
 
 }
 

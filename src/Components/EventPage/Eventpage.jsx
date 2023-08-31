@@ -63,7 +63,8 @@ export const Eventpage = () => {
                 <div className="EventPDC">
                     <div className="EventPrize pdc">
                         <h2 className="EventPrizeSubHeads">Prize</h2>
-                        <p className="EventPrizetext">Participate and win exciting prizes</p>
+                        <p className="EventPrizetext"><span className="ListInBold">Winner:</span> &#8377;2000</p>
+                        <p className="EventPrizetext"><span className="ListInBold">Runner Up:</span> &#8377;1000</p>
                     </div>
                     <div className="EventDetails pdc">
                         <h2 className="EventDetailsSubHeads subpdc">Details</h2>

@@ -29,7 +29,7 @@ const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
                 <p onClick={() => handlefilter("Civil")} className={`AllDepartmentPageHeadereachLinks ${selected === "Civil"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Civil</p>
                 <p onClick={() => handlefilter("Automobile")} className={`AllDepartmentPageHeadereachLinks ${selected === "Automobile"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Automobile</p>
                 <p onClick={() => handlefilter("Mechanical")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechanical"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mech</p>
-                <p onClick={() => handlefilter("AIDS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AIDS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
+                <p onClick={() => handlefilter("AI&DS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AI&DS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
             </div>
         </div>
     )
