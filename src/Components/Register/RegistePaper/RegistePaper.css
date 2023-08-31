@@ -1,0 +1,80 @@
+
+.RegistePaperIndicator{
+    padding: 15px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.InputForBiohead{
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-family: 'poppins', sans-serif;
+    font-size: medium;
+    margin-bottom: 18px;
+    font-weight: 400;
+}
+.mainRegisterPaper{
+    width: 40%;
+    padding: 10px 0px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.RegistePaperIndicatorEach{
+    padding: 2px;
+    border: 1px solid black;
+    height: 25px;
+    background-color: black;
+    color: whitesmoke;
+    font-family: 'poppins', sans-serif;
+    font-size: small;
+    width: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.InputForBio{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.InputForBiofordepartName{
+    display: flex;
+    padding: 0px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainRegisterPaperInput{
+    padding: 15px 10px;
+    outline: none;
+    font-size: medium;
+    margin: 10px 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+.registerPaperButton{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.registerPaperButtonBTN{
+    padding: 8px 16px;
+    margin: 10px 40px;
+    border-radius: 4px;
+    font-family: 'poppins', sans-serif;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+.registerPaperButtonBTN:hover{
+    background-color: black;
+    color: whitesmoke;
+}

@@ -2,13 +2,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCuqzjQuXvO0PUK_5iF7jUZcHppV0UOrGQ",
-  authDomain: "react-firebase-647d2.firebaseapp.com",
-  projectId: "react-firebase-647d2",
-  storageBucket: "react-firebase-647d2.appspot.com",
-  messagingSenderId: "923883471121",
-  appId: "1:923883471121:web:1a9021960201d564168cb0",
-  measurementId: "G-4Z8MD16Y57",
+  apiKey: "AIzaSyBoHt55UpI1sb7sIPur2TOhgMjUUg3H5Ps",
+  authDomain: "vivanta23-af38d.firebaseapp.com",
+  projectId: "vivanta23-af38d",
+  storageBucket: "vivanta23-af38d.appspot.com",
+  messagingSenderId: "514192563452",
+  appId: "1:514192563452:web:07924dcd4fd5e44c840b79"
 };
 
 // Initialize Firebase

@@ -334,10 +334,10 @@ const AllDepartmentPage = () => {
         handleInitialCommit();
         window.scrollTo(0, 0);
 
-        window.addEventListener("beforeunload", handleBeforeUnload);
-        return () => {
-            window.removeEventListener("beforeunload", handleBeforeUnload);
-        };
+        // window.addEventListener("beforeunload", handleBeforeUnload);
+        // return () => {
+        //     window.removeEventListener("beforeunload", handleBeforeUnload);
+        // };
     }, [])
 
     return(

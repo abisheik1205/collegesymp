@@ -1,14 +1,16 @@
 .RegisterPage{
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 .Register{
-    background-color: rgba(0, 0, 0, 0.836);
+    background-color: rgba(255, 255, 255, 0.836);
     display: flex;
     flex-direction: row;
     font-size: large;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
 }
 .RegContentsBox{
     /*background-color: rgba(139, 60, 60, 0.712);*/
@@ -18,11 +20,11 @@
     justify-content: center;
     /*padding: 10%;*/
     width: 50%;
-    
 }
+
 .RegHeader{
     padding: 20px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     color: snow;
     display: flex;
     flex-direction: column;
@@ -37,33 +39,21 @@
 .RegInp{
     padding: 10px;
 }
-
+.InstructionHeader{
+    font-size: x-large;
+}
 .Transaction-id{
     padding: 15px;
     border-radius: 25px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     width: 350px;
     color: rgb(0, 0, 0);
 }
-.Event-1{
-    padding: 10px;
-    border-radius: 25px;
-    font-family: 'Inconsolata', monospace;
-    width: 270px;
-    color: snow;
-    background-color: rgb(69, 69, 69);
-    font-size: large;
-}
-.EventOption{
-    padding: 10px;
-    background-color: rgb(69, 69, 69);
-    font-family: 'Inconsolata', monospace;
-    border-radius: 10px;
-    color: snow;
-    font-size: large;
-}
+
 .RegEventsDropdown{
     padding: 10px;
+    /* width: 40%; */
+    background-color: aqua;
 }
 .RegisterBtnCont{
     padding: 25px;

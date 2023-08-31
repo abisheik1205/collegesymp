@@ -30,7 +30,7 @@ function Signup() {
         setSubmitButtonDisabled(false);
         const user = res.user;
         await updateProfile(user, { displayName: values.name });
-        navigate("/");
+        navigate("/register");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
@@ -78,7 +78,7 @@ function Signup() {
           >
             Sign Up
           </button>
-          <p>
+          <p> 
             Already have an account?{" "}
             <span>
               <Link to="/login">login</Link>

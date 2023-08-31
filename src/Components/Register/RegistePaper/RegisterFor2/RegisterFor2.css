@@ -1,0 +1,15 @@
+.RegisterFor2InputDrop{
+    display: flex;
+    flex-direction: column;
+}
+
+.Event_label{
+    color: black;
+}
+
+.EventDropdown{
+    width: max-content;
+    padding: 15px 20px;
+    border-radius: 5px;
+    outline: none;
+}
