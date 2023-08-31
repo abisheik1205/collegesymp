@@ -25,7 +25,7 @@
 .departmentsInGridEachHead{
     font-weight: 200;
     text-align: left;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     font-size: medium;    
 }
 .departmentEventsHead{
@@ -52,7 +52,7 @@
 }
 
 .departmentsInGridEachStackPara{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     
     color: whitesmoke;
     font-weight: 100;
@@ -62,7 +62,7 @@
 }
 
 .departmentEventsHead{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     margin: 0xp;
 }
 

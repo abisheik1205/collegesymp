@@ -3,7 +3,7 @@
     border-radius: 5px;
     width: 330px;
     height: 400px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     color: whitesmoke;
 }
 
@@ -12,7 +12,7 @@
     border-radius: 5px;
     width: 330px;
     height: 400px;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     color: whitesmoke;
     background-color: rgba(0, 0, 0, 0.859);
 }
@@ -42,7 +42,7 @@
 }
 
 .AllDepartmentPageContainerEachStackFormHeaderHead{
-    font-size: 1.8rem;
+    font-size: 1.55rem;
     margin: 0%;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .AllDepartmentPageContainerEachStackFormHeaderPara{
-    font-size: x-small;    font-family: 'Inconsolata', monospace;
+    font-size: xx-small;     font-family: 'poppins', sans-serif;
 }
 
 .AllDepartmentPageContainerEachStackFormContent{
@@ -69,7 +69,7 @@
 
 .AllDepartmentPageContainerEachStackFormContent p{
     text-align: left;
-    font-size: small;
+    font-size: x-small;
     text-align: center;
     color: rgb(255, 255, 255);
 }

@@ -17,29 +17,22 @@ const Home = () => {
 
     const handleInteraction = () => {
 
+      
+    };
+
+    const handleOnclick = () => {
       console.log("Calling Now");
         if (window.innerWidth > 1000) {
           setIsPlayingforDesktop(true)
         }else{
           setIsPlayingforMobile(true)
         }
-    };
-
-    useEffect(() => {
-      // setTimeout(() => {
-      //   handleInteraction()
-      // }, 2700)
-
-      window.addEventListener("click", handleInteraction);
-      return () => {
-        window.removeEventListener("click", handleInteraction);
-      };
-    }, []);
+    }
 
   return (
     <div className="HomeMain">
       <div className="Home">
-        <div className="forBoxShadow">
+        <div className="forBoxShadow" onClick={() => handleOnclick()}>
           {
             isPlayingforMobile ?
             <video
@@ -63,7 +56,7 @@ const Home = () => {
         </div>
         <div className="bgContainer">
           <Header />
-          <div className={isPlayingforDesktop||isPlayingforMobile?"containerPlaying": "container"}>
+          <div className={isPlayingforDesktop||isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
             <img src={vivanata} id="logo" alt="logo" />
             <img src={i2023} id="year" alt="year" />
             <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "Click anywhere to play the promo"} </p> 
