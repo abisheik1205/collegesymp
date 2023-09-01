@@ -96,23 +96,7 @@
 .Instructions{
     padding: 4px;
 }
-.ScanningCont{
-    /*background-color: rgba(0, 0, 0, 0.712);*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-.QrCodeHead{
-    padding: 10px;
-    font-size: large;
-    font-family: 'Inconsolata', monospace;
-    color: snow;
-}
-.QrCode{
-    padding: 20px;
-}
+
 #h2Instructions{
     text-decoration: 2px solid underline snow;
     padding: 2px;

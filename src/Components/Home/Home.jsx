@@ -4,7 +4,7 @@ import AboutUs from "./AboutUs/AboutUs";
 import DepartmentEvents from "./DepartmentEvents/DepartmentEvents";
 import videoForMobile from "../../assets/video.mp4";
 import VideoForDesktop from "../../assets/21.mp4";
-import vivanata from "../../assets/vivanta.png";
+import vivanata from "../../assets/vivantaForReal.png";
 import i2023 from "../../assets/2023.png";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -15,11 +15,6 @@ const Home = () => {
     const videoRefMobile = useRef(null);
     const videoRefDesktop = useRef(null);
 
-    const handleInteraction = () => {
-
-      
-    };
-
     const handleOnclick = () => {
       console.log("Calling Now");
         if (window.innerWidth > 1000) {
@@ -28,6 +23,10 @@ const Home = () => {
           setIsPlayingforMobile(true)
         }
     }
+
+    useEffect(() => {
+      localStorage.clear();
+    }, [])
 
   return (
     <div className="HomeMain">
@@ -58,8 +57,8 @@ const Home = () => {
           <Header />
           <div className={isPlayingforDesktop||isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
             <img src={vivanata} id="logo" alt="logo" />
-            <img src={i2023} id="year" alt="year" />
-            <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "Click anywhere to play the promo"} </p> 
+  
+            <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
           </div>
         </div>
       </div>

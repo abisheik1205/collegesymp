@@ -46,14 +46,14 @@ video{
 
 .HomeNote{
   margin-top: 20px;
-  font-size: xx-small;
+  font-size: small;
   color: whitesmoke;
   /* font-family: 'poppins', sans-serif; */
 }
   #logo{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 300px;
     height: auto;
     object-fit: contain;
     margin-right: auto;
@@ -134,7 +134,7 @@ video{
     width: 100%;
     /* background: black; */
     box-sizing: border-box;
-    background-color: rgba(41, 40, 40, 0.518);
+    background-color: rgba(41, 40, 40, 0.793);
     /* backdrop-filter: blur(90px); */
 }
 .VideoForMobile{

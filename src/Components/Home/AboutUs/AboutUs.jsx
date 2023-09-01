@@ -16,7 +16,7 @@ const AboutUs = () => {
                             <span className="tobehidden"><p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The students' appetite for knowledge makes them thrive to prepare for the ready-to-serve industrial requirements. This is delivered by CIT through professional ethics which is sated by frequent guest lectures by professionals from various industries and academic backgrounds. Chennai Institute of Technology has been awarded the National Award of Excellence for Best Placements & has been ranked Second in Tamil Nadu. Our college has made dreams of thousands of students come true</p></span>
                         </div>
                         <div className="collegeqoute">
-                            <p className="collegeqoutePara">To Make Every Man A Success And No Man A Failure <span className="collegeqouteParaBold">&nbsp;-&nbsp;  KCG FounderName</span></p>
+                            <p className="collegeqoutePara">To Make Every Man A Success And No Man A Failure <span className="collegeqouteParaBold">&nbsp;-&nbsp;  KCG Verghese</span></p>
                         </div>
                         <div className="linkonaboutus">
                             <a href="https://kcgcollege.ac.in/" target="_blank" rel="noreferrer"><p className="linkFoundOnAboutUs">Website</p></a>

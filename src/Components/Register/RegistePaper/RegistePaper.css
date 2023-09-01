@@ -62,7 +62,9 @@
 .registerPaperButton{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    padding: 0px 20px;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 
 .registerPaperButtonBTN{

@@ -21,6 +21,10 @@ export const Eventpage = () => {
         navigate(-1, { state: { data: dataToSend } });
     };
 
+    const handleRegister = () => {
+        navigate("/register");
+    }
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -31,7 +35,7 @@ export const Eventpage = () => {
         <div className="Event_div">
             <div className="EventLeftColumn">
                 <div className="EventImage"><div className="EventImageInside"><img className="EventImageImg" alt="logo" src={image}/></div></div>
-                <div className="EventRegister"><button id="EventRegisterButton">REGISTER</button></div>
+                <div className="EventRegister"><button id="EventRegisterButton" onClick={() => handleRegister()}>REGISTER</button></div>
             </div>
             <div className="EventRightColumn">
                 <div className="EventName">
@@ -78,8 +82,8 @@ export const Eventpage = () => {
                         <h2 className="EventContactSubHeads subpdc">Contact</h2>
                         <div className="EventContactList">
                             <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
-                            <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                             <p className="EventDetailsListEach"><span className="ListInBold"> Phone</span>: {phoneNumber} </p>
+                            <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                         </div>
                     </div>
                 </div>
@@ -101,8 +105,8 @@ export const Eventpage = () => {
                             <h2 className="EventDetailsSubHeadsForMobile">Contact</h2>
                             <div className="EventContactList">
                                 <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
-                                <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                                 <p className="EventDetailsListEach"><span className="ListInBold"> Phone</span>: {phoneNumber} </p>
+                                <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                             </div>
                         </div>
                     </div>

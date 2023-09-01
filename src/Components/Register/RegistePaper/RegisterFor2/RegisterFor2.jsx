@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import "./RegisterFor2.css";
 
-const RegisterFor2 = ({ handleNextPaper }) => {
-
+const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper }) => {
 
     const [selectedEvents, setSelectedEvents] = useState([]);
 
@@ -18,7 +17,6 @@ const RegisterFor2 = ({ handleNextPaper }) => {
     }
 
     const handleNext = (e) => {
-
         e.preventDefault();
         if (selectedEvents.length > 0) {
             handleNextPaper();
@@ -88,6 +86,7 @@ const RegisterFor2 = ({ handleNextPaper }) => {
                 </div>
             </div>
             <div className="registerPaperButton">
+                <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>
                 <button className="registerPaperButtonBTN" type="submit">Next</button>
             </div>
             </form>

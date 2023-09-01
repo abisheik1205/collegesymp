@@ -6,15 +6,22 @@ import RegisterFor1 from "./RegisterFor1/RegisterFor1";
 import RegisterFor2 from "./RegisterFor2/RegisterFor2";
 import RegisterFor3 from "./RegisterFor3/RegisterFor3";
 import RegisterFor4 from "./RegisterFor4/RegisterFor4";
+import RegisterFor5 from "./RegisterFor5/RegisterFor5";
 
 const RegistePaper = () => {
 
-    const [currentPaper, setCurrentPaper] = useState(1);
+    const [currentPaper, setCurrentPaper] = useState(0);
 
     const handleNextPaper = () => {
+    
         setCurrentPaper(currentPaper + 1);
+    
+    }
+
+    const handlePreviousPaper = () => {
         
-        console.log("Calling");
+        setCurrentPaper(currentPaper - 1);
+
     }
 
     return(
@@ -30,7 +37,7 @@ const RegistePaper = () => {
                 </div>
             
             {
-                currentPaper === 0? <RegisterFor1 handleNextPaper={handleNextPaper}/>: currentPaper === 1? <RegisterFor2 handleNextPaper={handleNextPaper}/>: currentPaper === 2? <RegisterFor3 />: currentPaper ===3? <RegisterFor4 />: <></>
+                currentPaper === 0? <RegisterFor1 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper}/>: currentPaper === 1? <RegisterFor2 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper}/>: currentPaper === 2? <RegisterFor3 handlePreviousPaper={handlePreviousPaper} handleNextPaper={handleNextPaper}/>: currentPaper ===3? <RegisterFor4 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper}/>: <RegisterFor5 handlePreviousPaper={handlePreviousPaper}/>
             } 
 
             </div>

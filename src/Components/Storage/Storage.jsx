@@ -1,11 +1,43 @@
 import cseDepartmentImg from "../../assets/cse.png";
 import AIDSDepartmentImg from "../../assets/AI&DS department Pic.jpg";
+import cse_00 from "../../assets/cse_00.jpg"
+import cse_01 from "../../assets/cse_01.jpg"
+import cse_02 from "../../assets/cse_02.jpg"
+import cse_03 from "../../assets/cse_03.png"
+import ece_00 from "../../assets/ece_00.png"
+import ece_01 from "../../assets/ece_01.png"
+import ece_02 from "../../assets/ece_02.png"
+import ece_03 from "../../assets/ece_03.png"
+import it_00 from "../../assets/it_00.png"
+import it_01 from "../../assets/it_01.png"
+import it_02 from "../../assets/it_02.png"
+import it_03 from "../../assets/it_03.png"
+import ft_00 from "../../assets/ft_00.png"
+import ft_01 from "../../assets/ft_01.png"
+import ft_02 from "../../assets/ft_02.png"
+import ft_03 from "../../assets/ft_03.png"
+import eee_00 from "../../assets/eee_00.png"
+import eee_01 from "../../assets/eee_01.png"
+import eee_02 from "../../assets/eee_02.png"
+import eee_03 from "../../assets/eee_03.png"
+import mtr_00 from "../../assets/mtr_00.png"
+import mtr_01 from "../../assets/mtr_01.jpg"
+import mtr_02 from "../../assets/mtr_02.png"
+import mtr_03 from "../../assets/mtr_03.jpg"
+import ai_00 from "../../assets/ai_00.jpg";
+import aero_00 from "../../assets/aero_00.jpg"
+import aero_01 from "../../assets/aero_01.png"
+import aero_02 from "../../assets/aero_02.jpg"
+import aero_03 from "../../assets/aero_03.png"
+import ai_02 from "../../assets/ai_02.jpg";
+
 
 export const StorageData = [
     {
         departmentName: "Computer Science",
         departmentMotto: "Unleash the Power of Code: CSE Leading the Way!",
         eventCoordinator: "Aswin Kumar E",
+        phoneNumber: "7548815022",
         image: cseDepartmentImg,
         events: [
             {
@@ -22,7 +54,7 @@ export const StorageData = [
                     "Plagiarism, cheating, or any unethical behavior will result in immediate disqualification.",
                     "In all matters not covered by these rules and regulations, the decision of the organizers is final.",
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: cse_00,
                 details: {
                     venue: "Charles Babbage lab",
                     date: "22 Sep 2023",
@@ -49,15 +81,15 @@ export const StorageData = [
                     "Question can be multiple-choice, true/false, fill-in-the-blank, or short answer",
                     "In the event of a tie, Tie-breaker questions can be used to determine the winner. These questions are often more challenging"
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: cse_01,
                 details: {
                     venue: "S13",
                     date: "22 Sep 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 12:30 PM",
                 },
                 coordinator: {
                     name: "A K Duvajaa",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9150667955",
                 },
                 faculty: {
                     name: "Ms.Bharathi"
@@ -80,15 +112,15 @@ export const StorageData = [
                     "Participants are allowed to access HackerRank and submit answers to streamline participation.",
                     "Decisions made by the coordinators and faculty coordinators will be considered final and binding.",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: cse_02,
                 details: {
                     venue: "CSE Lab 1 & 2",
                     date: "22 Sep 2023",
-                    time: "9:30 AM",
+                    time: "1:30 PM - 3:30 PM",
                 },
                 coordinator: {
                     name: "Dhewagar G",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9962072963",
                 },
                 faculty: {
                     name: "Ms. Lavanya"
@@ -108,15 +140,15 @@ export const StorageData = [
                     "The chosen topic will have a 1.5-hour preparation session.  For the preparation time teams are only allowed to use paper and pen.",
                     "All must present the venue before 9 a.m. for the event.",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: cse_03,
                 details: {
                     venue: "CSE Lab 2",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "9:30 AM - 12:30 PM",
                 },
                 coordinator: {
                     name: "Merlin P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "7253729293",
                 },
                 faculty: {
                     name: "Ms. Saranya"
@@ -150,10 +182,10 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "xxx",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: it_00,
                 coordinator: {
                     name: "Neena",
-                    phoneNumber: "yyy",
+                    phoneNumber: "7358540527",
                 },
                 faculty: {
                     name: "Ms. A. Anju"
@@ -177,10 +209,10 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: it_01,
                 coordinator: {
                     name: "Vignesh",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "8248364360",
                 },
                 faculty: {
                     name: "Dr. S. Muthuselvan"
@@ -204,10 +236,10 @@ export const StorageData = [
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: it_02,
                 coordinator: {
                     name: "Sriram",
-                    phoneNumber: "xxx",
+                    phoneNumber: "9786729217",
                 },
                 faculty: {
                     name: "Dr.Babymol Kurian"
@@ -232,10 +264,10 @@ export const StorageData = [
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: it_03,
                 coordinator: {
                     name: "Harshithan",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "8778725031",
                 },
                 faculty: {
                     name: "Ms.R.Adline Freeda"
@@ -248,6 +280,7 @@ export const StorageData = [
         departmentName: "Mechanical",
         departmentMotto: "Mechanical Marvels -> Where Innovation Drives Motion!",
         eventCoordinator: "MUKESH KANNA M",
+        phoneNumber: "8124392148",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtH75SX6PJI2wOWhhcjgfYiY24TsAh4T-eA&usqp=CAU",
         events: [
             {
@@ -296,9 +329,9 @@ export const StorageData = [
                 ],
                 image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
                 details: {
-                    venue: "Mechanical Class Room",
+                    venue: "F14 Seminar Hall",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "10:00 AM - 12:00 PM",
                 },
                 coordinator: {
                     name: "JAYARAMAN K",
@@ -373,6 +406,7 @@ export const StorageData = [
         departmentName: "Automobile",
         departmentMotto: "Rev Up the Future -> Where Innovation Takes the Wheel!",
         eventCoordinator:"Mr.Sherin Chezhian A",
+        phoneNumber: "9514049967",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkeGLL6FB-PmmsYag-JtCfGog75CeGirfs7lebP-PbVFPOJd6mzTmtdg&s=10",
         events: [
             {
@@ -389,12 +423,12 @@ export const StorageData = [
                 details: {
                     venue: "Hero Lab",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 12:30 PM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
                     name: "Bhuvaneshwaran S K",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "6381195783",
                 },
                 faculty: {
                     name: "Mr. Balamurugan.R"
@@ -414,12 +448,12 @@ export const StorageData = [
                 details: {
                     venue: "Bosch Lab",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "2:00 PM - 3:30 PM",
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Jonathan P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9384648938",
                 },
                 faculty: {
                     name: "Mr.Mathavan.S"
@@ -440,12 +474,12 @@ export const StorageData = [
                 details: {
                     venue: "Bosch Lab",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 12:30 PM",
                 },
                 image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
                 coordinator: {
                     name: "Mr. DINESH KUMAR S ",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "7358290558",
                 },
                 faculty: {
                     name: "Dr.A.Arivazhagan"
@@ -471,7 +505,7 @@ export const StorageData = [
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
                     name: "Arun Kumar S",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "7448950590",
                 },
                 faculty: {
                     name: "Mr.M.Nelson Prem Kumar"
@@ -484,6 +518,7 @@ export const StorageData = [
         departmentName: "Civil",
         departmentMotto: "Building the World, Brick by Brick.",
         eventCoordinator: "Mruthulha N",
+        phoneNumber: "8056069130",
         image: "https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/04/Top%20Jobs%20For%20Civil%20Engineering%20Based%20On%20ETABS_1_1680615587.png",
         events: [
             {
@@ -507,7 +542,7 @@ export const StorageData = [
                 },
                 coordinator: {
                     name: "Monaj Kumar J N",
-                    phoneNumber: "7397442337",
+                    phoneNumber: "6381474648",
                 },
                 faculty: {
                     name: "Ms.Sabaripriya U"
@@ -530,11 +565,11 @@ export const StorageData = [
                 details: {
                     venue: "Concrete and Highway Lab",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "9:30 AM - 12:30 PM",
                 },
                 coordinator: {
                     name: "Nirajan P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "6381506345",
                 },
                 faculty: {
                     name: "Mr.Akin C"
@@ -562,7 +597,7 @@ export const StorageData = [
                 },
                 coordinator: {
                     name: "Prince Ragul V",
-                    phoneNumber: "7397442337",
+                    phoneNumber: "9944408910",
                 },
                 faculty: {
                     name: "Mr.Philips J"
@@ -584,11 +619,11 @@ export const StorageData = [
                 details: {
                     venue: "Civil CAD Lab",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "9:30 AM - 11:30 AM",
                 },
                 coordinator: {
                     name: "Padmashree P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9677017466",
                 },
                 faculty: {
                     name: "Ms.Praicy M"
@@ -601,6 +636,7 @@ export const StorageData = [
         departmentName: "Aero",
         departmentMotto: "Reaching New Heights, Defying Gravity.",
         eventCoordinator:"Mr.Sujith Ananth T",
+        phoneNumber:"7305275522",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOACHdJcytlApaAWD_c97CdzXSMrtbFwaRJA&usqp=CAU",
         events: [
             {
@@ -623,10 +659,10 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: aero_00,
                 coordinator: {
                     name: "Mr. A B Kesav kumar",
-                    phoneNumber: "xxx",
+                    phoneNumber: "9150955644",
                 },
                 faculty: {
                     name: "Mr.Dhamodaran K"
@@ -655,10 +691,10 @@ export const StorageData = [
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: aero_01,
                 coordinator: {
                     name: "Mr. Giridharan",
-                    phoneNumber: "xxx",
+                    phoneNumber: "6380102078",
                 },
                 faculty: {
                     name: "Mr.Dhamodaran K"
@@ -688,10 +724,10 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image:aero_02,
                 coordinator: {
                     name: "Mr. Vinith Ram",
-                    phoneNumber: "xxx",
+                    phoneNumber: "8248681808",
                 },
                 faculty: {
                     name: "Mr.Dhamodaran K"
@@ -713,9 +749,9 @@ export const StorageData = [
                 details: {
                     venue: "Aero block - F 53",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "9:00 AM - 12:30 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image:aero_03,
                 coordinator: {
                     name: "Mr. Ragupathi P",
                     phoneNumber: "xxx",
@@ -747,7 +783,7 @@ export const StorageData = [
                     "The team with highest number of points will qualify for the next round In case of a draw the teams will be given 3-5 extra questions",
                     "The teams can have 2-4 members. Only the members attending the quiz in-person will be given the participation certificate.",
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: mtr_00,
                 details: {
                     venue: "Robotics Lab",
                     date: "22 SEP 2023",
@@ -776,7 +812,7 @@ export const StorageData = [
                     "Completion of assembly and coding within the time limit will be awarded.",
                     "No usage of mobiles during event.",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: mtr_01,
                 details: {
                     venue: "Robotics Lab",
                     date: "22 SEP 2023",
@@ -809,7 +845,7 @@ export const StorageData = [
                     "Presentation marks will be based on team participation.",
 
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: mtr_02,
                 details: {
                     venue: "Robotics Lab",
                     date: "23 SEP 2023",
@@ -838,7 +874,7 @@ export const StorageData = [
                     "Jury's decision will be considered final.",
                     "Certificates of Participation will be given to all teams except the Disqualified teams",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: mtr_03,
                 details: {
                     venue: "Robotics Lab",
                     date: "23 SEP 2023",
@@ -876,7 +912,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: eee_00,
                 coordinator: {
                     name: "Arjun S",
                     phoneNumber: "08467248067",
@@ -901,7 +937,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: eee_01,
                 coordinator: {
                     name: "Mr.Manoj Devabhraj",
                     phoneNumber: "08467248067",
@@ -926,7 +962,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: eee_02,
                 coordinator: {
                     name: "Mr. Joshua Stephen",
                     phoneNumber: "08467248067",
@@ -951,7 +987,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: eee_03,
                 coordinator: {
                     name: "Mr. RahulRaj",
                     phoneNumber: "08467248067",
@@ -967,6 +1003,7 @@ export const StorageData = [
         departmentName: "Fashion Technology",
         departmentMotto: "Innovate, Create, Elevate: Where Fashion Meets Technology",
         eventCoordinator: "Jayadharshini R",
+        phoneNumber: "9176225193",
         image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBZSG0fHeBBhhCaqD_hsb-tfm4TEs1FIV_g&usqp=CAU",
         events: [
             {
@@ -980,15 +1017,15 @@ export const StorageData = [
                     "Fashion appearance as identity",
                     "Participants can be individual or team of 2 members.",
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: ft_00,
                 details: {
                     venue: "Patten Engineering Lab / 4018",
                     date: "22 SEP 2023",
                     time: "11:00AM - 12:30PM",
                 },
                 coordinator: {
-                    name: "Yawala Ventaka Mahalakshmi ",
-                    phoneNumber: "7397442337",
+                    name: "Miss. Mahalakshmi",
+                    phoneNumber: "6303601503",
                 },
                 faculty: {
                     name: "Ms. Sri Tanush Pandian PV"
@@ -1006,15 +1043,15 @@ export const StorageData = [
                     "Participants can be individual or team of 2 members",
                     "Products should be present with posters",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: ft_01,
                 details: {
                     venue: "Patten Engineering Lab / 4018",
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
                 coordinator: {
-                    name: "Pavithra S.",
-                    phoneNumber: "08467248067",
+                    name: "Miss. Pavithra S ",
+                    phoneNumber: "6303601503",
                 },
                 faculty: {
                     name: "Ms. Sri Tanush Pandian PV"
@@ -1031,7 +1068,7 @@ export const StorageData = [
                     "Clear Description of fabrics, embellishment, accessories along with illustration.",
                     "Illustrations should be 3D",
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: ft_02,
                 details: {
                     venue: "Illustration Lab / 4017",
                     date: "22 SEP 2023",
@@ -1039,7 +1076,7 @@ export const StorageData = [
                 },
                 coordinator: {
                     name: "Abi M",
-                    phoneNumber: "7397442337",
+                    phoneNumber: "8098839376",
                 },
                 faculty: {
                     name: "Mrs. Dharaga Selvi D."
@@ -1059,15 +1096,15 @@ export const StorageData = [
                     "garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: ft_03,
                 details: {
                     venue: "Illustration Lab / 4017",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 12:30 PM",
                 },
                 coordinator: {
-                    name: "Jayanth BJS.",
-                    phoneNumber: "08467248067",
+                    name: "Mr. Jayanth ",
+                    phoneNumber: "9346582912",
                 },
                 faculty: {
                     name: "Mrs. Jayanthi G"
@@ -1101,12 +1138,12 @@ export const StorageData = [
                 details: {
                     venue: "IOT Lab",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 1:00 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: ece_00,
                 coordinator: {
                     name: "Ms. Johanna Afreena I",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9444344277",
                 },
                 faculty: {
                     name: "Dr.C Umakumari "
@@ -1115,7 +1152,7 @@ export const StorageData = [
             },
             {
                 id: 1,
-                eventName: "Solution Finderz Ideatronics",
+                eventName: "Ideatronics",
                 shortDescription: "Fusing innovation, technology and solutions",
                 description: "Solution Finderz Ideatronics is a dynamic innovation event where teams collaborate to devise ingenious solutions by melding cutting-edge technologies, fostering creativity, and addressing real-world challenges with fresh perspectives.",
                 rules: [
@@ -1131,12 +1168,12 @@ export const StorageData = [
                 details: {
                     venue: "IOT Lab",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "9:00 AM - 1:00 PM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: ece_01,
                 coordinator: {
                     name: "Ms. Nehameena R",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "8610233892",
                 },
                 faculty: {
                     name: "Dr.Thomas Leonid"
@@ -1157,12 +1194,12 @@ export const StorageData = [
                 details: {
                     venue: "F01",
                     date: "22 Sep 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 1:00 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: ece_02,
                 coordinator: {
                     name: "Mr. Aravinth P",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "7397392763",
                 },
                 faculty: {
                     name: "Mr.Sadasivam"
@@ -1186,16 +1223,16 @@ export const StorageData = [
                 ],
                 details: {
                     venue: "Optical Lab",
-                    date: "22 Sep 2023",
-                    time: "9:30 AM",
+                    date: "22 Sep 2023(Round 1), 23 Sep 2023(Round 2)", 
+                    time: "2:00 PM - 5:00 PM(Round 1), 9:00 AM - 1:00 PM(Round 2)",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: ece_03,
                 coordinator: {
                     name: "Ms. Fahima Niaz",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "6383615182",
                 },
                 faculty: {
-                    name: "Mr.Harish M/ Ms"
+                    name: "Mr.Harish "
                 },
                 departmentName: "ECE",
             },
@@ -1209,22 +1246,23 @@ export const StorageData = [
         events: [
             {
                 id: 0,
-                eventName: "Ghost Debugger Challenge",
-                shortDescription: "Decode, debug and conquer! ",
-                description: "Ghost Debugging Challenge is an innovative competition where participants debug code and troubleshoot issues in unfamiliar projects, honing problem-solving skills and adaptability while racing against the clock.",
+                eventName: "Ghost Debug Exorcism",
+                shortDescription: "Unveiling Code Spirits",
+                description: "Calling all brave souls! Dive into our realm, where you'll navigate a chilling ghost story and mysterious debugging. Join this thrilling adventure and become a Ghost Buster. Will you answer the spectral call?",
                 rules: [
-                    "Teams of 2 to 4 members with at least one intermediate programmer each.",
-                    "Multiple rounds, each with a ghost-catching challenge and time limit.",
-                    "Design AI algorithms using programming skills to guide a virtual &quot;ghostbuster.&quot;",
-                    "AI algorithms evaluated for creativity, efficiency, and ghost-catching success.",
-                    "Winners determined by total points; fair play and sportsmanship expected.",
+                    "Teams of maximum 3 members with coding knowledge and debugging skills.",
+                    "First round will be based on solving coding crypt. Second and Third round will be instructed at the time of event.",
+                    "Participants can bring their own laptops.",
+                    "Online platforms can be used if necessary.",
+                    "The number of teams advancing will be determined by the organizers based on the competition structure.",
+                    "The winners will be decided based on the maximum points they're obtaining capturing the ghosts.",
                 ],
                 details: {
                     venue: "Intelligence lab",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 3:30 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: ai_00,
                 coordinator: {
                     name: "Sriram A",
                     phoneNumber: "72996 50059",
@@ -1236,7 +1274,7 @@ export const StorageData = [
             },
             {
                 id: 1,
-                eventName: "Paper Zone",
+                eventName: "PaperFest",
                 shortDescription: "Exploring ideas and sharing knowledge!",
                 description: "Paper Zone is a platform for sharing insightful research and innovative ideas, where presenters showcase their findings to an audience, fostering knowledge exchange and academic discourse.",
                 rules: [
@@ -1249,12 +1287,12 @@ export const StorageData = [
                 details: {
                     venue: "T12",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "9:30 AM - 12:30 PM",
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "Shaun R",
-                    phoneNumber: "9344587251",
+                    name: "Muskan P",
+                    phoneNumber: "9342806082",
                 },
                 faculty: {
                     name: "C.SURESHKUMAR"
@@ -1264,24 +1302,24 @@ export const StorageData = [
             {
                 id: 2,
                 eventName: "OptiHack",
-                shortDescription: "Optimize, Innovate, Win",
-                description: "Optimize a provided website per a problem statement. Encourage creative methods, like UI/UX design and SEO. Awards for efficient optimizations",
+                shortDescription: "Unleash your potential",
+                description: "ASOMETHING sOMETHING",
                 rules: [
-                    "Participants can use any number and type of technical tools.",
-                    "Participants may use no more than 4 slides to present, as given in the presentation template.",
-                    "Plagiarism is not encouraged.",
-                    "Submissions after the time limit will be disqualified.",
-                    "Round 1: Programming Challenge - Participants collaborate on an HTML and CSS project.",
-                    "Round 2: Presentation - Present your work with clarity in no more than 5 slides.",
+                    "Participants can either compete individually or form teams of up to two members.",
+                    "Participants will receive a sample website and a well-defined problem statement.",
+                    "Your task is to optimize the website to perfectly match and elevate the specified requirements.",
+                    "Put on your thinking cap and come up with ingenious ways to enhance the website's performance and user experience.",
+                    "Novel methods of optimization, such as UI/UX designing, technical SEO, voice search optimization, etc,. are higly admired.",
+                    "Our judges will assess the optimizations based on creativity, impact, and alignment with the problem statement.",
                 ],
                 details: {
                     venue: "Intelligence Lab",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "9:30 AM - 12:30 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: ai_02,
                 coordinator: {
-                    name: "Ramya P",
+                    name: "Ramya R",
                     phoneNumber: "9176123091",
                 },
                 faculty: {
@@ -1291,8 +1329,8 @@ export const StorageData = [
             },
             {
                 id: 3,
-                eventName: "MarketSim Challenge",
-                shortDescription: "Navigate markets, win big atMarketSim ",
+                eventName: "Insight-Ignite",
+                shortDescription: "Navigate markets, win big at Insight-Ignite ",
                 description: "MarketSim Challenge is a virtual trading competition where participants refine strategies and gain insights by navigating simulated financial markets, fostering practical investment skills and decision-making",
                 rules: [
                     "Participants form teams of up to 3 members or can participate individually.",
@@ -1304,12 +1342,12 @@ export const StorageData = [
                 details: {
                     venue: "T12",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:30 AM - 3:30 PM",
                 },
                 image: "https://wallpaperaccess.com/full/1170322.jpg",
                 coordinator: {
-                    name: "Muskan P",
-                    phoneNumber: "9342806082",
+                    name: "Shaun R",
+                    phoneNumber: "9344587251",
                 },
                 faculty: {
                     name: "Ms. S. Aishwarya"

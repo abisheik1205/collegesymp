@@ -1,0 +1,27 @@
+.QrCodeHeadHead{
+    font-size: large;
+    color: black;
+}
+
+.RegisterFor3{
+    margin-left: auto;
+    margin-right: auto;
+}
+.QrCodeHead{
+    padding: 10px;
+    font-size: large;
+    font-family: 'poppins', sans-serif;
+    color: snow;
+    text-align: center;
+}
+
+.QrCode{
+    padding: 20px;
+}
+
+.ScanningCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

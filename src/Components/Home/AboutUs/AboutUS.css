@@ -67,7 +67,7 @@ a{
     justify-items: center;
     text-align: justify;
     margin-left: auto;
-    font-size: small;
+    font-size: medium;
     font-weight: 400;
     font-style: oblique;
     color: whitesmoke;
@@ -87,7 +87,7 @@ a{
 }
 .collegeqoutePara{
     font-style: italic;
-    font-size: smaller;
+    font-size: medium;
     font-family: 'poppins', monospace;
 }
 .imageFoundOnAboutUS{
