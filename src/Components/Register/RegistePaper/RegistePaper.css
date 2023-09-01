@@ -12,8 +12,7 @@
     /* margin-left: auto;
     margin-right: auto; */
     font-family: 'poppins', sans-serif;
-    font-size: medium;
-    margin-bottom: 18px;
+    font-size: large;
     font-weight: 400;
 }
 .mainRegisterPaper{
@@ -24,12 +23,25 @@
     background-color: rgb(255, 255, 255);
 }
 
-.RegistePaperIndicatorEach{
+.RegistePaperIndicatorEachSelected{
     padding: 2px;
-    border: 1px solid rgb(234, 0, 255)  ;
+    border: 1px solid rgb(234, 0, 255);
     height: 25px;
     background-color: rgb(234, 0, 255); 
     color: whitesmoke;
+    font-family: 'poppins', sans-serif;
+    font-size: small;
+    width: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.RegistePaperIndicatorEach{
+    padding: 2px;
+    border: 1px solid rgb(234, 0, 255);
+    height: 25px;
+    background-color: none; 
+    color: rgb(234, 0, 255);
     font-family: 'poppins', sans-serif;
     font-size: small;
     width: 25px;
@@ -71,6 +83,7 @@
     padding: 8px 16px;
     margin: 10px 40px;
     border-radius: 4px;
+    cursor: pointer;
     font-family: 'poppins', sans-serif;
     border: 1px solid transparent;
     outline: none;

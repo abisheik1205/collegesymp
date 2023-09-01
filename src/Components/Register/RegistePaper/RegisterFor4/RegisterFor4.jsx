@@ -17,7 +17,7 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper }) => {
     return(
         <div className="RegisterFor4">
             <h2 className="RegisterFor4Head">Upload the screenshot</h2>
-            <p className="noteInRegisterFor4">&#x3F;</p>
+            <p className="noteInRegisterFor4">What pic&#x3F;</p>
             <div className="RegisterFor4Browse">
                 <label for="file-upload" className="custom-file-upload">
                         <i class="fa fa-upload"></i>

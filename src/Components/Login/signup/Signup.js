@@ -29,6 +29,7 @@ function Signup() {
       .then(async (res) => {
         setSubmitButtonDisabled(false);
         const user = res.user;
+        localStorage.setItem("email", values.email);
         await updateProfile(user, { displayName: values.name });
         navigate("/register");
       })

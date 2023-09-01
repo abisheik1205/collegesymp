@@ -46,7 +46,7 @@ export const StorageData = [
                 shortDescription: 'Fix bugs.',
                 description: "Debugging is the art of unraveling digital puzzles, converting glitches into graceful symphonies of code.",
                 rules: [
-                    "The event comprises two rounds.",
+                        "The event comprises two rounds.",
                     "Participants are expected to form a team of two members to participate in the event.",
                     "Participants should bring their own laptops with good Internet connectivity.",
                     "Participants are given codes with error and are expected to debug the same. ",
