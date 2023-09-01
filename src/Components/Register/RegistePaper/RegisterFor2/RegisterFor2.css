@@ -1,3 +1,10 @@
+
+.RegisterFor2Input{
+    display: flex;
+    flex-direction: row;
+    padding: 15px 60px;
+    justify-content: space-between;
+}
 .RegisterFor2InputDrop{
     display: flex;
     flex-direction: column;
@@ -5,11 +12,15 @@
 
 .Event_label{
     color: black;
+    margin-bottom: 5px;
+    font-family: 'poppins', sans-serif;
 }
 
 .EventDropdown{
+    font-family: 'poppins', sans-serif;
     width: max-content;
-    padding: 15px 20px;
+    padding: 15px 10px;
+    border: 2px solid rgb(234, 0, 255);
     border-radius: 5px;
     outline: none;
 }
