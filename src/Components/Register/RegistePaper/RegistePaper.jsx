@@ -12,6 +12,13 @@ const RegistePaper = () => {
 
     const [currentPaper, setCurrentPaper] = useState(0);
     const [selected, setSelectedEvents] = useState([]);
+    const [bio, setBio] = useState({
+        name: "",
+        departmentName: "",
+        phoneNumber: "",
+        collegeName: "",
+        mailAdress: "",
+    });
 
     const handleNextPaper = () => {
         setCurrentPaper(currentPaper + 1);
@@ -24,6 +31,16 @@ const RegistePaper = () => {
     const selectedEvents = (selectedEvents) => {
         setSelectedEvents(selectedEvents);
         console.log(selectedEvents);
+    }
+
+    const handleBio = (name, collegeName, departmentName, phoneNumber, mailAdress) => {
+        setBio({
+            name: name,
+            collegeName: collegeName,
+            departmentName: departmentName,
+            phoneNumber: phoneNumber,
+            mailAdress: mailAdress,
+        })
     }
 
     return(
@@ -39,7 +56,7 @@ const RegistePaper = () => {
                 </div>
             
             {
-                currentPaper === 0? <RegisterFor1 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper}/>: currentPaper === 1? <RegisterFor2 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper} finalSelectedEvents={selectedEvents}/>: currentPaper === 2? <RegisterFor3 handlePreviousPaper={handlePreviousPaper} handleNextPaper={handleNextPaper}/>: currentPaper ===3? <RegisterFor4 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper}/>: <RegisterFor5 handlePreviousPaper={handlePreviousPaper}/>
+                currentPaper === 0? <RegisterFor1 handleNextPaper={handleNextPaper} handleBio={handleBio} handlePreviousPaper={handlePreviousPaper}/>: currentPaper === 1? <RegisterFor2 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper} finalSelectedEvents={selectedEvents}/>: currentPaper === 2? <RegisterFor3 handlePreviousPaper={handlePreviousPaper} handleNextPaper={handleNextPaper}/>: currentPaper ===3? <RegisterFor4 handleNextPaper={handleNextPaper} bio={bio} selected={selected} handlePreviousPaper={handlePreviousPaper}/>: <RegisterFor5 handlePreviousPaper={handlePreviousPaper} bio={bio} selected={selected}/>
             } 
 
             </div>

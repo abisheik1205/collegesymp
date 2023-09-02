@@ -1,14 +1,13 @@
 import React from "react";
 import "./RegisterFor5.css";
+import { useNavigate } from 'react-router-dom';
 
-const RegisterFor5 = ({ handlePreviousPaper }) => {
+const RegisterFor5 = ({ handlePreviousPaper, selected, bio }) => {
 
-
-    const selectedEvents = ["Spot'n Sort","Debugging","Bridge It",]
-
+    const navigate = useNavigate();
 
     const handleclick = () => {
-        alert("All Done")
+        navigate('/', { replace: true });
     }
 
     return(
@@ -16,18 +15,18 @@ const RegisterFor5 = ({ handlePreviousPaper }) => {
             <h2 className="RegisterFor5Head">Details</h2>
             <div className="RegisterFor5Container">
                 <div className="RegisterFor5ContainernameandNumber">
-                    <p className="RegisterFor5ContainernameandNumberPara">Arul Rosario</p>
-                    <p className="RegisterFor5ContainernameandNumberPara">9043870363</p>
+                    <p className="RegisterFor5ContainernameandNumberPara">{bio.name}</p>
+                    <p className="RegisterFor5ContainernameandNumberPara">{bio.phoneNumber}</p>
                 </div>
                 <div className="RegisterFor5ContainernameandNumber">
-                    <p className="RegisterFor5ContainernameandNumberPara">Kcg College Of Technology</p>
+                    <p className="RegisterFor5ContainernameandNumberPara">{bio.collegeName}</p>
                 </div>
                 <br />
                 <div className="RegisterFor5Container">
                     <h2 className="RegisterFor5ContainerHead">Events Selected: </h2>
                     <div className="RegisterFor5ContainerList">
                         {
-                            selectedEvents.map((item, key) => {
+                            selected.map((item, key) => {
                                 return(
                                     <div className="RegisterFor5ContainerMapingRow">
                                         <p className="RegisterFor5ContainerMapingRowKey">0{key+1}.  </p>

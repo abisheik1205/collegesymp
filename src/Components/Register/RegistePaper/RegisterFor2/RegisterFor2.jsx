@@ -105,7 +105,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
                         {
                             allevents.map((item, key) => {
                                 return(
-                                    <option key={key} value={item.eventName + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
+                                    <option key={key} value={item.eventName + " - " + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
                                 )
                             })
                         }
@@ -118,7 +118,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
                         {
                             allevents.map((item, key) => {
                                 return(
-                                    <option key={key} value={item.eventName + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
+                                    <option key={key} value={item.eventName + " - " + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
                                 )
                             })
                         } 
@@ -133,7 +133,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
                         {
                             allevents.map((item, key) => {
                                 return(
-                                    <option key={key} value={item.eventName + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
+                                    <option key={key} value={item.eventName + " - " + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
                                 )
                             })
                         }
@@ -146,7 +146,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
                         {
                             allevents.map((item, key) => {
                                 return(
-                                    <option key={key} value={item.eventName + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
+                                    <option key={key} value={item.eventName + " - " + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
                                 )
                             })
                         }
@@ -161,7 +161,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
                         {
                             allevents.map((item, key) => {
                                 return(
-                                    <option key={key} value={item.eventName + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
+                                    <option key={key} value={item.eventName + " - " + item.departmentName} className="EventOption">{item.eventName} - {item.departmentName}</option> 
                                 )
                             })
                         }

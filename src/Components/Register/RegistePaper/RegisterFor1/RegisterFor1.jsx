@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
+import { doc, setDoc, serverTimestamp  } from 'firebase/firestore';
 
-const RegisterFor1 = ({ handleNextPaper }) => {
+const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
 
     const [name, setName] = useState("");
     const [phoneNumber, setPhoneNumber] = useState();
@@ -14,6 +15,7 @@ const RegisterFor1 = ({ handleNextPaper }) => {
 
         e.preventDefault();
         if (name.length > 8 || departmentName.length > 8 || phoneNumber.length > 8 || collegeName.length > 5) {
+            handleBio(name, collegeName, departmentName, phoneNumber, mail);
             handleNextPaper();
         }else{
             alert("Fill Credentials");
