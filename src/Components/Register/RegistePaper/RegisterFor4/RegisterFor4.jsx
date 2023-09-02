@@ -12,18 +12,18 @@ import 'firebase/compat/firestore';
 
 const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) => {
 
-    const [imageUrl, setImageUrl] = useState("");
+    const [imageUrl, setImageUrl] = useState(null);
     const [progresspercent, setprogresspercent] = useState(0);
 
-    const uploadingData = async () => {
+    const uploadingData = async (e) => {
         var downloadURLS = [];
-    
-        const storageRef = ref(storage, `files/${imageUrl.name}`);
+        const storageRef = ref(storage, `files/${e.name}`);
         console.log("UPLOADING");
 
-        await uploadBytesResumable(storageRef, imageUrl).then( async (snapshot) => {
+        await uploadBytesResumable(storageRef, e).then( async (snapshot) => {
             await getDownloadURL(snapshot.ref).then(url => {
                 console.log("COMING FOR NOW");
+                console.log(url);
                 downloadURLS.push(url);
             });
         });
@@ -33,8 +33,6 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
     const handlesubmit = async (e) => {
         e.preventDefault();
-
-        setImageUrl(e.target.files[0]);
 
         const date = new Date();
         const showTime = date.getHours()
@@ -58,9 +56,10 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
         const docRef = doc(collectionRef);
 
+
         try {
             await setDoc(docRef, data);
-            var uploadingDatasHere = await uploadingData()
+            var uploadingDatasHere = await uploadingData(e.target.files[0])
             await updateDoc(docRef, {
                 "fileLink": uploadingDatasHere,
             }).then(async () => {
