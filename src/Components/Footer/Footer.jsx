@@ -34,7 +34,7 @@ const Footer = ({ name, biodetails }) => {
                     <h2 className="FooterWebsiteHead FooterSubhead">Website</h2>
                     <div className="Contentlinks">
                         <a href="https://kcgcollege.ac.in/" className="Contents">College Site</a>
-                        <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" className="Contents">Developers</a>
+                        {/* <a href="https://youtu.be/dQw4w9WgXcQ?feature=shared" className="Contents">Developers</a> */}
                     </div>
                 </div>
                 <div className="FooterSupport FooterSub">
@@ -47,9 +47,9 @@ const Footer = ({ name, biodetails }) => {
                                 <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> {biodetails.contactNumber}</p>
                             </> : 
                                 <><p className="Contents"><span className="ContentlinksPspan">President: </span> Sherin Chezhian</p>
-                                <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> ???</p></>
+                                <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> 9514049967</p></>
                         :<><p className="Contents"><span className="ContentlinksPspan">President: </span> Sherin Chezhian</p>
-                        <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> ???</p></>
+                        <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> 9514049967</p></>
                  
                     }
                     </div>

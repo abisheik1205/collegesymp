@@ -9,7 +9,7 @@ import aero from "../../assets/aero.jpeg";
 import auto from "../../assets/AM.jpeg";
 import ft from "../../assets/ft.png";
 import AIDS from "../../assets/AI&DS department Pic.jpg";
-import cse_00 from "../../assets/cse_00.jpg";
+import cse_00 from "../../assets/cse_00.png";
 import cse_01 from "../../assets/quiz.jpg";
 import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
@@ -179,7 +179,7 @@ export const StorageData = [
         departmentMotto: "IT Wizards -> Turning Glitches into Good Vibes!",
         eventCoordinator:"Mr. Prashanth",
         faculty:"xxxxx",
-        phoneNumber: "7548815022",
+        phoneNumber: "8610661802",
         image: it,
         events: [
             {
@@ -790,7 +790,7 @@ export const StorageData = [
         departmentMotto: "Where Mechanics Meets Electronics in Perfect Harmony",
         eventCoordinator: "B.KANNAN",
         faculty:"xxxxx",
-        phoneNumber:"7305275522",
+        phoneNumber:"9940174768",
         image: mtr,
         events: [
             {
@@ -920,7 +920,7 @@ export const StorageData = [
         departmentMotto: "Empowering the World, One Electron at a Time.",
         eventCoordinator:"Mr. Dinesh S",
         faculty:"xxxxx",
-        phoneNumber:"7305275522",
+        phoneNumber:"9360015882",
         image: eee,
         events: [
             {
