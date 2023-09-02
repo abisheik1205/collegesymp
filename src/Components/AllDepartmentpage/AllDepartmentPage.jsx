@@ -15,6 +15,8 @@ const AllDepartmentPage = () => {
     const location = useLocation();
 
     const [mobileClick, setMobileClick] = useState(false);
+    
+    const [biodetails, setBioDetails] = useState({})
 
     var Data = StorageData;
 
@@ -34,6 +36,7 @@ const AllDepartmentPage = () => {
     var civil = [];
     var Ft = [];
 
+
     const handleInitialCommit = () => {
 
         if (localStorage.getItem("val")) {
@@ -44,46 +47,101 @@ const AllDepartmentPage = () => {
             if (localStorage.getItem("val") === "Computer Science") {
                 setSelected("Computer Science");
                 setList(computerScience);
+                setBioDetails({
+                    coordinatorName: Data[0].eventCoordinator,
+                    contactNumber: Data[0].phoneNumber,
+                    faculty: Data[0].faculty
+                });
             }
             if (localStorage.getItem("val") === "Information Technology") {
                 setSelected("Information Technology");
                 setList(informationTechnology)
+                setBioDetails({
+                    coordinatorName: Data[1].eventCoordinator,
+                    contactNumber: Data[1].phoneNumber,
+                    faculty: Data[1].faculty
+                })
             }
             if (localStorage.getItem("val") === "Mechatronics") {
                 setSelected("Mechatronics");
                 setList(Mechetronics);
+                setBioDetails({
+                    coordinatorName: Data[6].eventCoordinator,
+                    contactNumber: Data[6].phoneNumber,
+                    faculty: Data[6].faculty
+                })
             } 
             if (localStorage.getItem("val") === "Mechanical") {
                 setSelected("Mechanical");
                 setList(Mech)
+                setBioDetails({
+                    coordinatorName: Data[2].eventCoordinator,
+                    contactNumber: Data[2].phoneNumber,
+                    faculty: Data[2].faculty
+                })
             }
             if (localStorage.getItem("val") === "Automobile") {
                 setSelected("Automobile");
                 setList(automobile)
+                setBioDetails({
+                    coordinatorName: Data[3].eventCoordinator,
+                    contactNumber: Data[3].phoneNumber,
+                    faculty: Data[3].faculty
+                })
             }
             if (localStorage.getItem("val") === "Civil") {
                 setSelected("Civil");
                 setList(civil)
+                setBioDetails({
+                    coordinatorName: Data[4].eventCoordinator,
+                    contactNumber: Data[4].phoneNumber,
+                    faculty: Data[4].faculty,
+                })
             }
             if (localStorage.getItem("val") === "Aero") {
                 setSelected("Aero");
                 setList(aeroEvents)
+                setBioDetails({
+                    coordinatorName: Data[5].eventCoordinator,
+                    contactNumber: Data[5].phoneNumber,
+                    faculty: Data[5].faculty,
+                })
             }
             if (localStorage.getItem("val") === "AI&DS") {
                 setSelected("AI&DS");
                 setList(AIDS)
+                setBioDetails({
+                    coordinatorName: Data[10].eventCoordinator,
+                    contactNumber: Data[10].phoneNumber,
+                    faculty: Data[10].faculty,
+                })
             }
             if (localStorage.getItem("val") === "EEE") {
                 setSelected("EEE");
                 setList(EEE)
+                setBioDetails({
+                    coordinatorName: Data[7].eventCoordinator,
+                    contactNumber: Data[7].phoneNumber,
+                    faculty: Data[7].faculty
+                })
             }
             if (localStorage.getItem("val") === "ECE") {
                 setSelected("ECE");
                 setList(ECE)
+                setBioDetails({
+                    coordinatorName: Data[9].eventCoordinator,
+                    contactNumber: Data[9].phoneNumber,
+                    faculty: Data[9].faculty
+                })
             }
             if (localStorage.getItem("val") === "Fashion Technology") {
                 setSelected("Fashion Technology");
                 setList(Ft)
+                setBioDetails({
+                    coordinatorName: Data[8].eventCoordinator,
+                    contactNumber: Data[8].phoneNumber,
+                    faculty: Data[8].faculty
+                })
             }
         }  else{
             // For ALL
@@ -96,67 +154,121 @@ const AllDepartmentPage = () => {
             if (dataToSend === "Computer Science") {
                 setSelected("Computer Science");
                 setList(computerScience);
+                setBioDetails({
+                    coordinatorName: Data[0].eventCoordinator,
+                    contactNumber: Data[0].phoneNumber,
+                    faculty: Data[0].faculty
+                })
             }
     
-            
             // For Information Technology
             if (dataToSend === "Information Technology") {
                 setSelected("Information Technology");
                 setList(informationTechnology)
+                setBioDetails({
+                    coordinatorName: Data[1].eventCoordinator,
+                    contactNumber: Data[1].phoneNumber,
+                    faculty: Data[1].faculty
+                })
             } 
             
             // // For Mechatronics
             if (dataToSend === "Mechatronics") {
                 setSelected("Mechatronics");
                 setList(Mechetronics);
+                setBioDetails({
+                    coordinatorName: Data[6].eventCoordinator,
+                    contactNumber: Data[6].phoneNumber,
+                    faculty: Data[6].faculty
+                })
             } 
             
             // // For Mechanical
             if (dataToSend === "Mechanical") {
                 setSelected("Mechanical");
                 setList(Mech)
+                setBioDetails({
+                    coordinatorName: Data[2].eventCoordinator,
+                    contactNumber: Data[2].phoneNumber,
+                    faculty: Data[2].faculty
+                })
             } 
             
             // // For Automobile
             if (dataToSend === "Automobile") {
                 setSelected("Automobile");
                 setList(automobile)
+                setBioDetails({
+                    coordinatorName: Data[3].eventCoordinator,
+                    contactNumber: Data[3].phoneNumber,
+                    faculty: Data[3].faculty
+                })
             } 
             
             // // For Civil
             if (dataToSend === "Civil") {
                 setSelected("Civil");
                 setList(civil)
+                setBioDetails({
+                    coordinatorName: Data[4].eventCoordinator,
+                    contactNumber: Data[4].phoneNumber,
+                    faculty: Data[4].faculty
+                })
             } 
             
             // // For Aero
             if (dataToSend  === "Aero") {
                 setSelected("Aero");
                 setList(aeroEvents)
+                setBioDetails({
+                    coordinatorName: Data[5].eventCoordinator,
+                    contactNumber: Data[5].phoneNumber,
+                    faculty: Data[5].faculty
+                })
             } 
             
             // For AIDS
             if (dataToSend === "AI&DS") {
                 setSelected("AI&DS");
                 setList(AIDS)
+                setBioDetails({
+                    coordinatorName: Data[10].eventCoordinator,
+                    contactNumber: Data[10].phoneNumber,
+                    faculty: Data[10].faculty
+                })
             }
             
             // // For EEE
             if (dataToSend === "EEE") {
                 setSelected("EEE");
                 setList(EEE)
+                setBioDetails({
+                    coordinatorName: Data[7].eventCoordinator,
+                    contactNumber: Data[7].phoneNumber,
+                    faculty: Data[7].faculty
+                })
             } 
             
             // // For ECE
             if (dataToSend === "ECE") {
                 setSelected("ECE");
                 setList(ECE)
+                setBioDetails({
+                    coordinatorName: Data[9].eventCoordinator,
+                    contactNumber: Data[9].phoneNumber,
+                    faculty: Data[9].faculty
+                })
             } 
             
             // // For Fasion Technology
             if (dataToSend === "Fashion Technology") {
                 setSelected("Fashion Technology");
                 setList(Ft)
+                setBioDetails({
+                    coordinatorName: Data[8].eventCoordinator,
+                    contactNumber: Data[8].phoneNumber,
+                    faculty: Data[8].faculty
+                })
             } 
         }
     }
@@ -333,12 +445,7 @@ const AllDepartmentPage = () => {
         setList(allevents)
         handleInitialCommit();
         window.scrollTo(0, 0);
-
-        // window.addEventListener("beforeunload", handleBeforeUnload);
-        // return () => {
-        //     window.removeEventListener("beforeunload", handleBeforeUnload);
-        // };
-    }, [])
+    }, [selected])
 
     return(
         <>
@@ -368,7 +475,7 @@ const AllDepartmentPage = () => {
                 </div>
             </div>
         </div>
-            <Footer name={selected} coordinator={list.eventCoordinator} contactNumber={selected != "all"? list.phoneNumber: ""} />
+            <Footer name={selected} biodetails={biodetails} />
         </>
     )
 }

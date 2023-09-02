@@ -1,10 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import image from "../../assets/vivanta.png";
+import image from "../../assets/vivantaForReal.png";
                     
-const Footer = ({ name, faculty, coordinator, contactNumber }) => {
+const Footer = ({ name, biodetails }) => {
 
-    console.log(name);
+    console.log(biodetails);
 
     return( 
         <footer>
@@ -43,10 +43,10 @@ const Footer = ({ name, faculty, coordinator, contactNumber }) => {
                     <h2 className="FooterSupportHead FooterSubhead">Support</h2>
                     <div className="Contentlinks">
                         {
-                            name !== "all"? <>
-                                <p className="Contents"><span className="ContentlinksPspan">Coordinator: </span> {name}</p>
-                                {faculty !== ""? <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> {faculty}</p>: <></>}
-                                <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> {contactNumber}</p>
+                            name? <>
+                                <p className="Contents"><span className="ContentlinksPspan">Coordinator: </span> {biodetails.coordinatorName}</p>
+                                {/* {faculty !== ""? <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> {faculty}</p>: <></>} */}
+                                <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> {biodetails.contactNumber}</p>
                             </> : 
                                 <><p className="Contents"><span className="ContentlinksPspan">President: </span> Sherin Chezhian</p>
                                 <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> Dr. Prashad</p>

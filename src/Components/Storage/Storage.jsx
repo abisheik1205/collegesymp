@@ -1,18 +1,27 @@
-import cseDepartmentImg from "../../assets/cse.png";
-import AIDSDepartmentImg from "../../assets/AI&DS department Pic.jpg";
+import cse from "../../assets/cse.png";
+import it from "../../assets/it.jpg";
+import eee from "../../assets/eee.png";
+import mtr from "../../assets/mtr.png";
+import civil from "../../assets/Civil.png";
+import mech from "../../assets/mech.jpeg";
+import ece from "../../assets/ece.png";
+import aero from "../../assets/aero.jpeg";
+import auto from "../../assets/AM.jpeg";
+import ft from "../../assets/ft.png";
+import AIDS from "../../assets/AI&DS department Pic.jpg";
 import cse_00 from "../../assets/cse_00.jpg";
-import cse_01 from "../../assets/cse_01.jpg";
+import cse_01 from "../../assets/quiz.jpg";
 import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
 import ece_01 from "../../assets/ece_01.png";
 import ece_02 from "../../assets/ece_02.png";
 import ece_03 from "../../assets/ece_03.png";
-import it_00 from "../../assets/it_00.png";
+import pro from "../../assets/pro.jpg";
 import it_01 from "../../assets/it_01.png";
 import it_02 from "../../assets/it_02.png";
 import it_03 from "../../assets/it_03.png";
-import ft_00 from "../../assets/ft_00.png";
+import pp from "../../assets/pp.jpg";
 import ft_01 from "../../assets/ft_01.png";
 import ft_02 from "../../assets/ft_02.png";
 import ft_03 from "../../assets/ft_03.png";
@@ -42,8 +51,9 @@ export const StorageData = [
         departmentName: "Computer Science",
         departmentMotto: "Unleash the Power of Code: CSE Leading the Way!",
         eventCoordinator: "Aswin Kumar E",
+        faculty:"xxxxx",
         phoneNumber: "7548815022",
-        image: cseDepartmentImg,
+        image: cse,
         events: [
             {
                 id: 0,
@@ -167,7 +177,9 @@ export const StorageData = [
         departmentName: "Information Technology",
         departmentMotto: "IT Wizards -> Turning Glitches into Good Vibes!",
         eventCoordinator:"Mr. Prashanth",
-        image: "https://e1.pxfuel.com/desktop-wallpaper/272/414/desktop-wallpaper-everydays-technology-aesthetic.jpg",
+        faculty:"xxxxx",
+        phoneNumber: "7548815022",
+        image: it,
         events: [
             {
                 id: 0,
@@ -187,7 +199,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "xxx",
                 },
-                image: it_00,
+                image:pro,
                 coordinator: {
                     name: "Neena",
                     phoneNumber: "7358540527",
@@ -286,7 +298,8 @@ export const StorageData = [
         departmentMotto: "Mechanical Marvels -> Where Innovation Drives Motion!",
         eventCoordinator: "MUKESH KANNA M",
         phoneNumber: "8124392148",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKtH75SX6PJI2wOWhhcjgfYiY24TsAh4T-eA&usqp=CAU",
+        faculty:"xxxxx",
+        image: mech,
         events: [
             {
                 id: 0,
@@ -332,7 +345,7 @@ export const StorageData = [
                     "Social Impact Slide",
                     "One page lean canva business",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: pro,
                 details: {
                     venue: "F14 Seminar Hall",
                     date: "23 Sep 2023",
@@ -411,8 +424,9 @@ export const StorageData = [
         departmentName: "Automobile",
         departmentMotto: "Rev Up the Future -> Where Innovation Takes the Wheel!",
         eventCoordinator:"Mr.Sherin Chezhian A",
+        faculty:"xxxxx",
         phoneNumber: "9514049967",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUkeGLL6FB-PmmsYag-JtCfGog75CeGirfs7lebP-PbVFPOJd6mzTmtdg&s=10",
+        image: auto,
         events: [
             {
                 id: 0,
@@ -507,7 +521,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: aero_01,
                 coordinator: {
                     name: "Arun Kumar S",
                     phoneNumber: "7448950590",
@@ -523,8 +537,9 @@ export const StorageData = [
         departmentName: "Civil",
         departmentMotto: "Building the World, Brick by Brick.",
         eventCoordinator: "Mruthulha N",
+        faculty:"xxxxx",
         phoneNumber: "8056069130",
-        image: "https://sklc-tinymce-2021.s3.amazonaws.com/comp/2023/04/Top%20Jobs%20For%20Civil%20Engineering%20Based%20On%20ETABS_1_1680615587.png",
+        image: civil,
         events: [
             {
                 id: 0,
@@ -641,8 +656,9 @@ export const StorageData = [
         departmentName: "Aero",
         departmentMotto: "Reaching New Heights, Defying Gravity.",
         eventCoordinator:"Mr.Sujith Ananth T",
+        faculty:"xxxxx",
         phoneNumber:"7305275522",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOACHdJcytlApaAWD_c97CdzXSMrtbFwaRJA&usqp=CAU",
+        image:aero,
         events: [
             {
                 id: 0,
@@ -772,7 +788,9 @@ export const StorageData = [
         departmentName: "Mechatronics",
         departmentMotto: "Where Mechanics Meets Electronics in Perfect Harmony",
         eventCoordinator: "B.KANNAN",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2g3zSrGVcKVr1asGrbFc5yPT2cPs3mReNWw&usqp=CAU",
+        faculty:"xxxxx",
+        phoneNumber:"7305275522",
+        image: mtr,
         events: [
             {
                 id: 0,
@@ -900,7 +918,9 @@ export const StorageData = [
         departmentName: "EEE",
         departmentMotto: "Empowering the World, One Electron at a Time.",
         eventCoordinator:"Mr. Dinesh S",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFowHO38hvkTWgGk0fWYHwlGRwN76GeRALg&usqp=CAU",
+        faculty:"xxxxx",
+        phoneNumber:"7305275522",
+        image: eee,
         events: [
             {
                 id: 0,
@@ -1008,8 +1028,9 @@ export const StorageData = [
         departmentName: "Fashion Technology",
         departmentMotto: "Innovate, Create, Elevate: Where Fashion Meets Technology",
         eventCoordinator: "Jayadharshini R",
+        faculty:"xxxxx",
         phoneNumber: "9176225193",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYBZSG0fHeBBhhCaqD_hsb-tfm4TEs1FIV_g&usqp=CAU",
+        image: ft,
         events: [
             {
                 id: 0,
@@ -1022,7 +1043,7 @@ export const StorageData = [
                     "Fashion appearance as identity",
                     "Participants can be individual or team of 2 members.",
                 ],
-                image: ft_00,
+                image: pp,
                 details: {
                     venue: "Patten Engineering Lab / 4018",
                     date: "22 SEP 2023",
@@ -1122,7 +1143,9 @@ export const StorageData = [
         departmentName: "ECE",
         departmentMotto: "Powering Progress, Connecting the Future.",
         eventCoordinator:"Mr. Aadil Mohideen",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjvB5Ig1HLe166txl1dmYgxxHeFQx1kgW5Dw&usqp=CAU",
+        faculty:"xxxxx",
+        phoneNumber:"7305275522",
+        image: ece,
         events: [
             {
                 id: 0,
@@ -1247,7 +1270,9 @@ export const StorageData = [
         departmentName: "AI&DS",
         departmentMotto: "Empowering Tomorrow with AI & Data Science Today!",
         eventCoordinator:"Vignesh G",
-        image: AIDSDepartmentImg,
+        faculty:"xxxxx",
+        phoneNumber:"7305275522",
+        image: AIDS,
         events: [
             {
                 id: 0,

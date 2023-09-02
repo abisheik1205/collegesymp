@@ -58,7 +58,6 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
         const docRef = doc(collectionRef);
 
-
         try {
             await setDoc(docRef, data);
             var uploadingDatasHere = await uploadingData(e.target.files[0]);

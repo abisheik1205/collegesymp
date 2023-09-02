@@ -20,6 +20,27 @@
     padding: 20px;
 }
 
+.QrCodeParaBold{
+    font-weight: 500;
+}
+
+.noteInqr{
+    font-family: 'poppins', sans-serif;
+    font-size: x-small;
+    text-align: center;
+}
+
+.QrCodeInside{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.QrCodePara{
+    font-family: 'poppins', sans-serif;
+    font-size: medium;
+}
+
 .ScanningCont{
     display: flex;
     flex-direction: column;

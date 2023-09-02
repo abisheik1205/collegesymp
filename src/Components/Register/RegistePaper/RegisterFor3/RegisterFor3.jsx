@@ -15,7 +15,14 @@ const RegisterFor3 = ({ handleNextPaper, handlePreviousPaper }) => {
                     <h1 className="QrCodeHeadHead">&#x20B9; 130</h1>
                 </div>
                 <div className="QrCode">
-                    <img alt="QrCode" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO29jpK02kOHa3YX21knBGZT8z1ilBHEyt2g&usqp=CAU" className="QrCodeImage"/>
+                    <div className="QrCodeInside">
+                        <p className="QrCodePara"><span className="QrCodeParaBold">Bank Name: </span> Union Bank Of India</p>
+                        <p className="QrCodePara"><span className="QrCodeParaBold">Branch Name: </span> SSI Guindy, Chennai 600032</p>
+                        <p className="QrCodePara"><span className="QrCodeParaBold">IFSC Code: </span> UBIN0552631</p>
+                        <p className="QrCodePara"><span className="QrCodeParaBold">Account No: </span> 526301010020010</p>
+                        <br />
+                        <p className="noteInqr">Kindly mention name and college while making the payments</p>
+                    </div>
                 </div>
                 <div className="registerPaperButton">
                     <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>
