@@ -367,17 +367,8 @@ const AllDepartmentPage = () => {
                     <p onClick={() => handleFilterAdvanced("AI&DS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AIDS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
                 </div>
             </div>
-            <div className="AllDepartmentPageContactus">
-                <Fade right>
-                    <div className="AllDepartmentPageContactusSession">
-                        <p><span>Phone Number: </span> 9840298149</p>
-                        <p><span>Faculty: </span> Suraj</p>
-                        <p><span>Coordinator Name: </span> XXX</p>
-                    </div>
-                </Fade>
-            </div>
         </div>
-            <Footer />
+            <Footer name={selected} coordinator={list.eventCoordinator} contactNumber={selected != "all"? list.phoneNumber: ""} />
         </>
     )
 }

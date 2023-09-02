@@ -2,8 +2,11 @@ import React from "react";
 import "./Footer.css";
 import image from "../../assets/vivanta.png";
                     
-const Footer = () => {
-    return(
+const Footer = ({ name, faculty, coordinator, contactNumber }) => {
+
+    console.log(name);
+
+    return( 
         <footer>
             <div className="Footer_left">
                 <div className="logo">
@@ -26,11 +29,9 @@ const Footer = () => {
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          
         ></iframe>   
                     </div>
                 </div>
-                
                 <div className="FooterWebsite FooterSub">
                     <h2 className="FooterWebsiteHead FooterSubhead">Website</h2>
                     <div className="Contentlinks">
@@ -41,8 +42,16 @@ const Footer = () => {
                 <div className="FooterSupport FooterSub">
                     <h2 className="FooterSupportHead FooterSubhead">Support</h2>
                     <div className="Contentlinks">
-                        <a href="" className="Contents">Contact</a>
-                        <a href="" className="Contents">Developer</a>
+                        {
+                            name !== "all"? <>
+                                <p className="Contents"><span className="ContentlinksPspan">Coordinator: </span> {name}</p>
+                                {faculty !== ""? <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> {faculty}</p>: <></>}
+                                <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> {contactNumber}</p>
+                            </> : 
+                                <><p className="Contents"><span className="ContentlinksPspan">President: </span> Sherin Chezhian</p>
+                                <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> Dr. Prashad</p>
+                                <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> ???</p></>
+                        }
                     </div>
                 </div>
             </div>

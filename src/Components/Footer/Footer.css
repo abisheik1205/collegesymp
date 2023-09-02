@@ -3,7 +3,7 @@ footer{
     flex-direction: row;
     width:100%;
     justify-content: space-between;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'poppins', sans-serif;
     background-color: rgba(0, 0, 0, 0.874);
 }
 .Footer_left{
@@ -29,6 +29,10 @@ footer{
     padding: 40px;
     /* background-color: blue; */
     margin: 10px 0px;
+}
+.ContentlinksP{
+    color: whitesmoke;
+    margin-bottom: 6px;
 }
 .Contents{
     padding: 5px;
@@ -89,7 +93,9 @@ footer{
 .FooterLocationHead{
     padding-bottom:10px;
 }
-
+.ContentlinksPspan{
+    font-weight: 500;
+}
 @media only screen and (max-width: 1000px){
     footer{
         flex-direction: column-reverse;

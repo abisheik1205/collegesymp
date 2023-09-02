@@ -75,9 +75,10 @@
 
 #EventRegisterButton{
     padding: 12px 18px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border-radius: 10px;
     font-size: large;
+    color: whitesmoke;
     font-family: 'poppins', sans-serif;
     outline: none;
     border: none;
@@ -203,8 +204,8 @@
 }
 
 #EventRegisterButton:hover{
-    background-color: black;
-    color: whitesmoke;
+    background-color: whitesmoke;
+    color: black;
     cursor: pointer;
     outline: none;
     border: none;

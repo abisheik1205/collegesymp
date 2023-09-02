@@ -16,6 +16,21 @@
     width: max-content;
 }
 
+.RegisterFor4TransactionId{
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.RegisterFor4TransactionIdInp{
+    width: 50%;
+    padding: 13px 20px;
+    outline: none;
+    font-size: medium;
+    border-radius: 5px;
+}
+
   .RegisterFor4Browse{
     width: 40%;
     text-align: center;

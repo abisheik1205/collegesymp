@@ -12,8 +12,9 @@ import 'firebase/compat/firestore';
 
 const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) => {
 
-    const [imageUrl, setImageUrl] = useState(null);
-    const [progresspercent, setprogresspercent] = useState(0);
+    const [detailEntered, setDetailsEntered] = useState(false);
+    const [transactionId, setTransactionID] = useState("");
+    const [imageuploaded, setImageUploaded] = useState(false);
 
     const uploadingData = async (e) => {
         var downloadURLS = [];
@@ -22,7 +23,6 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
         await uploadBytesResumable(storageRef, e).then( async (snapshot) => {
             await getDownloadURL(snapshot.ref).then(url => {
-                console.log("COMING FOR NOW");
                 console.log(url);
                 downloadURLS.push(url);
             });
@@ -31,13 +31,17 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
         return downloadURLS;
     }
 
+    const handleTransactionID = (e) => {
+        setTransactionID(e)
+        if (e.length > 8) {
+            setDetailsEntered(true)
+        }else{
+            setDetailsEntered(false)
+        }
+    }
+
     const handlesubmit = async (e) => {
         e.preventDefault();
-
-        const date = new Date();
-        const showTime = date.getHours()
-        + ':' + date.getMinutes()
-        + ":" + date.getSeconds();
 
         const collectionRef = collection(firebasee, `users`);
 
@@ -52,14 +56,15 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
             fileLink: [],
         };
 
-        // const docRefHere = collectionRef.
-
         const docRef = doc(collectionRef);
 
 
         try {
             await setDoc(docRef, data);
-            var uploadingDatasHere = await uploadingData(e.target.files[0])
+            var uploadingDatasHere = await uploadingData(e.target.files[0]);
+
+            setImageUploaded(true);
+
             await updateDoc(docRef, {
                 "fileLink": uploadingDatasHere,
             }).then(async () => {
@@ -77,8 +82,6 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                     .catch((error) => {
                       console.error('Error sending email:', error);
                     });
-                    
-                handleNextPaper();
             });
 
         } catch (error) {
@@ -98,14 +101,14 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                     </label>
                     <input onChange={(e) => handlesubmit(e)} accept="image/*" id="file-upload" type="file" style={{display: 'none'}}/>            
                 </div>
-                {
-                    !imageUrl && <div>
-                        <div style={{ width: `${progresspercent}%` }}>{progresspercent}%</div>
-                    </div>
-                }
+                <div className="RegisterFor4TransactionId">
+                    <input className="RegisterFor4TransactionIdInp" placeholder="Transaction ID" type="text" onChange={(e) => handleTransactionID(e.target.value)}/>
+                </div>
                 <div className="registerPaperButton">
                     <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>
-                    {/* <button className="registerPaperButtonBTN" type="submit">Next</button> */}
+                    {
+                        detailEntered && imageuploaded?<button onClick={() => handleNextPaper()} className="registerPaperButtonBTN" type="submit">Next</button>: <></>
+                    }
                 </div>
             </form>
         </div>

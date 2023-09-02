@@ -10,7 +10,7 @@ import RegisterFor5 from "./RegisterFor5/RegisterFor5";
 
 const RegistePaper = () => {
 
-    const [currentPaper, setCurrentPaper] = useState(0);
+    const [currentPaper, setCurrentPaper] = useState(3);
     const [selected, setSelectedEvents] = useState([]);
     const [bio, setBio] = useState({
         name: "",

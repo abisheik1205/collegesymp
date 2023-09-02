@@ -1,36 +1,41 @@
 import cseDepartmentImg from "../../assets/cse.png";
 import AIDSDepartmentImg from "../../assets/AI&DS department Pic.jpg";
-import cse_00 from "../../assets/cse_00.jpg"
-import cse_01 from "../../assets/cse_01.jpg"
-import cse_02 from "../../assets/cse_02.jpg"
-import cse_03 from "../../assets/cse_03.png"
-import ece_00 from "../../assets/ece_00.png"
-import ece_01 from "../../assets/ece_01.png"
-import ece_02 from "../../assets/ece_02.png"
-import ece_03 from "../../assets/ece_03.png"
-import it_00 from "../../assets/it_00.png"
-import it_01 from "../../assets/it_01.png"
-import it_02 from "../../assets/it_02.png"
-import it_03 from "../../assets/it_03.png"
-import ft_00 from "../../assets/ft_00.png"
-import ft_01 from "../../assets/ft_01.png"
-import ft_02 from "../../assets/ft_02.png"
-import ft_03 from "../../assets/ft_03.png"
-import eee_00 from "../../assets/eee_00.png"
-import eee_01 from "../../assets/eee_01.png"
-import eee_02 from "../../assets/eee_02.png"
-import eee_03 from "../../assets/eee_03.png"
-import mtr_00 from "../../assets/mtr_00.png"
-import mtr_01 from "../../assets/mtr_01.jpg"
-import mtr_02 from "../../assets/mtr_02.png"
-import mtr_03 from "../../assets/mtr_03.jpg"
+import cse_00 from "../../assets/cse_00.jpg";
+import cse_01 from "../../assets/cse_01.jpg";
+import cse_02 from "../../assets/cse_02.jpg";
+import cse_03 from "../../assets/cse_03.png";
+import ece_00 from "../../assets/ece_00.png";
+import ece_01 from "../../assets/ece_01.png";
+import ece_02 from "../../assets/ece_02.png";
+import ece_03 from "../../assets/ece_03.png";
+import it_00 from "../../assets/it_00.png";
+import it_01 from "../../assets/it_01.png";
+import it_02 from "../../assets/it_02.png";
+import it_03 from "../../assets/it_03.png";
+import ft_00 from "../../assets/ft_00.png";
+import ft_01 from "../../assets/ft_01.png";
+import ft_02 from "../../assets/ft_02.png";
+import ft_03 from "../../assets/ft_03.png";
+import eee_00 from "../../assets/eee_00.png";
+import eee_01 from "../../assets/eee_01.png";
+import eee_02 from "../../assets/eee_02.png";
+import eee_03 from "../../assets/eee_03.png";
+import mtr_00 from "../../assets/mtr_00.png";
+import mtr_01 from "../../assets/mtr_01.jpg";
+import mtr_02 from "../../assets/mtr_02.png";
+import mtr_03 from "../../assets/mtr_03.jpg";
 import ai_00 from "../../assets/ai_00.jpg";
-import aero_00 from "../../assets/aero_00.jpg"
-import aero_01 from "../../assets/aero_01.png"
-import aero_02 from "../../assets/aero_02.jpg"
-import aero_03 from "../../assets/aero_03.png"
+import aero_00 from "../../assets/aero_00.jpg";
+import aero_01 from "../../assets/aero_01.png";
+import aero_02 from "../../assets/aero_02.jpg";
+import aero_03 from "../../assets/aero_03.png";
 import ai_02 from "../../assets/ai_02.jpg";
-
+import c_00 from "../../assets/cse_00.jpg";
+import c_01 from "../../assets/c_01.png";
+import c_02 from "../../assets/c_02.png";
+import c_03 from "../../assets/c_03.png";
+import ai_03 from '../../assets/ai_03.jpg';
+import ai_04 from "../../assets/ai_04.png"
 
 export const StorageData = [
     {
@@ -100,7 +105,7 @@ export const StorageData = [
                 id: 2,
                 eventName: "CodeQuesters Challenge",
                 shortDescription: "One minute to win it all!",
-                description: "ou have one minute to speak your piece, and everything will be determined within seconds. Energize yourselves, speak up without hesitation, and win with your words and tenacity.",
+                description: "coding challenge with two rounds, code Quest prelims and Rapid Code Clash on HackerRank. Teams advance based on prelims performance. Goodluck",
                 rules: [
                     "Team member size: 1",
                     "Timing: 1.30 to 2.35(Round 1) and 2.40 to 3.30(Round 2).",
@@ -356,7 +361,7 @@ export const StorageData = [
                     "Completion of assembly and coding within the time limit will be awarded.",
                     "No usage of mobiles during event.",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: mtr_01,
                 details: {
                     venue: "Robotics Lab",
                     date: "22 Sep 2023",
@@ -385,7 +390,7 @@ export const StorageData = [
                     "Jury's decision will be considered final.",
                     "Certificates of Participation will be given to all teams except the Disqualified teams",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: mtr_03,
                 details: {
                     venue: "Mechanical Class Room",
                     date: "23 Sep 2023",
@@ -534,7 +539,7 @@ export const StorageData = [
                     "Extra glue will not be given.",
                     "Extra sticks will not be given as well.",
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: c_00,
                 details: {
                     venue: "Concrete and highway Lab",
                     date: "22 SEP 2023",
@@ -561,7 +566,7 @@ export const StorageData = [
                     "Team that takes the shortest time to arrange wins.",
                     "Students will be grouped in three.",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: c_01,
                 details: {
                     venue: "Concrete and Highway Lab",
                     date: "23 SEP 2023",
@@ -589,7 +594,7 @@ export const StorageData = [
                     "In the second round, specifications will be provided and participants should draft accordingly.",
                     "The time allotted for each participant is 1hr.",
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: c_02,
                 details: {
                     venue: "Civil CAD Lab",
                     date: "22 SEP 2023",
@@ -615,7 +620,7 @@ export const StorageData = [
                     "A team can have a minimum of 1 to maximum of 4 participation.",
                     "The time allotted for each team is 15 mins.",
                 ],
-                image: "https://static.invenglobal.com/upload/image/2020/08/13/o1597361719998783.jpeg",
+                image: c_03,
                 details: {
                     venue: "Civil CAD Lab",
                     date: "23 SEP 2023",
@@ -1275,21 +1280,22 @@ export const StorageData = [
             {
                 id: 1,
                 eventName: "PaperFest",
-                shortDescription: "Exploring ideas and sharing knowledge!",
-                description: "Paper Zone is a platform for sharing insightful research and innovative ideas, where presenters showcase their findings to an audience, fostering knowledge exchange and academic discourse.",
+                shortDescription: "Innovate, Optimize, Elevate",
+                description: "Welcome to PaperFest – where innovation takes center stage! Gather your team of up to three participants for an electrifying challenge. We provide the research papers; you provide the magic.your mission?supercharge these papers with your genius. Craft captivating PowerPoint presentations to showcase your innovation.",
                 rules: [
-                    "Participants submit abstracts on technology and innovation and Related topics.",
-                    "Reviewers select high-quality abstracts for presentation.",
-                    "Selected participants prepare presentations with clear structure and visuals.",
-                    "Presentations are evaluated based on content quality, clarity, innovation, and presentation skills.",
-                    "Outstanding presentations are recognized with awards; all participants receive certificates."
+                    "Teams can have a maximum of three members. Teams with more than three members won't qualify.",
+                    "This event is open to students from any technical background. Make sure to have valid identification during registration.",
+                    "Bring your own laptop for creating and presenting your work.",
+                    "Choose one of the three domains: AI with IoT, Core AI, or Blockchain.",
+                    "Build your presentation based on the provided research papers, with a focus on improving solutions in your chosen domain.",
+                    "Stay on schedule! Each team gets 10 minutes for their presentation, including the Q&A session."
                 ],
                 details: {
                     venue: "T12",
                     date: "22 SEP 2023",
                     time: "9:30 AM - 12:30 PM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: ai_04,
                 coordinator: {
                     name: "Muskan P",
                     phoneNumber: "9342806082",
@@ -1302,8 +1308,8 @@ export const StorageData = [
             {
                 id: 2,
                 eventName: "OptiHack",
-                shortDescription: "Unleash your potential",
-                description: "ASOMETHING sOMETHING",
+                shortDescription: "Level-up your imagination",
+                description: "Welcome to the world of the unordinary. where the frontend means more than HTML and CSS. where the goal is beyond just completion .Gear up for a high-octane immersion into the heart of code optimization.",
                 rules: [
                     "Participants can either compete individually or form teams of up to two members.",
                     "Participants will receive a sample website and a well-defined problem statement.",
@@ -1331,20 +1337,22 @@ export const StorageData = [
                 id: 3,
                 eventName: "Insight-Ignite",
                 shortDescription: "Navigate markets, win big at Insight-Ignite ",
-                description: "MarketSim Challenge is a virtual trading competition where participants refine strategies and gain insights by navigating simulated financial markets, fostering practical investment skills and decision-making",
+                description: "Embark on a thrilling journey in our competition. You'll unlock an exclusive dataset, grapple with intriguing problems, dive deep into data, craft stunning visualizations, and strategize your way to victory.",
                 rules: [
-                    "Participants form teams of up to 3 members or can participate individually.",
-                    "Each team or participant is assigned a unique product concept featuring an AI-generated ambassador.",
-                    "Create a poster advertisement showcasing the product and its AI ambassador, emphasizing the virtual-real integration.",
-                    "Present the poster to judges, highlighting creativity, visual appeal, and the AI ambassador's role.",
-                    "Awards are given based on innovative poster design, effective conveyance of the AI ambassador's role, and presentation quality."
+                    "Each team can have up to three participants.",
+                    "Participants should have basic data analytics and visualization skills.",
+                    "Participants can use any visualization and analysis tools.",
+                    "Dataset will be provided onsite.",
+                    "First round begins with MCQ's based on the given data.",
+                    "Second round and third round will be instructed at the time of event.",
+                    "Submissions after the time limit will be disqualified.",
                 ],
                 details: {
                     venue: "T12",
                     date: "23 SEP 2023",
                     time: "11:30 AM - 3:30 PM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: ai_03,
                 coordinator: {
                     name: "Shaun R",
                     phoneNumber: "9344587251",
