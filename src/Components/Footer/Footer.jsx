@@ -4,8 +4,6 @@ import image from "../../assets/vivantaForReal.png";
                     
 const Footer = ({ name, biodetails }) => {
 
-    console.log(biodetails);
-
     return( 
         <footer>
             <div className="Footer_left">
@@ -43,15 +41,17 @@ const Footer = ({ name, biodetails }) => {
                     <h2 className="FooterSupportHead FooterSubhead">Support</h2>
                     <div className="Contentlinks">
                         {
-                            name? <>
+                           name.length > 1? name !== "all"? <>
                                 <p className="Contents"><span className="ContentlinksPspan">Coordinator: </span> {biodetails.coordinatorName}</p>
                                 {/* {faculty !== ""? <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> {faculty}</p>: <></>} */}
                                 <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> {biodetails.contactNumber}</p>
                             </> : 
                                 <><p className="Contents"><span className="ContentlinksPspan">President: </span> Sherin Chezhian</p>
-                                <p className="Contents"><span className="ContentlinksPspan">Faculty: </span> Dr. Prashad</p>
                                 <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> ???</p></>
-                        }
+                        :<><p className="Contents"><span className="ContentlinksPspan">President: </span> Sherin Chezhian</p>
+                        <p className="Contents"><span className="ContentlinksPspan">Contact Number: </span> ???</p></>
+                 
+                    }
                     </div>
                 </div>
             </div>

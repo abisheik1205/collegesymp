@@ -5,7 +5,6 @@ import DepartmentEvents from "./DepartmentEvents/DepartmentEvents";
 import videoForMobile from "../../assets/video.mp4";
 import VideoForDesktop from "../../assets/21.mp4";
 import vivanata from "../../assets/vivantaForReal.png";
-import i2023 from "../../assets/2023.png";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
@@ -67,7 +66,7 @@ const Home = () => {
       <DepartmentEvents />
       <br />
       <br />
-      <Footer />
+      <Footer name="" />
     </div>
   );
 };

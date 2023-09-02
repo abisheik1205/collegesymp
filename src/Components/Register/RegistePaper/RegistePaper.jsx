@@ -10,7 +10,7 @@ import RegisterFor5 from "./RegisterFor5/RegisterFor5";
 
 const RegistePaper = () => {
 
-    const [currentPaper, setCurrentPaper] = useState(3);
+    const [currentPaper, setCurrentPaper] = useState(0);
     const [selected, setSelectedEvents] = useState([]);
     const [bio, setBio] = useState({
         name: "",
@@ -48,11 +48,11 @@ const RegistePaper = () => {
             <Registerinstruction />
             <div className="mainRegisterPaper">
                 <div className="RegistePaperIndicator">
-                    <p className={currentPaper == 0? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>1</p>
-                    <p className={currentPaper == 1? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>2</p>
-                    <p className={currentPaper == 2? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>3</p>
-                    <p className={currentPaper == 3? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>4</p>
-                    <p className={currentPaper == 4? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>5</p>
+                    <p className={currentPaper === 0? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>1</p>
+                    <p className={currentPaper === 1? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>2</p>
+                    <p className={currentPaper === 2? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>3</p>
+                    <p className={currentPaper === 3? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>4</p>
+                    <p className={currentPaper === 4? "RegistePaperIndicatorEachSelected" :"RegistePaperIndicatorEach"}>5</p>
                 </div>
             
             {

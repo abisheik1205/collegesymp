@@ -52,11 +52,7 @@ footer{
     flex-direction: column;
     /*padding: 40px;*/
 }
-.Contents:hover{
-    /* transform: scale(1.01); */
-    text-decoration: solid underline 1px rgb(255, 253, 253);
-    cursor: pointer;
-}
+
 .logo{
     padding :10px;
     width: 200px;

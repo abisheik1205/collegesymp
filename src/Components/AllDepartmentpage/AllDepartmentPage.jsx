@@ -6,7 +6,6 @@ import Divider from "../Divider/Divider";
 import { StorageData } from "../Storage/Storage";
 import Footer from "../Footer/Footer";
 import { useLocation } from 'react-router-dom';
-import { Fade } from "react-reveal";
 
 const AllDepartmentPage = () => {
 

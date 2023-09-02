@@ -9,5 +9,6 @@
 
 .RegisterHeaderback{
     font-size: x-large;
+    cursor: pointer;
     font-family: 'poppins', sans-serif;
 }

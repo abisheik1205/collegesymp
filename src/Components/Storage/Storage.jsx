@@ -15,7 +15,7 @@ import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
 import ece_01 from "../../assets/ece_01.png";
-import ece_02 from "../../assets/ece_02.png";
+import ece_02 from "../../assets/quiz.jpg";
 import ece_03 from "../../assets/ece_03.png";
 import pro from "../../assets/pro.jpg";
 import it_01 from "../../assets/it_01.png";
@@ -24,7 +24,7 @@ import it_03 from "../../assets/it_03.png";
 import pp from "../../assets/pp.jpg";
 import ft_01 from "../../assets/ft_01.png";
 import ft_02 from "../../assets/ft_02.png";
-import ft_03 from "../../assets/ft_03.png";
+import ft_03 from "../../assets/ft_03.jpg";
 import eee_00 from "../../assets/eee_00.png";
 import eee_01 from "../../assets/eee_01.png";
 import eee_02 from "../../assets/eee_02.png";
@@ -39,18 +39,19 @@ import aero_01 from "../../assets/aero_01.png";
 import aero_02 from "../../assets/aero_02.jpg";
 import aero_03 from "../../assets/aero_03.png";
 import ai_02 from "../../assets/ai_02.jpg";
-import c_00 from "../../assets/cse_00.jpg";
+import c_00 from "../../assets/c_02.png";
 import c_01 from "../../assets/c_01.png";
-import c_02 from "../../assets/c_02.png";
-import c_03 from "../../assets/c_03.png";
+import c_02 from "../../assets/c_03.png";
+import c_03 from "../../assets/c_04.png";
 import ai_03 from '../../assets/ai_03.jpg';
-import ai_04 from "../../assets/ai_04.png"
+import ai_04 from "../../assets/ai_04.png";
+import auto_00 from "../../assets/auto_00.png"
 
 export const StorageData = [
     {
         departmentName: "Computer Science",
         departmentMotto: "Unleash the Power of Code: CSE Leading the Way!",
-        eventCoordinator: "Aswin Kumar E",
+        eventCoordinator: "Aswin Kumar E & Sangeetha ",
         faculty:"xxxxx",
         phoneNumber: "7548815022",
         image: cse,
@@ -315,7 +316,7 @@ export const StorageData = [
                     "For the interview round, a series of questions related to the design and accuracy would be posed to the candidate who cleared the first round.",
 
                 ],
-                image: "https://www.pixelstalk.net/wp-content/uploads/images6/Retro-Aesthetic-Wallpaper-HD.png",
+                image: aero_01,
                 details: {
                     venue: "Mechanical CAD Lab",
                     date: "22 Sep 2023",
@@ -444,7 +445,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "11:00 AM - 12:30 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image: auto_00,
                 coordinator: {
                     name: "Bhuvaneshwaran S K",
                     phoneNumber: "6381195783",
@@ -469,7 +470,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "2:00 PM - 3:30 PM",
                 },
-                image: "https://wallpaperaccess.com/full/1170322.jpg",
+                image: cse_01,
                 coordinator: {
                     name: "Jonathan P",
                     phoneNumber: "9384648938",
@@ -495,7 +496,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "11:00 AM - 12:30 PM",
                 },
-                image: "https://img.freepik.com/premium-photo/laptop-computer-peony-flower-with-sunlight-shadows-peach-background-top-view-minimalist-aesthetic-luxury-bohemian-workspace-flatlay-blog-social-media-template-with-copy-space_408798-10316.jpg",
+                image:pro,
                 coordinator: {
                     name: "Mr. DINESH KUMAR S ",
                     phoneNumber: "7358290558",
@@ -772,7 +773,7 @@ export const StorageData = [
                     date: "23 Sep 2023",
                     time: "9:00 AM - 12:30 PM",
                 },
-                image:aero_03,
+                image:pp,
                 coordinator: {
                     name: "Mr. Ragupathi P",
                     phoneNumber: "xxx",
@@ -806,7 +807,7 @@ export const StorageData = [
                     "The team with highest number of points will qualify for the next round In case of a draw the teams will be given 3-5 extra questions",
                     "The teams can have 2-4 members. Only the members attending the quiz in-person will be given the participation certificate.",
                 ],
-                image: mtr_00,
+                image: cse_01,
                 details: {
                     venue: "Robotics Lab",
                     date: "22 SEP 2023",
@@ -868,7 +869,7 @@ export const StorageData = [
                     "Presentation marks will be based on team participation.",
 
                 ],
-                image: mtr_02,
+                image: pp,
                 details: {
                     venue: "Robotics Lab",
                     date: "23 SEP 2023",
@@ -962,7 +963,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: eee_01,
+                image: cse_01,
                 coordinator: {
                     name: "Mr.Manoj Devabhraj",
                     phoneNumber: "08467248067",
@@ -1012,7 +1013,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: eee_03,
+                image: pp,
                 coordinator: {
                     name: "Mr. RahulRaj",
                     phoneNumber: "08467248067",
@@ -1144,7 +1145,7 @@ export const StorageData = [
         departmentMotto: "Powering Progress, Connecting the Future.",
         eventCoordinator:"Mr. Aadil Mohideen",
         faculty:"xxxxx",
-        phoneNumber:"7305275522",
+        phoneNumber:"6383615182",
         image: ece,
         events: [
             {
@@ -1198,7 +1199,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:00 AM - 1:00 PM",
                 },
-                image: ece_01,
+                image: pro,
                 coordinator: {
                     name: "Ms. Nehameena R",
                     phoneNumber: "8610233892",
@@ -1271,7 +1272,7 @@ export const StorageData = [
         departmentMotto: "Empowering Tomorrow with AI & Data Science Today!",
         eventCoordinator:"Vignesh G",
         faculty:"xxxxx",
-        phoneNumber:"7305275522",
+        phoneNumber:"8610975473",
         image: AIDS,
         events: [
             {

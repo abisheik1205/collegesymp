@@ -25,6 +25,11 @@ export const Eventpage = () => {
         navigate("/register");
     }
 
+    var biodetails = {
+        coordinatorName: coodinatorName,
+        contactNumber: phoneNumber
+    }
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [])
@@ -82,7 +87,7 @@ export const Eventpage = () => {
                         <h2 className="EventContactSubHeads subpdc">Contact</h2>
                         <div className="EventContactList">
                             <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
-                            <p className="EventDetailsListEach"><span className="ListInBold"> Phone</span>: {phoneNumber} </p>
+                            <p className="EventDetailsListEach"><span className="ListInBold"> Contact Number</span>: {phoneNumber} </p>
                             <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                         </div>
                     </div>
@@ -105,7 +110,7 @@ export const Eventpage = () => {
                             <h2 className="EventDetailsSubHeadsForMobile">Contact</h2>
                             <div className="EventContactList">
                                 <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
-                                <p className="EventDetailsListEach"><span className="ListInBold"> Phone</span>: {phoneNumber} </p>
+                                <p className="EventDetailsListEach"><span className="ListInBold"> Contact Number</span>: {phoneNumber} </p>
                                 <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                             </div>
                         </div>
@@ -113,7 +118,7 @@ export const Eventpage = () => {
                 </div>
             </div>
         </div>
-        <Footer /> 
-                           </div>
+        <Footer name="" biodetails={biodetails}/> 
+    </div>
     )
 }
