@@ -95,7 +95,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
     return(
         <div className="RegisterFor2">
             <h2 className="InputForBiohead">Choose Event</h2>
-            <p className="noteonRegisterFor2"><Link to={"/allevents"} style={{color: "purple"}}>View All Events</Link></p>
+            <p className="noteonRegisterFor2"><Link to={"/allevents"} style={{color: "grey"}}>View All Events</Link></p>
             <form onSubmit={(e) => handleNext(e)}>
             <div className="RegisterFor2Input">
                 <div className="RegisterFor2InputDrop">

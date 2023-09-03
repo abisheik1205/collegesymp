@@ -1,7 +1,7 @@
 import cse from "../../assets/cse.png";
 import it from "../../assets/it.jpg";
 import eee from "../../assets/eee.png";
-import mtr from "../../assets/mtr.png";
+import mtr from "../../assets/mtr (1).png";
 import civil from "../../assets/Civil.png";
 import mech from "../../assets/mech.jpeg";
 import ece from "../../assets/ece.png";
@@ -51,7 +51,7 @@ export const StorageData = [
     {
         departmentName: "Computer Science",
         departmentMotto: "Unleash the Power of Code: CSE Leading the Way!",
-        eventCoordinator: "Aswin Kumar E & Sangeetha ",
+        eventCoordinator: "Aswin Kumar & Sangeetha ",
         faculty:"xxxxx",
         phoneNumber: "7548815022",
         image: cse,
@@ -89,12 +89,13 @@ export const StorageData = [
                 id: 1,
                 eventName: "Brain Byte Blitz",
                 shortDescription: "Technical Quiz",
-                description: "A platform to test your computer science and engineering knowledge through a captivating and enlightening quiz experience.",
+                description: "A competitive and intellectually stimulating quiz contest designed to assess participants knowledge and understanding of various technical subjects",
                 rules: [
                     "The team should consist of one or two members per team",
                     "The use of mobile phones is strictly prohibited during the event",
                     "Each question has a specific time limit for answering.This time limit can vary based on the complexity of the round",
-                    "Question can be multiple-choice, true/false, fill-in-the-blank, or short answer",
+                    "Question can be multiple-choice, true/false, fill-in-the-blank",
+                    "The questions can cover many topics including theoretical concepts,pratical applicants,historical developments, and emerging trends",
                     "In the event of a tie, Tie-breaker questions can be used to determine the winner. These questions are often more challenging"
                 ],
                 image: cse_01,
@@ -115,17 +116,14 @@ export const StorageData = [
             {
                 id: 2,
                 eventName: "CodeQuesters Challenge",
-                shortDescription: "One minute to win it all!",
+                shortDescription: "code with precision, execute with determination",
                 description: "coding challenge with two rounds, code Quest prelims and Rapid Code Clash on HackerRank. Teams advance based on prelims performance. Goodluck",
                 rules: [
                     "Team member size: 1",
-                    "Timing: 1.30 to 2.35(Round 1) and 2.40 to 3.30(Round 2).",
-                    "Participants must strictly adhere to the instructions provided by the event coordinators.",
                     "Teams are required to bring their own tools, including laptops and chargers.",
                     "During the contest, the use of external resources or references is strictly prohibited to ensure fairness.",
                     "The contest will be fully proctored to maintain a level playing field.",
-                    "Participants are allowed to use the internet solely for accessing the HackerRank platform.",
-                    "Participants are allowed to access HackerRank and submit answers to streamline participation.",
+                    "Participants are allowed to use the internet solely for accessing the HackerRank platform and submit answers to streamline participation.",
                     "Decisions made by the coordinators and faculty coordinators will be considered final and binding.",
                 ],
                 image: cse_02,
@@ -145,9 +143,9 @@ export const StorageData = [
             },
             {
                 id: 3,
-                eventName: "Concept and cascade",
-                shortDescription: "Innovate, Connect: Concept & Cascade!",
-                description: "Explore innovative concepts and foster connections at 'Concept and Cascade': an event merging ideas, technology, and collaboration for progress.",
+                eventName: "Concept cascade",
+                shortDescription: "Innovate, Connect: Concept Cascade!",
+                description: "Explore innovative concepts and foster connections at 'Concept Cascade': an event merging ideas, technology, and collaboration for progress.",
                 rules: [
                     "Three/four members can take up a team.",
                     "Every team lead should be called to choose the topic based on chit picking.",
@@ -164,7 +162,7 @@ export const StorageData = [
                 },
                 coordinator: {
                     name: "Merlin P",
-                    phoneNumber: "7253729293",
+                    phoneNumber: "6382401094",
                 },
                 faculty: {
                     name: "Ms. Saranya"
@@ -508,7 +506,7 @@ export const StorageData = [
             },
             {
                 id: 3,
-                eventName: "CAD Model drawing & assembly",
+                eventName: "DESIGN SPECTRUM",
                 shortDescription: "Crafting automobiles Virtually!",
                 description: "A platform to master vehicle design and to delve into the art of creating intricate automotive models using cutting-edge CAD technology.",
                 rules: [
@@ -687,25 +685,25 @@ export const StorageData = [
                     phoneNumber: "9150955644",
                 },
                 faculty: {
-                    name: "Mr.Dhamodaran K"
+                    name: "Mr.S. Venkatramanan"
                 },
                 departmentName: "Aero",
             },
             {
                 id: 1,
-                eventName: "Aero CAD Modelling",
+                eventName: "CAD Modelling",
                 shortDescription: "Creativity merge of Aero designs!",
                 description: "A specialized competition where participants demonstrate their prowess in computer-aided design, constructing intricate aerospace models that embody both precision and creativity, encapsulating the essence of aviation innovation.",
                 rules: [
                     "Team members: maximum 2 (per team)",
-                    "Durations: 2hrs.",
-                    "The design topic will be disclosed to the participants during the competition.",
-                    "Participants must bring all necessary accessories such as laptops with fusion 360 installed and connection wires for charging.",
-                    "No technical support will be provided during that time",
-                    "No practices runs will be provided during the event",
-                    "The designs submitted must be original works created by the participant. (must not infringe on the intellectual property rights of any third party)",
+                    "Durations: 1hrs.",
+                    "The task will be disclosed to the participants during the competition.",
+                    "Participants must bring their own laptop installed with any of the following 3d Modelling software: CATIA/ Solid works/ Creo.",
+                    "The given task should be completed with proper dimensions and constraints.",
+                    "Evaluation would be based on the proficiency of the participant for the process of modelling.",
+                    "Preliminary stage of the competition will be in the mode of quiz. ",
                     "The final results will be based on the completeness and optimum usage of the software.",
-                    "Any arguments with judges in any form will lead to the disqualification of the participants.",
+                    "No technical support will be provided during that time",
                     "Rules should be followed properly, if not the participant(s) will be disqualified.",
                 ],
                 details: {
@@ -719,7 +717,7 @@ export const StorageData = [
                     phoneNumber: "6380102078",
                 },
                 faculty: {
-                    name: "Mr.Dhamodaran K"
+                    name: "Dr.S. Thamaraikannan"
                 },
                 departmentName: "Aero",
             },
@@ -752,7 +750,7 @@ export const StorageData = [
                     phoneNumber: "8248681808",
                 },
                 faculty: {
-                    name: "Mr.Dhamodaran K"
+                    name: "Dr.R. Naveen"
                 },
                 departmentName: "Aero",
             },
@@ -775,8 +773,8 @@ export const StorageData = [
                 },
                 image:pp,
                 coordinator: {
-                    name: "Mr. Ragupathi P",
-                    phoneNumber: "xxx",
+                    name: "Ragupathi P",
+                    phoneNumber: "8124989036",
                 },
                 faculty: {
                     name: "Mr.Dhamodaran K"
@@ -811,14 +809,14 @@ export const StorageData = [
                 details: {
                     venue: "Robotics Lab",
                     date: "22 SEP 2023",
-                    time: "11:00AM - 12:30PM",
+                    time: "11:00AM - 01:00PM",
                 },
                 coordinator: {
                     name: "Menmozhi",
-                    phoneNumber: "7397442337",
+                    phoneNumber: "9360338336",
                 },
                 faculty: {
-                    name: "G.Bhanvani Bharathi"
+                    name: "Bhavani Bharathi. G"
                 },
                 departmentName: "Mechatronics",
             },
@@ -840,11 +838,11 @@ export const StorageData = [
                 details: {
                     venue: "Robotics Lab",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "01:30PM - 03:00PM",
                 },
                 coordinator: {
                     name: "Lokkesh R B",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "8489574758",
                 },
                 faculty: {
                     name: "K.K.Manivannan"
@@ -877,7 +875,7 @@ export const StorageData = [
                 },
                 coordinator: {
                     name: "Sugavaneshwar",
-                    phoneNumber: "7397442337",
+                    phoneNumber: "9361715949",
                 },
                 faculty: {
                     name: "Dr.T.Raja"
@@ -906,7 +904,7 @@ export const StorageData = [
                 },
                 coordinator: {
                     name: "Balaji R",
-                    phoneNumber: "08467248067",
+                    phoneNumber: "9092028797",
                 },
                 faculty: {
                     name: "K.K.Manivannan"
@@ -1039,10 +1037,12 @@ export const StorageData = [
                 shortDescription: 'Exploring ideas and sharing knowledge!',
                 description: "Paper Presentation is a platform for sharing insightful research and innovative ideas, where presenters showcase their findings to an audience, fostering knowledge exchange and academic discourse.",
                 rules: [
-                    "Role of New Technologies in fashion industry.",
-                    "National differences in fashion.",
-                    "Fashion appearance as identity",
+                    "THEMES:", 
+                    "1)Role of New Technologies in fashion industry",
+                    "2)National differences in fashion.",
+                    "3)Fashion appearance as identity",
                     "Participants can be individual or team of 2 members.",
+                    "Each presentation should last 5 to 10 mins including jury quries",
                 ],
                 image: pp,
                 details: {
@@ -1069,12 +1069,13 @@ export const StorageData = [
                     "Product should be submitted with a write up",
                     "Participants can be individual or team of 2 members",
                     "Products should be present with posters",
+                    "Each presentation should last 5 to 10 mins including jury quries",
                 ],
                 image: ft_01,
                 details: {
                     venue: "Patten Engineering Lab / 4018",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "9:00 AM - 10:30 AM",
                 },
                 coordinator: {
                     name: "Miss. Pavithra S ",
@@ -1087,10 +1088,13 @@ export const StorageData = [
             },
             {
                 id: 2,
-                eventName: "3D fashion Illutration",
+                eventName: "3D fashion Illustration",
                 shortDescription: 'Evolves fashion through 3D innovation ',
                 description: "A platform to redefine the fashion landscape by integrating cutting-edge technology into clothing design, revolutionizing aesthetics and functionality for futuristic style expressions.",
                 rules: [
+                    "On spot theme",
+                    "Illustration can be digital or hand sketch",
+                    "required materials, laptop should be brought by students",
                     "Fashion illustrations should be submitted with a write up with",
                     "Clear Description of fabrics, embellishment, accessories along with illustration.",
                     "Illustrations should be 3D",
@@ -1116,9 +1120,10 @@ export const StorageData = [
                 shortDescription: "Unveiling artistry through innovative designs!",
                 description: "Draping is a platform to Showcase creativity and fashion expertise as participants drape fabric into stunning designs, highlighting artistic flair and skillful manipulation in a visual spectacle of textiles.",
                 rules: [
-                    "Individual participants can present 3 to 6 garments.",
-                    "Team of 2 can present 4 to 8 garments.",
-                    "Team of 4 can present 6 to 12 garments.",
+                    "On spot theme, partcipants should come with models",
+                    "Individual participants can present 3",
+                    "Team of 2 can present 4 ",
+                    "Team of 4 can present 6 ",
                     "Stitches can also be used at certain areas {if necessary} Showcase your",
                     "garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
@@ -1238,15 +1243,16 @@ export const StorageData = [
             {
                 id: 3,
                 eventName: "ElectroMindz",
-                shortDescription: "Explore innovations in electromagnetics at Electrominds",
-                description: "ElectroMinds is a platform to showcase ingenious innovations and breakthroughs in electromagnetics, uniting creators to explore cutting-edge projects and ideas in the field .",
+                shortDescription: "Exploring innovations in the field of electronics at Electromindz",
+                description: "ElectroMinds is a platform to showcase ingenious innovations and breakthroughs in the field of electronics, uniting creators to explore cutting-edge projects and ideas",
                 rules: [
                     "Teams of 2-3 members allowed.",
                     "Cross-disciplinary teams welcome.",
                     "Projects must align with Green Energy, IoT, or Advanced Communication Systems.",
                     "Social relevance required.",
                     "Prepare a concise PowerPoint presentation.",
-                    "Top 10 teams present working models in the final round.",
+                    "Ten teams will be selected from round one to go to round two which will take place on day two",
+                    "Teams selected for day two will need to have a functioning prototype ready of their project",
                     "Judging based on innovation, technical excellence, and presentation quality.",
                     "Two winners chosen irrespective of category.",
                 ],
@@ -1257,8 +1263,8 @@ export const StorageData = [
                 },
                 image: ece_03,
                 coordinator: {
-                    name: "Ms. Fahima Niaz",
-                    phoneNumber: "6383615182",
+                    name: "Fahima Niaz",
+                    phoneNumber: "7305501928",
                 },
                 faculty: {
                     name: "Mr.Harish "

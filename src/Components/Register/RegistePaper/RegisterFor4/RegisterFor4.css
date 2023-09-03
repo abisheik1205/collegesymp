@@ -9,7 +9,7 @@
 .noteInRegisterFor4{
     text-align: center;
     font-family: 'poppins', sans-serif;
-    color: purple;
+    color: whitesmoke;
     font-size: small;
     cursor: pointer;
     margin-left: auto;
@@ -53,4 +53,9 @@
     font-family: 'poppins', sans-serif;
     /* border: 1px solid rgb(234, 0, 255); */
 }
+@media screen and (max-width: 1000px){
 
+    .RegisterFor4TransactionIdInp{
+        width: 70%;
+    }
+}
