@@ -20,7 +20,6 @@
     padding: 10px 0px 20px;
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(255, 255, 255);
 }
 
 .RegistePaperIndicatorEachSelected{
@@ -68,6 +67,8 @@
     margin: 10px 5px;
     border-top: none;
     border-left: none;
+    color: whitesmoke;
+    background-color: transparent;
     border-right: none;
     border-bottom: 1px solid rgb(234, 0, 255);
 }
@@ -92,4 +93,32 @@
 .registerPaperButtonBTN:hover{
     background-color: rgb(234, 0, 255);
     color: whitesmoke;
+}
+
+.registerPaperButton{
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1000px){
+    
+    .registerPaperButton{
+        margin-top: 15px;
+    }
+    .InputForBio{
+        flex-direction: column;
+        margin-bottom: 10px;
+        justify-content: space-between;
+    }
+    .InputForBiofordepartName{
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    .mainRegisterPaper{
+        width: 100%;
+    }
+    
+    .mainRegisterPaperInput{
+        color: whitesmoke;
+    }
 }

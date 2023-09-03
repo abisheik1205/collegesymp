@@ -1,7 +1,7 @@
 import React from "react";
 import Registerinstruction from "../RegisterInstruction/RegisterInstruction";
 import "./RegistePaper.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import RegisterFor1 from "./RegisterFor1/RegisterFor1";
 import RegisterFor2 from "./RegisterFor2/RegisterFor2";
 import RegisterFor3 from "./RegisterFor3/RegisterFor3";
@@ -42,6 +42,10 @@ const RegistePaper = () => {
             mailAdress: mailAdress,
         })
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
 
     return(
         <div className="RegistePaper">

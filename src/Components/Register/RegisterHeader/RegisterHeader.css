@@ -10,5 +10,6 @@
 .RegisterHeaderback{
     font-size: x-large;
     cursor: pointer;
+    color: whitesmoke;
     font-family: 'poppins', sans-serif;
 }

@@ -68,7 +68,7 @@ export const Eventpage = () => {
                         }
                     </ul>
                 </div>
-                <div className="EventRegisterMobile"><button id="EventRegisterButton">REGISTER</button></div>
+                <div className="EventRegisterMobile"><button id="EventRegisterButton" onClick={() => handleRegister()}>REGISTER</button></div>
                 <div className="EventPDC">
                     <div className="EventPrize pdc">
                         <h2 className="EventPrizeSubHeads">Prize</h2>
