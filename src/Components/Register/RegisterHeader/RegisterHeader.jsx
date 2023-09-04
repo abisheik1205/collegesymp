@@ -1,6 +1,5 @@
 import React from "react";
 import "./RegisterHeader.css";
-
 import { useNavigate } from "react-router-dom";
 
 const RegisterHeader = () => {
@@ -8,7 +7,7 @@ const RegisterHeader = () => {
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate("/");
+        navigate(-1);
     }
 
     return(

@@ -98,7 +98,33 @@
 .registerPaperButton{
     margin-top: 30px;
 }
+.dialogBoxHeadX{
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+    font-family: 'poppins', sans-serif;
+    text-align: right;
+}
 
+.dialogBoxHeadInstrucRule{
+    font-family: 'poppins', sans-serif;
+    padding: 10px   25px;
+    font-size: medium;
+}
+
+.DialogBtn{
+    outline: none;
+    cursor: pointer;
+    font-family: 'poppins', sans-serif;
+    padding: 12px 18px;
+    margin: 0px 25px;
+    border: none;
+    margin-left: auto;
+    border-radius: 4px;
+    width: max-content;
+    background-color: black;
+    color: whitesmoke;
+}
 @media screen and (max-width: 1000px){
     
     .registerPaperButton{

@@ -11,9 +11,9 @@ const AboutUs = () => {
                         <h2 className="aboutUsContentHead">ABOUT KCG</h2>
                         <br />
                     <div>
-                            <p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A prominent institution ranking amongst the top colleges in Tamil Nadu, was established with an initiative to provide pragmatic learning. The institution has also partnered with a number of companies to set a worldwide standard by offering students a diverse range of possibilities that combine education and recreation.</p>
+                            <p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Established in 1998, KCG College of Technology is a Christian minority institution dedicated to providing exceptional education in science, technology, and engineering. Affiliated with Anna University, Chennai, and approved by AICTE, New Delhi, the college's mission is to disseminate knowledge within an intellectually stimulating environment. They also prioritize socially responsive research, innovation, and entrepreneurship while nurturing holistic development and ethical values in their students.</p>
                             <br />
-                            <span className="tobehidden"><p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The students' appetite for knowledge makes them thrive to prepare for the ready-to-serve industrial requirements. This is delivered by CIT through professional ethics which is sated by frequent guest lectures by professionals from various industries and academic backgrounds. Chennai Institute of Technology has been awarded the National Award of Excellence for Best Placements & has been ranked Second in Tamil Nadu. Our college has made dreams of thousands of students come true</p></span>
+                            <span className="tobehidden"><p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KCG College is committed to fostering responsible citizenship and progressive leadership by focusing on students' overall development and strengthening their leadership abilities. They continually adapt their curriculum to include value-added programs, enhancing students' job prospects while aligning their offerings with industry needs. With numerous undergraduate and postgraduate programs, accreditation by NBA, and recognition as a research center by Anna University, KCG College of Technology stands as a symbol of quality education and industry partnership in the field of engineering and technology.</p></span>
                         </div>
                         <div className="collegeqoute">
                             <p className="collegeqoutePara">To Make Every Man A Success And No Man A Failure <span className="collegeqouteParaBold">&nbsp;-&nbsp;  KCG Verghese</span></p>
@@ -25,7 +25,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <div className="aboutusContenttwo">
-                        <h2 className="aboutUsContentHead">ABOUT TECHFEST</h2>
+                        <h2 className="aboutUsContentHead">ABOUT VIVANTA 23</h2>
                         <br />
                         <div>
                             <p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A prominent institution ranking amongst the top colleges in Tamil Nadu, was established with an initiative to provide pragmatic learning. The institution has also partnered with a number of companies to set a worldwide standard by offering students a diverse range of possibilities that combine education and recreation.</p>

@@ -91,7 +91,7 @@ a{
 .imageFoundOnAboutUS{
     width: 100%;
     position: relative;
-    height: 100vh;
+    height: 110vh;
 }
 .imgonABoutUs{
     position: absolute;
@@ -100,7 +100,7 @@ a{
     transition: all 2s;
     right: 0;
     top: 50px;
-    height: 99vh;
+    height: 108vh;
     object-fit: cover;
     mix-blend-mode:luminosity;
 }

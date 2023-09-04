@@ -15,8 +15,6 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
 
     var Data = StorageData;
 
-    // var selectedEvents = [];
-
     var allevents = [];
 
     for (var i = 0; i < Data.length; i++) {

@@ -5,3 +5,19 @@
     justify-content: center;
     align-items: center;
 }
+
+.allListContainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.allListContainerEach{
+    padding: 20px 10px;
+    width: 100%;
+    background-color: bisque;
+    margin: 10px 0px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}

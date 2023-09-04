@@ -7,8 +7,12 @@ import RegisterFor2 from "./RegisterFor2/RegisterFor2";
 import RegisterFor3 from "./RegisterFor3/RegisterFor3";
 import RegisterFor4 from "./RegisterFor4/RegisterFor4";
 import RegisterFor5 from "./RegisterFor5/RegisterFor5";
+import Dialog from '@mui/material/Dialog';
+import { DialogTitle } from "@mui/material";
 
 const RegistePaper = () => {
+
+    const [dialog, setDialog] = useState(true);
 
     const [currentPaper, setCurrentPaper] = useState(0);
     const [selected, setSelectedEvents] = useState([]);
@@ -34,6 +38,10 @@ const RegistePaper = () => {
         console.log(selectedEvents);
     }
 
+    const handleCloseDialog = () => {
+        setDialog(false)
+    }
+
     const handleBio = (name, collegeName, departmentName, phoneNumber, mailAdress) => {
         setBio({
             name: name,
@@ -50,6 +58,19 @@ const RegistePaper = () => {
 
     return(
         <div className="RegistePaper">
+            <Dialog open={dialog}>
+              {/* <p className="dialogBoxHeadX">X</p> */}
+              <DialogTitle style={{textAlign: 'center'}} className="dialogBoxHeadInstruc">Instructions</DialogTitle>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
+              <br />
+              <button onClick={() => setDialog(false)} className="DialogBtn">Done!</button>
+              <br />
+              <br />
+            </Dialog>
+              <br />
             <Registerinstruction />
             <div className="mainRegisterPaper">
                 <div className="RegistePaperIndicator">

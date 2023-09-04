@@ -52,6 +52,7 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
             phoneNumber: bio.phoneNumber,
             collegeName: bio.collegeName,
             departmentname: bio.departmentName,
+            transactionId: transactionId,
             timeStamp: serverTimestamp(),
             fileLink: [],
         };
