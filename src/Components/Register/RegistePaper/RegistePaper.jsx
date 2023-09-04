@@ -12,6 +12,7 @@ const RegistePaper = () => {
 
     const [currentPaper, setCurrentPaper] = useState(0);
     const [selected, setSelectedEvents] = useState([]);
+
     const [bio, setBio] = useState({
         name: "",
         departmentName: "",

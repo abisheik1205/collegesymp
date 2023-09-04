@@ -86,9 +86,9 @@ export const Eventpage = () => {
                     <div className="EventContact pdc">
                         <h2 className="EventContactSubHeads subpdc">Contact</h2>
                         <div className="EventContactList">
+                            <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                             <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
                             <p className="EventDetailsListEach"><span className="ListInBold"> Contact Number</span>: {phoneNumber} </p>
-                            <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                         </div>
                     </div>
                 </div>
@@ -110,9 +110,9 @@ export const Eventpage = () => {
                         <div className="EventDetailsForMobile">
                             <h2 className="EventDetailsSubHeadsForMobile">Contact</h2>
                             <div className="EventContactList">
+                                <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                                 <p className="EventDetailsListEach"><span className="ListInBold">Co-ordinator</span>:  {coodinatorName} </p>
                                 <p className="EventDetailsListEach"><span className="ListInBold"> Contact Number</span>: {phoneNumber} </p>
-                                <p className="EventDetailsListEach"><span className="ListInBold"> Faculty</span>: {facultyName}</p>
                             </div>
                         </div>
                     </div>

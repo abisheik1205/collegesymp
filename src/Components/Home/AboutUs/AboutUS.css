@@ -91,7 +91,7 @@ a{
 .imageFoundOnAboutUS{
     width: 100%;
     position: relative;
-    height: 96vh;
+    height: 100vh;
 }
 .imgonABoutUs{
     position: absolute;
@@ -106,7 +106,6 @@ a{
 }
 
 @keyframes flicker {
-    
     0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
       
         text-shadow:
@@ -127,12 +126,7 @@ a{
 @media only screen and (max-width: 1000px){
     .aboutUS{   
         margin-top: 65px;
-        margin-bottom: 0px;
-        height: 105vh;
-    }
-    
-    .AboutUs{
-        height: 105vh;
+        margin-bottom: 50px;
     }
     .imageFoundOnAboutUS{
         width: max-content;
@@ -175,13 +169,10 @@ a{
         margin: 20px auto;
     }
     .collegeqoutePara{
+        font-size: small;
+        text-align: center;
         font-weight: 100;
     }
-    /* .collegeqoutePara{
-        font-size: small;
-        font-weight: 100;
-        font-style: oblique;
-    } */
 
     .aboutusImage{
         display: none;

@@ -5,8 +5,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./Components/Login/login/Login";
 import Signup from './Components/Login/signup/Signup';
 import Register from './Components/Register/Register';
-import storage from "./storage.json";
 import Dev from './Components/Dev/Dev';
+import SearchList from './Components/SearchList/SearchList';
 
 const router = createBrowserRouter([
   {
@@ -34,12 +34,12 @@ const router = createBrowserRouter([
     element: <Register />,
   },
   {
-    path: "/jsonData",
-    element: <p>{storage}</p>,
-  },
-  {
     path: "/dev",
     element: <Dev />,
+  },
+  {
+    path: "/administrator",
+    element: <SearchList />,
   },
 ])
 

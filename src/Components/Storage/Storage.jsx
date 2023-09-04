@@ -175,7 +175,7 @@ export const StorageData = [
     {
         departmentName: "Information Technology",
         departmentMotto: "IT Wizards -> Turning Glitches into Good Vibes!",
-        eventCoordinator:"Mr. Prashanth",
+        eventCoordinator:"Prashanth",
         faculty:"xxxxx",
         phoneNumber: "8610661802",
         image: it,
@@ -496,7 +496,7 @@ export const StorageData = [
                 },
                 image:pro,
                 coordinator: {
-                    name: "Mr. DINESH KUMAR S ",
+                    name: "DINESH KUMAR S ",
                     phoneNumber: "7358290558",
                 },
                 faculty: {

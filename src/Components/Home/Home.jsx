@@ -3,7 +3,7 @@ import "./Home.css";
 import AboutUs from "./AboutUs/AboutUs";
 import DepartmentEvents from "./DepartmentEvents/DepartmentEvents";
 import videoForMobile from "../../assets/video.mp4";
-import VideoForDesktop from "../../assets/21.mp4";
+import VideoForDesktop from "../../assets/21 (2).mp4";
 import vivanata from "../../assets/vivantaForReal.png";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -55,7 +55,7 @@ const Home = () => {
         <div className="bgContainer">
           <Header />
           <div className={isPlayingforDesktop||isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
-            <img src={vivanata} id="logo" alt="logo" />
+            <img src={vivanata} id={isPlayingforDesktop||isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
   
             <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
           </div>
