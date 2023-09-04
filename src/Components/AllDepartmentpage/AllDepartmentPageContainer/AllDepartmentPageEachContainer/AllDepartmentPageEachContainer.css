@@ -114,17 +114,37 @@
         height: 350px;
         margin: 0%;
     }
+
     .AllDepartmentPageContainerEachOnHover{
         width: max-content;
         height: 350px;
     }
+
     .AllDepartmentPageContainerEachStackForm{
         height: 350px;
     }
+
     .AllDepartmentPageContainerEachStackFormHeaderPara{
         display: none;
     }
+
+    .AllDepartmentPageContainerEachStackFormHeaderHead{
+        font-size: x-large;
+        padding: 0px 5px;
+    }
+.AllDepartmentPageContainerEachStackFormContent{
+    display: none;
+}
     .AllDepartmentPageContainerEachStackFormFooter{
-        display: none;
+        width: 290px;
+        height: 350px;
+        position: absolute;
+        transition: .5s;
+        display: flex;
+        padding: 10px 20px;
+        color: rgb(241, 241, 241);
+        justify-content: space-between;
+        align-items: flex-end;
+        font-size: small;
     }
 }

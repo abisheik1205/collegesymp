@@ -11,7 +11,7 @@
         width: 100%;
         grid-template-columns: 290px;
         justify-content: center;
-        gap: 10px 10px;
+        gap: 50px 10px;
         margin: 0px auto;
     }
 }

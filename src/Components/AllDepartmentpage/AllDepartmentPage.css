@@ -39,7 +39,7 @@
     }
     .NavOnMobileClick{
         overflow: hidden;
-        position: absolute;
+        position: sticky;
         display: none;
         /* margin: 0%; */
         top: 0;
@@ -48,7 +48,6 @@
         height: 100vh;
         z-index: 10;
         width: 100vw;
-        background-color: aliceblue;
         color: whitesmoke;
     }
     .NavOnMobile{
@@ -65,17 +64,28 @@
         background-color: aliceblue;
         color: whitesmoke;
     }
+
     .NavOnMobileP{
         z-index: 100;
         transform: rotate(90deg);
-        padding: 15px 25px;
+        /* padding: 15px 25px; */
         text-align: right;
         position: absolute;
-        top: 0;
-        right: 0;       
-        background-color: bisque;
-        color: rgb(0, 0, 0);
+        top: 55px;
+        right: 45px;
+        font-size: x-large;
+        color: whitesmoke;
+        font-weight: 600;
     }
+
+    .NavOnMobileX{
+        color: black;
+        text-align: right;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+    }
+
     .AllDepartmentPageContactusSession{
         display: flex;
         flex-direction: column;

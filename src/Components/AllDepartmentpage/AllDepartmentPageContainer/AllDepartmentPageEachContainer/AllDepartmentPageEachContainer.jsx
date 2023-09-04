@@ -21,7 +21,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, departmentMotto, main
         back: false,
         departmentNamefoundBACk: false
     };
-
+    
         return(
         <>
         {

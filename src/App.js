@@ -6,6 +6,7 @@ import Login from "./Components/Login/login/Login";
 import Signup from './Components/Login/signup/Signup';
 import Register from './Components/Register/Register';
 import storage from "./storage.json";
+import Dev from './Components/Dev/Dev';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
   {
     path: "/jsonData",
     element: <p>{storage}</p>,
+  },
+  {
+    path: "/dev",
+    element: <Dev />,
   },
 ])
 

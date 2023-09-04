@@ -1,0 +1,186 @@
+.DevPage{
+    background-image: url("https://i.pinimg.com/originals/59/69/84/59698460a33a71e42ddf46e185e17737.gif");
+    background-repeat: none ;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    overflow: hidden;
+}
+.DevBox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+.Developer{
+    padding: 20px;
+    transition: all .5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgba(27, 27, 27, 0.584);
+    transform: scale(0.8);
+
+}
+.space{
+    padding: 20px;
+}
+.DevImg{
+    height: 350px;
+    width: 250px;
+}
+.DevName{
+    font-family: 'poppins', sans-serif;
+    color: #fff;
+}
+.Developer:hover{
+    /*font-size: 6.2rem;*/
+    cursor: pointer;
+    animation: pulsate 1.5s infinite alternate;  
+    /*border: 0.2rem solid #fff;
+    /*border-radius: 2rem;
+    /*padding: 0.4em;*/
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem #bc13fe,
+              0 0 0.8rem #bc13fe,
+              0 0 2.8rem #bc13fe,
+              inset 0 0 1.3rem #bc13fe; 
+  }
+.Devhead{
+    color: #fff;
+  /**/text-shadow:
+    0 0 7px #fff,
+    0 0 10px #c1bfbf,
+    0 0 21px #9f9f9f,
+    0 0 42px #c556f1,
+    0 0 82px #9c55b9,
+    0 0 92px #6f567a,
+    0 0 102px #454047,
+    0 0 151px #302f30;/**/
+    font-family: 'poppins', sans-serif;
+}
+  
+  @keyframes pulsate {
+      
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #bc13fe,
+        0 0 80px #bc13fe,
+        0 0 90px #bc13fe,
+        0 0 100px #bc13fe,
+        0 0 150px #bc13fe;
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px #bc13fe,
+      0 0 45px #bc13fe,
+      0 0 55px #bc13fe,
+      0 0 70px #bc13fe,
+      0 0 80px #bc13fe;
+  
+  }
+}
+.flip-container {
+    perspective: 1000px; /* Removed -webkit- prefix */
+    /*: transparent;*/
+    margin: 10px auto;
+    background-color: transparent;
+}
+
+/* flip the picture when hover */
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg); /* Removed -webkit- prefix */
+}
+
+.flip-container,
+.front,
+.back,
+img {
+    width: 250px;
+    height: 350px;
+}
+
+/* flip speed */
+
+.flipper {
+    transition: 1.5s; /* Removed -webkit- prefix */
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back during flip */
+
+.front,
+.back {
+    backface-visibility: hidden; /* Removed -webkit- prefix */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front placed above back */
+
+.front {
+    z-index: 2;
+}
+
+/* back, initially hidden */
+
+.back {
+    transform: rotateY(180deg);
+    background: rgb(218, 138, 138);
+}
+@media only screen and (max-width: 800px) {
+    .DevBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
+    
+    
+    .Developer{
+        /*font-size: 6.2rem;*/
+        cursor: pointer;
+        animation: pulsate 1.5s infinite alternate;  
+        /*border: 0.2rem solid #fff;
+        /*border-radius: 2rem;
+        /*padding: 0.4em;*/
+        box-shadow: 0 0 .2rem #fff,
+                  0 0 .2rem #fff,
+                  0 0 2rem #bc13fe,
+                  0 0 0.8rem #bc13fe,
+                  0 0 2.8rem #bc13fe,
+                  inset 0 0 1.3rem #bc13fe; 
+        transform: scale(0.8);
+    }
+    .DevPage{
+        background-image: url("https://i.pinimg.com/originals/59/69/84/59698460a33a71e42ddf46e185e17737.gif");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+}

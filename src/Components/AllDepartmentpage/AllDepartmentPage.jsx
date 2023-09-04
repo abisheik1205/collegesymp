@@ -448,7 +448,7 @@ const AllDepartmentPage = () => {
 
     return(
         <>
-        <div className="AllDepartmentPage">
+        <div className="AllDepartmentPage" style={mobileClick? {padding: '0px 0px'}: {padding: "20px 40px"}}>
             <AllDepartmentPageHeader handlefilter={handlefilter} selected={selected}/>
             <br />
             <Divider margin="40px 20px 30px" color="whitesmoke"/>
@@ -456,8 +456,9 @@ const AllDepartmentPage = () => {
             <br />
             <br />
             <br />
+            <p className="NavOnMobileP" onClick={() => handleMobileClick()}>|||</p>
             <div className={mobileClick ? "NavOnMobile": "NavOnMobileClick"}>
-                <p className="NavOnMobileP" onClick={() => handleMobileClick()}>|||</p>
+                <p className="NavOnMobileX" onClick={() => handleMobileClick()}>X</p>
                 <div className="AllDepartmentPageHeaderLinkInMobile">
                     <p onClick={() => handleFilterAdvanced("all")} className={`AllDepartmentPageHeadereachLinks ${selected === "all"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>All</p>
                     <p onClick={() => handleFilterAdvanced("Computer Science")} className={`AllDepartmentPageHeadereachLinks ${selected === "Computer Science"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>CSE</p>
