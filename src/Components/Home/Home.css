@@ -7,8 +7,10 @@
 
 .bgContainer{
   width: 100%;
-  position: relative;
   height: 100vh;
+  background: rgba(0, 0, 0, 0.800);
+  position: relative;
+  z-index: 100;
 }
 
 video{
@@ -22,11 +24,16 @@ video{
 .container{
   position: absolute;
   width: 100VW;
-  z-index: 100;
   top: 44%;
   left: 0%;
   text-align: center;
+  opacity: 0;
+  z-index: 100;
+  /* background-color: black; */
   margin: 0px auto;
+  animation-name: opacityToHigh;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 
 .containerPlaying{
@@ -37,7 +44,8 @@ video{
   left: 0%;
   z-index: 100;
   animation-name: containerPlayingitAll;
-  animation-duration: 1.5s;
+  /* animation-delay: .5s; */
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   text-align: center;
   margin: 0px auto;
@@ -174,6 +182,15 @@ video{
     top: 92%;
     /* width: 250px; */
     left: 40%;
+  }
+}
+@keyframes opacityToHigh{
+  0%{
+    opacity: 0;
+  }
+
+  100%{
+    opacity: 1;
   }
 }
 

@@ -1,11 +1,16 @@
-import React from "react";
+import React from "react";  
 
-const LoginPage = ({ handleSubmit }) => {
+const LoginPage = ({ handleSubmit, handlePassword }) => {
     return(
-        <div className="LoginPage">
-            <h2>Administrator</h2>
-            <input placeholder="Administrator Password" required onSubmit={() => handleSubmit()}/>
-        </div>
+        <form onSubmit={(e) => handleSubmit(e)}>
+            <div className="LoginPage">
+
+                <h2 className="LoginPageHead">Administrator</h2>
+                <input className="LoginPageInp" placeholder="Administrator Password" onChange={handlePassword} required/>
+                <br />
+                <input className="LoginPageBtn" type="submit" value="Submit" />
+            </div>
+        </form>
     )
 }
 

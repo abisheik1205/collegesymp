@@ -60,11 +60,12 @@ const RegistePaper = () => {
         <div className="RegistePaper">
             <Dialog open={dialog}>
               {/* <p className="dialogBoxHeadX">X</p> */}
-              <DialogTitle style={{textAlign: 'center'}} className="dialogBoxHeadInstruc">Instructions</DialogTitle>
-              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
-              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
-              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
-              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>BlaahBlaahBlaahBlaah Blaahv BlaahBlaahBlaahvv Blaah</p>
+              <DialogTitle style={{textAlign: 'center'}} className="dialogBoxHeadInstruc">Steps To Be Followed</DialogTitle>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>1. Enter the personal info on the first page.</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>2. Can select up to 5 events or atleast one event.</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>3. Should make a manual payment of Rs. 130 with the given IFSC code/account number.</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>4. Upload the screenshot and enter the transaction ID on the following page.</p>
+              {/* <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>5. College sends a confirmation email to the registered email ID.</p> */}
               <br />
               <button onClick={() => setDialog(false)} className="DialogBtn">Done!</button>
               <br />

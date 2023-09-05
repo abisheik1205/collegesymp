@@ -26,7 +26,8 @@ footer{
 .FooterSub{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 0px;
+    width: 100%;
     /* background-color: blue; */
     margin: 10px 0px;
 }
@@ -86,6 +87,8 @@ footer{
 .MapLocation{
     border-radius: 15px;
     padding :1px;
+    margin-right: 'auto';
+    width: 80%;
 }
 .FooterLocationHead{
     padding-bottom:10px;
@@ -122,5 +125,12 @@ footer{
     }
     .FooterCollegeAddress{
         font-size: x-small;
+    }
+    .MapLocation{
+        border-radius: 15px;
+        padding :1px;
+        margin-right: 'auto';
+        margin-left: 'auto';
+        width: 100%;
     }
 }

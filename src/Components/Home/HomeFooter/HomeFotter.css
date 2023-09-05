@@ -1,0 +1,11 @@
+.HomeFotter{
+    padding: 10vh 10px;
+    background-color: black;
+}
+
+.HomeFotterHead{
+    font-size: xx-large;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Shadows Into Light', cursive;
+}

@@ -12,7 +12,7 @@ import 'firebase/compat/firestore';
 
 const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) => {
 
-    const [detailEntered, setDetailsEntered] = useState(false);
+    const [loading, setLoading] = useState(false);
     const [transactionId, setTransactionID] = useState("");
     const [photo, setPhoto] = useState(null);
     const [imageuploaded, setImageUploaded] = useState(false);
@@ -45,7 +45,7 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
     const handlesubmit = async (e) => {
 
         e.preventDefault();
-        console.log("came Here now!!")            
+        setLoading(true);
         const collectionRef = collection(firebasee, `users`);
 
         let data = {
@@ -92,15 +92,12 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                       console.error('Error sending email:', error);
                     });
             });
-
+            setLoading(false)
         } catch (error) {
             console.log(error + "Bhai")
         }
         
     }
-    // useEffect(() => {
-    //     handlesubmit()
-    // }, [photo, transactionId])    
 
     return(
         <div className="RegisterFor4">
@@ -108,18 +105,21 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                 <h2 className="RegisterFor4Head">Upload the screenshot</h2>
                 <p className="noteInRegisterFor4">What pic&#x3F;</p>
                 <div className="RegisterFor4Browse">
-                    <label for="file-upload" className="custom-file-upload">
-                            <i class="fa fa-upload"></i>
-                        Custom Upload
-                    </label>
-                    <input accept="image/*" id="file-upload" type="file" style={{display: 'none'}} onChange={(e) => handleChangePhoto(e)}/>            
-                </div>
+                    {
+                        photo? <h2 className="uploadHead">Done!!</h2>: <><label for="file-upload" className="custom-file-upload">
+                        <i class="fa fa-upload"></i>
+                    Custom Upload
+                </label>
+                <input accept="image/*" id="file-upload" type="file" style={{display: 'none'}} onChange={(e) => handleChangePhoto(e)}/></>
+                    } </div>
                 <div className="RegisterFor4TransactionId">
                     <input className="RegisterFor4TransactionIdInp" placeholder="Transaction ID" type="text" onChange={handleTransactionID}/>
                 </div>
                 <div className="registerPaperButton">
                     <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>
-                        <button onClick={(e) => handlesubmit(e)} className="registerPaperButtonBTN" type="submit">Next</button>
+                        {
+                            photo && transactionId.length > 8? loading? <button className="registerPaperButtonBTN" type="submit">Uploading</button> :<button onClick={(e) => handlesubmit(e)} className="registerPaperButtonBTN" type="submit">Next</button>: <></>
+                       } 
                 </div>
             </form>
         </div>

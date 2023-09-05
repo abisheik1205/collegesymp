@@ -35,7 +35,6 @@ const AllDepartmentPage = () => {
     var civil = [];
     var Ft = [];
 
-
     const handleInitialCommit = () => {
 
         if (localStorage.getItem("val")) {

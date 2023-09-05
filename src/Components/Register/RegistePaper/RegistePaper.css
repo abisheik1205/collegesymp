@@ -98,6 +98,9 @@
 .registerPaperButton{
     margin-top: 30px;
 }
+.dialogBoxHeadInstruc{
+    text-decoration: underline;
+}
 .dialogBoxHeadX{
     padding: 5px 15px;
     color: rgb(0, 0, 0);
@@ -144,7 +147,9 @@
     .mainRegisterPaper{
         width: 100%;
     }
-    
+    .dialogBoxHeadX{
+        font-size: medium;
+    }
     .mainRegisterPaperInput{
         color: whitesmoke;
     }

@@ -46,7 +46,10 @@
     background-color: none;
     font-size: xx-large;
 }
-
+.uploadHead{
+    font-family: 'poppins', sans-serif;
+    margin: 35px 10px;
+}
 .custom-file-upload{
     padding: 50px 10px;
     display: flex;

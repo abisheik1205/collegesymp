@@ -10,7 +10,7 @@ export const Eventpage = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { departmentName, image, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
+    const { departmentName, image, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
 
     const dataToSend = {
         back: true,
@@ -54,6 +54,22 @@ export const Eventpage = () => {
                     <h2 className="EventDescriptionSubHeads">Description</h2>
                     <p className="EventDescriptiontext">{eventdescription}</p>
                 </div>
+                {
+                    theme? <div className="EventRules">
+                        <h2 className="EventRulesSubHeads">Theme</h2>
+                        <ul className="RulesList">
+                            {
+                                theme?.map((item, key) => { 
+                                    return(
+                                        <>
+                                            <li className="RulesListEach">{item}</li>
+                                        </>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>: <></>
+                }
                 <div className="EventRules">
                     <h2 className="EventRulesSubHeads">Rules</h2>
                     <ul className="RulesList">

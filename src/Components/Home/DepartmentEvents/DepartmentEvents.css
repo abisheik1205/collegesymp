@@ -2,6 +2,7 @@
     color: whitesmoke;
     /* background-color: rgba(57, 57, 57, 0.86); */
     margin-top: 25px;
+    margin-bottom:40px;
 }
 
 .departmentsInGrid{
@@ -29,7 +30,6 @@
     font-size: medium;    
 }
 .departmentEventsHead{
-    margin: 10px 70px;
     font-size: xx-large;
 }
 .departmentsInGridEach{
@@ -41,7 +41,17 @@
     border-radius: 10px;
     position: relative;
 }
-
+.departmentEventsFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 90px;
+    justify-content: space-between;
+}
+.departmentEventP{
+    font-size: larger;
+    font-family: 'poppins', sans-serif;
+}
 .departmentsInGridEachStackHead{
     font-family: 'Inconsolata', monospace;
     color: whitesmoke;
@@ -185,13 +195,17 @@
         grid-template-columns: 0.4fr;
     }    
     .departmentEvents{
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+    }
+    .departmentEventsFlex{
+        padding: 10px 50px;
+    }
+    .departmentEventP{
+        font-size: small;
     }
     .departmentEventsHead{
-        width: 90%;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-size: larger;
         /* background-color: aquamarine; */
     }
     /* .divider{

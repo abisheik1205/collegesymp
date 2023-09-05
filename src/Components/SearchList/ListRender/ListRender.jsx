@@ -5,8 +5,6 @@ import TableCell from '@mui/material/TableCell';
 
 const ListRender = ({ key, name, phoneNumber, transactionID, photo, mailID, Eventname }) => {
 
-    console.log(name);
-
     return(
         <TableRow
         key={key}
