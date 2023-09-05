@@ -1,23 +1,55 @@
 .SearchList{
     height: 100vh;
-    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .allListContainer{
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .allListContainerEach{
-    padding: 20px 10px;
-    width: 100%;
-    background-color: bisque;
-    margin: 10px 0px;
-    gap: 20px;
     display: flex;
     flex-direction: row;
+}
+
+.allListContainerEachIn{
+    font-family: 'poppins', sans-serif;
+}
+
+.ListRenderParaName{
+    max-width: 200px;
+    font-size: larger;
+}
+.ListRenderParaLink{
+    font-family: 'poppins', sans-serif;
+    text-decoration: underline;
+    font-size: medium;
+}
+
+.ListRender{
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 70%;
+    padding: 20px;
+    border-radius: 5px;
+    /* align-items: center; */
+}
+
+.ListRenderPara{
+    font-size: medium;
+    font-family: 'poppins', sans-serif;
+}
+.ListRenderParaEventname{
+    font-size: small;
+    font-family: 'poppins', sans-serif;
 }

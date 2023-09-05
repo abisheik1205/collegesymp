@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./RegisterFor4.css";
 import { useState } from "react";
 import { storage, firebasee } from "../../../../firebase";
@@ -14,7 +14,10 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
     const [detailEntered, setDetailsEntered] = useState(false);
     const [transactionId, setTransactionID] = useState("");
+    const [photo, setPhoto] = useState(null);
     const [imageuploaded, setImageUploaded] = useState(false);
+
+    const [uploadedLink, setuploadedLink] = useState([])
 
     const uploadingData = async (e) => {
         var downloadURLS = [];
@@ -32,17 +35,17 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
     }
 
     const handleTransactionID = (e) => {
-        setTransactionID(e)
-        if (e.length > 8) {
-            setDetailsEntered(true)
-        }else{
-            setDetailsEntered(false)
-        }
+        setTransactionID(e.target.value)
+    }
+
+    const handleChangePhoto = (e) => {
+        setPhoto(e.target.files[0])
     }
 
     const handlesubmit = async (e) => {
-        e.preventDefault();
 
+        e.preventDefault();
+        console.log("came Here now!!")            
         const collectionRef = collection(firebasee, `users`);
 
         let data = {
@@ -59,14 +62,19 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
         const docRef = doc(collectionRef);
 
+        console.log("came Herre")
+
+        setuploadedLink(uploadingDatasHere)
+
         try {
             await setDoc(docRef, data);
-            var uploadingDatasHere = await uploadingData(e.target.files[0]);
+            var uploadingDatasHere = await uploadingData(photo);
 
             setImageUploaded(true);
 
             await updateDoc(docRef, {
                 "fileLink": uploadingDatasHere,
+                transactionId: transactionId
             }).then(async () => {
                 const message = `Hey ${bio.name}, you've registered for these events. ${selected}. Hope you'll have a great day at college.`;
 
@@ -77,6 +85,7 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                       message: message,
                     }, "sUppWr0eFNYXsNMHD")
                     .then((response) => {
+                        handleNextPaper();
                         console.log("Email Sent. Check it out!!");
                     })
                     .catch((error) => {
@@ -87,7 +96,11 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
         } catch (error) {
             console.log(error + "Bhai")
         }
+        
     }
+    // useEffect(() => {
+    //     handlesubmit()
+    // }, [photo, transactionId])    
 
     return(
         <div className="RegisterFor4">
@@ -99,16 +112,14 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                             <i class="fa fa-upload"></i>
                         Custom Upload
                     </label>
-                    <input onChange={(e) => handlesubmit(e)} accept="image/*" id="file-upload" type="file" style={{display: 'none'}}/>            
+                    <input accept="image/*" id="file-upload" type="file" style={{display: 'none'}} onChange={(e) => handleChangePhoto(e)}/>            
                 </div>
                 <div className="RegisterFor4TransactionId">
-                    <input className="RegisterFor4TransactionIdInp" placeholder="Transaction ID" type="text" onChange={(e) => handleTransactionID(e.target.value)}/>
+                    <input className="RegisterFor4TransactionIdInp" placeholder="Transaction ID" type="text" onChange={handleTransactionID}/>
                 </div>
                 <div className="registerPaperButton">
                     <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>
-                    {
-                        detailEntered && imageuploaded?<button onClick={() => handleNextPaper()} className="registerPaperButtonBTN" type="submit">Next</button>: <></>
-                    }
+                        <button onClick={(e) => handlesubmit(e)} className="registerPaperButtonBTN" type="submit">Next</button>
                 </div>
             </form>
         </div>

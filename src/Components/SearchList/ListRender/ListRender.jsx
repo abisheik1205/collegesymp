@@ -1,27 +1,24 @@
 import React from "react";
 import "../Login.css";
+import TableRow from '@mui/material/TableBody';
+import TableCell from '@mui/material/TableCell';
 
-const ListRender = ({ name, phoneNumber, transactionID }) => {
+const ListRender = ({ key, name, phoneNumber, transactionID, photo, mailID, Eventname }) => {
 
     console.log(name);
 
     return(
-        <div className="ListRender">
-            <input placeholder="Search Transaction ID"/>
-
-            <div className="allListContainer">
-                <div className="allListContainerEach">
-                    <div className="allListContainerEachInleft">
-                        <p>{name}</p>
-                        <p>{phoneNumber}</p>
-                    </div>
-                    <div className="allListContainerEachInright">
-                        <p>{transactionID}</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <TableRow
+        key={key}
+            className="ListRender"
+        >
+            <TableCell className="ListRenderParaName">{name}</TableCell>
+            <TableCell className="ListRenderPara">{Eventname}</TableCell>
+            <TableCell className="ListRenderPara">{phoneNumber}</TableCell>
+            <TableCell className="ListRenderPara">{transactionID}</TableCell>
+            <TableCell className="ListRenderPara">Photo</TableCell>
+            <TableCell className="ListRenderPara">{mailID}</TableCell>
+        </TableRow>
     )
 }
 
