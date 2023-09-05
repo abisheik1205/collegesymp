@@ -236,13 +236,43 @@ video{
 
     .container{
       width: 100%;
-      height: max-content;
+      height: 100vh;
       position: absolute;
-      bottom: 6vh;
       /* background-color: bisque; */
       text-align: center;
       margin-left: auto;
       margin-right: auto;
+      animation-name: opacityToHigh;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+    /* .container{
+      position: absolute;
+      width: 100VW;
+      bottom: 6vh;
+      text-align: center;
+      opacity: 0;
+      z-index: 100;
+      background-color: black;
+      margin: 0px auto;
+      animation-name: opacityToHigh;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    } */
+    .containerPlaying{
+      position: absolute;
+      width: 100VW;
+      height: 100vh;
+      top: 44%;
+      left: 0%;
+      z-index: 100;
+      animation-name: containerPlayingitAll;
+      animation-delay: .5s;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      text-align: center;
+      margin: 0px auto;
+      color: aliceblue;
     }
 
     #logo{
@@ -268,6 +298,15 @@ video{
       margin-left: auto;
       margin-right: auto;
     }
+    @keyframes opacityToHigh{
+      0%{
+        opacity: 0;
+      }
+    
+      100%{
+        opacity: 1;
+      }
+    }
 
     @keyframes containerPlayingitAll{
       0%{
@@ -275,7 +314,7 @@ video{
         left: 0%;
       }
       100%{
-        top: 94%;
+        bottom: 6vh;
       }
     }
     @keyframes containerPlayingitAllLogo{
@@ -284,6 +323,7 @@ video{
         /* width: 300px; */
         /* left: 0%; */
       }
+
       100%{
         /* top: 90%; */
         width: 100px;

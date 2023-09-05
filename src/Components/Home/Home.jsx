@@ -54,16 +54,15 @@ const Home = () => {
               videoRefDesktop.current.play();
             }
           }else{
-            if (videoForMobile.current) {
+            if (videoRefMobile.current) {
               // videoRefMobile.current.play();
-              videoForMobile.current.play();
+              videoRefMobile.current.play();
             }
           }
         }
       }
-  
+
       function handleScrolledDown() {
-        // Implement your desired functionality here
         setScrolleddown(true);
         if (window.innerWidth > 1000) {
           if (videoRefDesktop.current) {
@@ -71,13 +70,13 @@ const Home = () => {
             videoRefDesktop.current.pause();
           }
         }else{
-          if (videoForMobile.current) {
+          if (videoRefMobile.current) {
             // videoRefMobile.current.play();
-            videoForMobile.current.pause();
+            videoRefMobile.current.pause();
           }
         }
       }
-  
+
       window.addEventListener('scroll', handleScroll);
   
       return () => {
@@ -98,8 +97,7 @@ const Home = () => {
               src={videoForMobile}
               loop
               autoPlay
-              
-              />: <></>
+            />: <></>
           }         
           {
             isPlayingforDesktop ?
@@ -114,11 +112,17 @@ const Home = () => {
         </div>
         <div className="bgContainer" style={scrolledDown? {background: 'rgba(0, 0, 0, 0.800)'}: {backgroundColor: "transparent"}}>
           <Header />
-          <div className={!scrolledDown && isPlayingforDesktop || isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
+          { 
+            window.screenX > 1000? <div className={!scrolledDown && isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
+            <img src={vivanata} id={isPlayingforDesktop||isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
+  
+            <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
+          </div> : <div className={!scrolledDown && isPlayingforDesktop?"containerPlaying": "container"} onClick={() => handleOnclick()}>
             <img src={vivanata} id={isPlayingforDesktop||isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
   
             <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
           </div>
+          }
         </div>
       </div>
       <br />
