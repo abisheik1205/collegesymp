@@ -28,7 +28,7 @@ const AboutUs = () => {
                         <h2 className="aboutUsContentHead">ABOUT VIVANTA 23</h2>
                         <br />
                         <div>
-                            <p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A prominent institution ranking amongst the top colleges in Tamil Nadu, was established with an initiative to provide pragmatic learning. The institution has also partnered with a number of companies to set a worldwide standard by offering students a diverse range of possibilities that combine education and recreation.</p>
+                            <p className="aboutUsContentPara">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prepare to be captivated by our esteemed technical symposium, Vivanta23, featuring over 40 dynamic events spanning a diverse spectrum, from Aerospace and Artificial Intelligence to Automobile, Civil, Computer Science, Electronics, Fashion Technology, Information Technology, Mechanical, and Mechatronics. Dive headfirst into cutting-edge technology, nurture your creative spirit, and join us in shaping the future of higher education through this immersive and transformative experience. This is a great chance to ignite your passion for innovation at Vivanta23!</p>
                         </div>
                     </div>
                 </div>

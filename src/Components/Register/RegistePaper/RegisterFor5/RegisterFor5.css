@@ -68,12 +68,19 @@
 
 
 @media screen and (max-width: 1000px){
-
     .RegisterFor5ContainernameandNumber{
         padding: 10px 30px;
     }
-
+    .RegisterFor5ContainerMapinghead{
+        width: 200px;
+        font-size: medium;
+        /* background-color: aqua; */
+    }
     .RegisterFor5ContainerHead{
         padding: 10px 30px;
+    }
+
+    .RegisterFor5ContainerMapingRow{
+        width: 85%;
     }
 }

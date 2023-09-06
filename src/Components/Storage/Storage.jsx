@@ -1072,9 +1072,10 @@ export const StorageData = [
                     "Products should be present with posters",
                 ],
                 theme: [
-                    "Products should be present with posters",
-                    "Products should be present with posters",
-                    "Each presentation should last 5 to 10 mins including jury quries",
+                    "Towards sustainable ",
+                    "Fab trend (trending fabrics )",
+                    "Posters for our fashion show",
+                    "Fast fashion",
                 ],
                 image: ft_01,
                 details: {
@@ -1127,7 +1128,8 @@ export const StorageData = [
                     "Individual participants can present 3",
                     "Team of 2 can present 4 ",
                     "Team of 4 can present 6 ",
-                    "Stitches can also be used at certain areas (if necessary) Showcase your garments with clear Description of fabrics, embellishment, accessories.",
+                    "Stitches can also be used at certain areas (if necessary).",
+                    "Showcase your garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
                 ],
                 image: ft_03,

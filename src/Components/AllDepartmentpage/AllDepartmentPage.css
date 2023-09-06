@@ -28,7 +28,12 @@
     text-align: left;
     color: whitesmoke;
 }
-
+.NavOnMobileP{
+    display: none;
+}
+.NavOnMobileClick{
+    display: none;
+}
 @media only screen and (max-width:1000px){
     .AllDepartmentPageHeaderLink {
         position: relative;
@@ -37,9 +42,15 @@
         text-align: center;
 
     }
+    .NavOnMobileP{
+        display: block;
+    }
+    .NavOnMobileClick{
+        display: block;
+    }
     .NavOnMobileClick{
         overflow: hidden;
-        position: sticky;
+        position: fixed;
         display: none;
         /* margin: 0%; */
         top: 0;
@@ -50,18 +61,19 @@
         width: 100vw;
         color: whitesmoke;
     }
+
     .NavOnMobile{
-        overflow: hidden;
-        position: absolute;
+        /* overflow: hidden; */
+        position: fixed;
         display: block;
-        /* margin: 0%; */
         top: 0;
         left: 0;
         bottom: 0;
         height: 100vh;
         z-index: 10;
         width: 100vw;
-        background-color: aliceblue;
+        background-color: rgb(246, 246, 246);
+        font-family: 'poppins', sans-serif;
         color: whitesmoke;
     }
 
@@ -103,7 +115,7 @@
         font-size: large;
     }
     .AllDepartmentPageHeaderLinkInMobile {
-        margin-top: 100px;
+        margin-top: 50px;
         display: block;
         transition: all .5s;
         text-align: center;

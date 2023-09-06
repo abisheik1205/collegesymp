@@ -29,8 +29,8 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
         }
 
         if (e) {
-            setName(e)
-            localStorage.setItem("name", e);
+            setName(e.target.value)
+            localStorage.setItem("name", e.target.value);
         }
     }
     const handlephoneNumber = (e) => {
@@ -40,8 +40,8 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
         }
 
         if (e) {
-            setPhoneNumber(e)
-            localStorage.setItem("phoneNumber", e);
+            setPhoneNumber(e.target.value)
+            localStorage.setItem("phoneNumber", e.target.value);
         }
     }
     const handlecollegeName = (e) => {
@@ -51,8 +51,8 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
         }
 
         if (e) {
-            setCollegeName(e)
-            localStorage.setItem("collegename", e);
+            setCollegeName(e.target.value)
+            localStorage.setItem("collegename", e.target.value);
         }
     }
     const handledepartmentname = (e) => {
@@ -62,8 +62,8 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
         }
 
         if (e) {
-            setDepartmentName(e)
-            localStorage.setItem("departmentName", e);
+            setDepartmentName(e.target.value)
+            localStorage.setItem("departmentName", e.target.value);
         }
     }
     const handlemail = (e) => {
@@ -73,8 +73,8 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
         }
         
         if (e) {
-            setMail(e)
-            localStorage.setItem("email", e);
+            setMail(e.target.value)
+            localStorage.setItem("email", e.target.value);
         }
     }
 
@@ -92,15 +92,15 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
             <form onSubmit={(e) => handleClick(e)}>
                 <h2 className="InputForBiohead">Personal Detail</h2>
                 <div className="InputForBio">
-                    <input onChange={(e) => handlename(e.target.value)} value={name} className="mainRegisterPaperInput" required type="text" placeholder="Name *" />
-                    <input onChange={(e) => handlephoneNumber(e.target.value)} value={phoneNumber} className="mainRegisterPaperInput" required type="number" placeholder="Phone Number *" />
+                    <input onChange={handlename} value={name} className="mainRegisterPaperInput" required type="text" placeholder="Name *" />
+                    <input onChange={handlephoneNumber} value={phoneNumber} className="mainRegisterPaperInput" required type="number" placeholder="Phone Number *" />
                 </div>
                 <div className="InputForBiofordepartName">
-                    <input onChange={(e) => handlecollegeName(e.target.value)} value={collegeName} className="mainRegisterPaperInput" required type="text" placeholder="College Name *" />
-                    <input onChange={(e) => handledepartmentname(e.target.value)} value={departmentName} className="mainRegisterPaperInput" required type="text" placeholder="Department Name *" />
+                    <input onChange={handlecollegeName} value={collegeName} className="mainRegisterPaperInput" required type="text" placeholder="College Name *" />
+                    <input onChange={handledepartmentname} value={departmentName} className="mainRegisterPaperInput" required type="text" placeholder="Department Name *" />
                 </div>
                 <div className="InputForBiofordepartName">
-                    <input onChange={(e) => handlemail(e.target.value)}  value={mail} className="mainRegisterPaperInput" required type="email" placeholder="Mail Address" />
+                    <input onChange={handlemail}  value={mail} className="mainRegisterPaperInput" required type="email" placeholder="Mail Address" />
                 </div>
 
                 <div className="registerPaperButton">

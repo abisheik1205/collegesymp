@@ -14,7 +14,7 @@ const ListRender = ({ key, name, phoneNumber, transactionID, photo, mailID, Even
             <TableCell className="ListRenderPara">{Eventname}</TableCell>
             <TableCell className="ListRenderPara">{phoneNumber}</TableCell>
             <TableCell className="ListRenderPara">{transactionID}</TableCell>
-            <TableCell className="ListRenderPara">Photo</TableCell>
+            <TableCell className="ListRenderPara"><a style={{color: 'blue', textDecoration: 'underline'}} target="_blank" href={photo}>Photo</a></TableCell>
             <TableCell className="ListRenderPara">{mailID}</TableCell>
         </TableRow>
     )

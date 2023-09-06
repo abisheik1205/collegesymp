@@ -144,11 +144,26 @@
         justify-content: space-between;
         margin-bottom: 10px;
     }
+    .RegisterFor5ContainernameandNumberPara{
+        font-size: medium;
+    }
     .mainRegisterPaper{
         width: 100%;
     }
     .dialogBoxHeadX{
         font-size: medium;
+    }
+    .RegisterFor5ContainerHead{
+        font-size: small;
+    }
+    .RegisterFor5ContainerMapingRowKey{
+        font-size: small;
+    }
+    .RegisterFor5ContainerMapinghead{
+        font-size: small;
+    }
+    .RegisterFor5ContainerMapingpara{
+        font-size: small;
     }
     .mainRegisterPaperInput{
         color: whitesmoke;

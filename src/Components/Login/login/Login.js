@@ -45,7 +45,7 @@ function Login() {
         <h3>Email :</h3>
         <InputControl
           lable="Email"
-          placeholder="enter the email"
+          placeholder="Enter the email"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
@@ -53,17 +53,17 @@ function Login() {
         <h3>Password :</h3>
         <InputControl
           lable="Password"
-          placeholder="enter the password"
+          placeholder="Enter the password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, password: event.target.value }))
           }
         ></InputControl>
-        <div className={styles.footer}>
+        <div className={styles.footer} style={{marginTop: "15px"}}>
           <button type="button" disabled={submitButtonDisabled} onClick={handlesubmission}>Login</button>
           <p>
             Don't have an account?{" "}
             <span>
-              <Link to="/signup">signup</Link>
+              <Link to="/signup">&nbsp;<span style={{color: 'blue'}}>signup</span></Link>
             </span>
           </p>
         </div>

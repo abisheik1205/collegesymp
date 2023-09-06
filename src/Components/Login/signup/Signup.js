@@ -50,28 +50,31 @@ function Signup() {
         <h3>Name:</h3>
         <InputControl
           lable="Name"
-          placeholder="enter your Name"
+          className="input"
+          placeholder="Enter your Name"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, name: event.target.value }))
           }
-        ></InputControl>
+          ></InputControl>
         <h3>Email :</h3>
         <InputControl
           lable="Email"
-          placeholder="enter the email"
+          className="input"
+          placeholder="Enter the email"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, email: event.target.value }))
           }
-        ></InputControl>
+          ></InputControl>
         <h3>Password :</h3>
         <InputControl
           lable="Password"
-          placeholder="enter the password"
+          className="input"
+          placeholder="Enter the password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, password: event.target.value }))
           }
         ></InputControl>
-        <div className={styles.footer}>
+        <div className={styles.footer} style={{marginTop: '15px'}}>
           <button
             type="button"
             onClick={handlesubmission}
@@ -82,7 +85,7 @@ function Signup() {
           <p> 
             Already have an account?{" "}
             <span>
-              <Link to="/login">login</Link>
+              <Link to="/login">&nbsp;<span style={{color: 'blue'}}>login</span></Link>
             </span>
           </p>
         </div>

@@ -84,10 +84,12 @@ const SearchList = () => {
                             var transactionID = item?._document?.data?.value?.mapValue?.fields?.transactionId?.stringValue;
                             var phonenumber = item?._document?.data?.value?.mapValue?.fields?.phoneNumber?.stringValue;
                             var Email = item?._document?.data?.value?.mapValue?.fields?.Email?.stringValue;
-                            var phoneNumber = item?._document?.data?.value?.mapValue?.fields?.phoneNumber?.stringValue;
                             var SelectedEvents = item?._document?.data?.value?.mapValue?.fields?.SelectedEvents?.arrayValue?.values;
+                            var photo = item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values?.[0]?.stringValue;
+
+                            console.log(photo);
                             
-                            return <MainSearch selectedEvents={SelectedEvents} name={name} phoneNumber={phonenumber}  transactionID={transactionID} photo={phoneNumber} searchInput={searchInput} mailID={Email}/>
+                            return <MainSearch selectedEvents={SelectedEvents} name={name} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
                         })
                     }
                 </Table>
