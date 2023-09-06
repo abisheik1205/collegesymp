@@ -113,14 +113,14 @@ const Home = () => {
         <div className="bgContainer" style={scrolledDown? {background: 'rgba(0, 0, 0, 0.800)'}: {backgroundColor: "transparent"}}>
           <Header />
           { 
-            window.screenX > 1000? <div className={!scrolledDown && isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
-            <img src={vivanata} id={isPlayingforDesktop||isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
+            window.innerWidth < 1000? <div className={!scrolledDown && isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
+            <img src={vivanata} id={!scrolledDown && isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
   
-            <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
+            <p className="HomeNote">{isPlayingforMobile? "": "TAP YO TO ENTER THE WORLD OF TECHIES"} </p> 
           </div> : <div className={!scrolledDown && isPlayingforDesktop?"containerPlaying": "container"} onClick={() => handleOnclick()}>
-            <img src={vivanata} id={isPlayingforDesktop||isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
+            <img src={vivanata} id={!scrolledDown && isPlayingforDesktop? "logoPlaying": "logo"  } alt="logo" />
   
-            <p className="HomeNote">{isPlayingforDesktop||isPlayingforMobile? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
+            <p className="HomeNote">{isPlayingforDesktop? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
           </div>
           }
         </div>
