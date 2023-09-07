@@ -9,7 +9,7 @@
 .noteInRegisterFor4{
     text-align: center;
     font-family: 'poppins', sans-serif;
-    color: whitesmoke;
+    color: gainsboro;
     font-size: small;
     cursor: pointer;
     margin-left: auto;
@@ -57,6 +57,17 @@
     justify-content: space-between;
     font-family: 'poppins', sans-serif;
     /* border: 1px solid rgb(234, 0, 255); */
+}
+.imgInHelp{
+    width: 200px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgInHelpImg{
+    width: 100%;
+    object-fit: cover;
+
 }
 @media screen and (max-width: 1000px){
 

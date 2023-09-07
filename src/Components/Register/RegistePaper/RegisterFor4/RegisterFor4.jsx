@@ -9,6 +9,9 @@ import firebase from 'firebase/compat/app';
 import emailjs from 'emailjs-com';
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
+import Dialog from '@mui/material/Dialog';
+import { DialogTitle } from "@mui/material";
+import imginhelp from "../../../../assets/for help in screenshot.png";
 
 const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) => {
 
@@ -16,6 +19,8 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
     const [transactionId, setTransactionID] = useState("");
     const [photo, setPhoto] = useState(null);
     const [imageuploaded, setImageUploaded] = useState(false);
+
+    const [dialog, setDialog] = useState(true);
 
     const [uploadedLink, setuploadedLink] = useState([])
 
@@ -96,14 +101,25 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
         } catch (error) {
             console.log(error + "Bhai")
         }
-        
     }
 
     return(
         <div className="RegisterFor4">
             <form>
                 <h2 className="RegisterFor4Head">Upload the screenshot</h2>
-                <p className="noteInRegisterFor4">What pic&#x3F;</p>
+                <p onClick={() => setDialog(true)} className="noteInRegisterFor4">What pic&#x3F;</p>
+                <Dialog open={dialog}>
+                    {/* <p className="dialogBoxHeadX">X</p> */}
+                    <DialogTitle style={{textAlign: 'center'}} className="dialogBoxHeadInstruc">Proof of transaction</DialogTitle>
+                    <div className="imgInHelp">
+                        <img className="imgInHelpImg" src={imginhelp}/>
+                    </div>
+                    {/* <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>5. College sends a confirmation email to the registered email ID.</p> */}
+                    <br />
+                    <button onClick={() => setDialog(false)} className="DialogBtn">Understood</button>
+                    <br />
+                    <br />
+                </Dialog>
                 <div className="RegisterFor4Browse">
                     {
                         photo? <h2 className="uploadHead">Done!!</h2>: <><label for="file-upload" className="custom-file-upload">

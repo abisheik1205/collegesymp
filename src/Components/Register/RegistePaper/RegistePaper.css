@@ -128,6 +128,13 @@
     background-color: black;
     color: whitesmoke;
 }
+
+.dialogBoxHeadInstrucRuledisclaimer{
+    text-align: center;
+    font-size: small;
+    margin-top: 15px;
+    font-family: 'poppins', sans-serif;
+}
 @media screen and (max-width: 1000px){
     
     .registerPaperButton{

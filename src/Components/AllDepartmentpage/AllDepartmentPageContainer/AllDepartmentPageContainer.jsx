@@ -5,8 +5,6 @@ import { Fade } from "react-reveal";
 
 const AllDepartmentPageContainer = ({ list, int }) => {
 
-    console.log(list);
-
     return(
         <div className="AllDepartmentPageContainer">
             {
@@ -21,9 +19,9 @@ const AllDepartmentPageContainer = ({ list, int }) => {
                         <div key={key}>
                             {
                                 key%2 === 0? <Fade slow left >
-                                <AllDepartmentPageEachContainer link="eventpage" departmentMotto={item} image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} theme={item.theme} shortDescription={item.shortDescription} snap={item}/>
+                                <AllDepartmentPageEachContainer link="eventpage" entertainmentPic={item.entertainmentPhoto} departmentMotto={item} image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} theme={item.theme} shortDescription={item.shortDescription} snap={item}/>
                             </Fade> : <Fade slow right>
-                                <AllDepartmentPageEachContainer link="eventpage" departmentMotto={item} image={item.image} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} theme={item.theme} shortDescription={item.shortDescription} snap={item}/>
+                                <AllDepartmentPageEachContainer link="eventpage" departmentMotto={item} image={item.image} entertainmentPic={item.entertainmentPhoto} eventName={item.eventName} departmentName={item.departmentName} eventdescription={item.description} theme={item.theme} shortDescription={item.shortDescription} snap={item}/>
                             </Fade>
                             }
                             

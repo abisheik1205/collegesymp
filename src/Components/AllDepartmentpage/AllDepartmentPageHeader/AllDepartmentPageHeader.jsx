@@ -5,8 +5,6 @@ const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
 
     const [mobileClick, setMobileClick] = useState(false);
 
-    console.log(selected);
-
     const handleMobileClick = () => {
         setMobileClick(!mobileClick);
     }
@@ -29,10 +27,11 @@ const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
                 <p onClick={() => handlefilter("Civil")} className={`AllDepartmentPageHeadereachLinks ${selected === "Civil"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Civil</p>
                 <p onClick={() => handlefilter("Automobile")} className={`AllDepartmentPageHeadereachLinks ${selected === "Automobile"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Automobile</p>
                 <p onClick={() => handlefilter("Mechanical")} className={`AllDepartmentPageHeadereachLinks ${selected === "Mechanical"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>Mech</p>
-                <p onClick={() => handlefilter("AI&DS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AI&DS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AIDS</p>
+                <p onClick={() => handlefilter("AI&DS")} className={`AllDepartmentPageHeadereachLinks ${selected === "AI&DS"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>AI&DS</p>
             </div>
         </div>
     )
 }
+
 
 export default AllDepartmentPageHeader;

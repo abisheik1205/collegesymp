@@ -12,6 +12,8 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
     const [event4, setEvent4] = useState("")
     const [event5, setEvent5] = useState("")
 
+    const val = "";
+
     const [allevents, setAllEvents] = useState([]);
 
     const [selectedEvents, setSelectedEvents] = useState([]);
@@ -20,26 +22,9 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
 
     const handleChange1 = (e) => {
         setEvent1(e);
-        // allevents.map((item, key) => {
-        //     if (item.eventName + " - " + item.departmentName === e) {
-        //         let index = allevents;
-
-        //         let indexToRemove = key - 1;
-
-        //         let newArray = index.filter((_, index) => index !== indexToRemove);
-
-        //         index.splice(key - 1, 1);
-        //         // setAllEvents(array);
-        //         console.log(e + " " + key);
-        //         console.log(index);
-        //         console.log(allevents);
-        //         // setAllEvents(array);
-        //     }
-        // });
     }
-
     const handleChange2 = (e) => {
-        setEvent2(e)
+        setEvent2(e);
     }
     const handleChange3 = (e) => {
         setEvent3(e)
@@ -128,16 +113,16 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
             <p className="noteonRegisterFor2"><Link to={"/allevents"} style={{color: "grey"}}>View All Events</Link></p>
             <form onSubmit={(e) => handleNext(e)}>
             <div className="RegisterFor2Input">
-                <RegisterSelector event1={event1} num="1" handleChange1={handleChange1} allevents={allevents} />
-                <RegisterSelector event1={event2} num="2" handleChange1={handleChange2} allevents={allevents} />
+                <RegisterSelector event1="val" num="1" handleChange1={handleChange1} allevents={allevents} />
+                <RegisterSelector event1="val" num="2" handleChange1={handleChange2} allevents={allevents} />
             </div>
             <div className="RegisterFor2Input">
-                <RegisterSelector event1={event3} num="3" handleChange1={handleChange3} allevents={allevents} />
+                <RegisterSelector event1={val} num="3" handleChange1={handleChange3} allevents={allevents} />
 
-                <RegisterSelector event1={event4} num="4" handleChange1={handleChange4} allevents={allevents} />
+                <RegisterSelector event1={val} num="4" handleChange1={handleChange4} allevents={allevents} />
             </div>
             <div className="RegisterFor2Input">
-                <RegisterSelector event1={event5} num="5" handleChange1={handleChange5} allevents={allevents} />
+                <RegisterSelector event1={val} num="5" handleChange1={handleChange5} allevents={allevents} />
             </div>
             <div className="registerPaperButton">
                 <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>

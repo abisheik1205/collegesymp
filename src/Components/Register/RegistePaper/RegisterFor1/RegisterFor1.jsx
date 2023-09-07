@@ -100,7 +100,7 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
                     <input onChange={handledepartmentname} value={departmentName} className="mainRegisterPaperInput" required type="text" placeholder="Department Name *" />
                 </div>
                 <div className="InputForBiofordepartName">
-                    <input onChange={handlemail}  value={mail} className="mainRegisterPaperInput" required type="email" placeholder="Mail Address" />
+                    <input onChange={handlemail}  value={mail} className="mainRegisterPaperInput" required type="email" placeholder="Mail Address *" />
                 </div>
 
                 <div className="registerPaperButton">

@@ -1,21 +1,26 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import './EventPage.css';
 import { useLocation  } from "react-router-dom";
 import EventPageHeader from "./EventPageHeader/EventpageHeader";
 import Footer from "../Footer/Footer";
 import { useNavigate } from 'react-router-dom';
+import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
 
 export const Eventpage = () => {
     
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { departmentName, image, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
+    const { departmentName, image, entertainmentPic, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
 
     const dataToSend = {
         back: true,
         departmentNamefoundBACk: departmentName
     };
+
+    const [isImageavailable, setisImageavailable] = useState(false);
+    const [imgChanged, setImgChange] = useState(false);
+    const [Changedimage, setImageChanged] = useState(entertainmentPic);
 
     const handleNavigation = () => {
         navigate(-1, { state: { data: dataToSend } });
@@ -30,16 +35,29 @@ export const Eventpage = () => {
         contactNumber: phoneNumber
     }
 
+    const handleImageChange = () => {
+        if (isImageavailable) {
+            setImgChange(!imgChanged);
+        }
+    } 
+
     useEffect(() => {
+        if (Changedimage) {
+            setisImageavailable(true);
+        }
         window.scrollTo(0, 0);
     }, [])
 
     return(
-        <div className="EventMainPage">
+        <div className="EventMainPage" style={isImageavailable? imgChanged? {backgroundImage: `url(${Changedimage})`, backgroundPosition: 'center'}: {backgroundImage: `url(${image})`}: {backgroundImage: `url(${image})`}}>
             <EventPageHeader departmentName={departmentName} handleNavigation={handleNavigation}/>
         <div className="Event_div">
             <div className="EventLeftColumn">
-                <div className="EventImage"><div className="EventImageInside"><img className="EventImageImg" alt="logo" src={image}/></div></div>
+                <div className="EventImage">
+                    <div className="EventImageInside">
+                        <img onClick={() => handleImageChange()} className="EventImageImg" alt="logo" src={imgChanged ? Changedimage: image}/>
+                    </div>
+                </div>
                 <div className="EventRegister"><button id="EventRegisterButton" onClick={() => handleRegister()}>REGISTER</button></div>
             </div>
             <div className="EventRightColumn">
@@ -48,7 +66,7 @@ export const Eventpage = () => {
                     <p className="EventRightColumnEventHeadertext">{shortDescription}</p>
                 </div>
                 <div className="EventLeftColumnfORmoBILE">
-                    <div className="EventImage"><div className="EventImageInside"><img className="EventImageImg" alt="logo" src={image}/></div></div>
+                    <div className="EventImage"><div className="EventImageInside"><img onClick={() => handleImageChange()} className="EventImageImg" alt="logo" src={imgChanged ? Changedimage: image}/></div></div>
                 </div>
                 <div className="EventDescription">
                     <h2 className="EventDescriptionSubHeads">Description</h2>
@@ -90,7 +108,7 @@ export const Eventpage = () => {
                         <h2 className="EventPrizeSubHeads">Prize</h2>
                         <p className="EventPrizetext"><span className="ListInBold">Winner:</span> &#8377;2000</p>
                         <p className="EventPrizetext"><span className="ListInBold">Runner Up:</span> &#8377;1000</p>
-                    </div>0
+                    </div>
                     <div className="EventDetails pdc">
                         <h2 className="EventDetailsSubHeads subpdc">Details</h2>
                         <div className="EventDetailsList">

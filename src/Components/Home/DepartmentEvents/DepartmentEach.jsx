@@ -8,12 +8,10 @@ const DepartmentEach = () => {
 
     const handleOver = () => {
         setHover(true);
-        console.log("hovering")
     }
     
     const handleOut = () => {
         setHover(false)
-        console.log("!hovering")
     }
 
     return(

@@ -46,6 +46,14 @@ import c_03 from "../../assets/c_04.png";
 import ai_03 from '../../assets/ai_03.jpg';
 import ai_04 from "../../assets/ai_04.png";
 import auto_00 from "../../assets/auto_00.png"
+import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
+import DesignothronMechEntertainmentPic from "../../assets/DesignothronMechEntertainmentPic.jpg";
+import DesignSpectrum from "../../assets/DesignSpectrum.jpg";
+import CADModelling from "../../assets/CADModelling.jpg";
+import paperppresentation from "../../assets/paperppresentation.jpg";
+import EVDesignChallenge from "../../assets/EVDesignChallenge.jpg";
+import paperpresentationft from "../../assets/paperpresentationft.jpg";
+import techwar from "../../assets/techwar.jpg";
 
 export const StorageData = [
     {
@@ -100,7 +108,7 @@ export const StorageData = [
                 ],
                 image: cse_01,
                 details: {
-                    venue: "S13",
+                    venue: "S13 - Seminar Hall",
                     date: "22 Sep 2023",
                     time: "11:00 AM - 12:30 PM",
                 },
@@ -156,7 +164,7 @@ export const StorageData = [
                 ],
                 image: cse_03,
                 details: {
-                    venue: "CSE Lab 2",
+                    venue: "S13 -Seminar hall",
                     date: "23 Sep 2023",
                     time: "9:30 AM - 12:30 PM",
                 },
@@ -265,6 +273,7 @@ export const StorageData = [
             {
                 id: 3,
                 eventName: "Data Driven IPL Auction",
+                entertainmentPhoto: iplEntertainmentPic,
                 shortDescription: "Strategize and Dominate: Data-Driven IPL Auction Challenge.",
                 description: "Experience the future of IPL auctions through data-driven insights and strategies, revolutionizing team selections for the ultimate cricket showdown.",
                 rules: [
@@ -306,26 +315,25 @@ export const StorageData = [
                 shortDescription: 'Innovative designs enchancing industrial automation',
                 description: "Create innovative designs using CAD software that can enchance current industrial automation.",
                 rules: [
-                    "The competition will consist of two rounds. After the release of the problem statement, the participants arrequested to submit the design perquisites according to specified constraints in the given time.",
+                    "The competition will consist of two rounds. After the release of the problem statement, the participants are requested to submit the design perquisites according to specified constraints in the given time.",
                     "Each specification will carry some points which include details of the assembly for instances, accuracy in technical constraints, analysis of the design ,accuracy in measurements, etc given according to the question and its level of difficulty.",
                     "Models can be prepared using FUSION 360 software only.",
                     "On spot verification of the design with timeline will be noted based on the deadline.",
                     "Participants must necessarily install the software on their laptops or use any online service before participating in the event.",
                     "For the interview round, a series of questions related to the design and accuracy would be posed to the candidate who cleared the first round.",
-
                 ],
-                image: aero_01,
+                image: DesignothronMechEntertainmentPic,
                 details: {
                     venue: "Mechanical CAD Lab",
-                    date: "22 Sep 2023",
-                    time: "xxx",
+                    date: "22 Sep 2023(Round 1), 23 Sep 2023(Round 2)",
+                    time: "9:00AM - 12:30PM (Round 1), 9:30AM - 12:30PM (Round 2)",
                 },
                 coordinator: {
-                    name: "MUKESH KANNA M",
-                    phoneNumber: "+91 8124392148",
+                    name: "Dhanasekar R",
+                    phoneNumber: "+91 7358460329",
                 },
                 faculty: {
-                    name: "DR D. EASU"
+                    name: "Dr. M. Vignesh kumar"
                 },
                 departmentName: "Mechanical",
             },
@@ -520,7 +528,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:30 AM",
                 },
-                image: aero_01,
+                image: DesignSpectrum,
                 coordinator: {
                     name: "Arun Kumar S",
                     phoneNumber: "7448950590",
@@ -606,7 +614,7 @@ export const StorageData = [
                     "First round will be MCQ based.",
                     "Qualifiers will move on to Second round. ",
                     "In the second round, specifications will be provided and participants should draft accordingly.",
-                    "The time allotted for each participant is 1hr.",
+                    "The time allotted for each participant is 1 Hour.",
                 ],
                 image: c_02,
                 details: {
@@ -630,7 +638,7 @@ export const StorageData = [
                 description: "Unveiling Sustainable Infrastructure solutions and delve into pioneering research and shaping our urban future.",
                 rules: [
                     "Topics will be announced beforehand .",
-                    "The best technical / sound presentation will be nominated.",
+                    "The best technicaly sound presentation will be nominated.",
                     "A team can have a minimum of 1 to maximum of 4 participation.",
                     "The time allotted for each team is 15 mins.",
                 ],
@@ -681,7 +689,7 @@ export const StorageData = [
                 },
                 image: aero_00,
                 coordinator: {
-                    name: "Mr. A B Kesav kumar",
+                    name: "Mr. A B Keshav Kumar",
                     phoneNumber: "9150955644",
                 },
                 faculty: {
@@ -711,7 +719,7 @@ export const StorageData = [
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
-                image: aero_01,
+                image: CADModelling,
                 coordinator: {
                     name: "Mr. Giridharan",
                     phoneNumber: "6380102078",
@@ -723,7 +731,7 @@ export const StorageData = [
             },
             {
                 id: 2,
-                eventName: "Water Rocker",
+                eventName: "Water Rocket & CANSAT",
                 shortDescription: "Hydro Tech Triumph: Water Rocker Challenge",
                 description: "Dive into innovation with Water Rocker, a riveting event where aquatic robots compete, pushing the boundaries of hydro-technology and creativity.",
                 rules: [
@@ -738,6 +746,10 @@ export const StorageData = [
                     "Maximum pressure supported 60psi",
                     "The provided foot pump will only be compatible with common bicycle valves.",
                     "The organization only provides water, a measuring cup, a bucket and compressors (which will have an in-built pressure gage). Other materials will NOT be provided. However, you could buy items in the stationary shops in the campus.",
+                    "The parachute can be made of either polythene or nylon material. Any other material will not be allowed.",
+                    "The CANSAT should be made of any cylindrical object like coke can less than the weight of the rocket and make sure the weight of the payload doesn’t affect the vertical lift off of the rocket.",
+                    "The payload has to be safely deployed from the rocket and should be dropped on the ground safely.",
+                    "Marks will be awarded for other parameters like creativity, spontaneity, design of the rocket, usage of multiple stages but maximum marks are awarded for the soft landing of the payload.",
                 ],
                 details: {
                     venue: "Ground",
@@ -777,7 +789,7 @@ export const StorageData = [
                     phoneNumber: "8124989036",
                 },
                 faculty: {
-                    name: "Mr.Dhamodaran K"
+                    name: "Dr. Asad Ahmed"
                 },
                 departmentName: "Aero",
             },
@@ -799,7 +811,7 @@ export const StorageData = [
                 rules: [
                     "The teams will compete one on one, each team competing with another",
                     "Teams that qualify the initial knock out rounds will compete in the qualifiers, semifinals and finals",
-                    "The rounds will have 10 questions; First 8 questions will have 10 points if the team answers without a hint and 5 points with the hint. The last two will be bonus questions with 15 points each without hint and 10 points with hint.",
+                    "The rounds will have 10 questions, the first 8 questions will have 10 points each and the last two questions will have 15 points each.",
                     "Once the question is read the team will have 15 seconds for answering. The first team to ring the bell will be given the chance to answer first. ",
                     "If the team fails to answer correctly, the question will pass to the opponent team and will be awarded for right answer.",
                     "The team with highest number of points will qualify for the next round In case of a draw the teams will be given 3-5 extra questions",
@@ -867,7 +879,7 @@ export const StorageData = [
                     "Presentation marks will be based on team participation.",
 
                 ],
-                image: pp,
+                image: paperppresentation,
                 details: {
                     venue: "Robotics Lab",
                     date: "23 SEP 2023",
@@ -888,7 +900,7 @@ export const StorageData = [
                 shortDescription: "Autonomous bots navigates and guides",
                 description:"A robotics competition where autonomous robots navigate intricate paths by following lines, showcasing precision, sensor integration, and programming skills in an engaging technical showcase.",
                 rules: [
-                    "Team Members - 3 (Max.)",
+                    "Team Members - 4 (Max)",
                     "Each member of the team must contain an identity card of his/her respected institute.",
                     "No test practice will be allowed on the arena.",
                     "The robot must not leave behind any of its parts during the run; else it will result in disqualification.",
@@ -923,20 +935,22 @@ export const StorageData = [
         events: [
             {
                 id: 0,
-                eventName: "EV Design Challenge",
+                eventName: "Circuit Debugging",
                 shortDescription: "Challenge to envision green mobolity!",
                 description: "A competition driving innovation where participants engineer sustainable electric vehicle solutions, merging technology and design for a greener transportation future.",
                 rules: [
                     "Participants should follow the instructions given by the coordinators.",
                     "Participants should bring their prototype model.",
                     "Complete working module of the project is mandatory.",
+                    "Mobiles are not allowed",
+                    "Maximum 3 members per team.",
                 ],
                 details: {
-                    venue: "G02/machines Lab",
+                    venue: "EEE (2nd Floor)",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "2PM - 4PM",
                 },
-                image: eee_00,
+                image: EVDesignChallenge,
                 coordinator: {
                     name: "Arjun S",
                     phoneNumber: "08467248067",
@@ -959,7 +973,7 @@ export const StorageData = [
                 details: {
                     venue: "G01",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "9:00AM - 10:30AM",
                 },
                 image: cse_01,
                 coordinator: {
@@ -984,7 +998,7 @@ export const StorageData = [
                 details: {
                     venue: "EEE 2nd floor Lab",
                     date: "23 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:00AM - 12:30PM",
                 },
                 image: eee_02,
                 coordinator: {
@@ -1009,7 +1023,7 @@ export const StorageData = [
                 details: {
                     venue: "EEE Conference Room",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "11:00AM - 01:00PM",
                 },
                 image: pp,
                 coordinator: {
@@ -1045,7 +1059,7 @@ export const StorageData = [
                     "National differences in fashion.",
                     "Fashion appearance as identity",
                 ],
-                image: pp,
+                image: paperpresentationft,
                 details: {
                     venue: "Patten Engineering Lab / 4018",
                     date: "22 SEP 2023",
@@ -1066,10 +1080,10 @@ export const StorageData = [
                 shortDescription: "Innovate, showcase and captivate",
                 description: "Showcasing innovation and functionality, creators unveil their products to an audience, highlighting features, benefits, and design intricacies in a captivating display of creativity and utility",
                 rules: [
-                    "Posters can be digital or non-digital",
-                    "Product should be submitted with a write up",
                     "Participants can be individual or team of 2 members",
                     "Products should be present with posters",
+                    "Posters can be digital or non-digital",
+                    "Product should be submitted with a write up",
                 ],
                 theme: [
                     "Towards sustainable ",
@@ -1107,7 +1121,7 @@ export const StorageData = [
                 details: {
                     venue: "Illustration Lab / 4017",
                     date: "22 SEP 2023",
-                    time: "11:00AM - 12:30PM",
+                    time: "02:00PM - 03:00PM",
                 },
                 coordinator: {
                     name: "Abi M",
@@ -1125,9 +1139,9 @@ export const StorageData = [
                 description: "Draping is a platform to Showcase creativity and fashion expertise as participants drape fabric into stunning designs, highlighting artistic flair and skillful manipulation in a visual spectacle of textiles.",
                 rules: [
                     "On spot theme, partcipants should come with models",
-                    "Individual participants can present 3",
-                    "Team of 2 can present 4 ",
-                    "Team of 4 can present 6 ",
+                    "Individual participants can present 3 garments",
+                    "Team of 2 can present 4 garments",
+                    "Team of 4 can present 6 garments",
                     "Stitches can also be used at certain areas (if necessary).",
                     "Showcase your garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
@@ -1159,7 +1173,7 @@ export const StorageData = [
         events: [
             {
                 id: 0,
-                eventName: "Technostrom",
+                eventName: "Technostorm",
                 shortDescription: "Exploring ideas and sharing knowledge!",
                 description: "TechnoStrom is a platform to present their research, exchange insights, and engage in academic dialogue, fostering knowledge dissemination and intellectual growth.",
                 rules: [
@@ -1234,7 +1248,7 @@ export const StorageData = [
                     date: "22 Sep 2023",
                     time: "11:00 AM - 1:00 PM",
                 },
-                image: ece_02,
+                image: techwar,
                 coordinator: {
                     name: "Mr. Aravinth P",
                     phoneNumber: "7397392763",

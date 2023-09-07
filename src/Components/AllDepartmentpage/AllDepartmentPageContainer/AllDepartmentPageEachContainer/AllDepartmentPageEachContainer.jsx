@@ -4,7 +4,7 @@ import Divider from "../../../Divider/Divider";
 import { Fade } from "react-reveal";
 import { Link } from 'react-router-dom';
 
-const AllDepartmentPageEachContainer = ({ mainEventsimage, theme, departmentMotto, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
+const AllDepartmentPageEachContainer = ({ mainEventsimage, entertainmentPic, theme, departmentMotto, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
 
     const [over, setOver] = useState(false);
 
@@ -27,7 +27,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, theme, departmentMott
         {
                 link === "eventpage"? <div className="AllDepartmentPageEachContainer">
                 <div className={over? "AllDepartmentPageContainerEach": "AllDepartmentPageContainerEachOnHover"} style={over? {backdropFilter: 'blur(5px)'}: {}} onMouseOver={() => handleOver()} onMouseOut={() => handleOut()}>
-                    <Link to={"/eventpage"} state={{ departmentName, image, theme, eventName, shortDescription, eventdescription, rules: snap.rules, venue: snap.details.venue, phoneNumber: snap.coordinator.phoneNumber, date: snap.details.date, time: snap.details.time, facultyName: snap.faculty.name, coodinatorName: snap.coordinator.name }}>
+                    <Link to={"/eventpage"} state={{ departmentName, entertainmentPic, image, theme, eventName, shortDescription, eventdescription, rules: snap.rules, venue: snap.details.venue, phoneNumber: snap.coordinator.phoneNumber, date: snap.details.date, time: snap.details.time, facultyName: snap.faculty.name, coodinatorName: snap.coordinator.name }}>
                     <img className="AllDepartmentPageContainerEachImg" src={image} alt={departmentName}/>
                     <div className="AllDepartmentPageContainerEachStackForm" style={over? {justifyContent: 'center', backdropFilter: 'blur(3px)'}: {justifyContent: 'center'}}>
                         <div className="AllDepartmentPageContainerEachStackFormHeader" style={over? {marginBottom: '50px'}: {}}>

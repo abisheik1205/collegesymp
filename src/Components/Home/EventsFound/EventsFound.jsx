@@ -35,12 +35,34 @@ const EventsFound = () => {
             shuffle(allevents);
             setList(allevents)
         }
+
+        console.log(allevents);
     }
 
-    console.log(list);
+    
+    const handleFilter = () => {
+        let arr = allevents;
+        
+        console.log(arr);
+        // Removing the specified element by value from the array
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].eventName === "Line Follower") {
+                // let spliced = arr.splice(i, 1);
+                // console.log("Removed element: " + spliced);
+                // console.log("Remaining elements: " + arr);
+
+                delete arr[i]
+            }
+        }
+
+        console.log(arr)
+    }
 
     useEffect(() => {
-        handleUser();
+        if (allevents.length === 0) {
+            handleUser();
+            handleFilter();
+        }
     }, [])
 
     return(

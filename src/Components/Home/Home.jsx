@@ -27,7 +27,6 @@ const Home = () => {
 
 
     const handleOnclick = () => {
-      console.log("Calling Now " + scrollPosition);
         if (window.innerWidth > 1000) {
           setIsPlayingforDesktop(true)
         }else{
@@ -116,11 +115,11 @@ const Home = () => {
             window.innerWidth < 1000? <div className={!scrolledDown && isPlayingforMobile?"containerPlaying": "container"} onClick={() => handleOnclick()}>
             <img src={vivanata} id={!scrolledDown && isPlayingforMobile? "logoPlaying": "logo"  } alt="logo" />
   
-            <p className="HomeNote">{isPlayingforMobile? "": "TAP YO TO ENTER THE WORLD OF TECHIES"} </p> 
+            <p className="HomeNote">{isPlayingforMobile? "": "INSPIRING INNOVATION"} </p> 
           </div> : <div className={!scrolledDown && isPlayingforDesktop?"containerPlaying": "container"} onClick={() => handleOnclick()}>
             <img src={vivanata} id={!scrolledDown && isPlayingforDesktop? "logoPlaying": "logo"  } alt="logo" />
   
-            <p className="HomeNote">{isPlayingforDesktop? "": "TAP TO ENTER THE WORLD OF TECHIES"} </p> 
+            <p className="HomeNote">{isPlayingforDesktop? "": "INSPIRING INNOVATION"} </p> 
           </div>
           }
         </div>
