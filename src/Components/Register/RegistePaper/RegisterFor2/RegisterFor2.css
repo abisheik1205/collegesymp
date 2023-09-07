@@ -16,7 +16,7 @@
     
     font-size: small;
     padding: 5px 10px;
-    margin: 5px 10px;
+    margin: 10px 10px;
     font-family: 'poppins', sans-serif;
 }
 
@@ -45,7 +45,9 @@
     color: rgb(0, 238, 255);
     font-size: small;
 }
-
+.EventOptionSelected{
+    background-color: aqua;
+}
 @media screen and (max-width: 1000px){
 
     .RegisterFor2Input{

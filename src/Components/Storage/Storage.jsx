@@ -939,11 +939,11 @@ export const StorageData = [
                 shortDescription: "Challenge to envision green mobolity!",
                 description: "A competition driving innovation where participants engineer sustainable electric vehicle solutions, merging technology and design for a greener transportation future.",
                 rules: [
-                    "Participants should follow the instructions given by the coordinators.",
-                    "Participants should bring their prototype model.",
-                    "Complete working module of the project is mandatory.",
-                    "Mobiles are not allowed",
-                    "Maximum 3 members per team.",
+                    "Maximum two members per team.",
+                    "Preliminary level consist of Technical test.(Selection Round)",
+                    "Time duration 20 minutes (Selection Round)",
+                    "Circuits will be given on the spot (Final Round)",
+                    "30 minutes for spotting the bugs (Final Round)",
                 ],
                 details: {
                     venue: "EEE (2nd Floor)",
@@ -958,7 +958,7 @@ export const StorageData = [
                 faculty: {
                     name: "Mr. Balaji S"
                 },
-                departmentName: "EEE",
+                departmentName: "EEE, ECE, E&I",
             },
             {
                 id: 1,

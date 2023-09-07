@@ -4,6 +4,7 @@ import Divider from "../../Divider/Divider";
 import { StorageData } from "../../Storage/Storage";
 import AllDepartmentPageEachContainer from "../../AllDepartmentpage/AllDepartmentPageContainer/AllDepartmentPageEachContainer/AllDepartmentPageEachContainer";
 import { Link } from "react-router-dom";
+import { Fade } from "react-reveal";
 
 const DepartmentEvents = () => {
 
@@ -29,7 +30,7 @@ const DepartmentEvents = () => {
         <div className="departmentEvents">
             <div className="departmentEventsFlex">
                 <h2 className="departmentEventsHead">Departments</h2>
-                <Link to={"/allevents"}><p className="departmentEventP">View All</p></Link>
+                {/* <Link to={"/allevents"}><p className="departmentEventP">View All</p></Link> */}
             </div>
             <Divider color="whitesmoke" margin="18px 70px" />
             <br />
@@ -38,13 +39,23 @@ const DepartmentEvents = () => {
                 { 
                     mainEvents.map((item, key) => {
 
-                        if (key > 2) {
-                            return;
-                        }
+                        // if (key > 2) {
+                        //     return;
+                        // }
 
-                        return(
-                            <AllDepartmentPageEachContainer key={key} link="allevents" departmentMotto={item.departmentMotto} departmentName={item.departmentName} mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
-                        )
+                        if (key%2 == 0) {
+                            return(
+                                <Fade left>
+                                    <AllDepartmentPageEachContainer key={key} link="allevents" forHome={true} departmentMotto={item.departmentMotto} departmentName={item.departmentName} mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
+                                </Fade>
+                            )
+                        }else{
+                            return(
+                                <Fade right>
+                                    <AllDepartmentPageEachContainer key={key} link="allevents" forHome={true} departmentMotto={item.departmentMotto} departmentName={item.departmentName} mainEventsimage={item.image} mainEventsdepartmentName={item.departmentName}/>
+                                </Fade>
+                            )
+                        }
                     })
                 }
             </div>

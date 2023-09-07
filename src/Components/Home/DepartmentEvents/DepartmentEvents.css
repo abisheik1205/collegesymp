@@ -9,7 +9,7 @@
     width: 90%;
     display: grid;
     margin: 0px auto;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
     /* grid-template-rows: auto auto auto; */
     justify-content: space-around;
     align-self: center;

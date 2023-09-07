@@ -12,7 +12,7 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
     const [event4, setEvent4] = useState("")
     const [event5, setEvent5] = useState("")
 
-    const val = "";
+    const [val, setVal] = useState(["one", "two", "three", "four", "five"]);
 
     const [allevents, setAllEvents] = useState([]);
 
@@ -21,21 +21,50 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
     var Data = StorageData;
 
     const handleChange1 = (e) => {
-        setEvent1(e);
-    }
-    const handleChange2 = (e) => {
-        setEvent2(e);
-    }
-    const handleChange3 = (e) => {
-        setEvent3(e)
-    }
-    const handleChange4 = (e) => {
-        setEvent4(e)
-    }
-    const handleChange5 = (e) => {
-        setEvent5(e)
+        const selectedValue = e.target.value;
+        setEvent1(selectedValue);
+        const updatedVal = [e.target.value, ...val.slice(1)];
+        
+        // Update the state with the new array
+        setVal(updatedVal);
     }
 
+    const handleChange2 = (e) => {
+        const selectedValue = e.target.value;
+
+        const updatedVal = [val[0], e.target.value, ...val.slice(2)];
+        setEvent2(selectedValue);
+
+        // Update the state with the new array
+        setVal(updatedVal);
+    }
+
+    const handleChange3 = (e) => {
+        const selectedValue = e.target.value;
+        setEvent3(selectedValue)
+        const updatedVal = [val[0], val[1], e.target.value, ...val.slice(3)];
+        
+        // Update the state with the new array
+        setVal(updatedVal);
+    }
+    const handleChange4 = (e) => {
+        
+        const selectedValue = e.target.value;
+        setEvent4(selectedValue)
+        const updatedVal = [val[0], val[1], val[2], e.target.value, ...val.slice(4)];
+
+        // Update the state with the new array
+        setVal(updatedVal);
+    }
+    const handleChange5 = (e) => {
+        const selectedValue = e.target.value;
+        setEvent5(selectedValue);
+        const updatedVal = [val[0], val[1], val[2], val[3], e.target.value, ...val.slice(5)];
+
+        // Update the state with the new array
+        setVal(updatedVal);
+    }
+    
     const handletosaveselectedEvents = () => {
         finalSelectedEvents(selectedEvents);
     }
@@ -113,16 +142,16 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
             <p className="noteonRegisterFor2"><Link to={"/allevents"} style={{color: "grey"}}>View All Events</Link></p>
             <form onSubmit={(e) => handleNext(e)}>
             <div className="RegisterFor2Input">
-                <RegisterSelector event1="val" num="1" handleChange1={handleChange1} allevents={allevents} />
-                <RegisterSelector event1="val" num="2" handleChange1={handleChange2} allevents={allevents} />
+                <RegisterSelector event1={event1} num="1" selectedEvents={val} handleChange1={handleChange1} allevents={allevents} />
+                <RegisterSelector event1={event2} num="2" selectedEvents={val} handleChange1={handleChange2} allevents={allevents} />
             </div>
             <div className="RegisterFor2Input">
-                <RegisterSelector event1={val} num="3" handleChange1={handleChange3} allevents={allevents} />
+                <RegisterSelector event1={event3} num="3" selectedEvents={val} handleChange1={handleChange3} allevents={allevents} />
 
-                <RegisterSelector event1={val} num="4" handleChange1={handleChange4} allevents={allevents} />
+                <RegisterSelector event1={event4} num="4" selectedEvents={val} handleChange1={handleChange4} allevents={allevents} />
             </div>
             <div className="RegisterFor2Input">
-                <RegisterSelector event1={val} num="5" handleChange1={handleChange5} allevents={allevents} />
+                <RegisterSelector event1={event5} num="5" selectedEvents={val} handleChange1={handleChange5} allevents={allevents} />
             </div>
             <div className="registerPaperButton">
                 <button className="registerPaperButtonBTN" onClick={() => handlePreviousPaper()} type="submit">Back</button>
