@@ -27,7 +27,7 @@ function Login() {
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
-        navigate("/");
+        navigate("/register");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);

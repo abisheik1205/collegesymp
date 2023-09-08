@@ -11,7 +11,7 @@ const RegisterSelector = ({ allevents, handleChange1, num, event1, selectedEvent
                         const optionValue = `${item.eventName} - ${item.departmentName}`;
                         if (selectedEvents.includes(optionValue)) {
                             return (
-                                <option key={key} value={optionValue} className="EventOptionSelected" selected>
+                                <option key={key} value={optionValue} className="EventOption" disabled>
                                     <p>{item.eventName} - {item.departmentName}</p>
                                 </option>
                             );

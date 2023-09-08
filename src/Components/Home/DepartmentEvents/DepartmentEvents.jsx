@@ -16,15 +16,20 @@ const DepartmentEvents = () => {
         mainEvents = mainEvents.concat(events);
     }
 
-    const shuffle = (array) => { 
-        for (let i = array.length - 1; i > 0; i--) { 
-            const j = Math.floor(Math.random() * (i + 1)); 
-            [array[i], array[j]] = [array[j], array[i]]; 
-        } 
-        return array; 
-    }; 
+    // Filter and sort mainEvents based on departmentName
+    mainEvents = mainEvents.filter(event => event.departmentName); // Remove any events without a departmentName
+    mainEvents.sort((a, b) => a.departmentName.localeCompare(b.departmentName)); // Sort by departmentName in alphabetical order
 
-    shuffle(mainEvents);
+
+    // const shuffle = (array) => { 
+    //     for (let i = array.length - 1; i > 0; i--) { 
+    //         const j = Math.floor(Math.random() * (i + 1)); 
+    //         [array[i], array[j]] = [array[j], array[i]]; 
+    //     } 
+    //     return array; 
+    // }; 
+
+    // shuffle(mainEvents);
 
     return(
         <div className="departmentEvents">
