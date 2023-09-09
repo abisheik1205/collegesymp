@@ -9,15 +9,19 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, forHome, entertainmen
     const [over, setOver] = useState(false);
 
     const handleOver = () => {
-        if (!forHome) {
-            setOver(true);
+        if (window.innerWidth > 1000) {
+            if (!forHome) {
+                setOver(true);
+            }
         }
     }
 
     const handleOut = () => {
 
-        if (!forHome) {
-            setOver(false);
+        if (window.innerWidth > 1000) {
+            if (!forHome) {
+                setOver(false);
+            }
         }
 
     }
@@ -61,7 +65,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, forHome, entertainmen
                 <div className={over? "AllDepartmentPageContainerEach": "AllDepartmentPageContainerEachOnHover"} style={over? forHome? {backdropFilter: 'blur(5px)', width: '150px', height: '150px'}: {backdropFilter: 'blur(5px)'}: forHome? {width: '150px', height: '150px'}: {}} onMouseOver={() => handleOver()} onMouseOut={() => handleOut()}>
                     <Link to={"/allevents"} state={{ dataToSend }}>
                     <img className="AllDepartmentPageContainerEachImg" style={forHome? {width: '150px', height: '150px'}: {}} src={mainEventsimage} alt={departmentName}/>
-                    <div className="AllDepartmentPageContainerEachStackForm" style={over? forHome? {justifyContent: 'center', top: "10%", height: '150px', backdropFilter: 'blur(3px)'}: {justifyContent: 'center',  backdropFilter: 'blur(3px)'}: {justifyContent: 'center', top: "10%", height: '150px'}}>
+                    <div className="AllDepartmentPageContainerEachStackForm" style={over? forHome? {justifyContent: 'center', top: "10%", height: '150px', backdropFilter: 'blur(3px)'}: {justifyContent: 'center',  backdropFilter: 'blur(3px)'}: {justifyContent: 'center'}}>
                         <div className="AllDepartmentPageContainerEachStackFormHeader" style={over? {marginBottom: '50px'}: forHome? {marginBottom: '0px'}: {}}>
                             <h2 className="AllDepartmentPageContainerEachStackFormHeaderHead" style={forHome? {fontSize: '1.25rem'}: {}}>{mainEventsdepartmentName}</h2>
                             <Divider margin="5px 20px" color="whitesmoke"/>

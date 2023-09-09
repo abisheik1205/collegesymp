@@ -3,18 +3,48 @@
     /* background-color: rgba(57, 57, 57, 0.86); */
     margin-top: 25px;
     margin-bottom:40px;
+    overflow: hidden;
+}
+.departmentsInGrid {
+    width: 90%;
+    height: 450px;
+    margin: 7px auto;
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    gap: 60px;
+ /* Adjust duration as needed */
 }
 
-.departmentsInGrid{
-    width: 90%;
-    display: grid;
-    margin: 0px auto;
-    grid-template-columns: 150px 150px 150px 150px 150px 150px;
-    /* grid-template-rows: auto auto auto; */
-    justify-content: space-around;
-    align-self: center;
-    align-items: center;
-    gap: 40px;
+.departmentsInGrid::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    margin-right: 10px;
+}
+
+/* Define the custom scrollbar thumb */
+.departmentsInGrid::-webkit-scrollbar-thumb {
+    background-color: gray; /* Change this to your desired thumb color */
+    border-radius: 60px;
+}
+
+/* Define the custom scrollbar track when hovered */
+.departmentsInGrid::-webkit-scrollbar-thumb:hover {
+    background-color: #393939; /* Change this to your desired thumb color when hovered */
+}
+
+/* Define a class for the animation */
+.scroll {
+    animation: scroll 20s linear infinite; /* Adjust duration as needed */
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    100% {
+        transform: translateX(-100%); /* Move to the left */
+    }
 }
 
 .departmentsInGridMain{
@@ -170,7 +200,6 @@
 .departmentsInGridMoreHead{
     font-weight: 100;
 }
-
 @keyframes animatineTi{
     from{
         border-radius: 10px;
@@ -192,7 +221,12 @@
 
 @media only screen and (max-width: 1000px){
     .departmentsInGrid{
-        grid-template-columns: 0.4fr;
+        display: grid;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 290px;
     }    
     .departmentEvents{
         margin-bottom: 30px;

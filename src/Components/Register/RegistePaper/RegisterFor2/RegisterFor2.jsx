@@ -122,6 +122,10 @@ const RegisterFor2 = ({ handleNextPaper, handlePreviousPaper, finalSelectedEvent
                 }
 
             }
+
+            oollEvents = oollEvents.filter(event => event.departmentName); // Remove any events without a departmentName
+            oollEvents.sort((a, b) => a.departmentName.localeCompare(b.departmentName)); // Sort by departmentName in alphabetical order
+
             setAllEvents(oollEvents);
         }else{
             console.log(allevents);

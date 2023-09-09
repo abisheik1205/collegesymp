@@ -81,7 +81,7 @@ const Home = () => {
       return () => {
         window.removeEventListener('scroll', handleScroll);
       };
-    }, []);
+    }, [scrolledDown]);
     
     window.addEventListener('scroll', handleScroll);
   return (
@@ -94,7 +94,7 @@ const Home = () => {
               className="VideoForMobile"
               ref={videoRefMobile}
               src={videoForMobile}
-              loop
+              // onEnded={handleEndded}
               autoPlay
             />: <></>
           }         
@@ -105,9 +105,10 @@ const Home = () => {
               ref={videoRefDesktop}
               src={VideoForDesktop}
               autoPlay
-              loop
+              // onEnded={handleEndded}
             />: <></>
           }
+
         </div>
         <div className="bgContainer" style={scrolledDown? {background: 'rgba(0, 0, 0, 0.800)'}: {backgroundColor: "transparent"}}>
           <Header />

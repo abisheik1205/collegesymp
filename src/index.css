@@ -14,5 +14,6 @@ body{
   background-clip: border-box;
   backdrop-filter: blur(10px);;
   background-attachment: fixed;
+  scroll-behavior: smooth;
   background-image: url("./Components//picture.jpg");
 }

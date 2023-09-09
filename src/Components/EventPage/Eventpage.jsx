@@ -86,7 +86,7 @@ export const Eventpage = () => {
                                 })
                             }
                         </ul>
-                    </div>: <></>
+                    </div>: <></>   
                 }
                 <div className="EventRules">
                     <h2 className="EventRulesSubHeads">Rules</h2>

@@ -7,14 +7,14 @@ import mech from "../../assets/mech.jpeg";
 import ece from "../../assets/ece.png";
 import aero from "../../assets/aero.jpeg";
 import auto from "../../assets/AM.jpeg";
-import ft from "../../assets/ft.png";
-import AIDS from "../../assets/AI&DS department Pic.jpg";
+import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
+import AIDS from "../../assets/aids pic.jpg";
 import cse_00 from "../../assets/cse_00.png";
 import cse_01 from "../../assets/quiz.jpg";
 import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
-import ece_01 from "../../assets/ece_01.png";
+import spiderman from "../../assets/vijaySpiderman.jpg";
 import ece_02 from "../../assets/quiz.jpg";
 import ece_03 from "../../assets/ece_03.png";
 import pro from "../../assets/pro.jpg";
@@ -25,6 +25,7 @@ import pp from "../../assets/pp.jpg";
 import ft_01 from "../../assets/ft_01.png";
 import ft_02 from "../../assets/ft_02.png";
 import ft_03 from "../../assets/ft_03.jpg";
+import ft_032 from "../../assets/ft_032.png";
 import eee_00 from "../../assets/eee_00.png";
 import eee_01 from "../../assets/eee_01.png";
 import eee_02 from "../../assets/eee_02.png";
@@ -43,7 +44,7 @@ import c_00 from "../../assets/c_02.png";
 import c_01 from "../../assets/c_01.png";
 import c_02 from "../../assets/c_03.png";
 import c_03 from "../../assets/c_04.png";
-import ai_03 from '../../assets/ai_03.jpg';
+import ai_03 from '../../assets/Firefly A dark themed transformers cube built with numbers of different sizes caught on red flame 39 (1).jpg';
 import ai_04 from "../../assets/ai_04.png";
 import auto_00 from "../../assets/auto_00.png"
 import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
@@ -51,9 +52,12 @@ import DesignothronMechEntertainmentPic from "../../assets/DesignothronMechEnter
 import DesignSpectrum from "../../assets/DesignSpectrum.jpg";
 import CADModelling from "../../assets/CADModelling.jpg";
 import paperppresentation from "../../assets/paperppresentation.jpg";
-import EVDesignChallenge from "../../assets/EVDesignChallenge.jpg";
+import EVDesignChallenge from "../../assets/circuitDebugging.jpg";
 import paperpresentationft from "../../assets/paperpresentationft.jpg";
 import techwar from "../../assets/techwar.jpg";
+import aids from "../../assets/aids.jpg";
+import technicalQuiz from "../../assets/technicalQuiz.jpg";
+import techwarentertainment from "../../assets/techwarentertainment.png";
 
 export const StorageData = [
     {
@@ -79,6 +83,7 @@ export const StorageData = [
                     "In all matters not covered by these rules and regulations, the decision of the organizers is final.",
                 ],
                 image: cse_00,
+                entertainmentPhoto: spiderman,
                 details: {
                     venue: "Charles Babbage lab",
                     date: "22 Sep 2023",
@@ -106,6 +111,7 @@ export const StorageData = [
                     "The questions can cover many topics including theoretical concepts,pratical applicants,historical developments, and emerging trends",
                     "In the event of a tie, Tie-breaker questions can be used to determine the winner. These questions are often more challenging"
                 ],
+                entertainmentPhoto: technicalQuiz,
                 image: cse_01,
                 details: {
                     venue: "S13 - Seminar Hall",
@@ -1043,7 +1049,7 @@ export const StorageData = [
         eventCoordinator: "Jayadharshini R",
         faculty:"xxxxx",
         phoneNumber: "9176225193",
-        image: ft,
+        image: aids,
         events: [
             {
                 id: 0,
@@ -1146,6 +1152,7 @@ export const StorageData = [
                     "Showcase your garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
                 ],
+                entertainmentPhoto: ft_032,
                 image: ft_03,
                 details: {
                     venue: "Illustration Lab / 4017",
@@ -1222,6 +1229,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:00 AM - 1:00 PM",
                 },
+                entertainmentPhoto: techwarentertainment,
                 image: pro,
                 coordinator: {
                     name: "Ms. Nehameena R",
@@ -1243,6 +1251,7 @@ export const StorageData = [
                     "Final Round - Rapid Fire: Teams answer 10 questions in 90 seconds.",
                     "Top 2 teams in the final round win.",
                 ],
+                entertainmentPhoto: techwarentertainment2,
                 details: {
                     venue: "F01",
                     date: "22 Sep 2023",
@@ -1293,7 +1302,7 @@ export const StorageData = [
     },
     {
         departmentName: "AI&DS",
-        departmentMotto: "Empowering Tomorrow with AI & Data Science Today!",
+        departmentMotto: "Predicting the future isn't magic,it's Artificial Intelligence",
         eventCoordinator:"Vignesh G",
         faculty:"xxxxx",
         phoneNumber:"8610975473",
@@ -1301,19 +1310,19 @@ export const StorageData = [
         events: [
             {
                 id: 0,
-                eventName: "Ghost Debug Exorcism",
+                eventName: "Ghostly Debug Exorcism",
                 shortDescription: "Unveiling Code Spirits",
                 description: "Calling all brave souls! Dive into our realm, where you'll navigate a chilling ghost story and mysterious debugging. Join this thrilling adventure and become a Ghost Buster. Will you answer the spectral call?",
                 rules: [
-                    "Teams of maximum 3 members with coding knowledge and debugging skills.",
-                    "First round will be based on solving coding crypt. Second and Third round will be instructed at the time of event.",
-                    "Participants can bring their own laptops.",
-                    "Online platforms can be used if necessary.",
+                    "Teams can have a maximum of three members.",
+                    "Participants should have basic coding knowledge and debugging skills.",
+                    "The event consists of three rounds, each with a different level of difficulty and an intriguing ghostly storyline facing progressively challenging debugging tasks related to the story.",
+                    "Coding languages- Python,C++,Java any one can be used.",
                     "The number of teams advancing will be determined by the organizers based on the competition structure.",
-                    "The winners will be decided based on the maximum points they're obtaining capturing the ghosts.",
+                    "Other details will be instructed at the time of event.",
                 ],
                 details: {
-                    venue: "Intelligence lab",
+                    venue: "John McCarthy Intelligence lab",
                     date: "22 SEP 2023",
                     time: "11:00 AM - 3:30 PM",
                 },
@@ -1325,15 +1334,15 @@ export const StorageData = [
                 faculty: {
                     name: "Dr. S. Bairavel"
                 },
-                departmentName: "AIDS",
+                departmentName: "AI&DS",
             },
             {
                 id: 1,
                 eventName: "PaperFest",
                 shortDescription: "Innovate, Optimize, Elevate",
-                description: "Welcome to PaperFest – where innovation takes center stage! Gather your team of up to three participants for an electrifying challenge. We provide the research papers; you provide the magic.your mission?supercharge these papers with your genius. Craft captivating PowerPoint presentations to showcase your innovation.",
+                description: "Welcome to PaperFest – where innovation takes center stage! Gather your team of up to three participants for an electrifying challenge. We provide the research papers; you provide the magic.your mission?supercharge these papers with your genius. Craft captivating presentations to showcase your innovation.",
                 rules: [
-                    "Teams can have a maximum of three members. Teams with more than three members won't qualify.",
+                    "Teams can have a maximum of three members.",
                     "This event is open to students from any technical background. Make sure to have valid identification during registration.",
                     "Bring your own laptop for creating and presenting your work.",
                     "Choose one of the three domains: AI with IoT, Core AI, or Blockchain.",
@@ -1341,9 +1350,9 @@ export const StorageData = [
                     "Stay on schedule! Each team gets 10 minutes for their presentation, including the Q&A session."
                 ],
                 details: {
-                    venue: "T12",
+                    venue: "S13 Seminar Hall",
                     date: "22 SEP 2023",
-                    time: "9:30 AM - 12:30 PM",
+                    time: "11:00 AM - 3:30 PM",
                 },
                 image: ai_04,
                 coordinator: {
@@ -1351,9 +1360,9 @@ export const StorageData = [
                     phoneNumber: "9342806082",
                 },
                 faculty: {
-                    name: "C.SURESHKUMAR"
+                    name: "Ms. S. Aishwarya "
                 },
-                departmentName: "AIDS",
+                departmentName: "AI&DS",
             },
             {
                 id: 2,
@@ -1365,11 +1374,11 @@ export const StorageData = [
                     "Participants will receive a sample website and a well-defined problem statement.",
                     "Your task is to optimize the website to perfectly match and elevate the specified requirements.",
                     "Put on your thinking cap and come up with ingenious ways to enhance the website's performance and user experience.",
-                    "Novel methods of optimization, such as UI/UX designing, technical SEO, voice search optimization, etc,. are higly admired.",
+                    "Novel methods of optimization, such as UI/UX designing, technical SEO, voice search optimization, etc., are highly admired.",
                     "Our judges will assess the optimizations based on creativity, impact, and alignment with the problem statement.",
                 ],
                 details: {
-                    venue: "Intelligence Lab",
+                    venue: "John McCarthy Intelligence Lab",
                     date: "23 SEP 2023",
                     time: "9:30 AM - 12:30 PM",
                 },
@@ -1379,28 +1388,27 @@ export const StorageData = [
                     phoneNumber: "9176123091",
                 },
                 faculty: {
-                    name: "Ms. D. Arthi Prakash"
+                    name: "Mrs. D. Arthi "
                 },
-                departmentName: "AIDS",
+                departmentName: "AI&DS",
             },
             {
                 id: 3,
                 eventName: "Insight-Ignite",
-                shortDescription: "Navigate markets, win big at Insight-Ignite ",
-                description: "Embark on a thrilling journey in our competition. You'll unlock an exclusive dataset, grapple with intriguing problems, dive deep into data, craft stunning visualizations, and strategize your way to victory.",
+                shortDescription: "Set Your Heart Ablaze ",
+                description: "Embark on an Epic Data Journey! Join Insight-Ignite. Explore data, visualize insights, and propose real-world solutions.Conquer MCQs, visualization challenges, and real-world recommendations.. Dive into the world of data and set your analytical skills ablaze! Are you up for the challenge?",
                 rules: [
                     "Each team can have up to three participants.",
-                    "Participants should have basic data analytics and visualization skills.",
-                    "Participants can use any visualization and analysis tools.",
-                    "Dataset will be provided onsite.",
-                    "First round begins with MCQ's based on the given data.",
-                    "Second round and third round will be instructed at the time of event.",
-                    "Submissions after the time limit will be disqualified.",
+                    "Teams will navigate these three rounds to extract valuable insights from real-world data.",
+                    "Round 1:Questions(MCQ on kahoot)  based on the provided dataset on basic Analysis, Stats, Behavior.",
+                    "Round 2:Visualize key dataset aspects.Solve specific problems using data visualization techniques.",
+                    "Round 3:Make actionable recommendations based on your analysis.Propose solutions to real-world problems.",
+                    "Other details will be instructed at the time of event.",
                 ],
                 details: {
-                    venue: "T12",
+                    venue: "John McCarthy Intelligence Lab",
                     date: "23 SEP 2023",
-                    time: "11:30 AM - 3:30 PM",
+                    time: "9:30 AM - 12:30 PM",
                 },
                 image: ai_03,
                 coordinator: {
@@ -1408,9 +1416,9 @@ export const StorageData = [
                     phoneNumber: "9344587251",
                 },
                 faculty: {
-                    name: "Ms. S. Aishwarya"
+                    name: "C.SURESHKUMAR"
                 },
-                departmentName: "AIDS",
+                departmentName: "AI&DS",
             },
         ]
     },
