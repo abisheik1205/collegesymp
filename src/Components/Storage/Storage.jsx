@@ -42,7 +42,7 @@ import aero_03 from "../../assets/aero_03.png";
 import ai_02 from "../../assets/ai_02.jpg";
 import c_00 from "../../assets/c_02.png";
 import c_01 from "../../assets/c_01.png";
-import c_02 from "../../assets/c_03.png";
+import c_02 from "../../assets/forDarkTheme.jpg";
 import c_03 from "../../assets/c_04.png";
 import ai_03 from '../../assets/Firefly A dark themed transformers cube built with numbers of different sizes caught on red flame 39 (1).jpg';
 import ai_04 from "../../assets/ai_04.png";

@@ -7,7 +7,7 @@
 }
 .departmentsInGrid {
     width: 90%;
-    height: 450px;
+    height: 470px;
     margin: 7px auto;
     display: flex;
     flex-direction: row;
@@ -19,7 +19,6 @@
 .departmentsInGrid::-webkit-scrollbar {
     width: 4px;
     height: 4px;
-    margin-right: 10px;
 }
 
 /* Define the custom scrollbar thumb */
