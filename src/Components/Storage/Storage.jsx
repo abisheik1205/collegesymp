@@ -210,7 +210,7 @@ export const StorageData = [
                 details: {
                     venue: "T07",
                     date: "22 SEP 2023",
-                    time: "xxx",
+                    time: "9:30AM",
                 },
                 image:pro,
                 coordinator: {

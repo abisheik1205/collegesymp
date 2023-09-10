@@ -34,8 +34,10 @@ const Home = () => {
         }
     }
 
-    useEffect(() => {
+    console.log("We've built this in just 4 Days");
+      console.log("And we're gonna fook from this")
 
+    useEffect(() => {
       localStorage.clear();
 
       function handleScroll() {
@@ -97,7 +99,7 @@ const Home = () => {
               // onEnded={handleEndded}
               autoPlay
             />: <></>
-          }         
+          }
           {
             isPlayingforDesktop ?
             <video

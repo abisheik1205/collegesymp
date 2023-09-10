@@ -3,6 +3,7 @@ import "./AboutUS.css";
 import homeSide from "../../../assets/HomeS.png";
 
 const AboutUs = () => {
+    
     return(
         <div className="aboutUS">
             <div className="AboutUs">

@@ -44,6 +44,7 @@ const DepartmentEvents = () => {
                     return (
                             <AllDepartmentPageEachContainer
                                 link="allevents"
+                                key={key}
                                 departmentMotto={item.departmentMotto}
                                 departmentName={item.departmentName}
                                 mainEventsimage={item.image}
