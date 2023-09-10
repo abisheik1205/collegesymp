@@ -68,4 +68,12 @@
     .HeaderMainLinkEvent:hover .NavForEvents{
         display: none;
     }
+    .HeaderMainLinkEventhOVER{
+        padding: 0%;
+        font-size: small;
+    }   
+    .HeaderMainLink{
+        padding: 0%;
+        font-size: small;
+    }
 }
