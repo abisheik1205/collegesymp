@@ -89,7 +89,7 @@ const SearchList = () => {
 
                             console.log(photo);
                             
-                            return <MainSearch selectedEvents={SelectedEvents} name={name} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
+                            return <MainSearch key={key} selectedEvents={SelectedEvents} name={name} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
                         })
                     }
                 </Table>

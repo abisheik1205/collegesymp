@@ -1,11 +1,47 @@
 .HeaderMain{
     display: flex;
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 40px;
     position: absolute;
     z-index: 1000;
     justify-content: flex-end;
     font-family: 'Inconsolata', monospace;
+}
+
+.HeaderMainLinkEvent{
+    position: relative;
+    /* margin-top: 20px; */
+}
+.HeaderMainLinkEventhOVER{
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: large;
+    margin: 25px 20px;
+}
+.NavForEvents{
+    display: none;
+    position: absolute;
+    top: 0%;
+    border-radius: 5px;
+    background-color: aliceblue;
+    left: 10%;
+    width: max-content;
+    margin-top: 70px;
+}
+
+.NavForEventsLink{
+    padding: 15px 20px;
+    text-align: left;
+}
+
+.NavForEventsLink:hover{
+    background-color: ghostwhite;
+}
+
+.HeaderMainLinkEvent:hover .NavForEvents{
+    display: block;
+    opacity: 1  ;
 }
 
 .HeaderMainLink{
@@ -22,9 +58,14 @@
 
 @media screen and (max-width: 1000px){
 
+    .HeaderMain{
+        padding: 15px 10px;
+    }
     .HeaderMainLink{
         padding: 4px 5px;
         font-size: small;
     }
-
+    .HeaderMainLinkEvent:hover .NavForEvents{
+        display: none;
+    }
 }

@@ -36,14 +36,12 @@ const EventsFound = () => {
             setList(allevents)
         }
 
-        console.log(allevents);
     }
 
     
     const handleFilter = () => {
         let arr = allevents;
         
-        console.log(arr);
         // Removing the specified element by value from the array
         for (let i = 0; i < arr.length; i++) {
             if (arr[i].eventName === "Line Follower") {
@@ -54,8 +52,6 @@ const EventsFound = () => {
                 delete arr[i]
             }
         }
-
-        console.log(arr)
     }
 
     useEffect(() => {

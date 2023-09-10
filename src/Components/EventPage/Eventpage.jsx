@@ -27,7 +27,7 @@ export const Eventpage = () => {
     };
 
     const handleRegister = () => {
-        navigate("/register");
+        navigate("/signup");
     }
 
     var biodetails = {
@@ -80,7 +80,7 @@ export const Eventpage = () => {
                                 theme?.map((item, key) => { 
                                     return(
                                         <>
-                                            <li className="RulesListEach">{item}</li>
+                                            <li key={key} className="RulesListEach">{item}</li>
                                         </>
                                     )
                                 })
@@ -95,7 +95,7 @@ export const Eventpage = () => {
                             rules?.map((item, key) => {
                                 return(
                                     <>
-                                        <li className="RulesListEach">{item}</li>
+                                        <li key={key} className="RulesListEach">{item}</li>
                                     </>
                                 )
                             })

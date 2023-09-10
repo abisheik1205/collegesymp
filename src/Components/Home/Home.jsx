@@ -32,7 +32,7 @@ const Home = () => {
         }else{
           setIsPlayingforMobile(true)
         }
-    }
+    } 
 
     console.log("We've built this in just 4 Days");
       console.log("And we're gonna fook from this")
@@ -86,6 +86,7 @@ const Home = () => {
     }, [scrolledDown]);
     
     window.addEventListener('scroll', handleScroll);
+
   return (
     <div className="HomeMain">
       <div className="Home">
@@ -98,8 +99,9 @@ const Home = () => {
               src={videoForMobile}
               // onEnded={handleEndded}
               autoPlay
-            />: <></>
-          }
+              loop
+              />: <></>
+            }
           {
             isPlayingforDesktop ?
             <video
@@ -107,10 +109,10 @@ const Home = () => {
               ref={videoRefDesktop}
               src={VideoForDesktop}
               autoPlay
+              loop
               // onEnded={handleEndded}
             />: <></>
           }
-
         </div>
         <div className="bgContainer" style={scrolledDown? {background: 'rgba(0, 0, 0, 0.800)'}: {backgroundColor: "transparent"}}>
           <Header />

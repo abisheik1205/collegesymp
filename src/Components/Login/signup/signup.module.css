@@ -8,14 +8,21 @@
     font-family: 'poppins', sans-serif;
 }
 
+.container input{
+    font-family: 'poppins', sans-serif;
+}
+
 .input{
     font-family: 'poppins', sans-serif;
     padding: 18px 15px;
     outline: none;
     border: 1px solid whitesmoke;
 }
-
+.InputControl_container__XIpwG input{
+    font-family: 'poppins', sans-serif;
+}
 .innerbox{
+    font-family: 'Poppins';
     height: fit-content;
     width: fit-content;
     min-width: 400px;

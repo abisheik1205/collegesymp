@@ -27,6 +27,7 @@ function Login() {
     signInWithEmailAndPassword(auth, values.email, values.password)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
+        localStorage.setItem("email", values.email);
         navigate("/register");
       })
       .catch((err) => {

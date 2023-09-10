@@ -210,7 +210,7 @@ export const StorageData = [
                 details: {
                     venue: "T07",
                     date: "22 SEP 2023",
-                    time: "9:30AM",
+                    time: "11:00AM - 01:00PM",
                 },
                 image:pro,
                 coordinator: {
@@ -237,7 +237,7 @@ export const StorageData = [
                 details: {
                     venue: "T10,S10",
                     date: "22 SEP 2023",
-                    time: "9:30 AM",
+                    time: "01:30 AM - 04:00 PM",
                 },
                 image: it_01,
                 coordinator: {
@@ -264,7 +264,7 @@ export const StorageData = [
                 details: {
                     venue: "IT Lab",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "9:00 AM - 11:00 PM",
                 },
                 image: it_02,
                 coordinator: {
@@ -293,7 +293,7 @@ export const StorageData = [
                 details: {
                     venue: "T07",
                     date: "23 Sep 2023",
-                    time: "9:30 AM",
+                    time: "11:00 AM - 01:30 PM",
                 },
                 image: it_03,
                 coordinator: {
@@ -811,7 +811,7 @@ export const StorageData = [
         events: [
             {
                 id: 0,
-                eventName: "Quiz",
+                eventName: "Quiz - RoboTrivia",
                 shortDescription: 'Cross-disciplinary minds clash!',
                 description: "A knowledge showdown where participants engage in a captivating quiz, testing their multidisciplinary skills at the intersection of mechanics, electronics, and automation, fostering intellectual growth and collaboration.",
                 rules: [

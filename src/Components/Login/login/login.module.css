@@ -7,8 +7,12 @@
     justify-content: center;
     font-family: 'poppins', sans-serif;
 }
+.container input{
+    font-family: 'poppins', sans-serif;
+}
 
 .innerbox{
+    font-family: 'Poppins';
     height: fit-content;
     width: fit-content;
     min-width: 400px;

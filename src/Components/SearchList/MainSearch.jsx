@@ -11,13 +11,13 @@ const MainSearch = ({ selectedEvents, name, phoneNumber, transactionID, photo, m
 
 
                 if (item?.stringValue.toLowerCase().includes(searchInput.toLowerCase())) {
-                    return <LoginRender name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
+                    return <LoginRender key={key} name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
                 }
                 return;
             })
         }
 
-        return selectedEvents.map((item, key) => <LoginRender name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
+        return selectedEvents.map((item, key) => <LoginRender key={key} name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
     );
 }
 

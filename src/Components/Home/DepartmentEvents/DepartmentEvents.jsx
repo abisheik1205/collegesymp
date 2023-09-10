@@ -23,7 +23,6 @@ const DepartmentEvents = () => {
     mainEvents = mainEvents.filter(event => event.departmentName); // Remove any events without a departmentName
     mainEvents.sort((a, b) => a.departmentName.localeCompare(b.departmentName)); // Sort by departmentName in alphabetical order
 
-
     return (    
         <div className="departmentEvents">
             <div className="departmentEventsFlex">
