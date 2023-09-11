@@ -70,6 +70,7 @@ const SearchList = () => {
                             <TableCell>Name </TableCell>
                             <TableCell>Event Name</TableCell>
                             <TableCell>Phone Number</TableCell>
+                            <TableCell>Department Name</TableCell>
                             <TableCell>Transaction ID</TableCell>
                             <TableCell>College Name</TableCell>
                             <TableCell>Link</TableCell>
@@ -85,10 +86,11 @@ const SearchList = () => {
                             var SelectedEvents = item?._document?.data?.value?.mapValue?.fields?.SelectedEvents?.arrayValue?.values;
                             var photo = item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values?.[0]?.stringValue;
                             var collegeName = item?._document?.data?.value?.mapValue?.fields?.collegeName?.stringValue;
+                            var departmentname = item?._document?.data?.value?.mapValue?.fields?.departmentname?.stringValue;
 
                             console.log(photo);
                             
-                            return <MainSearch key={key} selectedEvents={SelectedEvents} name={name} collegeName={collegeName} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
+                            return <MainSearch key={key} selectedEvents={SelectedEvents} departmentname={departmentname} name={name} collegeName={collegeName} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
                         })
                     }
                 </Table>
