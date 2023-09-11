@@ -17,7 +17,6 @@ const Header = () => {
         }
         var oollEvents = [];
         if (allevents.length === 0) {
-            var oollEvents = [];
             for (var i = 0; i < Data.length; i++) {
     
                 var events = Data[i].departmentName;
@@ -35,7 +34,7 @@ const Header = () => {
 
     useEffect(() => {
         handleinitial();
-    }, [])
+    })
 
     return(
         <div className="HeaderMain">
@@ -68,7 +67,6 @@ const Header = () => {
             <Link to={"/signup"}><p className="HeaderMainLink">Sign Up</p></Link>
 </>
             }
-            
         </div>
     )
 }
