@@ -15,7 +15,7 @@ const ListRender = ({ key, name, phoneNumber, collegeName, transactionID, photo,
             <TableCell className="ListRenderPara">{phoneNumber}</TableCell>
             <TableCell className="ListRenderPara">{transactionID}</TableCell>
             <TableCell className="ListRenderPara">{collegeName}</TableCell>
-            <TableCell className="ListRenderPara"><a style={{color: 'blue', textDecoration: 'underline'}} target="_blank" href={photo}>Photo</a></TableCell>
+            <TableCell className="ListRenderPara"><a style={{color: 'blue', textDecoration: 'underline'}} rel="noreferrer" target="_blank" href={photo}>Photo</a></TableCell>
             <TableCell className="ListRenderPara">{mailID}</TableCell>
         </TableRow>
     )
