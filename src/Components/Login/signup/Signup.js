@@ -70,10 +70,11 @@ function Signup() {
           lable="Password"
           className="input"
           placeholder="Enter the password"
+          type="password"
           onChange={(event) =>
             setValues((prev) => ({ ...prev, password: event.target.value }))
           }
-        ></InputControl>
+          ></InputControl>
         <div className={styles.footer} style={{marginTop: '15px'}}>
           <button
             type="button"
