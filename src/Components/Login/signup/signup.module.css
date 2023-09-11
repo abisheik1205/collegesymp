@@ -62,10 +62,6 @@
     cursor: pointer;
 }
 
-.footer button:disabled{
-    /* background-color: grey !important; */
-}
-
 .footer button:hover{
     background-color: #171518;
 }
