@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Login.css";
 import LoginPage from "./LoginPage";
-import { Firestore, Query, QueryOrderByConstraint, collection, getDocs, orderBy, query } from "firebase/firestore";
+import { collection, getDocs } from "firebase/firestore";
 import { firebasee } from '../../firebase';
 import 'firebase/firestore';
 import Table from '@mui/material/Table';
@@ -22,8 +22,6 @@ const SearchList = () => {
     const handleClick = async () => {
 
         const query1 = collection(firebasee, "users");
-
-            // const bb = query(query1, orderBy('timeStamp', 'desc'));
 
             const aa = await getDocs(query1); 
 
@@ -73,23 +71,24 @@ const SearchList = () => {
                             <TableCell>Event Name</TableCell>
                             <TableCell>Phone Number</TableCell>
                             <TableCell>Transaction ID</TableCell>
+                            <TableCell>College Name</TableCell>
                             <TableCell>Link</TableCell>
                             <TableCell>Mail-ID</TableCell>
                         </TableRow>
                     </TableHead>
                     {
                         docs?.map((item, key) => {
-                            console.log(item?._document?.data?.value?.mapValue?.fields?.name?.stringValue);
                             var name = item?._document?.data?.value?.mapValue?.fields?.Name?.stringValue;
                             var transactionID = item?._document?.data?.value?.mapValue?.fields?.transactionId?.stringValue;
                             var phonenumber = item?._document?.data?.value?.mapValue?.fields?.phoneNumber?.stringValue;
                             var Email = item?._document?.data?.value?.mapValue?.fields?.Email?.stringValue;
                             var SelectedEvents = item?._document?.data?.value?.mapValue?.fields?.SelectedEvents?.arrayValue?.values;
                             var photo = item?._document?.data?.value?.mapValue?.fields?.fileLink?.arrayValue?.values?.[0]?.stringValue;
+                            var collegeName = item?._document?.data?.value?.mapValue?.fields?.collegeName?.stringValue;
 
                             console.log(photo);
                             
-                            return <MainSearch key={key} selectedEvents={SelectedEvents} name={name} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
+                            return <MainSearch key={key} selectedEvents={SelectedEvents} name={name} collegeName={collegeName} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
                         })
                     }
                 </Table>

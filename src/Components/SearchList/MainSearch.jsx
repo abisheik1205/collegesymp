@@ -3,7 +3,7 @@ import LoginRender from "./ListRender/ListRender";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const MainSearch = ({ selectedEvents, name, phoneNumber, transactionID, photo, mailID, searchInput }) => {
+const MainSearch = ({ selectedEvents, collegeName, name, phoneNumber, transactionID, photo, mailID, searchInput }) => {
 
         if (searchInput !== "") {
 
@@ -11,13 +11,13 @@ const MainSearch = ({ selectedEvents, name, phoneNumber, transactionID, photo, m
 
 
                 if (item?.stringValue.toLowerCase().includes(searchInput.toLowerCase())) {
-                    return <LoginRender key={key} name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
+                    return <LoginRender key={key} name={name} collegeName={collegeName} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
                 }
                 return;
             })
         }
 
-        return selectedEvents.map((item, key) => <LoginRender key={key} name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
+        return selectedEvents.map((item, key) => <LoginRender key={key} collegeName={collegeName} name={name} transactionID={transactionID} phoneNumber={phoneNumber} Eventname={item?.stringValue} mailID={mailID} photo={photo} />
     );
 }
 
