@@ -25,7 +25,6 @@ const Home = () => {
         setScrollPosition(position);
     };
 
-
     const handleOnclick = () => {
         if (window.innerWidth > 1000) {
           setIsPlayingforDesktop(true)
@@ -38,7 +37,7 @@ const Home = () => {
       console.log("And we're gonna fook from this")
 
     useEffect(() => {
-      localStorage.clear();
+      localStorage.setItem("val", null);
 
       function handleScroll() {
         // Your function to be called when scrolling down goes here

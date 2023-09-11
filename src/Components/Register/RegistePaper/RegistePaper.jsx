@@ -9,8 +9,10 @@ import RegisterFor4 from "./RegisterFor4/RegisterFor4";
 import RegisterFor5 from "./RegisterFor5/RegisterFor5";
 import Dialog from '@mui/material/Dialog';
 import { DialogTitle } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
 
 const RegistePaper = () => {
+    const navigate = useNavigate();
 
     const [dialog, setDialog] = useState(true);
 
@@ -34,6 +36,9 @@ const RegistePaper = () => {
     var mailIDRegistered = localStorage.getItem("mailAdress");
     var mailIDLoggedIn = localStorage.getItem("email");
 
+    console.log(mailIDRegistered);
+    console.log(mailIDLoggedIn);
+
     const handlePreviousPaper = () => {
         setCurrentPaper(currentPaper - 1);
     }
@@ -42,6 +47,12 @@ const RegistePaper = () => {
         setSelectedEvents(selectedEvents);
         console.log(selectedEvents);
     }
+
+    const handleclick = () => {
+        localStorage.setItem("register", "Done");
+        localStorage.setItem("mailAdress", bio.mailAdress);
+        navigate('/', { replace: true });
+    }   
 
     const handleBio = (name, collegeName, departmentName, phoneNumber, mailAdress) => {
         setBio({
@@ -58,7 +69,7 @@ const RegistePaper = () => {
     }, [])
 
     return(
-        registerDone && mailIDLoggedIn == mailIDRegistered ? <div style={{display:'flex', fontFamily: 'poppins', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '100px 40px'}}>
+        registerDone === "Done" && mailIDLoggedIn == mailIDRegistered ? <div style={{display:'flex', fontFamily: 'poppins', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '100px 40px'}}>
             <h1 style={{textAlign: 'center', color: 'whitesmoke'}}>You've Already Regisetered!!</h1>
             <br />
             <br />
@@ -91,7 +102,7 @@ const RegistePaper = () => {
                 </div>
             
             {
-                currentPaper === 0? <RegisterFor1 handleNextPaper={handleNextPaper} handleBio={handleBio} handlePreviousPaper={handlePreviousPaper}/>: currentPaper === 1? <RegisterFor2 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper} finalSelectedEvents={selectedEvents}/>: currentPaper === 2? <RegisterFor3 handlePreviousPaper={handlePreviousPaper} handleNextPaper={handleNextPaper}/>: currentPaper ===3? <RegisterFor4 handleNextPaper={handleNextPaper} bio={bio} selected={selected} handlePreviousPaper={handlePreviousPaper}/>: <RegisterFor5 handlePreviousPaper={handlePreviousPaper} bio={bio} selected={selected}/>
+                currentPaper === 0? <RegisterFor1 handleNextPaper={handleNextPaper} handleBio={handleBio} handlePreviousPaper={handlePreviousPaper}/>: currentPaper === 1? <RegisterFor2 handleNextPaper={handleNextPaper} handlePreviousPaper={handlePreviousPaper} finalSelectedEvents={selectedEvents}/>: currentPaper === 2? <RegisterFor3 handlePreviousPaper={handlePreviousPaper} handleNextPaper={handleNextPaper}/>: currentPaper ===3? <RegisterFor4 handleNextPaper={handleNextPaper} bio={bio} selected={selected} handlePreviousPaper={handlePreviousPaper}/>: <RegisterFor5 handlePreviousPaper={handlePreviousPaper} handleclick={handleclick} bio={bio} selected={selected}/>
             } 
 
             </div>

@@ -1,17 +1,7 @@
 import React from "react";
 import "./RegisterFor5.css";
-import { useNavigate } from 'react-router-dom';
 
-const RegisterFor5 = ({ handlePreviousPaper, selected, bio }) => {
-
-    const navigate = useNavigate();
-
-    const handleclick = () => {
-        localStorage.setItem("register", "Done");
-        localStorage.setItem("mailAdress", bio.mailAdress);
-        navigate('/', { replace: true });
-    }
-
+const RegisterFor5 = ({ handlePreviousPaper, handleclick, selected, bio }) => {
     return(
         <div className="RegisterFor5">
             <h2 className="RegisterFor5Head">Details</h2>

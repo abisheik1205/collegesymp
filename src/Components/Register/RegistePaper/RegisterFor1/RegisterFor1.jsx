@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { doc, setDoc, serverTimestamp  } from 'firebase/firestore';
 
 const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
 
@@ -14,7 +13,7 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
     const handleClick = (e) => {
 
         e.preventDefault();
-        if (name.length > 8 || departmentName.length > 8 || phoneNumber.length > 8 || collegeName.length > 5) {
+        if (name.length > 8 || departmentName.length > 8 || phoneNumber.length > 8 || collegeName.length > 5 || mail.length > 5) {
             handleBio(name, collegeName, departmentName, phoneNumber, mail);
             handleNextPaper();
         }else{
@@ -33,6 +32,7 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
             localStorage.setItem("name", e.target.value);
         }
     }
+
     const handlephoneNumber = (e) => {
         var phoneNumber = localStorage.getItem("phoneNumber");
         if (phoneNumber) {
