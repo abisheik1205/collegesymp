@@ -28,12 +28,15 @@
     text-align: left;
     color: whitesmoke;
 }
+
 .NavOnMobileP{
     display: none;
 }
+
 .NavOnMobileClick{
     display: none;
 }
+
 @media only screen and (max-width:1000px){
     .AllDepartmentPageHeaderLink {
         position: relative;
@@ -52,7 +55,6 @@
         overflow: hidden;
         position: fixed;
         display: none;
-        /* margin: 0%; */
         top: 0;
         left: 0;
         bottom: 0;
@@ -63,14 +65,15 @@
     }
 
     .NavOnMobile{
-        /* overflow: hidden; */
-        position: fixed;
+        overflow: hidden;
+        position: sticky;
         display: block;
         top: 0;
         left: 0;
         bottom: 0;
         height: 100vh;
         z-index: 10;
+        padding-top: 40px;
         width: 100vw;
         background-color: rgb(246, 246, 246);
         font-family: 'poppins', sans-serif;
@@ -84,8 +87,10 @@
         text-align: right;
         position: absolute;
         top: 55px;
-        right: 45px;
-        font-size: xx-large;
+        height: 55px;
+        right:  45px;
+        font-size: small;
+        height: fit-content;
         color: whitesmoke;
         font-weight: 600;
     }

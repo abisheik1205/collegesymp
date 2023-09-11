@@ -31,7 +31,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, forHome, entertainmen
         back: false,
         departmentNamefoundBACk: false
     };
-    
+
         return(
         <>
         {

@@ -29,6 +29,11 @@ const RegistePaper = () => {
         setCurrentPaper(currentPaper + 1);
     }
 
+    var registerDone = localStorage.getItem("register");
+
+    var mailIDRegistered = localStorage.getItem("mailAdress");
+    var mailIDLoggedIn = localStorage.getItem("email");
+
     const handlePreviousPaper = () => {
         setCurrentPaper(currentPaper - 1);
     }
@@ -36,10 +41,6 @@ const RegistePaper = () => {
     const selectedEvents = (selectedEvents) => {
         setSelectedEvents(selectedEvents);
         console.log(selectedEvents);
-    }
-
-    const handleCloseDialog = () => {
-        setDialog(false)
     }
 
     const handleBio = (name, collegeName, departmentName, phoneNumber, mailAdress) => {
@@ -57,6 +58,12 @@ const RegistePaper = () => {
     }, [])
 
     return(
+        registerDone && mailIDLoggedIn == mailIDRegistered ? <div style={{display:'flex', fontFamily: 'poppins', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', margin: '100px 40px'}}>
+            <h1 style={{textAlign: 'center', color: 'whitesmoke'}}>You've Already Regisetered!!</h1>
+            <br />
+            <br />
+            <p style={{textAlign: 'center', color: 'whitesmoke', fontSize: 'small'}}>If you have any changes, you can come to college on 22nd/23rd and change. </p>
+        </div> :
         <div className="RegistePaper">
             <Dialog open={dialog}>
               {/* <p className="dialogBoxHeadX">X</p> */}

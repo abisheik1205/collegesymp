@@ -39,7 +39,9 @@ const DepartmentEvents = () => {
         <div className="departmentEvents">
             <div className="departmentEventsFlex">
                 <h2 className="departmentEventsHead">Departments</h2>
-                {/* <Link to={"/allevents"}><p className="departmentEventP">View All</p></Link> */}
+                {
+                    window.innerWidth < 1000?<Link to={"/allevents"}><p className="departmentEventP">View All</p></Link>: <></>   
+                }
             </div>
             <Divider color="whitesmoke" margin="18px 70px" />
              <br /> 

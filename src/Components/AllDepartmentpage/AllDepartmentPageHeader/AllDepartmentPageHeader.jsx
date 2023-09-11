@@ -1,20 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./AllDepartmentPageHeader.css";
 
 const AllDepartmentPageHeader = ({ handlefilter, selected }) => {
 
-    const [mobileClick, setMobileClick] = useState(false);
-
-    const handleMobileClick = () => {
-        setMobileClick(!mobileClick);
-    }
-
     return(
         <div className="AllDepartmentPageHeader">
-            {/* <div className={mobileClick? "NavOnMobile" :"AllDepartmentPageHeaderM0obile"}> */}
                 <h1 className="AllDepartmentPageHeaderHead"><a href="/" className="AllDepartmentPageHeaderHead">Home</a> &gt; Events</h1>
-                {/* <p className="NavOnMobileP" onClick={() => handleMobileClick()}>|||</p> */}
-            {/* </div> */}
             <div className="AllDepartmentPageHeaderLink">
                 <p onClick={() => handlefilter("all")} className={`AllDepartmentPageHeadereachLinks ${selected === "all"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>All</p>
                 <p onClick={() => handlefilter("Computer Science")} className={`AllDepartmentPageHeadereachLinks ${selected === "Computer Science"? "AllDepartmentPageHeadereachLinksSelected": ""}`}>CSE</p>

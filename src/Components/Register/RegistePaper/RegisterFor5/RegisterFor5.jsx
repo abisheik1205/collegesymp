@@ -7,6 +7,8 @@ const RegisterFor5 = ({ handlePreviousPaper, selected, bio }) => {
     const navigate = useNavigate();
 
     const handleclick = () => {
+        localStorage.setItem("register", "Done");
+        localStorage.setItem("mailAdress", bio.mailAdress);
         navigate('/', { replace: true });
     }
 

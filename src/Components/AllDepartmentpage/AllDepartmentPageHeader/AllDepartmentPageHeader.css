@@ -1,6 +1,7 @@
 .AllDepartmentPageHeader{
     display: flex;
     flex-direction: row;
+    /* height: 50px; */
     margin: 30px 10px 10px;
     align-items: center;
     justify-content: space-between;
