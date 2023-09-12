@@ -25,7 +25,6 @@ const RegisterFor5 = ({ handlePreviousPaper, handleclick, selected, bio }) => {
                                         <br />
                                         <div className="RegisterFor5ContainerMaping">
                                             <h2 className="RegisterFor5ContainerMapinghead">{item}</h2>
-                                            <p className="RegisterFor5ContainerMapingpara">Computer Science</p>
                                         </div>
                                     </div>
                                 )

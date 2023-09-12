@@ -51,6 +51,7 @@ const RegistePaper = () => {
     const handleclick = () => {
         localStorage.setItem("register", "Done");
         localStorage.setItem("mailAdress", bio.mailAdress);
+
         navigate('/', { replace: true });
     }   
 

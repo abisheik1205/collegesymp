@@ -20,6 +20,10 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
     const [photo, setPhoto] = useState(null);
     const [imageuploaded, setImageUploaded] = useState(false);
 
+    var ftPaperPresentation = "https://docs.google.com/forms/d/e/1FAIpQLSc5U29xSreC7gO-LlpLer-dvDjdLPtrBLBShlQi72KVH4ma8g/viewform?vc=0&c=0&w=1&flr=0&pli=1";
+    var itInnoventures = "https://docs.google.com/forms/d/e/1FAIpQLSfgKQ_cEUneHw99NCmU1yPs8He-lehAfsvgLKnSIVAce9toWA/viewform?vc=0&c=0&w=1&flr=0";
+    var mechIdeaPitching = "https://docs.google.com/forms/d/e/1FAIpQLSfTRJgw2RW3JFzm6qdjO_7FdBM4JH4gjTW9oaeYpKuIxcxG9A/viewform?vc=0&c=0&w=1&flr=0";
+
     const [dialog, setDialog] = useState(true);
 
     const [uploadedLink, setuploadedLink] = useState([])
@@ -81,13 +85,32 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                 "fileLink": uploadingDatasHere,
                 transactionId: transactionId
             }).then(async () => {
-                const message = `Hey ${bio.name}, you've registered for these events. ${selected}. Hope you'll have a great day at college.`;
+
+                var presentationEvents = [{eventName: "Paper Presentation - Fashion Technology", link: "https://docs.google.com/forms/d/e/1FAIpQLSc5U29xSreC7gO-LlpLer-dvDjdLPtrBLBShlQi72KVH4ma8g/viewform?vc=0&c=0&w=1&flr=0&pli=1"}, {eventName: "START-UP GROUND - Automobile", link: "https://docs.google.com/forms/d/e/1FAIpQLSeFRMVHFA0FZSzR_WaD35HAwJmAuraNIhz-8xHGDQDu-9nbCw/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Paper presentation - EEE", link: "https://docs.google.com/forms/d/e/1FAIpQLSeeHoHCyTfc5utWh7v02P3NgyrMwvoW7UlQ3YzcOeXaM8BHAw/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Paper Presentation - Mechatronics", link: "https://docs.google.com/forms/d/e/1FAIpQLSdpcYQLVdbrRKaNblU-YQgNCN7V0URTznX5aCYHwHyYoeY_qQ/viewform?usp=sf_link"}, {eventName: "Paper Presentation - Aero", link: "https://docs.google.com/forms/d/e/1FAIpQLSfMzQxp199qL9MNSTCx8RRW16RM-MT4d1iTugYClZ2beFKicw/viewform"}, {eventName: "Paper Presentation - Civil", link: "https://docs.google.com/forms/d/e/1FAIpQLSdsQeWEl3E7RclC1iXqPZ6njvKhac0oAkZi4v-DLJbtue97vA/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Innoventure - Information Technology", link: "https://docs.google.com/forms/d/e/1FAIpQLSfgKQ_cEUneHw99NCmU1yPs8He-lehAfsvgLKnSIVAce9toWA/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Idea Pitching - Mechanical", link: "https://docs.google.com/forms/d/e/1FAIpQLSfTRJgw2RW3JFzm6qdjO_7FdBM4JH4gjTW9oaeYpKuIxcxG9A/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "ElectroMindz - ECE", link: "https://docs.google.com/forms/d/e/1FAIpQLSfvx6FmK3guQQCQWImLpnUju-rADLKdOoHMV08_r7ej321nZQ/viewform?vc=0&c=0&w=1&flr=0"}]
+                var docLinkstoBeSent = [];
+
+                for (let index = 0; index < selected.length; index++) {
+                    const element1 = selected[index];
+                    for (let j = 0; j < presentationEvents.length; j++) {
+                        const element2 = presentationEvents[j].eventName;
+                        if (element1 === element2) {
+                            console.log(element2);
+                            var ConcatThis = `${presentationEvents[j].eventName} - ${presentationEvents[j].link}       `;
+                            docLinkstoBeSent = docLinkstoBeSent.concat(ConcatThis);
+                        }
+                    }
+                }
+                console.log(docLinkstoBeSent);
+                var register = `Register Here, /n ${docLinkstoBeSent}`;
+
+                var message = `Hey ${bio.name}, you've registered for these events. ${selected}. Hope you'll have a great day at college.`;
 
                  await emailjs
                     .send('service_txm28o2', 'template_x0ifqcc', {
                       to_name: bio.name,
-                      to_mail: bio.mailAdress,
                       message: message,
+                      register: register,
+                      to_mail: bio.mailAdress,
                     }, "sUppWr0eFNYXsNMHD")
                     .then((response) => {
                         handleNextPaper();

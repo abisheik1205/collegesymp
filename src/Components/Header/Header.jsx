@@ -14,6 +14,19 @@ const Header = () => {
         if (window.innerWidth > 1000) {
             setDesktop(true)
         }
+
+        // var presentationEvents = ["Paper Presentation - Fashion Technology", "Technostorm - ECE", "Paper Presentation - EEE", "Paper Presentation - Mechatronics", "Paper Presentation - Aero", "Paper presentation - Civil", "PaperFest - AI&DS"]
+                
+        // for (let index = 0; index < presentationEvents.length; index++) {
+        //     const element1 = presentationEvents[index];
+        //     for (let index = 0; index < presentationEvents.length; index++) {
+        //         const element2 = presentationEvents[index];
+        //         if (element1 === element2) {
+        //             console.log("Found IT");
+        //         }
+        //     }
+        // }
+
         var oollEvents = [];
         if (allevents.length === 0) {
             for (var i = 0; i < Data.length; i++) {

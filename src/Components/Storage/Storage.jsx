@@ -8,7 +8,6 @@ import ece from "../../assets/ece.png";
 import aero from "../../assets/aero.jpeg";
 import auto from "../../assets/AM.jpeg";
 import it_00 from "../../assets/it_00.png"
-
 import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
 import AIDS from "../../assets/aids pic.jpg";
 import cse_00 from "../../assets/cse_00.png";
@@ -18,7 +17,6 @@ import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
 import ece_01 from "../../assets/ece_01.png";
 import spiderman from "../../assets/vijaySpiderman.jpg";
-import ece_02 from "../../assets/quiz.jpg";
 import ece_03 from "../../assets/ece_03.png";
 import pro from "../../assets/pro.jpg";
 import it_01 from "../../assets/it_01.png";
@@ -30,21 +28,15 @@ import ft_02 from "../../assets/3D illustration.jpg";
 import mechatronicsQuiz from "../../assets/mechatronicsQuiz.jpg";
 import ft_03 from "../../assets/ft_03.jpg";
 import ft_032 from "../../assets/ft_032.png";
-import eee_00 from "../../assets/eee_00.png";
 import eee_01 from "../../assets/eee_01.png";
 import auto_02 from "../../assets/auto_02.png"
 import eee_02 from "../../assets/eee_02.png";
-import eee_03 from "../../assets/eee_03.png";
-import mtr_00 from "../../assets/mtr_00.png";
 import mtr_01 from "../../assets/mtr_01.jpg";
 import autoQuiz from "../../assets/autoQuiz.jpg"
-import mtr_02 from "../../assets/mtr_02.png";
 import mtr_03 from "../../assets/mtr_03.jpg";
 import ai_00 from "../../assets/ai_00.jpg";
 import aero_00 from "../../assets/aero_00.jpg";
-import aero_01 from "../../assets/aero_01.png";
 import aero_02 from "../../assets/aero_02.jpg";
-import aero_03 from "../../assets/aero_03.png";
 import ai_02 from "../../assets/ai_02.jpg";
 import c_00 from "../../assets/c_02.png";
 import c_01 from "../../assets/c_01.png";
@@ -580,7 +572,7 @@ export const StorageData = [
                     time: "11:00AM - 12:30PM",
                 },
                 coordinator: {
-                    name: "Monaj Kumar J N",
+                    name: "Manoj Kumar J N",
                     phoneNumber: "6381474648",
                 },
                 faculty: {
@@ -645,14 +637,20 @@ export const StorageData = [
             },
             {
                 id: 3,
-                eventName: "Poster/Paper Presentation",
+                register: "https://kcgcollege.ac.in/",
+                eventName: "Paper Presentation",
                 shortDescription: "Innovative Solutions Shaping Future Urban Infrastructure",
                 description: "Unveiling Sustainable Infrastructure solutions and delve into pioneering research and shaping our urban future.",
                 rules: [
-                    "Topics will be announced beforehand .",
                     "The best technicaly sound presentation will be nominated.",
                     "A team can have a minimum of 1 to maximum of 4 participation.",
                     "The time allotted for each team is 15 mins.",
+                ],
+                theme: [
+                    "Construction debris management.",
+                    "Smart cities and sustainable technology.",
+                    "Advanced construction techniques.",
+                    "Submerged and floating structures.",
                 ],
                 image: c_03,
                 details: {
