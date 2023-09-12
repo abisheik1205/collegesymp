@@ -89,19 +89,27 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                 var presentationEvents = [{eventName: "Paper Presentation - Fashion Technology", link: "https://docs.google.com/forms/d/e/1FAIpQLSc5U29xSreC7gO-LlpLer-dvDjdLPtrBLBShlQi72KVH4ma8g/viewform?vc=0&c=0&w=1&flr=0&pli=1"}, {eventName: "START-UP GROUND - Automobile", link: "https://docs.google.com/forms/d/e/1FAIpQLSeFRMVHFA0FZSzR_WaD35HAwJmAuraNIhz-8xHGDQDu-9nbCw/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Paper presentation - EEE", link: "https://docs.google.com/forms/d/e/1FAIpQLSeeHoHCyTfc5utWh7v02P3NgyrMwvoW7UlQ3YzcOeXaM8BHAw/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Paper Presentation - Mechatronics", link: "https://docs.google.com/forms/d/e/1FAIpQLSdpcYQLVdbrRKaNblU-YQgNCN7V0URTznX5aCYHwHyYoeY_qQ/viewform?usp=sf_link"}, {eventName: "Paper Presentation - Aero", link: "https://docs.google.com/forms/d/e/1FAIpQLSfMzQxp199qL9MNSTCx8RRW16RM-MT4d1iTugYClZ2beFKicw/viewform"}, {eventName: "Paper Presentation - Civil", link: "https://docs.google.com/forms/d/e/1FAIpQLSdsQeWEl3E7RclC1iXqPZ6njvKhac0oAkZi4v-DLJbtue97vA/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Innoventure - Information Technology", link: "https://docs.google.com/forms/d/e/1FAIpQLSfgKQ_cEUneHw99NCmU1yPs8He-lehAfsvgLKnSIVAce9toWA/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "Idea Pitching - Mechanical", link: "https://docs.google.com/forms/d/e/1FAIpQLSfTRJgw2RW3JFzm6qdjO_7FdBM4JH4gjTW9oaeYpKuIxcxG9A/viewform?vc=0&c=0&w=1&flr=0"}, {eventName: "ElectroMindz - ECE", link: "https://docs.google.com/forms/d/e/1FAIpQLSfvx6FmK3guQQCQWImLpnUju-rADLKdOoHMV08_r7ej321nZQ/viewform?vc=0&c=0&w=1&flr=0"}]
                 var docLinkstoBeSent = [];
 
+                var count = 0;
+
                 for (let index = 0; index < selected.length; index++) {
                     const element1 = selected[index];
                     for (let j = 0; j < presentationEvents.length; j++) {
                         const element2 = presentationEvents[j].eventName;
                         if (element1 === element2) {
-                            console.log(element2);
-                            var ConcatThis = `${presentationEvents[j].eventName} - ${presentationEvents[j].link}       `;
-                            docLinkstoBeSent = docLinkstoBeSent.concat(ConcatThis);
+                            if (count > 0) {
+                                var ConcatThis = `, ${presentationEvents[j].eventName} - ${presentationEvents[j].link}`;
+                                docLinkstoBeSent = docLinkstoBeSent.concat(ConcatThis);
+                            }else{
+                                var ConcatThis = `${presentationEvents[j].eventName} - ${presentationEvents[j].link}`;
+                                docLinkstoBeSent = docLinkstoBeSent.concat(ConcatThis);
+                            }
+                            count++;
                         }
                     }
                 }
+
                 console.log(docLinkstoBeSent);
-                var register = `Register Here, /n ${docLinkstoBeSent}`;
+                var register = docLinkstoBeSent.length > 0 ?`PPT Link > ${docLinkstoBeSent}`: "Enjoy your day at KCG";
 
                 var message = `Hey ${bio.name}, you've registered for these events. ${selected}. Hope you'll have a great day at college.`;
 
