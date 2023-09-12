@@ -7,6 +7,8 @@ import mech from "../../assets/mech.jpeg";
 import ece from "../../assets/ece.png";
 import aero from "../../assets/aero.jpeg";
 import auto from "../../assets/AM.jpeg";
+import it_00 from "../../assets/it_00.png"
+
 import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
 import AIDS from "../../assets/aids pic.jpg";
 import cse_00 from "../../assets/cse_00.png";
@@ -14,6 +16,7 @@ import cse_01 from "../../assets/quiz.jpg";
 import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
+import ece_01 from "../../assets/ece_01.png";
 import spiderman from "../../assets/vijaySpiderman.jpg";
 import ece_02 from "../../assets/quiz.jpg";
 import ece_03 from "../../assets/ece_03.png";
@@ -23,15 +26,18 @@ import it_02 from "../../assets/it_02.png";
 import it_03 from "../../assets/it_03.png";
 import pp from "../../assets/pp.jpg";
 import ft_01 from "../../assets/ft_01.png";
-import ft_02 from "../../assets/ft_02.png";
+import ft_02 from "../../assets/3D illustration.jpg";
+import mechatronicsQuiz from "../../assets/mechatronicsQuiz.jpg";
 import ft_03 from "../../assets/ft_03.jpg";
 import ft_032 from "../../assets/ft_032.png";
 import eee_00 from "../../assets/eee_00.png";
 import eee_01 from "../../assets/eee_01.png";
+import auto_02 from "../../assets/auto_02.png"
 import eee_02 from "../../assets/eee_02.png";
 import eee_03 from "../../assets/eee_03.png";
 import mtr_00 from "../../assets/mtr_00.png";
 import mtr_01 from "../../assets/mtr_01.jpg";
+import autoQuiz from "../../assets/autoQuiz.jpg"
 import mtr_02 from "../../assets/mtr_02.png";
 import mtr_03 from "../../assets/mtr_03.jpg";
 import ai_00 from "../../assets/ai_00.jpg";
@@ -212,7 +218,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "11:00AM - 01:00PM",
                 },
-                image:pro,
+                image:it_00,
                 coordinator: {
                     name: "Neena",
                     phoneNumber: "7358540527",
@@ -482,7 +488,7 @@ export const StorageData = [
                     date: "22 SEP 2023",
                     time: "2:00 PM - 3:30 PM",
                 },
-                image: cse_01,
+                image: autoQuiz,
                 coordinator: {
                     name: "Jonathan P",
                     phoneNumber: "9384648938",
@@ -508,7 +514,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "11:00 AM - 12:30 PM",
                 },
-                image:pro,
+                image:auto_02,
                 coordinator: {
                     name: "DINESH KUMAR S ",
                     phoneNumber: "7358290558",
@@ -823,7 +829,7 @@ export const StorageData = [
                     "The team with highest number of points will qualify for the next round In case of a draw the teams will be given 3-5 extra questions",
                     "The teams can have 2-4 members. Only the members attending the quiz in-person will be given the participation certificate.",
                 ],
-                image: cse_01,
+                image: mechatronicsQuiz,
                 details: {
                     venue: "Robotics Lab",
                     date: "22 SEP 2023",
@@ -981,7 +987,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:00AM - 10:30AM",
                 },
-                image: cse_01,
+                image: eee_01,
                 coordinator: {
                     name: "Mr.Manoj Devabhraj",
                     phoneNumber: "08467248067",
@@ -1230,7 +1236,7 @@ export const StorageData = [
                     time: "9:00 AM - 1:00 PM",
                 },
                 entertainmentPhoto: techwarentertainment,
-                image: pro,
+                image: ece_01,
                 coordinator: {
                     name: "Ms. Nehameena R",
                     phoneNumber: "8610233892",
