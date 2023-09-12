@@ -37,7 +37,9 @@ const AllDepartmentPage = () => {
 
     const handleInitialCommit = () => {
 
-        if (localStorage.getItem("val")) {
+        var val = localStorage.getItem("val");
+        console.log(val);
+        if (val !== "false") {
             if (localStorage.getItem("val") === "all") {
                 setSelected("all");
                 setList(allevents);
@@ -147,7 +149,7 @@ const AllDepartmentPage = () => {
                 console.log("ITS ALLL NOWW")
                 setList(allevents);
             } 
-            
+
             // For Computer Science
             if (dataToSend === "Computer Science") {
                 setSelected("Computer Science");
@@ -158,7 +160,7 @@ const AllDepartmentPage = () => {
                     faculty: Data[0].faculty
                 })
             }
-    
+
             // For Information Technology
             if (dataToSend === "Information Technology") {
                 setSelected("Information Technology");
@@ -443,7 +445,7 @@ const AllDepartmentPage = () => {
         setList(allevents)
         handleInitialCommit();
         window.scrollTo(0, 0);
-    }, [selected])
+    }, [selected, dataToSend])
 
     return(
         <>

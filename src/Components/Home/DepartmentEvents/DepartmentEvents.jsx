@@ -48,12 +48,6 @@ const DepartmentEvents = () => {
             <div className="departmentsInGrid">
                 {mainEvents.map((item, key) => {
 
-                    // if (window.innerWidth < 1000) {
-                    //     if (key > 2) {
-                    //         return;
-                    //     }
-                    // }
-
                     return (
                             <AllDepartmentPageEachContainer
                                 link="allevents"

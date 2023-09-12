@@ -37,7 +37,7 @@ const Home = () => {
       console.log("And we're gonna fook from this")
 
     useEffect(() => {
-      localStorage.setItem("val", null);
+      localStorage.setItem("val", false);
 
       function handleScroll() {
         // Your function to be called when scrolling down goes here

@@ -18,7 +18,7 @@
 
 .departmentsInGrid::-webkit-scrollbar {
     width: 4px;
-    height: 4px;
+    height: 7px;
 }
 
 /* Define the custom scrollbar thumb */

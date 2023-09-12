@@ -10,7 +10,6 @@ const Header = () => {
     const [allevents, setAllEvents] = useState([]);
     const [desktop, setDesktop] = useState(false);
     
-    
     const handleinitial = () => {
         if (window.innerWidth > 1000) {
             setDesktop(true)
@@ -52,11 +51,9 @@ const Header = () => {
                                     departmentNamefoundBACk: false
                                 };
                                 
-                                return <>
-                                <Link to={"/allevents"} state={{ dataToSend }}>
+                                return <Link to={"/allevents"} state={{ dataToSend }}>
                                     <p style={{color: 'black'}} key={key} className="NavForEventsLink">{item}</p>
                                 </Link>
-                                </> 
                             })
                         }
                     </div>
