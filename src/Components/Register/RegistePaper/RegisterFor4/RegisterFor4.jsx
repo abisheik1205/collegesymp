@@ -30,7 +30,7 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
 
     const uploadingData = async (e) => {
         var downloadURLS = [];
-        const storageRef = ref(storage, `files/${e.name}`);
+        const storageRef = ref(storage, `files/${bio.name}/${e.name}`);
         console.log("UPLOADING");
 
         await uploadBytesResumable(storageRef, e).then( async (snapshot) => {
