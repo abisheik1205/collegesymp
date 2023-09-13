@@ -12,7 +12,7 @@ import it_00 from "../../assets/it_00.png"
 // import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
 // import dModellingentertainmentPic from "../../assets/3dModellingentertainmentPic.jpeg";
 import AIDS from "../../assets/aids pic.jpg";
-import cse_00 from "../../assets/cse_00.png";
+import cse_00 from "../../assets/cse_00.jpg";
 import cse_01 from "../../assets/quiz.jpg";
 import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";

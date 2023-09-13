@@ -445,7 +445,7 @@ const AllDepartmentPage = () => {
         setList(allevents)
         handleInitialCommit();
         window.scrollTo(0, 0);
-    }, [selected, dataToSend])
+    }, [selected])
 
     return(
         <>
