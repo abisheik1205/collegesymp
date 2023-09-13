@@ -13,7 +13,7 @@ const RegisterFor1 = ({ handleNextPaper, handleBio }) => {
     const handleClick = (e) => {
 
         e.preventDefault();
-        if (name.length > 5 && departmentName.length > 3 && phoneNumber.length > 8 && collegeName.length > 3 && mail.length === null) {
+        if (name.length > 5 && departmentName.length > 3 && phoneNumber.length > 8 && collegeName.length > 3 && mail.length > 1) {
             handleBio(name, collegeName, departmentName, phoneNumber, mail);
             handleNextPaper();
         }else{

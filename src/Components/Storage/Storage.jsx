@@ -8,7 +8,9 @@ import ece from "../../assets/ece.png";
 import aero from "../../assets/aero.jpeg";
 import auto from "../../assets/AM.jpeg";
 import it_00 from "../../assets/it_00.png"
-import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
+// import robotAsemblingentertainmentPic from "../../assets/robotAsemblingentertainmentPic.jpeg";
+// import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
+// import dModellingentertainmentPic from "../../assets/3dModellingentertainmentPic.jpeg";
 import AIDS from "../../assets/aids pic.jpg";
 import cse_00 from "../../assets/cse_00.png";
 import cse_01 from "../../assets/quiz.jpg";
@@ -16,7 +18,7 @@ import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
 import ece_01 from "../../assets/ece_01.png";
-import spiderman from "../../assets/vijaySpiderman.jpg";
+// import spiderman from "../../assets/vijaySpiderman.jpg";
 import ece_03 from "../../assets/ece_03.png";
 import pro from "../../assets/pro.jpg";
 import it_01 from "../../assets/it_01.png";
@@ -27,7 +29,7 @@ import ft_01 from "../../assets/ft_01.png";
 import ft_02 from "../../assets/3D illustration.jpg";
 import mechatronicsQuiz from "../../assets/mechatronicsQuiz.jpg";
 import ft_03 from "../../assets/ft_03.jpg";
-import ft_032 from "../../assets/ft_032.png";
+// import ft_032 from "../../assets/ft_032.png";
 import eee_01 from "../../assets/eee_01.png";
 import auto_02 from "../../assets/auto_02.png"
 import eee_02 from "../../assets/eee_02.png";
@@ -45,7 +47,7 @@ import c_03 from "../../assets/c_04.png";
 import ai_03 from '../../assets/Firefly A dark themed transformers cube built with numbers of different sizes caught on red flame 39 (1).jpg';
 import ai_04 from "../../assets/ai_04.png";
 import auto_00 from "../../assets/auto_00.png"
-import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
+// import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
 import DesignothronMechEntertainmentPic from "../../assets/DesignothronMechEntertainmentPic.jpg";
 import DesignSpectrum from "../../assets/DesignSpectrum.jpg";
 import CADModelling from "../../assets/CADModelling.jpg";
@@ -54,8 +56,8 @@ import EVDesignChallenge from "../../assets/circuitDebugging.jpg";
 import paperpresentationft from "../../assets/paperpresentationft.jpg";
 import techwar from "../../assets/techwar.jpg";
 import aids from "../../assets/aids.jpg";
-import technicalQuiz from "../../assets/technicalQuiz.jpg";
-import techwarentertainment from "../../assets/techwarentertainment.png";
+// import technicalQuiz from "../../assets/technicalQuiz.jpg";
+// import techwarentertainment from "../../assets/techwarentertainment.png";
 
 export const StorageData = [
     {
@@ -73,6 +75,7 @@ export const StorageData = [
                 description: "Debugging is the art of unraveling digital puzzles, converting glitches into graceful symphonies of code.",
                 rules: [
                         "The event comprises two rounds.",
+                        "Questions will be asked using python, C & Java.",
                     "Participants are expected to form a team of two members to participate in the event.",
                     "Participants should bring their own laptops with good Internet connectivity.",
                     "Participants are given codes with error and are expected to debug the same. ",
@@ -81,7 +84,7 @@ export const StorageData = [
                     "In all matters not covered by these rules and regulations, the decision of the organizers is final.",
                 ],
                 image: cse_00,
-                entertainmentPhoto: spiderman,
+                // entertainmentPhoto: spiderman,
                 details: {
                     venue: "Charles Babbage lab",
                     date: "22 Sep 2023",
@@ -109,7 +112,7 @@ export const StorageData = [
                     "The questions can cover many topics including theoretical concepts,pratical applicants,historical developments, and emerging trends",
                     "In the event of a tie, Tie-breaker questions can be used to determine the winner. These questions are often more challenging"
                 ],
-                entertainmentPhoto: technicalQuiz,
+                // entertainmentPhoto: technicalQuiz,
                 image: cse_01,
                 details: {
                     venue: "S13 - Seminar Hall",
@@ -132,6 +135,7 @@ export const StorageData = [
                 description: "coding challenge with two rounds, code Quest prelims and Rapid Code Clash on HackerRank. Teams advance based on prelims performance. Goodluck",
                 rules: [
                     "Team member size: 1",
+                    "Any programming language can be used",
                     "Teams are required to bring their own tools, including laptops and chargers.",
                     "During the contest, the use of external resources or references is strictly prohibited to ensure fairness.",
                     "The contest will be fully proctored to maintain a level playing field.",
@@ -170,7 +174,7 @@ export const StorageData = [
                 details: {
                     venue: "S13 -Seminar hall",
                     date: "23 Sep 2023",
-                    time: "9:30 AM - 12:30 PM",
+                    time: "9:30 AM - 11:30 PM",
                 },
                 coordinator: {
                     name: "Merlin P",
@@ -277,7 +281,7 @@ export const StorageData = [
             {
                 id: 3,
                 eventName: "Data Driven IPL Auction",
-                entertainmentPhoto: iplEntertainmentPic,
+                // entertainmentPhoto: iplEntertainmentPic,
                 shortDescription: "Strategize and Dominate: Data-Driven IPL Auction Challenge.",
                 description: "Experience the future of IPL auctions through data-driven insights and strategies, revolutionizing team selections for the ultimate cricket showdown.",
                 rules: [
@@ -375,6 +379,7 @@ export const StorageData = [
                 id: 2,
                 eventName: "ROBO - Assembly",
                 shortDescription: "Build Bots, Engineer Future: Robo Assembly Challenge.",
+                // entertainmentPhoto: robotAsemblingentertainmentPic,
                 description: "Join the ultimate Robo Assembly event, showcasing engineering prowess as participants construct cutting-edge robots that define the future of automation.",
                 rules: [
                     "Participants are requested to come to the venue on time.",
@@ -1119,6 +1124,7 @@ export const StorageData = [
             {
                 id: 2,
                 eventName: "3D fashion Illustration",
+                // entertainmentPhoto: dModellingentertainmentPic,
                 shortDescription: 'Evolves fashion through 3D innovation ',
                 description: "A platform to redefine the fashion landscape by integrating cutting-edge technology into clothing design, revolutionizing aesthetics and functionality for futuristic style expressions.",
                 rules: [
@@ -1156,7 +1162,7 @@ export const StorageData = [
                     "Showcase your garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
                 ],
-                entertainmentPhoto: ft_032,
+                // entertainmentPhoto: ft_032,
                 image: ft_03,
                 details: {
                     venue: "Illustration Lab / 4017",
@@ -1233,7 +1239,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:00 AM - 1:00 PM",
                 },
-                entertainmentPhoto: techwarentertainment,
+                // entertainmentPhoto: techwarentertainment,
                 image: ece_01,
                 coordinator: {
                     name: "Ms. Nehameena R",
@@ -1255,7 +1261,7 @@ export const StorageData = [
                     "Final Round - Rapid Fire: Teams answer 10 questions in 90 seconds.",
                     "Top 2 teams in the final round win.",
                 ],
-                entertainmentPhoto: techwarentertainment2,
+                // entertainmentPhoto: techwarentertainment2,
                 details: {
                     venue: "F01",
                     date: "22 Sep 2023",
@@ -1346,12 +1352,13 @@ export const StorageData = [
                 shortDescription: "Innovate, Optimize, Elevate",
                 description: "Welcome to PaperFest – where innovation takes center stage! Gather your team of up to three participants for an electrifying challenge. We provide the research papers; you provide the magic.your mission?supercharge these papers with your genius. Craft captivating presentations to showcase your innovation.",
                 rules: [
+                    "On spot event",
                     "Teams can have a maximum of three members.",
                     "This event is open to students from any technical background. Make sure to have valid identification during registration.",
                     "Bring your own laptop for creating and presenting your work.",
                     "Choose one of the three domains: AI with IoT, Core AI, or Blockchain.",
                     "Build your presentation based on the provided research papers, with a focus on improving solutions in your chosen domain.",
-                    "Stay on schedule! Each team gets 10 minutes for their presentation, including the Q&A session."
+                    "Stay on schedule! Each team gets 2 hours for preparation and 10 mins for presentation, including the Q&A session."
                 ],
                 details: {
                     venue: "S13 Seminar Hall",
@@ -1372,7 +1379,7 @@ export const StorageData = [
                 id: 2,
                 eventName: "OptiHack",
                 shortDescription: "Level-up your imagination",
-                description: "Welcome to the world of the unordinary. where the frontend means more than HTML and CSS. where the goal is beyond just completion .Gear up for a high-octane immersion into the heart of code optimization.",
+                description: "Welcome to the world of the unordinary, Where the frontend means more than HTML and CSS. Where the goal is beyond just completion. Gear up for a high-octane immersion into the heart of code optimization.",
                 rules: [
                     "Participants can either compete individually or form teams of up to two members.",
                     "Participants will receive a sample website and a well-defined problem statement.",

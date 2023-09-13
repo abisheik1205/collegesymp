@@ -426,11 +426,11 @@ const AllDepartmentPage = () => {
         }
     }
 
-    const handleBeforeUnload = (e) => {
-        e.preventDefault();
-        e.returnValue = "Are you sure you want to leave? Your changes may not be saved.";
-        localStorage.clear();
-    };
+    // const handleBeforeUnload = (e) => {
+    //     e.preventDefault();
+    //     e.returnValue = "Are you sure you want to leave? Your changes may not be saved.";
+    //     localStorage.clear();
+    // };
 
     const handleMobileClick = () => {
         setMobileClick(!mobileClick);
