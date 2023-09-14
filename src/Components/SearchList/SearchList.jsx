@@ -15,7 +15,7 @@ const SearchList = () => {
 
     const [loggedIn, setLoggedIn] = useState(true);
     const [docs, setDocs] = useState([]);
-
+    const [count, setCount] = useState(0);
     const [pass, setPass] = useState("");
     const [searchInput, setSearchInput] = useState("");
     
@@ -37,7 +37,6 @@ const SearchList = () => {
 
         setPass(pass)
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
 
@@ -57,13 +56,17 @@ const SearchList = () => {
         if (!loggedIn) {
             handleClick();
         }
-    }, [loggedIn])
+        if (docs) {
+            setCount(docs.length);
+        }
+    }, [loggedIn, docs])
 
     return(
         <div className="SearchList">
                 {/* <tr><th>Name</th><th>Event Name</th><th>Phone Number</th><th>Photo Link</th><th>Mail-ID</th></tr> */}
             {
-                loggedIn? <LoginPage handleSubmit={handleSubmit} handlePassword={handlePassword} />:<div className="ListInside"><div className="SearchInputDiv"><input onChange={handleSearchChange} className="SearchInput" placeholder="Search Event Name"/></div><TableContainer>
+                loggedIn? <LoginPage handleSubmit={handleSubmit} handlePassword={handlePassword} />:<div className="ListInside"><div className="SearchInputDiv"><input onChange={handleSearchChange} className="SearchInput" placeholder="Search Event Name"/></div>
+                <h1 className="usersRegistered">Users Registered: {count}</h1><TableContainer>
                 <Table sx={{ minWidth: 650 }} aria-label="simple table">
                     <TableHead>
                         <TableRow>
@@ -88,8 +91,8 @@ const SearchList = () => {
                             var collegeName = item?._document?.data?.value?.mapValue?.fields?.collegeName?.stringValue;
                             var departmentname = item?._document?.data?.value?.mapValue?.fields?.departmentname?.stringValue;
 
-                            console.log(photo);
-                            
+                            // handleCount();
+
                             return <MainSearch key={key} selectedEvents={SelectedEvents} departmentname={departmentname} name={name} collegeName={collegeName} phoneNumber={phonenumber}  transactionID={transactionID} photo={photo} searchInput={searchInput} mailID={Email}/>
                         })
                     }

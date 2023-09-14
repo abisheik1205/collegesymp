@@ -89,6 +89,10 @@
 .ListInside{
     padding: 6vh 5px;
 }
+.usersRegistered{
+    text-align: center;
+    font-size: medium;
+}
 .SearchInputDiv{
     margin-left: auto;
     margin-right: auto;

@@ -115,7 +115,7 @@ export const StorageData = [
                 // entertainmentPhoto: technicalQuiz,
                 image: cse_01,
                 details: {
-                    venue: "S13 - Seminar Hall",
+                    venue: "KMC Auditorium",
                     date: "22 Sep 2023",
                     time: "11:00 AM - 12:30 PM",
                 },
