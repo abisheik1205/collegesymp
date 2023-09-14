@@ -4,14 +4,13 @@ import { useLocation  } from "react-router-dom";
 import EventPageHeader from "./EventPageHeader/EventpageHeader";
 import Footer from "../Footer/Footer";
 import { useNavigate } from 'react-router-dom';
-import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
 
 export const Eventpage = () => {
-    
+
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { departmentName, image, entertainmentPic, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
+    const { departmentName, image, textLink, entertainmentPic, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
 
     const dataToSend = {
         back: true,
@@ -102,6 +101,22 @@ export const Eventpage = () => {
                         }
                     </ul>
                 </div>
+
+                {textLink? <div className="EventRules">
+                    <h2 className="EventRulesSubHeads">Link</h2>
+                    <ul className="RulesList">
+                        {
+                            textLink?.map((item, key) => {
+                                return(
+                                    <>
+                                        <li key={key} className="RulesListEach"><a href={item}>Go to Output Page</a></li>
+                                    </>
+                                )
+                            })
+                        }
+                    </ul>
+                </div>: <></>}
+
                 <div className="EventRegisterMobile"><button id="EventRegisterButton" onClick={() => handleRegister()}>REGISTER</button></div>
                 <div className="EventPDC">
                     <div className="EventPrize pdc">

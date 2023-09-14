@@ -84,6 +84,7 @@ export const StorageData = [
                     "In all matters not covered by these rules and regulations, the decision of the organizers is final.",
                 ],
                 image: cse_00,
+                textLink: ["hola there"],
                 // entertainmentPhoto: spiderman,
                 details: {
                     venue: "Charles Babbage lab",
@@ -1411,9 +1412,9 @@ export const StorageData = [
                 rules: [
                     "Each team can have up to three participants.",
                     "Teams will navigate these three rounds to extract valuable insights from real-world data.",
-                    "Round 1:Questions(MCQ on kahoot)  based on the provided dataset on basic Analysis, Stats, Behavior.",
-                    "Round 2:Visualize key dataset aspects.Solve specific problems using data visualization techniques.",
-                    "Round 3:Make actionable recommendations based on your analysis.Propose solutions to real-world problems.",
+                    "Questions based on the provided dataset on basic Analysis, Stats, Behavior.",
+                    "Visualize key dataset aspects. Solve specific problems using data visualization techniques.",
+                    "Make actionable recommendations based on your analysis.Propose solutions to real-world problems.",
                     "Other details will be instructed at the time of event.",
                 ],
                 details: {
