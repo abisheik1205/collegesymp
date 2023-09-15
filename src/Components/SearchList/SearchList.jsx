@@ -37,10 +37,11 @@ const SearchList = () => {
 
         setPass(pass)
     }
+
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        if (pass === "vivanta23") {
+        if (pass === "220923") {
             handleChange();
         }else{
             alert("Incorrect Password")

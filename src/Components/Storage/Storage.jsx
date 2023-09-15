@@ -13,6 +13,7 @@ import it_00 from "../../assets/it_00.png"
 // import dModellingentertainmentPic from "../../assets/3dModellingentertainmentPic.jpeg";
 import AIDS from "../../assets/aids pic.jpg";
 import cse_00 from "../../assets/cse_00.jpg";
+import cse_001 from "../../assets/cse_00.png";
 import cse_01 from "../../assets/quiz.jpg";
 import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
@@ -83,7 +84,7 @@ export const StorageData = [
                     "Plagiarism, cheating, or any unethical behavior will result in immediate disqualification.",
                     "In all matters not covered by these rules and regulations, the decision of the organizers is final.",
                 ],
-                image: cse_00,
+                image: cse_001,
                 textLink: ["hola there"],
                 // entertainmentPhoto: spiderman,
                 details: {
@@ -143,7 +144,7 @@ export const StorageData = [
                     "Participants are allowed to use the internet solely for accessing the HackerRank platform and submit answers to streamline participation.",
                     "Decisions made by the coordinators and faculty coordinators will be considered final and binding.",
                 ],
-                image: cse_02,
+                image: cse_00,
                 details: {
                     venue: "CSE Lab 1 & 2",
                     date: "22 Sep 2023",
@@ -171,7 +172,7 @@ export const StorageData = [
                     "The chosen topic will have a 1.5-hour preparation session.  For the preparation time teams are only allowed to use paper and pen.",
                     "All must present the venue before 9 a.m. for the event.",
                 ],
-                image: cse_03,
+                image: cse_02,
                 details: {
                     venue: "S13 -Seminar hall",
                     date: "23 Sep 2023",
