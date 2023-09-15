@@ -22,9 +22,8 @@ const SearchList = () => {
     const handleClick = async () => {
 
         const query1 = collection(firebasee, "users");
-
             const aa = await getDocs(query1); 
-
+            console.log(aa?.docs);
             setDocs(aa?.docs);
     }
 
@@ -55,7 +54,9 @@ const SearchList = () => {
 
     useEffect(() =>{
         if (!loggedIn) {
-            handleClick();
+            if (docs.length < 1) {
+                handleClick();
+            }
         }
         if (docs) {
             setCount(docs.length);

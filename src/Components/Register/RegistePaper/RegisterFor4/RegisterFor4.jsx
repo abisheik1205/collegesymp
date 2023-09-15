@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./RegisterFor4.css";
 import { useState } from "react";
 import { storage, firebasee } from "../../../../firebase";
-import { CollectionReference, addDoc, collection, getDocs, updateDoc, deleteDoc, Firestore } from "firebase/firestore";
+import { collection, updateDoc } from "firebase/firestore";
 import { doc, setDoc, serverTimestamp  } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL, uploadBytesResumable, updateMetadata } from "firebase/storage";
 import firebase from 'firebase/compat/app';
