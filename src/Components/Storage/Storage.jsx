@@ -885,16 +885,26 @@ export const StorageData = [
                 description: "A platform for showcasing innovative research at the nexus of mechanics and electronics, encouraging knowledge exchange and fostering advancements in interdisciplinary fields.",
                 rules: [
                     "A team can have a minimum of 2 and a maximum of 5 members.",
-                    "You will be given a total of 10 minutes for presentation. 7 minutes for presentation and 3 minutes for Q & A.",
-                    "A warning bell will be given at the 5th minute &amp; a final bell.",
+                    "You will be given a total of 10 minutes for presentation. 7 minutes for presentation and 3 minutes for Q&A",
+                    "A warning bell will be given at the 5th minute & a final bell",
                     "If you exceed the presentation time marks will be deducted.",
-                    "The presentation can have a maximum of 12 slides.",
-                    "The presentation must have both technical and business aspects of the project.",
-                    "Project working video can be added with a maximum duration of 2 minutes.",
+                    "The presentation can have a maximum of 12 slides",
+                    "The presentation must have both technical and business aspects of the project",
+                    "Project working video can be added with a maximum duration of 2 minutes. You can bring the projects for display",
                     "Images used in ppt must not be from the internet.",
-                    "Evaluation will be based on innovation, technical aspects, marketing/business model,presentation &amp; feasibility.",
+                    "Evaluation will be based on innovation, technical aspects, marketing/business model, presentation & feasibility.",
                     "Presentation marks will be based on team participation.",
 
+                ],
+                round1: [
+                    "All teams will be assembled in a hall. Jury will come to each team and assess them.",
+                    "The teams can bring their projects to display if they want.",
+                    "You are required to carry your own laptop.",
+                ],
+                round2: [
+                    "Selected teams will be grouped. Each group will have two teams.",
+                    "Particular theme will be given to each group on the spot.",
+                    "The teams have to prepare the ppt and present it.",
                 ],
                 image: paperppresentation,
                 details: {

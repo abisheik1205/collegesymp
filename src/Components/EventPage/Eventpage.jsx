@@ -10,7 +10,7 @@ export const Eventpage = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { departmentName, image, textLink, entertainmentPic, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
+    const { departmentName, image, round1, round2, textLink, entertainmentPic, theme, eventName, shortDescription, eventdescription, rules, venue, phoneNumber, date, time, facultyName, coodinatorName } = location.state
 
     const dataToSend = {
         back: true,
@@ -101,6 +101,40 @@ export const Eventpage = () => {
                         }
                     </ul>
                 </div>
+                {
+                    round1?
+                    <div className="EventRules">
+                        <h2 className="EventRulesSubHeads">Round 1</h2>
+                        <ul className="RulesList">
+                            {
+                                round1?.map((item, key) => {
+                                    return(
+                                        <>
+                                            <li key={key} className="RulesListEach">{item}</li>
+                                        </>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>: <></>
+                }
+                {
+                    round2?
+                    <div className="EventRules">
+                        <h2 className="EventRulesSubHeads">Round 2</h2>
+                        <ul className="RulesList">
+                            {
+                                round2?.map((item, key) => {
+                                    return(
+                                        <>
+                                            <li key={key} className="RulesListEach">{item}</li>
+                                        </>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>: <></>
+                }
 
                 {textLink? <div className="EventRules">
                     <h2 className="EventRulesSubHeads">Link</h2>

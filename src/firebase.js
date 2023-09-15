@@ -9,7 +9,7 @@ const firebaseConfig = {
   projectId: "vivanta23-af38d",
   storageBucket: "vivanta23-af38d.appspot.com",
   messagingSenderId: "514192563452",
-  appId: "1:514192563452:web:07924dcd4fd5e44c840b79"
+  appId: "1:514192563452:web:67f986500286c86d840b79"
 };
 
 // Initialize Firebase

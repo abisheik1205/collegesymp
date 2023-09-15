@@ -37,11 +37,11 @@ const router = createBrowserRouter([
     path: "/dev",
     element: <Dev />,
   },
-  {
-    path: "/administrator",
-    element: <SearchList />,
-  },
-])
+  // {
+  //   path: "/administrator",
+  //   element: <SearchList />,
+  // },
+]);
 
 function App() {
   return (

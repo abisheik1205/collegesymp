@@ -4,7 +4,7 @@ import Divider from "../../../Divider/Divider";
 import { Fade } from "react-reveal";
 import { Link } from 'react-router-dom';
 
-const AllDepartmentPageEachContainer = ({ mainEventsimage, textLink, forHome, entertainmentPic, theme, departmentMotto, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
+const AllDepartmentPageEachContainer = ({ mainEventsimage, round1, round2, textLink, forHome, entertainmentPic, theme, departmentMotto, mainEventsdepartmentName, link, image, departmentName, eventName, eventdescription, shortDescription, snap }) => {
 
     const [over, setOver] = useState(false);
 
@@ -37,7 +37,7 @@ const AllDepartmentPageEachContainer = ({ mainEventsimage, textLink, forHome, en
         {
                 link === "eventpage"? <div className="AllDepartmentPageEachContainer">
                 <div className={over? "AllDepartmentPageContainerEach": "AllDepartmentPageContainerEachOnHover"} style={over? forHome? {backdropFilter: 'blur(5px)', width: '150px', height: '150px'}: {backdropFilter: 'blur(5px)'}: forHome? {width: '150px', height: '150px'}: {}} onMouseOver={() => handleOver()} onMouseOut={() => handleOut()}>
-                    <Link to={"/eventpage"} style={forHome? {cursor: 'none'}: {}} state={{ textLink, departmentName, entertainmentPic, image, theme, eventName, shortDescription, eventdescription, rules: snap.rules, venue: snap.details.venue, phoneNumber: snap.coordinator.phoneNumber, date: snap.details.date, time: snap.details.time, facultyName: snap.faculty.name, coodinatorName: snap.coordinator.name }}>
+                    <Link to={"/eventpage"} style={forHome? {cursor: 'none'}: {}} state={{ round1, round2, textLink, departmentName, entertainmentPic, image, theme, eventName, shortDescription, eventdescription, rules: snap.rules, venue: snap.details.venue, phoneNumber: snap.coordinator.phoneNumber, date: snap.details.date, time: snap.details.time, facultyName: snap.faculty.name, coodinatorName: snap.coordinator.name }}>
                     <img className="AllDepartmentPageContainerEachImg" style={forHome? {width: '150px', height: '150px'}: {}} src={image} alt={departmentName}/>
                     <div className="AllDepartmentPageContainerEachStackForm" style={over? forHome? {justifyContent: 'center', height: '150px', backdropFilter: 'blur(3px)'}: {justifyContent: 'center',  backdropFilter: 'blur(3px)'}: {justifyContent: 'center'}}>
                         <div className="AllDepartmentPageContainerEachStackFormHeader" style={over? {marginBottom: '50px'}: {}}>
