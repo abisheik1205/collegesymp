@@ -6,13 +6,13 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../../firebase";
 import "./signup.module.css"
 
-function Signup() { 
+function Signup() {
 
   const [values, setValues] = useState({
     name: "",
     email: "",
     password: "",
-  }); 
+  });
 
   const navigate = useNavigate();
   const [errorMsg, setErrorMsg] = useState("");
@@ -23,14 +23,17 @@ function Signup() {
       setErrorMsg("Fill All Fields");
       return;
     }
+
     setErrorMsg("");
     setSubmitButtonDisabled(true);
     createUserWithEmailAndPassword(auth, values.email, values.password)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
         const user = res.user;
+
         localStorage.setItem("email", values.email);
-        await updateProfile(user, { displayName: values.name });
+        
+        // await updateProfile(user, { displayName: values.name });
         navigate("/register");
       })
       .catch((err) => {

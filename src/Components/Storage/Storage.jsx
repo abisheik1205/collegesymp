@@ -26,7 +26,7 @@ import it_01 from "../../assets/it_01.png";
 import it_02 from "../../assets/it_02.png";
 import it_03 from "../../assets/it_03.png";
 import pp from "../../assets/pp.jpg";
-import ft_01 from "../../assets/ft_01.png";
+import ft_01 from "../../assets/ft_01.jpg";
 import ft_02 from "../../assets/3D illustration.jpg";
 import mechatronicsQuiz from "../../assets/mechatronicsQuiz.jpg";
 import ft_03 from "../../assets/ft_03.jpg";
@@ -204,13 +204,17 @@ export const StorageData = [
                 shortDescription: "Exploring innovations",
                 description: "Join us for 'Innoventure' – a dynamic event igniting creativity, fostering collaboration, and celebrating innovation in the field of Information Technology.",
                 rules: [
-                    "Registered symposium attendees with ID cards can participate.",
-                    "Participation allowed for individuals or teams of 3, with one project or idea per participant/team.",
-                    "Submit a paper focused on the competition's theme, detailing the project's concept, approach, and potential impact.",
-                    "Prepare two presentations: Traditional Paper Presentation (15 minutes) emphasizing technical details and development approach, and a Shark Tank Pitch (10 minutes) highlighting market potential, impact, unique features, investment, expected returns, and scalability.",
-                    "Maintain professionalism, respect, and ethical behavior throughout the event.Plagiarism or misrepresentation will result in disqualification.",
-                    "Scoring criteria include technical quality, market viability, presentation skills, and responses to questions All decisions made by the judges are final.",
+                    "Open to registered symposium attendees with valid ID cards.",
+                    "Participation for individuals or teams of 3.",
+                    "Each participant/team can submit one project or idea.",
+                    "Deliver a 15-minute presentation and 5 mins question &amp; answer session.",
+                    "PRESENTATION FORMAT: tinyurl.com/ye62takv",
+                    "Maintain professionalism, respect, and ethical behavior.",
+                    "Plagiarism or misrepresentation will lead to disqualification.",
+                    "Projects are evaluated based on technical quality, market viability, presentation skills, and responses to questions.",
+                    "Judges’ decisions are final.",
                 ],
+                theme: ["SUSTAINABLE DEVELOPMENT GOALS"],
                 details: {
                     venue: "T07",
                     date: "22 SEP 2023",
@@ -1107,10 +1111,11 @@ export const StorageData = [
                 shortDescription: "Innovate, showcase and captivate",
                 description: "Showcasing innovation and functionality, creators unveil their products to an audience, highlighting features, benefits, and design intricacies in a captivating display of creativity and utility",
                 rules: [
-                    "Participants can be individual or team of 2 members",
-                    "Products should be present with posters",
-                    "Posters can be digital or non-digital",
-                    "Product should be submitted with a write up",
+                    "Participants can be individual or team of 2 members.",
+                    "Products should be present with posters.",
+                    "Posters can be digital or non-digital.",
+                    "Participants should bring their products along with the poster.",
+                    "Product should be submitted with a write up.",
                 ],
                 theme: [
                     "Towards sustainable ",
@@ -1419,14 +1424,13 @@ export const StorageData = [
                 id: 3,
                 eventName: "Insight-Ignite",
                 shortDescription: "Set Your Heart Ablaze ",
-                description: "Embark on an Epic Data Journey! Join Insight-Ignite. Explore data, visualize insights, and propose real-world solutions.Conquer MCQs, visualization challenges, and real-world recommendations.. Dive into the world of data and set your analytical skills ablaze! Are you up for the challenge?",
+                description: "Embark on an Epic Data Journey! Dive into thrilling challenges, ignite your inner fire, and conquer one-on-one battles using your Data Science skills to emerge as the victorious champion!",
                 rules: [
-                    "Each team can have up to three participants.",
-                    "Teams will navigate these three rounds to extract valuable insights from real-world data.",
-                    "Questions based on the provided dataset on basic Analysis, Stats, Behavior.",
-                    "Visualize key dataset aspects. Solve specific problems using data visualization techniques.",
-                    "Make actionable recommendations based on your analysis.Propose solutions to real-world problems.",
-                    "Other details will be instructed at the time of event.",
+                    "Teams can have a maximum of three members.",
+                    "Participants from beginners to intermediate levels in data science are welcome to join.",
+                    "This event Focuses on testing and enhancing data science and analytical skills, while competing against others.",
+                    "Utilize skills to analyze scenarios, solve problems, and make decisions using the provided dataset and information.",
+                    "Let your heart ignite with fire as you take on questions, conquer challenges, and prevail against rivals in one-on-one encounters in the following rounds.",
                 ],
                 details: {
                     venue: "John McCarthy Intelligence Lab",

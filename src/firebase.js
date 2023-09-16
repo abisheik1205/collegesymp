@@ -13,7 +13,6 @@ import { getFirestore } from "firebase/firestore";
 //   appId: "1:514192563452:web:67f986500286c86d840b79"
 // };
 
-
 //Vivanta  - v2
 const firebaseConfig = {
   apiKey: "AIzaSyCxzxVTzea1fOwyLic1m_dNiiAIQxnPyRY",
@@ -23,7 +22,6 @@ const firebaseConfig = {
   messagingSenderId: "523483860152",
   appId: "1:523483860152:web:5f9eb5b3f46d297c2ff84d"
 };
-
 
 // Vivanta - v3
 // const firebaseConfig = {
@@ -46,6 +44,16 @@ const firebaseConfig = {
 //   appId: "1:1096760938462:web:83f525740310104444174f"
 // };
 
+
+// Vivanta - v5
+// const firebaseConfig = {
+//   apiKey: "AIzaSyDPWF5AvUeS7gjhLaQnTSDpDJiYHQrZFRc",
+//   authDomain: "vivanta23---5.firebaseapp.com",
+//   projectId: "vivanta23---5",
+//   storageBucket: "vivanta23---5.appspot.com",
+//   messagingSenderId: "727348918518",
+//   appId: "1:727348918518:web:2e9d0ef1f6d998e4cc54d7"
+// };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
