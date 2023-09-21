@@ -9,6 +9,7 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import EventsFound from "./EventsFound/EventsFound";
 import HomeFotter from "./HomeFooter/HomeFotter";
+import SeminarEvents from "./SeminarEvents/SeminarEvents";
 
 const Home = () => {
     const [isPlayingforDesktop, setIsPlayingforDesktop] = useState(false);
@@ -134,6 +135,9 @@ const Home = () => {
       <DepartmentEvents />
       <br />
       <br />
+      <SeminarEvents />
+      <br/>
+      <br/>
       <EventsFound />
       <br />
       <br />

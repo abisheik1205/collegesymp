@@ -114,12 +114,12 @@ const RegisterFor4 = ({ handleNextPaper, handlePreviousPaper, selected, bio }) =
                 var message = `Hey ${bio.name}, you've registered for these events. ${selected}. Hope you'll have a great day at college.`;
 
                  await emailjs
-                    .send('service_txm28o2', 'template_x0ifqcc', {
+                    .send('service_8t5gqyf', 'template_p4yt3el', {
                       to_name: bio.name,
                       message: message,
                       register: register,
                       to_mail: bio.mailAdress,
-                    }, "sUppWr0eFNYXsNMHD")
+                    }, "wU8stQ8vwlVtJoNWl")
                     .then((response) => {
                         handleNextPaper();
                         console.log("Email Sent. Check it out!!");

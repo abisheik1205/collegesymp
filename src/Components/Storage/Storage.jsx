@@ -8,9 +8,9 @@ import ece from "../../assets/ece.png";
 import aero from "../../assets/aero.jpeg";
 import auto from "../../assets/AM.jpeg";
 import it_00 from "../../assets/it_00.png"
-// import robotAsemblingentertainmentPic from "../../assets/robotAsemblingentertainmentPic.jpeg";
-// import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
-// import dModellingentertainmentPic from "../../assets/3dModellingentertainmentPic.jpeg";
+import robotAsemblingentertainmentPic from "../../assets/robotAsemblingentertainmentPic.jpeg";
+import techwarentertainment2 from "../../assets/techwarentertainmentPic.png";
+import dModellingentertainmentPic from "../../assets/3dModellingentertainmentPic.jpeg";
 import AIDS from "../../assets/aids pic.jpg";
 import cse_00 from "../../assets/cse_00.jpg";
 import cse_001 from "../../assets/cse_00.png";
@@ -19,7 +19,7 @@ import cse_02 from "../../assets/cse_02.jpg";
 import cse_03 from "../../assets/cse_03.png";
 import ece_00 from "../../assets/ece_00.png";
 import ece_01 from "../../assets/ece_01.png";
-// import spiderman from "../../assets/vijaySpiderman.jpg";
+import spiderman from "../../assets/vijaySpiderman.jpg";
 import ece_03 from "../../assets/ece_03.png";
 import pro from "../../assets/pro.jpg";
 import it_01 from "../../assets/it_01.png";
@@ -30,7 +30,7 @@ import ft_01 from "../../assets/ft_01.jpg";
 import ft_02 from "../../assets/3D illustration.jpg";
 import mechatronicsQuiz from "../../assets/mechatronicsQuiz.jpg";
 import ft_03 from "../../assets/ft_03.jpg";
-// import ft_032 from "../../assets/ft_032.png";
+import ft_032 from "../../assets/ft_032.png";
 import eee_01 from "../../assets/eee_01.png";
 import auto_02 from "../../assets/auto_02.png"
 import eee_02 from "../../assets/eee_02.png";
@@ -48,7 +48,7 @@ import c_03 from "../../assets/c_04.png";
 import ai_03 from '../../assets/Firefly A dark themed transformers cube built with numbers of different sizes caught on red flame 39 (1).jpg';
 import ai_04 from "../../assets/ai_04.png";
 import auto_00 from "../../assets/auto_00.png"
-// import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
+import iplEntertainmentPic from "../../assets/iplEntertainmentPic.png";
 import DesignothronMechEntertainmentPic from "../../assets/DesignothronMechEntertainmentPic.jpg";
 import DesignSpectrum from "../../assets/DesignSpectrum.jpg";
 import CADModelling from "../../assets/CADModelling.jpg";
@@ -57,8 +57,9 @@ import EVDesignChallenge from "../../assets/circuitDebugging.jpg";
 import paperpresentationft from "../../assets/paperpresentationft.jpg";
 import techwar from "../../assets/techwar.jpg";
 import aids from "../../assets/aids.jpg";
-// import technicalQuiz from "../../assets/technicalQuiz.jpg";
-// import techwarentertainment from "../../assets/techwarentertainment.png";
+import technicalQuiz from "../../assets/technicalQuiz.jpg";
+import techwarentertainment from "../../assets/techwarentertainment.png";
+import ConceptCascade from "../../assets/conceptCascaseEntertainmentPic2.jpg";
 
 export const StorageData = [
     {
@@ -86,7 +87,7 @@ export const StorageData = [
                 ],
                 image: cse_001,
                 textLink: ["hola there"],
-                // entertainmentPhoto: spiderman,
+                entertainmentPhoto: spiderman,
                 details: {
                     venue: "Charles Babbage lab",
                     date: "22 Sep 2023",
@@ -114,7 +115,7 @@ export const StorageData = [
                     "The questions can cover many topics including theoretical concepts,pratical applicants,historical developments, and emerging trends",
                     "In the event of a tie, Tie-breaker questions can be used to determine the winner. These questions are often more challenging"
                 ],
-                // entertainmentPhoto: technicalQuiz,
+                entertainmentPhoto: technicalQuiz,
                 image: cse_01,
                 details: {
                     venue: "KMC Auditorium",
@@ -172,6 +173,7 @@ export const StorageData = [
                     "The chosen topic will have a 1.5-hour preparation session.  For the preparation time teams are only allowed to use paper and pen.",
                     "All must present the venue before 9 a.m. for the event.",
                 ],
+                entertainmentPhoto: ConceptCascade,
                 image: cse_02,
                 details: {
                     venue: "S13 -Seminar hall",
@@ -187,7 +189,6 @@ export const StorageData = [
                 },
                 departmentName: "Computer Science",
             },
-            
         ]
     },
     {
@@ -287,7 +288,7 @@ export const StorageData = [
             {
                 id: 3,
                 eventName: "Data Driven IPL Auction",
-                // entertainmentPhoto: iplEntertainmentPic,
+                entertainmentPhoto: iplEntertainmentPic,
                 shortDescription: "Strategize and Dominate: Data-Driven IPL Auction Challenge.",
                 description: "Experience the future of IPL auctions through data-driven insights and strategies, revolutionizing team selections for the ultimate cricket showdown.",
                 rules: [
@@ -385,7 +386,7 @@ export const StorageData = [
                 id: 2,
                 eventName: "ROBO - Assembly",
                 shortDescription: "Build Bots, Engineer Future: Robo Assembly Challenge.",
-                // entertainmentPhoto: robotAsemblingentertainmentPic,
+                entertainmentPhoto: robotAsemblingentertainmentPic,
                 description: "Join the ultimate Robo Assembly event, showcasing engineering prowess as participants construct cutting-edge robots that define the future of automation.",
                 rules: [
                     "Participants are requested to come to the venue on time.",
@@ -400,7 +401,7 @@ export const StorageData = [
                 details: {
                     venue: "Robotics Lab",
                     date: "22 Sep 2023",
-                    time: "9:30 AM",
+                    time: "01:30 PM - 03:00 PM",
                 },
                 coordinator: {
                     name: "Dhanasekar R",
@@ -417,17 +418,23 @@ export const StorageData = [
                 shortDescription: "Precision Robotics: Line Follower Challenge",
                 description: "Navigate the twists and turns of engineering excellence in our Line Follower event, where robots follow the path to victory.",
                 rules: [
-                    "Team Members - 3 (Max.)",
-                    "Each member of the team must contain an identity card of his/her respected institute.",
-                    "No test practice will be allowed on the arena.",
-                    "The robot must not leave behind any of its parts during the run; else it will result in disqualification.",
-                    "Unethical behaviour could lead to disqualification. Faculty coordinators have all the rights to take final decisions for any matter during the event.",
-                    "Jury's decision will be considered final.",
-                    "Certificates of Participation will be given to all teams except the Disqualified teams",
+                    "Teams should submit the following description of the Robot that will be used in the competition:",
+                    "Name of the team(with leader name mentioned)",
+                    "Description (Dimensions, Weight, Power Supply, Other, etc.)",
+                    "List of components",
+                    "Robot Specifications:",
+                    "Maximum dimensions - 25 cm x 25cm (l x b).",
+                    "Once a robot has crossed the starting line it must remain fully autonomous, or it will be disqualified.",
+                    "Maximum weight – 1kg",
+                    "Ready made robots and Machines made from Lego parts will be disqualified.",
+                    "Power supply must be on board.",
+                    "Each team is allowed to have only one bot for all the rounds.",
+                    "Batteries must be sealed, immobilised electrolyte type (gel cell, lithium, NiCad, or dry cells).",
+                    "The electric voltage anywhere in the machine should not be more than “12V” DC at any point of time.",
                 ],
                 image: mtr_03,
                 details: {
-                    venue: "Mechanical Class Room",
+                    venue: "Robotics Lab",
                     date: "23 Sep 2023",
                     time: "9:30 AM",
                 },
@@ -510,7 +517,7 @@ export const StorageData = [
                     "Team member size: maximum 4 members",
                     "Maximum time limit 10 minutes per presentation",
                     "Present with Clarity and Share Accurate Info with Interactive Visuals",
-                    "Must contain Technical &amp; Business aspect, market value and investment plan",
+                    "Must contain Technical, Business aspect, market value and investment plan",
                 ],
                 details: {
                     venue: "Bosch Lab",
@@ -826,7 +833,7 @@ export const StorageData = [
         events: [
             {
                 id: 0,
-                eventName: "Quiz - RoboTrivia",
+                eventName: "RoboTrivia",
                 shortDescription: 'Cross-disciplinary minds clash!',
                 description: "A knowledge showdown where participants engage in a captivating quiz, testing their multidisciplinary skills at the intersection of mechanics, electronics, and automation, fostering intellectual growth and collaboration.",
                 rules: [
@@ -845,8 +852,8 @@ export const StorageData = [
                     time: "11:00AM - 01:00PM",
                 },
                 coordinator: {
-                    name: "Menmozhi",
-                    phoneNumber: "9360338336",
+                    name: "Iswarya",
+                    phoneNumber: "9944274442",
                 },
                 faculty: {
                     name: "Bhavani Bharathi. G"
@@ -861,7 +868,7 @@ export const StorageData = [
                 rules: [
                     "Participants are requested to come to the venue on time.",
                     "All components required for the competition will be provided.",
-                    "Only individual participants allowed (no teams).",
+                    "Only teams allowed, no individual participants.",
                     "Participants need to complete the assembly in first 40 minutes and coding part in next 20 minutes.",
                     "Code will be given with some errors, participants need to correct and run it.",
                     "Completion of assembly and coding within the time limit will be awarded.",
@@ -917,7 +924,7 @@ export const StorageData = [
                     time: "11:00AM - 12:30PM",
                 },
                 coordinator: {
-                    name: "Sugavaneshwar",
+                    name: "Sugavaneswar",
                     phoneNumber: "9361715949",
                 },
                 faculty: {
@@ -931,13 +938,19 @@ export const StorageData = [
                 shortDescription: "Autonomous bots navigates and guides",
                 description:"A robotics competition where autonomous robots navigate intricate paths by following lines, showcasing precision, sensor integration, and programming skills in an engaging technical showcase.",
                 rules: [
-                    "Team Members - 4 (Max)",
-                    "Each member of the team must contain an identity card of his/her respected institute.",
-                    "No test practice will be allowed on the arena.",
-                    "The robot must not leave behind any of its parts during the run; else it will result in disqualification.",
-                    "Unethical behaviour could lead to disqualification. Faculty coordinators have all the rights to take final decisions for any matter during the event.",
-                    "Jury's decision will be considered final.",
-                    "Certificates of Participation will be given to all teams except the Disqualified teams",
+                    "Teams should submit the following description of the Robot that will be used in the competition:",
+                    "Name of the team(with leader name mentioned)",
+                    "Description (Dimensions, Weight, Power Supply, Other, etc.)",
+                    "List of components",
+                    "Robot Specifications:",
+                    "Maximum dimensions - 25 cm x 25cm (l x b).",
+                    "Once a robot has crossed the starting line it must remain fully autonomous, or it will be disqualified.",
+                    "Maximum weight – 1kg",
+                    "Ready made robots and Machines made from Lego parts will be disqualified.",
+                    "Power supply must be on board.",
+                    "Each team is allowed to have only one bot for all the rounds.",
+                    "Batteries must be sealed, immobilised electrolyte type (gel cell, lithium, NiCad, or dry cells).",
+                    "The electric voltage anywhere in the machine should not be more than “12V” DC at any point of time.",
                 ],
                 image: mtr_03,
                 details: {
@@ -1111,18 +1124,19 @@ export const StorageData = [
                 shortDescription: "Innovate, showcase and captivate",
                 description: "Showcasing innovation and functionality, creators unveil their products to an audience, highlighting features, benefits, and design intricacies in a captivating display of creativity and utility",
                 rules: [
+                    "Open theme",
                     "Participants can be individual or team of 2 members.",
                     "Products should be present with posters.",
                     "Posters can be digital or non-digital.",
                     "Participants should bring their products along with the poster.",
                     "Product should be submitted with a write up.",
                 ],
-                theme: [
-                    "Towards sustainable ",
-                    "Fab trend (trending fabrics )",
-                    "Posters for our fashion show",
-                    "Fast fashion",
-                ],
+                // theme: [
+                //     "Towards sustainable ",
+                //     "Fab trend (trending fabrics )",
+                //     "Posters for our fashion show",
+                //     "Fast fashion",
+                // ],
                 image: ft_01,
                 details: {
                     venue: "Patten Engineering Lab / 4018",
@@ -1141,7 +1155,7 @@ export const StorageData = [
             {
                 id: 2,
                 eventName: "3D fashion Illustration",
-                // entertainmentPhoto: dModellingentertainmentPic,
+                entertainmentPhoto: dModellingentertainmentPic,
                 shortDescription: 'Evolves fashion through 3D innovation ',
                 description: "A platform to redefine the fashion landscape by integrating cutting-edge technology into clothing design, revolutionizing aesthetics and functionality for futuristic style expressions.",
                 rules: [
@@ -1176,10 +1190,11 @@ export const StorageData = [
                     "Team of 2 can present 4 garments",
                     "Team of 4 can present 6 garments",
                     "Stitches can also be used at certain areas (if necessary).",
+                    "Materials should be bring by participants",
                     "Showcase your garments with clear Description of fabrics, embellishment, accessories.",
                     "Credits will be included for makeup and accessories",
                 ],
-                // entertainmentPhoto: ft_032,
+                entertainmentPhoto: ft_032,
                 image: ft_03,
                 details: {
                     venue: "Illustration Lab / 4017",
@@ -1256,7 +1271,7 @@ export const StorageData = [
                     date: "23 SEP 2023",
                     time: "9:00 AM - 1:00 PM",
                 },
-                // entertainmentPhoto: techwarentertainment,
+                entertainmentPhoto: techwarentertainment,
                 image: ece_01,
                 coordinator: {
                     name: "Ms. Nehameena R",
@@ -1278,7 +1293,7 @@ export const StorageData = [
                     "Final Round - Rapid Fire: Teams answer 10 questions in 90 seconds.",
                     "Top 2 teams in the final round win.",
                 ],
-                // entertainmentPhoto: techwarentertainment2,
+                entertainmentPhoto: techwarentertainment2,
                 details: {
                     venue: "F01",
                     date: "22 Sep 2023",

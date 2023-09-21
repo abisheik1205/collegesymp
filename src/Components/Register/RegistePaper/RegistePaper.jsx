@@ -84,7 +84,7 @@ const RegistePaper = () => {
               <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>2. Can select up to 5 events or atleast one event.</p>
               <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>3. If it's a team event, each one from the team should register individually.</p>
               <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>4. For paper presentation, form link will be sent in mail.</p>
-              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>5. Should make a manual payment of INR 130 with the given IFSC code/account number.</p>
+              <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>5. Should make a manual payment of INR 150 with the given IFSC code/account number.</p>
               <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>6. Upload the screenshot and enter the transaction ID on the following page.</p>
               <p className="dialogBoxHeadInstrucRuledisclaimer">Incase of payment failure college won't take responsiblity</p>
               {/* <p className="dialogBoxHeadInstrucRule"><span className="dialogBoxHeadInstrucRuleBold"></span>5. College sends a confirmation email to the registered email ID.</p> */}

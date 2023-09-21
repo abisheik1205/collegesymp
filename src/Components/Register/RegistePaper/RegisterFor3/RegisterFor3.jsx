@@ -12,7 +12,7 @@ const RegisterFor3 = ({ handleNextPaper, handlePreviousPaper }) => {
             <div className="ScanningCont">
                 <div className="QrCodeHead">
                     <h1 className="QrCodeHeadHead">Card Details</h1>
-                    <h1 className="QrCodeHeadHead">&#x20B9; 130</h1>
+                    <h1 className="QrCodeHeadHead">&#x20B9; 150</h1>
                 </div>
                 <div className="QrCode">
                     <div className="QrCodeInside">
